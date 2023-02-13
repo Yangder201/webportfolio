@@ -32,11 +32,64 @@
     <!--/RWD MENU相關-->
 
 
+    <script type="text/javascript">
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
+                document.getElementById("header-fixed").style.marginTop = '0';
+            }
+
+            else {
+                document.getElementById("header-fixed").style.marginTop = '-68px';
+            }
+        }
+    </script>
+
+
+
+    <!--go to top js-->
+    <script type="text/javascript">
+        $(function () {
+            $("#gotop").click(function () {
+                jQuery("html,body").animate({
+                    scrollTop: 0
+                }, 500);
+            });
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 300) {
+                    $('#gotop').fadeIn("fast");
+                } else {
+                    $('#gotop').stop().fadeOut("fast");
+                }
+            });
+        });
+    </script>
+
+
+
+    <!-- 錨點滑動 -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("a").on("click", function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash; //抓取網頁#錨點
+                    console.log(hash);
+                    $("html,body").animate(
+                        {
+                            scrollTop: $(hash).offset().top
+                        },
+                        800
+                    );
+                }
+            });
+        });
+    </script>
+
+
 </head>
 
 <body>
-
-
 
 
     <div id="gotop">
@@ -426,8 +479,8 @@
                 <div class="inside-tit">瀏覽過程中，過多的動態反而會對瀏覽體驗造成干擾</div>
                 <div class="inside-text">
                     <p>　　網站有適當的微動態可以做到畫龍點睛的效果，些微的開場動畫，不至於干擾閱讀，
-                        但當整個畫面到處都在閃的時候，眼睛就會不知道要先看哪裡，尤其動態又是最吸睛的。</p>
-                    <p>　　有看過一些網站，一個畫面中就放了兩三個輪播或切換效果，那其實是會干擾瀏覽體驗的。
+                        但當整個畫面到處都在閃動的時候，眼睛就會不知道要先看哪裡，尤其動態又是最吸睛的。</p>
+                    <p>　　有看過一些網站，一個畫面中就放了兩三個輪播區或切換效果，其實是會干擾瀏覽體驗的。
                         網站中使用的動態，應該要是有意義的，而不只是為了裝飾或炫技。
                         例如：應該在按鈕或連結移入時，給予動態回饋，或是提示用的動態，那就是有意義的。
                     </p>                
@@ -437,7 +490,10 @@
             <div class="inside-content">
                 <div class="inside-tit">直覺明確，在各方面一直都是很好的策略</div>
                 <div class="inside-text">
-                   <p>現代人較無耐心，除了沒有耐心等待載入太久的網站以外，也沒耐心觀看一堆文字的內容。</p>
+                   <p>現代人較沒有耐心等待載入太久的網站之外，也沒耐性觀看一堆文字敘述的內容。
+                    因此不管是行銷文案，網站內容資訊，排版方式等，都需要化繁為簡，明確易懂
+                    不咬文嚼字，使用親切直白白話的描述文字，簡潔重點清楚的介面。
+                   </p>
                     <p>
                         以上謝謝花費時間耐心閱讀至此，如果覺得我的設計理念符合貴司期待，<br>
                         請再給彼此一個更深入了解的機會，謝謝</p>
@@ -448,64 +504,6 @@
         </div>
 
      
-   
-
-
-
-
-        <script type="text/javascript">
-            window.onscroll = function () { scrollFunction() };
-            function scrollFunction() {
-                if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
-                    document.getElementById("header-fixed").style.marginTop = '0';
-                }
-
-                else {
-                    document.getElementById("header-fixed").style.marginTop = '-68px';
-                }
-            }
-        </script>
-
-
-
-        <!--go to top js-->
-        <script type="text/javascript">
-            $(function () {
-                $("#gotop").click(function () {
-                    jQuery("html,body").animate({
-                        scrollTop: 0
-                    }, 500);
-                });
-                $(window).scroll(function () {
-                    if ($(this).scrollTop() > 300) {
-                        $('#gotop').fadeIn("fast");
-                    } else {
-                        $('#gotop').stop().fadeOut("fast");
-                    }
-                });
-            });
-        </script>
-
-
-
-        <!-- 錨點滑動 -->
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $("a").on("click", function (event) {
-                    if (this.hash !== "") {
-                        event.preventDefault();
-                        var hash = this.hash; //抓取網頁#錨點
-                        console.log(hash);
-                        $("html,body").animate(
-                            {
-                                scrollTop: $(hash).offset().top
-                            },
-                            800
-                        );
-                    }
-                });
-            });
-        </script>
 
         <!--特質實例收合-->
         <!-- <script>

@@ -1,0 +1,136 @@
+﻿@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css); /*黑體*/
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css); /*圓體*/
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexfangsong.css); /*仿宋體*/
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexkai.css); /*楷體*/
+
+.pullquote {
+	        float: right;
+	        clear: right;
+	        width: 200px;
+	        border: 1px solid black;
+	        padding: 10px;
+	        font-size: 20px;
+	        background-color:rgb(195,151,51);
+	        margin: 20px 0 10px 10px;
+	        font-style: italic;
+	        color: rgb(255,255,255);
+        }
+
+
+
+#menu{
+	width: 60%;
+	float:right;
+	height: 40px;
+	font-size: 18px;
+	font-weight: 100px;
+	color:#FFF;
+	filter:alpha(opascity=100)!important;
+	opacity: 1.0!important;
+	color:#FFF;
+	}
+#menu a{ color:#ffffff;}
+#menu ul{ list-style-type:none;}
+#menu li{ width:20%; float: left; }	
+	
+
+#content{
+	max-width: 1100px;
+	padding: 30px;
+	min-height: 300px;
+	margin: auto;
+	font-size: 15px;
+	
+	}
+
+
+
+.info{ float:left; height: 180px; padding: 0 15px;}
+.img{ float: left; width:20%; height:auto;}
+
+
+#sort-box{ width:100%; height:40px; margin-top:15px;}
+.sort{ 
+	width:20%; 
+	margin: 10px 10px; 
+	float:left; 
+	border-radius: 10px; 
+	border: #999 1px solid;
+	text-align:center;
+}
+.sort a{ display:block;}
+
+#tag-box{width:100%; height:50px;}
+.tag{
+	width:20%;
+	margin-bottom: 15px;
+	margin-right: 10px;
+	float:left; 
+	border-radius: 10px; 
+	border: #999 1px solid;
+	text-align:center;
+	}
+.tag a{ display:block;}
+
+
+.app-box{ max-width: 100%;}
+.app-tit{ max-width: 100%; padding:15px; text-align:center; font-size:24px; clear:both;}
+.app-img{ max-width: 25%; float:left; padding:10px;}
+.app-box img{ max-width:100%;}
+
+.pad-img{ max-width: 50%; float:left; padding:10px;}
+
+#footer{
+	max-width: 1280px;
+	min-width: 1024px;
+	height: 50px;
+	margin: auto;
+	text-align: center;
+	font-size: 13px;
+	}
+	
+.fancybox-custom .fancybox-skin {
+			box-shadow: 0 0 50px #222;
+		}
+
+#btn-area{ max-width:100%;}
+.btn-box a{
+	display:block;
+	width:23%; 
+	padding:2px; 
+	margin:8px;
+	margin-bottom: 30px;
+	border: #C1AA4D 0px solid;
+	border-radius:6px;
+	float:left; 
+	background:#CDCDCD;
+	text-align:center;
+}
+
+.btn-box a:hover{
+	background:#666;
+	color:#fff;
+}
+
+.line{ border-bottom:#CCC 1px dashed; margin:5px;}
+
+
+@media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+.btn-box a{
+	display:block;
+	width:45%; 
+	padding:2px; 
+	margin:8px;
+	margin-bottom: 20px;
+	border: #999 1px solid; 
+	border-radius: 5px; 
+	float:left; 
+	background:#F9F9F9;
+	text-align:center;
+}
+
+.img{ width:100%;}	
+	
+}

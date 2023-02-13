@@ -1236,26 +1236,17 @@ h2 {
 } */
 
 
-/*首頁f*/
-#footer {
-    width: 100%;
-    min-height: 50px;
-    padding-top: 3vh;
-    margin: auto;
-    font-size: 1rem;
-    color: #8d8d8d;
-    text-align: center;
-    clear: both;
 
-}
 
 /*內頁f*/
+
 
 
 
 footer {
     width: 100%;
     min-height: 50px;
+    margin-top: 50px;
     margin: auto;
     font-size: 1rem;
     color: #6e6d6d;

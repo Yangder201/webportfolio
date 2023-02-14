@@ -69,6 +69,14 @@ body {
 
 }
 
+
+#m-header{
+    display: none;
+
+}
+
+
+
 .arrow {
     border: solid rgb(255, 255, 255);
     border-width: 0px 2px 2px 0;
@@ -152,7 +160,7 @@ body {
     margin: 0 3px;
     margin-top: 8px;
     text-align: center;
-    background: #f9f9f970;
+    background: #f9f9f938;
     backdrop-filter: blur(3px);
     border-top: #eeeeee 2px solid;
     border-left: #eeeeee 2px solid;
@@ -164,7 +172,7 @@ body {
 
 .btn-box a {
     padding: 15px 0 0 0;
-    color: rgb(85, 85, 85);
+    color: rgb(255, 255, 255);
     display: block;
     font-weight: 500;
     transition: .2s;
@@ -254,18 +262,12 @@ mark {
 
 
 .tag-describe {
-    width: 48%;
+    width: 90%;
     font-size: 1.1rem;
     line-height: 2rem;
-    margin-top: 5vh;
-    background: #ffffff3d;
-    border-radius: 6px;
-    border: 2px solid #fff;
-    padding: 15px 20px;
-    float: right;
-    margin-right: 15px;
-    color: #ffffff;
-    font-size: 1rem;
+    color: #575757;
+
+
 }
 
 .portfolio-area {
@@ -440,7 +442,7 @@ mark {
     max-width: 400px;
     min-width: 100px;
     height: fit-content;
-    margin: 50px 25px;
+    margin: 50px 15px;
     /* border: 1px solid #f5f5f5; */
     border-radius: 6px;
     overflow: hidden;
@@ -714,385 +716,81 @@ footer {
 
 @media only screen and (max-width: 768px) {
 
-    #open-bg{
-        background: url(../img/bg4.png) fixed no-repeat 70%;
-    }
-
-
-    #open {
-        padding-top: 20vh;
-        height: 70vh;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
-    #open-title{
-        width: 80%;
-        padding-left: 0;
-        margin: auto;
-        margin-top: 3vh;
-    }
-
-    #main-image{
-        display: none;
-    }
-
-    .open-f{
-        text-align: center;
-        font-size: .8rem;
-    }
-
-    h1 {
-        width: 100%;
-        font-size: 5rem;
-        font-weight: bold;
-        margin: auto;
-        color: #575757;
-        padding: 1rem 0;
-
-
-        animation-name: open-title;
-        animation-duration: 2s;
-        /*動畫運作秒數*/
-        animation-delay: 0;
-        /*動畫延遲開始秒數*/
-        animation-iteration-count: 1;
-        animation-timing-function: ease;
-        animation-fill-mode: forwards;
-        /*動畫結束停在最後一個影格*/
-    }
-
-
-    .open-describe {
-        color: #505050;
-        max-width: 100%;
-        padding: 0 35px;
-        font-size: 1.2rem;
-        line-height: 2rem;
-        margin-top: 1vh;
-        opacity: 0;
-
-        animation-name: open-des;
-        animation-duration: 1s;
-        animation-delay: .3s;
-        animation-iteration-count: 1;
-        animation-timing-function: ease;
-        animation-fill-mode: forwards;
-    }
-
-    .main-cta {
-        font-size: 1rem;
-        background: #444444;
-    }
-
-
-    .else-cta {
-        border-radius: 30px;
-        background: #ffffff00;
-        margin: 10px;
-        font-size: 16px;
-        font-weight: 400;
-        box-shadow: 5px 5px 25px #ffffff25;
-        transform: 1s;
-        -moz-transform: 1s;
-    }
-
-    .else-cta a {
-        border-radius: 30px;
-        padding: 15px 35px;
+    
+    #m-header{
         display: block;
-        border: #5e5e5e 2px solid;
-        transform: 1s;
-        -moz-transform: 1s;
-        color: #3a3a3a;
-
-    }
-
-
-    #open-logo {
-        left: 5vw;
-    }
-
-
-    #header-fixed {
-        min-height: 65px;
-    }
-
-
-    #intro-area-bg {
         width: 100%;
-        height: 95vh;
-        padding-top: 5vh;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: flex-start;
+        height: 70px;
+        background: linear-gradient(90deg, #d1d1d180, #cecece);
+        border-bottom: 2px solid #d6d6d6;
     }
 
-
-    #intro-area {
-        display: none;
-
-    }
-
-    #intro-bg{
-        padding: 10vw;
-        width: 80vw;
-    }
-
-    #info {
-        width: 100%;
-        padding: 35px;
-        line-height: 33px;
-        list-style-type: none;
-        font-size: 1.5rem;
-        background: #ffffff;
-        height: fit-content;
-    }
-
-    #photo {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 35vh;
-        padding-top: 5vh;
-    }
-
-    
-    #photo img {
-        max-width: 220px;
-    }
-
-    .text {
-        margin-top: 10px;
-        font-size: 1.2rem;
-    }
-
-    .text li {
-        list-style-type: none;
-        margin-left: 5px;
-    }
-
-    .text li::before {
-        content: '▪　';
-        /* font-size: 10 px; */
+    #m-logo{
+        font-size: 1.3rem;
         font-weight: bold;
-        color: #797979;
-    }
-
-
-    #photo img {
-        max-width: 250px;
-    }
-
-    .trait-area {
-        display: none;
-    }
-
-
-    #work-exp-bg{
-        padding-top: 5vh;
-    }
-
-    .name {
-        font-size: 26px;
-    }
-
-    .job-title {
-        font-size: 18px;
-    }
-
-    .work-detal {
-        padding: 20px 30px 0 30px;
-    }
-
-    .work-detal li {
-        line-height: 24px;
-    }
-
-
-    
-
-    #logo {
-        font-weight: bold;
-        margin-top: 5px;
-        margin-left: 10px;
+        margin-top: 3vh;
+        margin-left: 5vw;
         float: left;
         height: 40px;
-    }
-
-    #logo a{
-        color: #5e5e5e;
-        padding-top: 20px;
-    }
-
-    #tool-bg {
-        padding-top: 10vh;
-    }
-
-    .tool{
-        width: 70%;
-        margin: 5px;
-    }
-
-    #skill {
-        max-width: 90vw;
-        height: fit-content;
-    }
-
-    #skill-bg {
-        width: 100%;
-        padding: 5vh 0;
-    }
-
-    .skill-area {
-        width: 100vw;
-        padding: 25px 30px;
-    }
-
-    .skill li{
-        line-height: 2rem;
-    }
-
-    #work-exp {
-        width: 100%;
-        margin: 0;
-        min-height: 300px;
-
-    }
-
-    #work-exp-area {
-        max-width: 85%;
-        margin: auto;
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .work {
-        max-width: 100%;
-        margin: 10px 0;
-        display: flex;
-        flex-wrap: wrap;
-        padding-bottom: 5vh;
-
-    }
-
-    .work-tit-area{
-        width: 100%;
-        border-right: 0px;
-        border-bottom:  #e9e9e9 1px solid;
-    }
-
-    .work-detal{
-        line-height: 2rem;
-        width: 100%;
-    }
-
-    .work-detal ul{
-        padding-top: 20px;
-    }
-
-    .work-detal ul li{
-        line-height: 2rem;
+       
     }
 
 
-    .company-name {
-        width: 100%;
-    }
-
-    .title {
-        font-size: 33px;
-        padding-bottom: 15px;
-    }
-
-    #trait-bg{
-        padding-top: 5vh;
-    }
-
-
-    #trait{
-        margin: auto;
-        width: 85%;
-        height: fit-content;
-        padding: 0 0 5vh 0;
-    }
-
-    .inside-tit {
-        width: 80vw;
-        font-size: 1.6rem;
-        line-height: 2rem;
-        font-weight: bold;
-        padding: 3rem 0 1rem 0;
-    }
-
-    .inside-text {
-        line-height: 2.2rem;
-    
-    }
-
-
-    .tool-group{
-        padding: 3vh;
-    }
 
  
-    
 
+
+    .portfolio-area{
+        max-width: 100%;
+        padding-top: 5px;
+    }
+ 
 
 
     #btn-area-bg{
-        width: 100%;
-        padding-top: 90px;
-        height: fit-content;
-        font-size: 1.1rem;
-        padding-bottom: 10px;
-
+        display: none;
     }
 
     #btn-area{
-        width: 90vw;
-        margin: auto;
+        width: 80%;
+        margin: 10px auto;
     }
 
     .btn-box-now{
-        width: 45%;
+        width: 46%;
         border-radius: 6px;
     }
 
     .btn-box{
-        width: 45%;
+        width: 46%;
         border-radius: 6px;
+        border: 2px solid #ffffff;
     }
 
-    .page-title{
-        font-size: 1.3rem;
-        color: #ffffff;
-        text-align: center;
-        padding: 1vh 0;
+    .tag-describe{
+        width: 70%;
+        margin: auto;
     }
-
 
     .box{
-        max-width: 90vw;
-        margin: 1vh auto;
+        max-width: 85vw;
+        margin: 5vh auto;
     }
 
     .box2{
-        max-width: 90vw;
-        margin: 1vh auto;
+        max-width: 85vw;
+        margin: 5vh auto;
     }
 
     .box3{
-        max-width: 90vw;
-        margin: 1vh auto;
+        max-width: 85vw;
+        margin: 5vh auto;
     }
     .box4{
-        max-width: 90vw;
-        margin: 1vh auto;
+        max-width: 85vw;
+        margin: 5vh auto;
     }
+
+
 
 }

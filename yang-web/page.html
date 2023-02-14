@@ -2,27 +2,29 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Yang 網站設計作品集｜Web Design Portfolio" />
-    <meta property="og:description" content="網站設計｜UI.UX 設計" />
-    <meta property="og:type" content="Web.UI.Design" />
-    <meta property="og:url" content="https://yangder201.github.io/webportfolio/yang-web/" />
-    <link rel="icon" href="img/title-icon.ico" type="image/x-icon" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="Yang 網站設計作品集｜Web Design Portfolio" />
+	<meta property="og:description" content="網站設計｜UI.UX 設計" />
+	<meta property="og:type" content="Web.UI.Design" />
+	<meta property="og:url" content="https://yangder201.github.io/webportfolio/yang-web/" />
 	<title>Portfolio｜YANG</title>
 	<link rel="icon" href="img/title-icon.ico" type="image/x-icon" />
 	<link href="css/reset.css" rel="stylesheet">
 	<link href="css/portfolio.css" rel="stylesheet">
 
+	<!--Google Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap"
+		rel="stylesheet">
 
-    <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap"
-        rel="stylesheet">
-
+	<!--手機板 RWD MENU 相關-->
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script src="js/menu.js" type="text/javascript"></script>
 
 	<!--中間作品集區塊相關群-->
 	<link rel="stylesheet" href="css/portfolio.css" type="text/css">
@@ -93,6 +95,21 @@
 		</div>
 	</div> -->
 
+	<div id="m-header">
+		<div id="m-logo"><a href="index.html">YANG</a></div>
+		<div id="cssmenu">
+			<ul>
+				<li><a href="page.html">大型專案</a></li>
+				<li><a href="product.html">產品頁</a></li>
+				<li><a href="first.html">形象網站</a></li>
+				<li><a href="banner.html">Banner</a></li>
+				<li><a href="AD.html">電商廣告</a></li>
+				<li><a href="ill.html">電繪插圖 / ICON</a></li>
+				<li><a href="sticker.html">LINE 貼圖創作</a></li>
+			</ul>
+		</div>
+	</div>
+
 
 	<div id="btn-area-bg">
 		<div id="logo">
@@ -108,37 +125,21 @@
 			<div class="btn-box"><a href="sticker.html">LINE 貼圖創作</a></div>
 		</div>
 
+	</div>
+
+	
+
+	<div class="portfolio-area">
+	
 		<div class="tag-describe">
 			<p>
 				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
 					class="bi bi-question-circle-fill" viewBox="0 0 16 16">
 					<path
 						d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z" />
-				</svg><br>
-				2017 - 2021<br>
-				改版規劃、登錄頁<br>活動頁、解決方案
+				</svg>　2017 - 2021　改版規劃、登錄頁、活動頁、解決方案
 			</p>
 		</div>
-	</div>
-
-
-
-	<div class="portfolio-area">
-
-
-		<div class="box3">
-			<a class="fancybox" href="portfolio/page/008.jpg">
-				<div class="box-btn">瀏覽大圖</div><img src="portfolio/page/008.jpg" title="測試2" alt="測試">
-			</a>
-		</div>
-
-
-		<div class="box3">
-			<a class="fancybox" href="portfolio/page/007.jpg">
-				<div class="box-btn">瀏覽大圖</div><img src="portfolio/page/007.jpg">
-			</a>
-		</div>
-
 
 		<div class="box3">
 			<a class="fancybox" href="portfolio/page/001.jpg">
@@ -156,12 +157,6 @@
 
 
 		<div class="box3">
-			<a class="fancybox" href="portfolio/product/012.jpg">
-				<div class="box-btn">瀏覽大圖</div><img src="portfolio/product/012.jpg" alt="產品頁">
-			</a>
-		</div>
-
-		<div class="box3">
 			<a class="fancybox" href="portfolio/page/004.jpg">
 				<div class="box-btn">瀏覽大圖</div><img src="portfolio/page/004.jpg" alt="綜合頁">
 			</a>
@@ -173,6 +168,21 @@
 				<div class="box-btn">瀏覽大圖</div><img src="portfolio/page/003.jpg" alt="綜合頁">
 			</a>
 		</div>
+
+		<div class="box3">
+			<a class="fancybox" href="portfolio/page/005.jpg">
+				<div class="box-btn">瀏覽大圖</div><img src="portfolio/page/005.jpg" alt="綜合頁">
+			</a>
+		</div>
+
+
+		<div class="box3">
+			<a class="fancybox" href="portfolio/product/012.jpg">
+				<div class="box-btn">瀏覽大圖</div><img src="portfolio/product/012.jpg" alt="產品頁">
+			</a>
+		</div>
+
+
 
 		<div class="box3">
 			<a class="fancybox" href="portfolio/product/013.jpg">
@@ -188,11 +198,6 @@
 
 		</div>
 
-		<div class="box3">
-			<a class="fancybox" href="portfolio/page/005.jpg">
-				<div class="box-btn">瀏覽大圖</div><img src="portfolio/page/005.jpg" alt="綜合頁">
-			</a>
-		</div>
 
 
 		<div class="box3">
@@ -216,24 +221,6 @@
 
 		</div>
 
-		<div class="box3">
-			<a class="fancybox" title="" href="portfolio/page/011.jpg">
-				<div class="box-btn">瀏覽大圖</div><img src="portfolio/page/011.jpg" alt="">
-			</a>
-		</div>
-
-		<div class="box3">
-			<a class="fancybox" title="" href="portfolio/page/012.jpg">
-				<div class="box-btn">瀏覽大圖</div><img src="portfolio/page/012.jpg" alt="">
-			</a>
-		</div>
-
-		<div class="box3">
-			<a class="fancybox" title="" href="portfolio/page/013.jpg">
-				<div class="box-btn">瀏覽大圖</div><img src="portfolio/page/013.jpg" alt="">
-			</a>
-
-		</div>
 
 		<div class="box3">
 			<a class="fancybox" title="" href="portfolio/page/014.jpg">
@@ -242,11 +229,52 @@
 
 		</div>
 
+
+		<div class="box3">
+			<a class="fancybox" title="" href="portfolio/page/013.jpg">
+				<div class="box-btn">瀏覽大圖</div><img src="portfolio/page/013.jpg" alt="">
+			</a>
+
+		</div>
+
+
+
+		<div class="box3">
+			<a class="fancybox" title="" href="portfolio/page/012.jpg">
+				<div class="box-btn">瀏覽大圖</div><img src="portfolio/page/012.jpg" alt="">
+			</a>
+		</div>
+
+
+		<div class="box3">
+			<a class="fancybox" title="" href="portfolio/page/011.jpg">
+				<div class="box-btn">瀏覽大圖</div><img src="portfolio/page/011.jpg" alt="">
+			</a>
+		</div>
+		<div class="box3">
+			<a class="fancybox" href="portfolio/page/007.jpg">
+				<div class="box-btn">瀏覽大圖</div><img src="portfolio/page/007.jpg">
+			</a>
+		</div>
+
+
+
+		<div class="box3">
+			<a class="fancybox" href="portfolio/page/008.jpg">
+				<div class="box-btn">瀏覽大圖</div><img src="portfolio/page/008.jpg" title="測試2" alt="測試">
+			</a>
+		</div>
+
+
+
+
 		<div class="box3">
 			<a class="fancybox" title="" href="portfolio/page/015.jpg">
 				<div class="box-btn">瀏覽大圖</div><img src="portfolio/page/015.jpg" alt="">
 			</a>
 		</div>
+
+
 
 		<div class="box3">
 			<a class="fancybox" title="" href="portfolio/page/016.jpg">
@@ -260,12 +288,20 @@
 			</a>
 		</div>
 
+
+		<div class="box3">
+			<a class="fancybox" href="portfolio/first/023.jpg">
+				<div class="box-btn">瀏覽大圖</div>
+				<img src="portfolio/first/023.jpg" alt="高雄榮總輪椅借用系統介面">
+			</a>
+		</div>
+
+
 		<div class="box3">
 			<a class="fancybox" title="" href="portfolio/page/018.jpg">
 				<div class="box-btn">瀏覽大圖</div><img src="portfolio/page/018.jpg" alt="">
 			</a>
 		</div>
-
 
 		<div class="box2">
 			<a class="fancybox" href="portfolio/page/019.jpg">
@@ -274,22 +310,14 @@
 			</a>
 		</div>
 
-		<div class="box3">
-			<a class="fancybox" href="portfolio/first/023.jpg">
-				<div class="box-btn">瀏覽大圖</div>
-				<img src="portfolio/first/023.jpg" alt="高雄榮總輪椅借用系統介面">
-			</a>
-
-
-		</div>
 
 
 		<footer>Copyright © Yang</footer>
 
-		</div>
-		<!-- Add fancyBox main JS and CSS files -->
-		<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
-		<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
+	</div>
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
 
 </body>
 

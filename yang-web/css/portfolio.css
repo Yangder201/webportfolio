@@ -56,12 +56,13 @@ body {
     border-radius: 10px;
     background: #383838d1;
     box-shadow: 5px 5px 25px #6e6e6ed1;
-    padding: 20px;
-    color: white;
+    padding: 15px 20px;
+    color: #ffffff;
+    border: #ffffffa8 2px solid;
     font-weight: bold;
     cursor: pointer;
     z-index: 999;
-    border: #ffffffa8 2px solid;
+
 }
 
 #gotop:hover {
@@ -723,6 +724,8 @@ footer {
         height: 70px;
         background: linear-gradient(90deg, #d1d1d180, #cecece);
         border-bottom: 2px solid #d6d6d6;
+        position: fixed;
+        z-index: 88;
     }
 
     #m-logo{
@@ -736,15 +739,16 @@ footer {
     }
 
 
-
- 
-
-
     .portfolio-area{
         max-width: 100%;
-        padding-top: 5px;
+        padding-top: 100px;
     }
  
+
+    .tag-describe{
+        width: 80%;
+        margin: auto;
+    }
 
 
     #btn-area-bg{
@@ -767,30 +771,30 @@ footer {
         border: 2px solid #ffffff;
     }
 
-    .tag-describe{
-        width: 70%;
-        margin: auto;
-    }
-
     .box{
         max-width: 85vw;
-        margin: 5vh auto;
+        margin: 3vh auto;
     }
 
     .box2{
         max-width: 85vw;
-        margin: 5vh auto;
+        margin: 3vh auto;
     }
 
     .box3{
         max-width: 85vw;
-        margin: 5vh auto;
+        margin: 3vh auto;
     }
     .box4{
         max-width: 85vw;
-        margin: 5vh auto;
+        margin: 3vh auto;
     }
 
+
+    .box5{
+        max-width: 85vw;
+        margin: 3vh auto;
+    }
 
 
 }

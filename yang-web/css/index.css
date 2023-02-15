@@ -62,7 +62,7 @@ section {
     border-radius: 10px;
     background: #383838d1;
     box-shadow: 5px 5px 25px #6e6e6ed1;
-    padding: 20px;
+    padding: 15px 20px;
     color: white;
     font-weight: bold;
     cursor: pointer;
@@ -593,7 +593,8 @@ mark {
     list-style-type: none;
     color: #555555;
     /* border-left: 2px solid #ffffff; */
-    background: linear-gradient(234deg, rgba(243, 243, 243, 0.849) 0%, rgba(230, 230, 230, 0.7) 60%, rgba(255, 255, 255, 0) 100%);
+    background: #ffffff;
+    /* background: linear-gradient(234deg, rgba(243, 243, 243, 0.849) 0%, rgba(230, 230, 230, 0.7) 60%, rgba(255, 255, 255, 0) 100%); */
 }
 
 

@@ -735,6 +735,8 @@ footer {
         margin-left: 5vw;
         float: left;
         height: 40px;
+        position: relative;
+        z-index: 999;
        
     }
 

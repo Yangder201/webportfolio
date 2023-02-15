@@ -57,8 +57,8 @@ section {
 #gotop {
     display: none;
     position: fixed;
-    right: 5%;
-    bottom: 100px;
+    right: 2%;
+    bottom: 5%;
     border-radius: 10px;
     background: #383838d1;
     box-shadow: 5px 5px 25px #6e6e6ed1;
@@ -67,7 +67,7 @@ section {
     font-weight: bold;
     cursor: pointer;
     z-index: 999;
-    border: #ffffffa8 2px solid;
+    border: #ffffff5c 2px solid;
 }
 
 #gotop:hover {
@@ -547,7 +547,7 @@ mark {
     flex-wrap: nowrap;
     margin: 0;
     padding: 0;
-    border-top: #ffffffd9 1px solid;
+    /* border-top: #ffffffd9 1px solid; */
 
 }
 
@@ -558,10 +558,12 @@ mark {
     height: 90vh;
     padding-top: 10vh;
     background: #e3e3e3;
+    /* background: linear-gradient(to top, #90c7ff, #f5fb9b, #ffd4a8); */
+    background: linear-gradient(to top, #fff3dc, #f1dec2, #525252);
     color: #ffffff;
     font-size: 6.5rem;
     font-weight: bold;
-    text-shadow: 5px 3px #93939369;
+    text-shadow: 19px 6px 7px #93939326;
     writing-mode: vertical-lr;
 }
 
@@ -593,8 +595,8 @@ mark {
     list-style-type: none;
     color: #555555;
     /* border-left: 2px solid #ffffff; */
-    background: #ffffff;
-    /* background: linear-gradient(234deg, rgba(243, 243, 243, 0.849) 0%, rgba(230, 230, 230, 0.7) 60%, rgba(255, 255, 255, 0) 100%); */
+    /* background: #ffffff; */
+    background: linear-gradient(234deg, rgba(243, 243, 243, 0.849) 0%, rgba(230, 230, 230, 0.7) 60%, rgba(255, 255, 255, 0) 100%);
 }
 
 
@@ -623,6 +625,16 @@ mark {
     margin: 3vh 0;
 }
 
+.question ul{
+    padding: 15px 30px;
+    line-height: 2.5rem;
+}
+
+.question ul li{
+    list-style-type: '． ';
+    margin-left: 30px;
+
+}
 
 .question h3 {
     color: #060606;
@@ -938,15 +950,10 @@ h2 {
 }
 
 .skill li {
-    list-style-type: none;
+    list-style-type: '． ';
     line-height: 2.5rem;
+    margin-left: 20px;
 
-}
-
-.skill li::before {
-    content: '•　';
-    font-weight: bold;
-    color: #797979;
 }
 
 
@@ -967,7 +974,7 @@ h2 {
 }
 
 #work-exp-area {
-    max-width: 900px;
+    max-width: 960px;
     margin: auto;
     height: auto;
 }
@@ -976,7 +983,7 @@ h2 {
 .work {
     max-width: 100%;
     border: 2px solid #ffffff9e;
-    border-radius: 6px;
+    border-radius: 10px;
     margin: 50px 0;
     /* padding-bottom: 35px; */
     display: flex;
@@ -1050,22 +1057,21 @@ h2 {
 /*工作內容細項*/
 
 .work-detal {
-    background:  #f9f9f9;
+    background: #f9f9f9;
     padding: 20px 30px 50px 40px;
     font-size: 1.2rem;
     line-height: 2.8rem;
     width: 70%;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
 }
 
 .work-detal li {
-    list-style-type: none;
+    list-style-type: '． ';
+    margin-left: 20px;
 }
 
-.work-detal li::before {
-    content: '•　';
-    font-weight: bold;
-    color: #797979;
-}
+
 
 
 .tit {
@@ -1110,29 +1116,10 @@ h2 {
     color: #000000;
 }
 
-.inside-text {
-    max-width: 800px;
+.inside-text{
     font-size: 1.2rem;
-    font-weight: 300;
     line-height: 2.5rem;
-    color: #1d1d1d;
-
 }
-
-.insdie-text li {
-    padding: .4rem 0;
-}
-
-
-
-.insdie-text li::before {
-    content: '▪　';
-    font-size: .2rem;
-    font-weight: normal;
-    color: #525252;
-    margin-left: -1.5rem;
-}
-
 
 
 #footer {
@@ -1143,10 +1130,23 @@ h2 {
     font-size: 1rem;
     color: #8d8d8d;
     text-align: center;
-    clear: both;
 
 }
 
+.scrollDown{
+    position: absolute;
+    text-transform: uppercase;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: calc(90px / 2);
+    font-family: "silka-semibold";
+    font-size: .8em;
+    pointer-events: none;
+    z-index: 5;
+    opacity: 0;
+
+}
 
 
 
@@ -1196,6 +1196,22 @@ h2 {
 
 
 @media only screen and (max-width: 768px) {
+
+    #gotop {
+        display: none;
+        position: fixed;
+        right: 5%;
+        bottom: 3%;
+        border-radius: 10px;
+        background: #383838d1;
+        box-shadow: 5px 5px 25px #6e6e6ed1;
+        padding: 15px 20px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        z-index: 999;
+        border: #ffffff5c 2px solid;
+    }
 
     #open-bg{
         background: url(../img/bg4.jpg) fixed no-repeat 70%;
@@ -1344,15 +1360,7 @@ h2 {
     }
 
     .text li {
-        list-style-type: none;
-        margin-left: 5px;
-    }
-
-    .text li::before {
-        content: '▪　';
-        /* font-size: 10 px; */
-        font-weight: bold;
-        color: #797979;
+        list-style-type: '． ';
     }
 
 
@@ -1379,6 +1387,8 @@ h2 {
 
     .work-detal {
         padding: 20px 30px 0 30px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 7px;
     }
 
     .work-detal li {

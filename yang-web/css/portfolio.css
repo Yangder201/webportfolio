@@ -17,6 +17,8 @@ a {
 
 a:hover {
     color: #3d3d3d;
+    transition: .3s ease-out;
+
 }
 
 a:visited {
@@ -62,16 +64,18 @@ body {
     font-weight: bold;
     cursor: pointer;
     z-index: 999;
+    
 
 }
 
 #gotop:hover {
     opacity: .6;
+    transition: .3s ease-out;
 
 }
 
 
-#m-header{
+#m-header {
     display: none;
 
 }
@@ -90,14 +94,14 @@ body {
 
 
 #btn-area-bg {
-    width: 25%;
+    width: 20%;
     float: left;
     height: 100vh;
     font-size: 1rem;
     position: fixed;
-    background: #BBD2C5;
-    background: -webkit-linear-gradient(to bottom, #292E49, #536976, #BBD2C5);
-    background: linear-gradient(to top, #292E49, #536976, #BBD2C5);
+    background: #ededed;
+    /* background: -webkit-linear-gradient(to bottom, #292E49, #536976, #BBD2C5);
+    background: linear-gradient(to top, #292E49, #536976, #BBD2C5); */
 
 }
 
@@ -105,52 +109,57 @@ body {
 
 #logo {
     padding: 20px;
-    width: 25%;
+    width: 80%;
+    margin: 2vh auto 0 auto;
     font-size: 1.2rem;
     font-weight: bold;
     position: relative;
     z-index: 88;
-    float: left;
-
-    /* animation-name: loading;
-    animation-duration: 0.5s;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards; */
 }
 
 #logo a {
-    color: #ececec;
+    color: #8b8b8b;
 }
 
+#logo a:hover {
+    color: #414141;
+    transition: .2s ease-out;
+}
 
+.portfolio-tit {
+    width: 80%;
+    margin: auto;
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 3rem;
+    /* text-align: center; */
+    color: #dddddd;
+}
 
 #btn-area {
-    width: 15vw;
+    width: 80%;
+    margin: 10vh auto 0 auto;
     height: fit-content;
-    margin-top: 10vh;
-    float: right;
-    margin-right: 5px;
-    left: 5vw;
-    top: 15vh;
+
+
 }
 
 .btn-box-now {
     width: 100%;
-    height: 35px;
-    margin: 0 5px;
-    text-align: center;
-    display: inline-block;
-    background: #f5f5f5;
-    padding: 18px 0 5px 0;
-    border-bottom-left-radius: 6px;
-    border-top-left-radius: 6px;
+    height: 70px;
+    /* margin: 0 5px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e7e7e7;
+    border-radius: 3px;
+    /* border-bottom-left-radius: 6px; */
+    /* border-top-left-radius: 6px; */
     font-weight: 500;
     font-size: 1.1rem;
-    color: rgb(54 54 54);
+    color: rgb(177 177 177);
     margin-top: 7px;
-    box-shadow: -7px 5px 8px #89868661;
+    /* box-shadow: -7px 5px 8px #89868661; */
     cursor: default;
 }
 
@@ -158,36 +167,42 @@ body {
 
 .btn-box {
     width: 100%;
-    margin: 0 3px;
-    margin-top: 8px;
-    text-align: center;
-    background: #f9f9f938;
-    backdrop-filter: blur(3px);
-    border-top: #eeeeee 2px solid;
-    border-left: #eeeeee 2px solid;
-    border-bottom: #eeeeee 2px solid;
-    display: inline-block;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
+    height: 70px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 8px; */
+    background: #f9f9f991;
+    border-radius: 5px;
+    /* border: #666666 2px solid; */
+    /* border-top: #eeeeee 2px solid; */
+    /* border-left: #eeeeee 2px solid; */
+    /* border-bottom: #eeeeee 2px solid; */
+
 }
 
 .btn-box a {
-    padding: 15px 0 0 0;
-    color: rgb(255, 255, 255);
-    display: block;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(88 88 88);
     font-weight: 500;
+    border-radius: 5px;
     transition: .2s;
     -webkit-transition: .2s;
-    min-height: 35px;
 }
 
 .btn-box a:hover {
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #ffffffe8;
+    border-radius: 5px;
     color: #222222;
-    min-height: 37px;
+    transition: .4s ease-out;
 }
 
 
@@ -266,23 +281,23 @@ mark {
     width: 90%;
     font-size: 1.1rem;
     line-height: 2rem;
-    color: #575757;
+    color: #d7d7d7;
 
 
 }
 
 .portfolio-area {
-    max-width: 71%;
-    padding: 5vh 2%;
+    max-width: 70%;
+    padding: 5vh 5%;
     float: right;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: center;
-    background: #f5f5f5;
+    background: #666666;
 }
 
-.page-title{
+.page-title {
     width: 100%;
     padding: 5px;
     color: #ffffff;
@@ -302,7 +317,6 @@ mark {
     border-radius: 6px;
     overflow: hidden;
 
-
 }
 
 .box6 a {
@@ -314,16 +328,31 @@ mark {
 }
 
 
-.box6:hover .box-btn {
-    display: block;
-    z-index: 1;
-    position: relative;
+
+.box6:hover::after{
+    content: '瀏覽大圖';
+    pointer-events: none;
+    background-color: rgb(255 130 23 / 60%);
+    backdrop-filter: blur(2px);
+    -moz-backdrop-filter: blur(2px);
+    color: #ffffff;
+    border: #f9c29f 2px solid;
+    border-radius: 6px;
+    box-shadow: 5px 6px 20px #ffc275cb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 50px;
+    position: absolute;
+    top: 10%;
+    left: 37%;
 
 }
 
 .box6:hover a img {
-
-    opacity: .6;
+    transition: .3s ease-out;
+    opacity: .5;
 }
 
 
@@ -334,13 +363,14 @@ mark {
     max-height: 500px;
     height: fit-content;
     margin: 30px 10px;
-    border: 1px solid #e3e3e3db;
+    /* border: 1px solid #e3e3e3db; */
     align-items: center;
     z-index: 1;
     position: relative;
     /* border: 1px solid #e3e3e3; */
     border-radius: 6px;
     overflow: hidden;
+    position: relative;
 
 }
 
@@ -353,37 +383,51 @@ mark {
 }
 
 
-.box5:hover .box-btn {
-    display: block;
-    z-index: 1;
-    position: relative;
+
+.box5:hover::after{
+    content: '瀏覽大圖';
+    pointer-events: none;
+    background-color: rgb(255 130 23 / 60%);
+    backdrop-filter: blur(2px);
+    -moz-backdrop-filter: blur(2px);
+    color: #ffffff;
+    border: #f9c29f 2px solid;
+    border-radius: 6px;
+    box-shadow: 5px 6px 20px #ffc275cb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 50px;
+    position: absolute;
+    top: 10%;
+    left: 20%;
 
 }
 
 
 .box5:hover a img {
-    opacity: .6;
+    transition: .3s ease-out;
+    opacity: .5;
 
 }
 
 .box4 {
     max-width: 250px;
-    min-width: 200px;
     height: fit-content;
-    border: 1px solid #ffffff69;
-    margin: 50px 15px;
+    margin: 30px 15px;
     z-index: 1;
     position: relative;
     border-radius: 6px;
     max-height: 550px;
     overflow: hidden;
+    position: relative;
     /* box-shadow: 6px 5px 20px 0px #9d9d9d87; */
 
 }
 
 .box4 a {
     max-width: 300px;
-    min-width: 100px;
     border-radius: 6px;
     height: fit-content;
     transition: .5s;
@@ -391,53 +435,61 @@ mark {
 }
 
 
-.box4 a:hover .box-btn {
-    display: block;
-    z-index: 1;
-    position: relative;
 
-}
-
-.box4:hover img {
-    opacity: .6;
-}
-
-.box4 img {
-    border-radius: 6px;
-}
-
-.box-tit {
-    width: fit-content;
-    padding: 7px 25px;
-    margin: 15px auto;
-    text-align: center;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    background: #d4d4d467;
-    border-radius: 20px;
-}
-
-.box-btn {
-    display: none;
-    width: 80px;
-    margin: 30px auto -80px auto;
-    box-shadow: 5px 6px 20px #ffc275cb;
-    z-index: 99;
-    position: relative;
-    padding: 15px 25px;
-    border-radius: 6px;
-    text-align: center;
+.box4:hover::after{
+    content: '瀏覽大圖';
+    pointer-events: none;
     background-color: rgb(255 130 23 / 60%);
     backdrop-filter: blur(2px);
     -moz-backdrop-filter: blur(2px);
     color: #ffffff;
-    font-size: 18px;
-    border: #f9c29f 1px solid;
-    transition: .5s;
-    -webkit-transition: .5s;
-
+    border: #f9c29f 2px solid;
+    border-radius: 6px;
+    box-shadow: 5px 6px 20px #ffc275cb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 50px;
+    position: absolute;
+    top: 10%;
+    left: 25%;
 
 }
+
+
+.box4 img{
+    border-radius: 5px;
+}
+
+
+.box4:hover img {
+    opacity: .5;
+    transition: .3s ease-out;
+}
+
+
+.box-tit {
+    width: fit-content;
+    position: absolute;
+    display: flex;
+    bottom: 10px;
+    left: 10px;
+    margin: auto;
+    padding: 7px 25px;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    background: #ffffffd9;
+    border-radius: 3px;
+    color: #404040;
+    justify-content: center;
+    border: 1px solid #ffffff;
+    box-shadow: 2px 2px 20px #ccc;
+}
+
+
+
 
 .box3 {
     max-width: 400px;
@@ -448,7 +500,8 @@ mark {
     border-radius: 6px;
     overflow: hidden;
     max-height: 550px;
-    box-shadow: 5px 5px 15px #e0e0e0c7;
+    box-shadow: 5px 5px 15px #48474773;
+    position: relative;
 
 }
 
@@ -456,36 +509,45 @@ mark {
     max-width: 550px;
     min-width: 100px;
     height: fit-content;
-    transition: 1s;
-    -webkit-transition: 1s;
 }
 
 
-.box3 a:hover img {
-    opacity: .6;
-}
-
-.box3 a:hover .box-btn {
-    display: block;
-    z-index: 1;
-    position: relative;
-
-}
-
-.box3 img {
-    box-shadow: 5px 5px 15px #e0e0e0c7;
+.box3:hover img {
+    opacity: .5;
+    transition: opacity .3s ease-out;
 }
 
 
+.box3:hover::after{
+    content: '瀏覽大圖';
+    pointer-events: none;
+    background-color: rgb(255 130 23 / 60%);
+    backdrop-filter: blur(2px);
+    -moz-backdrop-filter: blur(2px);
+    color: #ffffff;
+    border: #f9c29f 2px solid;
+    border-radius: 6px;
+    box-shadow: 5px 6px 20px #ffc275cb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 50px;
+    position: absolute;
+    top: 10%;
+    left: 33%;
+
+}
 
 .box2 {
     max-width: 600px;
     min-width: 100px;
     height: fit-content;
-    margin: 10px;
+    margin:10px;
     /* border: 1px solid #f5f5f5; */
     border-radius: 6px;
     overflow: hidden;
+    position: relative;
 
 
 }
@@ -494,21 +556,35 @@ mark {
     max-width: 550px;
     min-width: 100px;
     height: fit-content;
-
     transition: 1s;
     -webkit-transition: 1s;
 }
 
 
 .box2 a:hover img {
-    opacity: .6;
-    box-shadow: 5px 5px 15px #e0e0e0c7;
+    opacity: .5;
+    transition: .3s ease-out;
 }
 
-.box2 a:hover .box-btn {
-    display: block;
-    z-index: 1;
-    position: relative;
+
+.box2:hover::after{
+    content: '瀏覽大圖';
+    pointer-events: none;
+    background-color: rgb(255 130 23 / 60%);
+    backdrop-filter: blur(2px);
+    -moz-backdrop-filter: blur(2px);
+    color: #ffffff;
+    border: #f9c29f 2px solid;
+    border-radius: 6px;
+    box-shadow: 5px 6px 20px #ffc275cb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 50px;
+    position: absolute;
+    top: 10%;
+    left: 37%;
 
 }
 
@@ -527,6 +603,7 @@ mark {
     border-radius: 6px;
     overflow: hidden;
     background: #626262;
+    position: relative;
 
 
 }
@@ -541,15 +618,65 @@ mark {
 
 
 .box a:hover img {
-    opacity: .6;
+    opacity: .5;
+    transition: .3s ease-out;
 }
 
-.box a:hover .box-btn {
-    display: block;
-    z-index: 1;
+.box:hover::after{
+    content: '瀏覽大圖';
+    pointer-events: none;
+    background-color: rgb(255 130 23 / 60%);
+    backdrop-filter: blur(2px);
+    -moz-backdrop-filter: blur(2px);
+    color: #ffffff;
+    border: #f9c29f 2px solid;
+    border-radius: 6px;
+    box-shadow: 5px 6px 20px #ffc275cb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 50px;
+    position: absolute;
+    top: 10%;
+    left: 45%;
+
+}
+
+.box-btn {
+    display: none;
+    width: 80px;
+    margin: 30px auto -80px auto;
+    box-shadow: 5px 6px 20px #ffc275cb;
+    background-color: rgb(255 130 23 / 60%);
+    backdrop-filter: blur(2px);
+    -moz-backdrop-filter: blur(2px);
+    color: #ffffff;
+    border: #f9c29f 1px solid;
+    border-radius: 6px;
+    z-index: 99;
     position: relative;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 18px;
+    transition: .5s;
+    -webkit-transition: .5s;
 
 }
+.box-tit4{
+    width: fit-content;
+    display: flex;
+    margin: 10px auto;
+    padding: 7px 25px;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    background: #6c6c6c;
+    border-radius: 10px;
+    color: #afafaf;
+    justify-content: center;
+}
+
 
 .link-btn {
     max-width: 100px;
@@ -570,6 +697,7 @@ mark {
 
 .link-btn:hover {
     opacity: 0.6;
+    transition: .3s ease-out;
 }
 
 
@@ -600,6 +728,7 @@ mark {
 
 .product li:hover {
     border: #70cac6 2px solid;
+    transition: .3s ease-out;
 }
 
 /*大型專案*/
@@ -627,6 +756,7 @@ mark {
 
 .page li a:hover {
     border: #70cac6 2px solid;
+    transition: .3s ease-out;
 }
 
 /*前期作品*/
@@ -654,6 +784,7 @@ mark {
 
 .first li a:hover {
     border: #70cac6 2px solid;
+    transition: .3s ease-out;
 }
 
 
@@ -697,7 +828,11 @@ footer {
 
     }
 
+    .portfolio-tit {
 
+        font-size: 2.5rem;
+ 
+    }
     #tool-bg {
         width: 100vw;
         margin: auto;
@@ -711,24 +846,49 @@ footer {
         margin: auto;
         padding: 5vh 0;
     }
+    
+
+    .box5{
+        max-width: 28%;
+        margin: 25px 15px;
+
+
+    }
+    .box4{
+        max-width: 30%;
+        margin: 20px 10px;
+
+
+    }
+
+
+    .box3{
+        max-width: 29%;
+        margin: 20px 10px;
+
+
+    }
+
+    .box2{
+        max-width: 45%;
+        margin: 10px 15px;
+
+    }
 
 }
-
-
 @media only screen and (max-width: 768px) {
 
-    
-    #m-header{
+    #m-header {
         display: block;
         width: 100%;
         height: 70px;
-        background: linear-gradient(90deg, #d1d1d180, #cecece);
+        background: linear-gradient(90deg, #ffffffcc, #e3e3e3);
         border-bottom: 2px solid #d6d6d6;
         position: fixed;
         z-index: 88;
     }
 
-    #m-logo{
+    #m-logo {
         font-size: 1.3rem;
         font-weight: bold;
         margin-top: 3vh;
@@ -737,63 +897,155 @@ footer {
         height: 40px;
         position: relative;
         z-index: 999;
-       
+
     }
 
 
-    .portfolio-area{
+
+
+    .portfolio-area {
         max-width: 100%;
         padding-top: 100px;
     }
- 
 
-    .tag-describe{
+
+    .tag-describe {
         width: 80%;
         margin: auto;
     }
 
 
-    #btn-area-bg{
+    #btn-area-bg {
         display: none;
     }
 
-    #btn-area{
+    #btn-area {
         width: 80%;
         margin: 10px auto;
     }
 
-    .btn-box-now{
+    .btn-box-now {
         width: 46%;
         border-radius: 6px;
     }
 
-    .btn-box{
+    .btn-box {
         width: 46%;
         border-radius: 6px;
         border: 2px solid #ffffff;
     }
 
-    .box{
+    .box {
         max-width: 85vw;
         margin: 3vh auto;
     }
 
-    .box2{
+    .box2 {
+        max-width: 40vw;
+        margin: 3vh auto;
+    }
+
+    .box3 {
+        max-width: 40vw;
+        margin: 3vh auto;
+    }
+
+    .box4 {
+        max-width: 40vw;
+        margin: 3vh auto;
+    }
+
+
+    .box5 {
+        max-width: 40vw;
+        margin: 3vh auto;
+    }
+
+
+}
+
+@media only screen and (max-width: 425px) {
+
+
+    #m-header {
+        display: block;
+        width: 100%;
+        height: 70px;
+        background: linear-gradient(90deg, #ffffffcc, #e3e3e3);
+        border-bottom: 2px solid #d6d6d6;
+        position: fixed;
+        z-index: 88;
+    }
+
+    #m-logo {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-top: 3vh;
+        margin-left: 5vw;
+        float: left;
+        height: 40px;
+        position: relative;
+        z-index: 999;
+
+    }
+
+
+
+
+    .portfolio-area {
+        max-width: 100%;
+        padding-top: 100px;
+    }
+
+
+    .tag-describe {
+        width: 80%;
+        margin: auto;
+    }
+
+
+    #btn-area-bg {
+        display: none;
+    }
+
+    #btn-area {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .btn-box-now {
+        width: 46%;
+        border-radius: 6px;
+    }
+
+    .btn-box {
+        width: 46%;
+        border-radius: 6px;
+        border: 2px solid #ffffff;
+    }
+
+    .box {
         max-width: 85vw;
         margin: 3vh auto;
     }
 
-    .box3{
+    .box2 {
         max-width: 85vw;
         margin: 3vh auto;
     }
-    .box4{
+
+    .box3 {
+        max-width: 85vw;
+        margin: 3vh auto;
+    }
+
+    .box4 {
         max-width: 85vw;
         margin: 3vh auto;
     }
 
 
-    .box5{
+    .box5 {
         max-width: 85vw;
         margin: 3vh auto;
     }

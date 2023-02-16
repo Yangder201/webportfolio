@@ -541,11 +541,11 @@ mark {
 }
 
 #logo a {
-    color: #5a5a5a !important;
+    color:#a1a1a1 !important;
 }
 
 #logo a:hover{
-    color: #bdbdbd !important;
+    color: #646464 !important;
     transition: .2s ease-out;
 }
 

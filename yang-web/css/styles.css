@@ -80,7 +80,8 @@
 #cssmenu>ul>li>a {
   padding: 20px 35px;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
+  letter-spacing: 3px;
   text-decoration: none;
   text-transform: uppercase;
   /* color: #1c1c1c; */

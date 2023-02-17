@@ -2,6 +2,7 @@
 
 html {
     font-size: 16px;
+   
 }
 
 li {
@@ -207,7 +208,7 @@ section {
 #header-fixed {
     /* background: linear-gradient(90deg, #e5e5e5bf, #483f35f2); */
     /* background: linear-gradient(90deg, #b9a78791, #7a715985); */
-    background: linear-gradient(90deg, #ffffff80, #efefef);
+    background: linear-gradient(90deg, #ffffffb8, #efefeff5);
     border-bottom: 1px solid #ffffff;
     backdrop-filter: blur(3px);
     border-bottom: 1px solid #ffffff9e;
@@ -279,10 +280,8 @@ section {
 
 
 h1 {
-    width: 98vmax;
     font-size: 6rem;
     font-weight: 500;
-    padding: 2rem 0;
     margin: auto;
     color: #575757;
     /* text-shadow: 0px -9px 13px #ccc;
@@ -421,6 +420,7 @@ mark {
     text-align: center;
     font-size: 1.1rem;
     font-weight: 300;
+    letter-spacing: .1rem;
 }
 
 .main-cta-t {
@@ -587,6 +587,7 @@ mark {
     /* background: linear-gradient(to top, #e7e7e7, #f3f3f3, #dddddd); */
     /* background: #eeeeee url(../img/Renee-full.png) no-repeat bottom; */
     position: relative;
+    z-index: 5;
 }
 
 #photo img {
@@ -595,14 +596,14 @@ mark {
 }
 
 
-
-
 #info {
     width: 50%;
     padding-left: 20%;
     height: 75vh;
     padding-top: 25vh;
     color: #222222;
+    position: relative;
+    z-index: 0;
     /* border-left: 2px solid #ffffff; */
     /* background: #ffffff; */
     background: linear-gradient(234deg, rgba(243, 243, 243, 0.849) 0%, rgba(230, 230, 230, 0.7) 60%, rgba(255, 255, 255, 0) 100%);
@@ -631,7 +632,7 @@ mark {
 }
 
 .question{
-    margin: 3vh 0;
+    margin:3vh auto 5vh auto;
 }
 
 .question ul{
@@ -740,7 +741,7 @@ mark {
     width: 100PX;
     height: 3vh;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 30px;
     font-size: 1rem;
     display: flex;
     flex-wrap: nowrap;
@@ -791,7 +792,6 @@ mark {
     line-height: 4rem;
     margin: auto;
     margin-top: 5vh;
-
     position: relative;
     z-index: 95;
 
@@ -804,20 +804,39 @@ mark {
     margin: auto;
 }
 
-.next-btn {
-    border-radius: 30px;
-    border: 2px solid #303030;
-    background: #1d1d1de0;
-    color: #ffffff;
-    width: 60px;
-    height: 35px;
-    padding-top: 15px;
-    margin: 25px 5px;
+.next-btn a{
+    color: #adadad;
     display: block;
     text-align: center;
-    font-size: 1.1rem;
-    font-weight: 300;
+    position: absolute;
+    left: 28%;
+    bottom: 30px;
+
+    animation-name: next-arrow;
+    animation-duration: .6s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
 }
+
+.next-btn a:hover{
+    color: #5e5e5e;
+    transform: .3s ease-out;
+}
+
+@keyframes next-arrow {
+    0% {
+        bottom: 30px;
+    }
+
+    100% {
+        bottom: 35px;
+    }
+}
+
+
+
 
 
 /*首頁大標題*/
@@ -943,7 +962,7 @@ h2 {
     width: 20%;
     margin: 1%;
     /* margin-bottom: 3vh; */
-    min-height: 350px;
+    min-height: 400px;
     background: #ffffffd9;
     border: 1px solid #fff;
     padding: 20px 40px;

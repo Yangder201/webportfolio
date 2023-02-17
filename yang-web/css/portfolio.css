@@ -48,7 +48,16 @@ body {
     padding: 0;
 }
 
+.back{
+    text-align: center;
+    margin: auto;
+    margin-top: 3vh;
+}
 
+.back a{
+    color: #404040;
+    border-bottom: 1px dashed  #bdbdbd;
+}
 
 #gotop {
     display: none;
@@ -796,7 +805,7 @@ footer {
     margin-top: 50px;
     margin: auto;
     font-size: 1rem;
-    color: #6e6d6d;
+    color: #878787;
     text-align: center;
     clear: both;
 
@@ -900,7 +909,20 @@ footer {
 
     }
 
-
+    .back{
+        width: 100%;
+        text-align: left;
+        margin: auto;
+        font-size: 1rem;
+        border-top: 1px solid #e3e3e3;
+    }
+    
+    .back a{
+        color: #404040;
+        border-bottom: 0;
+        padding: 25px 35px;
+        display: block;
+    }
 
 
     .portfolio-area {
@@ -1026,12 +1048,12 @@ footer {
 
     .box {
         max-width: 85vw;
-        margin: 3vh auto;
+        margin: 10px auto;
     }
 
     .box2 {
         max-width: 85vw;
-        margin: 3vh auto;
+        margin: 10px auto;
     }
 
     .box3 {

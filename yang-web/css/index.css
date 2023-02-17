@@ -300,6 +300,8 @@ h1 {
 }
 
 
+
+
 @keyframes open-title {
     0% {
 
@@ -843,6 +845,7 @@ mark {
 h2 {
     font-size: 3rem;
     font-weight: bold;
+    color: #060606;
     text-align: center;
     line-height: 4rem;
     padding: 2vh 5vw;
@@ -942,8 +945,8 @@ h2 {
 #skill {
     /* max-width: 1200px; */
     width: 80%;
-    padding-top: 10vh;
-    height: 90vh;
+    padding-top: 5vh;
+    height: 95vh;
     margin: auto;
     display: flex;
     font-size: 1.1rem;
@@ -1046,6 +1049,7 @@ h2 {
     font-size: 1.8rem;
     line-height: 4.5rem;
     font-weight: 500;
+    color: #000000;
 }
 
 .company {
@@ -1125,13 +1129,14 @@ h2 {
 #intro-bg {
     height: fit-content;
     width: 100%;
-    padding-top: 10vh;
+    padding: 10vh 0;
     background: radial-gradient(ellipse at center, #ffffff, #d9d9d9);
 }
 
 
+
 .inside-content {
-    max-width: 800px;
+    max-width: 820px;
     margin: 0 auto 5vh auto;
 }
 
@@ -1151,6 +1156,24 @@ h2 {
     line-height: 2.5rem;
 }
 
+.indsie-pic{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.intro-pic{
+    width: 40%;
+    margin: 15px;
+    border:30px solid #d7d7d7;
+}
+
+#interest-bg{
+    width: 100%;
+    height: 85vh;
+    padding-top: 15vh;
+    background: #c2c2c2;
+}
 
 #footer {
     width: 100%;

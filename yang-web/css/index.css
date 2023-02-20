@@ -42,7 +42,7 @@ img {
 
 body {
     font-family: 'Rubik', 'Noto Sans TC', sans-serif;
-    color: rgb(68, 67, 67);
+    color: #323237;
     max-width: 100%;
     background: #fdfdfd;
     margin: 0;
@@ -280,24 +280,44 @@ section {
 
 
 h1 {
-    font-size: 6rem;
+    font-size: 7rem;
+    line-height: 6rem;
     font-weight: 500;
+    letter-spacing: 35px;
     margin: auto;
     color: #575757;
-    /* text-shadow: 0px -9px 13px #ccc;
-    -webkit-text-stroke: 1.5px #ffffff; */
-    /* color: #73bd83; */
+    -webkit-box-reflect: below -10px linear-gradient(transparent 20%, rgba(255, 255, 255, 0.1));
 
-    animation-name: open-title;
+    /* animation-name: open-title;
     animation-duration: 1s;
-    /*動畫運作秒數*/
     animation-delay: 0;
-    /*動畫延遲開始秒數*/
     animation-iteration-count: 1;
     animation-timing-function: ease;
+    animation-fill-mode: forwards; */
+
+    white-space: nowrap;
+    opacity: 0;
+    animation: focus 1s ease-in-out;
     animation-fill-mode: forwards;
-    /*動畫結束停在最後一個影格*/
+
+
 }
+
+@keyframes focus {
+    0% {
+        font-size: 15rem;
+        filter: blur(16px);
+        letter-spacing: 60px;
+    }
+
+    100% {
+        font-size: 7rem;
+        filter: blur(0px);
+        letter-spacing: 0px;
+        opacity: 1;
+    }
+}
+
 
 
 
@@ -329,15 +349,14 @@ mark {
 
 .open-describe {
     color: #2c2c2c;
-    width: 50%;
+    width: 100%;
     font-size: 1.3rem;
     font-weight: 300;
-    line-height: 3rem;
+    line-height: 4rem;
     margin: auto;
-    margin-top: 3vh;
-    opacity: 0;
+}
 
-    position: relative;
+/* position: relative;
     z-index: 95;
     animation-name: open-des;
     animation-duration: .5s;
@@ -348,35 +367,34 @@ mark {
 }
 
 
-
 @keyframes open-des {
     0% {
-        margin-top: -30px;
+        margin-top: -20px;
         opacity: 0;
     }
 
     100% {
-        margin-top: 0;
+        margin-top: 0px;
         opacity: 1;
     }
-}
+} */
 
 .open-cta-area {
-    width: 95vmax;
+    width: 100%;
     margin: auto;
-    margin-top: 5vh;
-    opacity: 0;
+    margin-top: 10vh;
+    opacity: 1;
     display: flex;
     position: relative;
     z-index: 98;
     justify-content: center;
 
-    animation-name: open-cta;
+    /* animation-name: open-cta;
     animation-duration: 1.5s;
     animation-delay: 1s;
     animation-iteration-count: 1;
     animation-timing-function: ease;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
 @keyframes open-cta {
@@ -478,8 +496,6 @@ mark {
     padding: 16px 35px;
     display: block;
     border: #818181 2px solid;
-    transform: 1s;
-    -moz-transform: 1s;
     font-weight: 400;
     color: #4c4a47;
 }
@@ -607,8 +623,8 @@ mark {
     position: relative;
     z-index: 0;
     /* border-left: 2px solid #ffffff; */
-    /* background: #ffffff; */
-    background: linear-gradient(234deg, rgba(243, 243, 243, 0.849) 0%, rgba(230, 230, 230, 0.7) 60%, rgba(255, 255, 255, 0) 100%);
+    background: #F6F6F6;
+    /* background: linear-gradient(234deg, rgba(243, 243, 243, 0.849) 0%, rgba(230, 230, 230, 0.7) 60%, rgba(255, 255, 255, 0) 100%); */
 }
 
 
@@ -617,7 +633,7 @@ mark {
     height: fit-content;
     max-width: 900px;
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 2rem;
     padding-top: 10vh;
 }
@@ -674,6 +690,7 @@ mark {
     margin-top: -5px;
     position: relative;
     z-index: 0;
+
 }
 
 
@@ -763,16 +780,6 @@ mark {
     color: #b1b1b1;
 } */
 
-
-#aboutme {
-    width: 100%;
-    height: 70vh;
-    padding-top: 30vh;
-    background: radial-gradient(ellipse at center, #ffffff, #d9d9d9);
-    background-attachment: fixed;
-    text-align: center;
-
-}
 
 
 .about-title {
@@ -871,10 +878,9 @@ h2 {
 #tool-bg {
     width: 100%;
     height: 90vh;
-
     /* background: -webkit-linear-gradient(303deg, #cbc4ad, #a9a089);
     background: linear-gradient(303deg, #cbc4ad, #a9a089); */
-    background: #e4e3de;
+    background: #e9e9e9;
     min-height: 80vh;
     padding-top: 15vh;
     border-top: 2px solid #ffffff;
@@ -1156,19 +1162,19 @@ h2 {
     line-height: 2.5rem;
 }
 
-.indsie-pic{
+.indsie-pic {
     max-width: 100%;
     display: flex;
     flex-wrap: nowrap;
 }
 
-.intro-pic{
+.intro-pic {
     width: 40%;
     margin: 15px;
-    border:30px solid #d7d7d7;
+    border: 30px solid #d7d7d7;
 }
 
-#interest-bg{
+#interest-bg {
     width: 100%;
     height: 85vh;
     padding-top: 15vh;
@@ -1272,24 +1278,80 @@ h2 {
     }
 
     h1 {
-        width: 100%;
-        font-size: 5rem;
+        width: 90%;
+        font-size: 4rem;
         font-weight: bold;
         margin: auto;
         color: #575757;
         padding: 1rem 0;
+        letter-spacing: 5px;
 
+        -webkit-box-reflect: below 0 linear-gradient(transparent 20%, rgba(255, 255, 255, 0.1));
 
-        animation-name: open-title;
-        animation-duration: 2s;
-        /*動畫運作秒數*/
-        animation-delay: 0;
-        /*動畫延遲開始秒數*/
-        animation-iteration-count: 1;
-        animation-timing-function: ease;
+  
+        white-space: nowrap;
+        opacity: 0;
+        animation: focus 1s ease-in-out;
         animation-fill-mode: forwards;
-        /*動畫結束停在最後一個影格*/
+
+
     }
+
+    @keyframes focus {
+        0% {
+            font-size: 1rem;
+            filter: blur(16px);
+            letter-spacing: 30px;
+        }
+
+        100% {
+            font-size: 4rem;
+            filter: blur(0px);
+            letter-spacing: 0px;
+            opacity: 1;
+        }
+    }
+
+
+    h1 {
+        font-size: 6rem;
+        line-height: 6rem;
+        font-weight: 500;
+        letter-spacing: 35px;
+        margin: auto;
+        color: #575757;
+        -webkit-box-reflect: below -10px linear-gradient(transparent 20%, rgba(255, 255, 255, 0.1));
+
+        /* animation-name: open-title;
+    animation-duration: 1s;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards; */
+
+        white-space: nowrap;
+        opacity: 0;
+        animation: focus 1s ease-in-out;
+        animation-fill-mode: forwards;
+
+
+    }
+
+    @keyframes focus {
+        0% {
+            font-size: 15rem;
+            filter: blur(16px);
+            letter-spacing: 60px;
+        }
+
+        100% {
+            font-size: 6rem;
+            filter: blur(0px);
+            letter-spacing: 0px;
+            opacity: 1;
+        }
+    }
+
 
 
     .open-describe {
@@ -1297,16 +1359,9 @@ h2 {
         max-width: 100%;
         padding: 0 35px;
         font-size: 1.2rem;
-        line-height: 2rem;
-        margin-top: 1vh;
-        opacity: 0;
+        line-height: 1rem;
+        margin-top: 0;
 
-        animation-name: open-des;
-        animation-duration: 1s;
-        animation-delay: .3s;
-        animation-iteration-count: 1;
-        animation-timing-function: ease;
-        animation-fill-mode: forwards;
     }
 
     .main-cta {
@@ -1374,7 +1429,7 @@ h2 {
         line-height: 33px;
         list-style-type: none;
         font-size: 1.5rem;
-        background: #ffffff;
+        background: #F6F6F6;
         height: fit-content;
     }
 
@@ -1594,10 +1649,19 @@ h2 {
         margin: 10px 0;
     }
 
-    .inside-tit{
+    .inside-tit {
         width: 100%;
         font-size: 1.9rem;
         line-height: 2.8rem;
+    }
+
+    .intro-pic{
+        width: 90%;
+        margin: auto;
+    }
+
+    .indsie-pic{
+        flex-wrap: wrap;
     }
 
 

@@ -263,8 +263,8 @@ section {
 
 #open {
     width: 100%;
-    height: 60vh;
-    padding-top: 30vh;
+    height: 65vh;
+    padding-top: 25vh;
     background: radial-gradient(ellipse at center, #ffffff, #d9d9d9);
     background-attachment: fixed;
     text-align: center;
@@ -278,32 +278,74 @@ section {
 }
 
 
-
-h1 {
-    font-size: 7rem;
-    line-height: 6rem;
-    font-weight: 500;
-    letter-spacing: 35px;
+.open-describe {
+    color: #2c2c2c;
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 4rem;
     margin: auto;
-    color: #575757;
-    -webkit-box-reflect: below -10px linear-gradient(transparent 20%, rgba(255, 255, 255, 0.1));
-
-    /* animation-name: open-title;
+    position: relative;
+    z-index: 95;
+    opacity: 0;
+    animation-name: open-des;
     animation-duration: 1s;
     animation-delay: 0;
     animation-iteration-count: 1;
     animation-timing-function: ease;
-    animation-fill-mode: forwards; */
+    animation-fill-mode: forwards;
+}
 
-    white-space: nowrap;
+
+@keyframes open-des {
+    0% {
+        margin-top: 0px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-top: 10px;
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-size: 7rem;
+    font-weight: 500;
+    margin: auto;
+    color: #575757;
+    -webkit-box-reflect: below -10px linear-gradient(transparent 20%, rgba(255, 255, 255, 0.1));
     opacity: 0;
-    animation: focus 1s ease-in-out;
+    animation-name: open-title;
+    animation-duration: 1.5s;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
     animation-fill-mode: forwards;
 
+    /* opacity: 0;
+    animation: focus 1s ease-in-out;
+    animation-fill-mode: forwards; */
 
 }
 
-@keyframes focus {
+
+@keyframes open-title {
+    0% {
+
+        margin-top: 0px;
+        opacity: 0;
+    }
+
+    100% {
+
+        margin-top: 10px;
+        opacity: 1;
+
+    }
+}
+
+/* @keyframes focus {
     0% {
         font-size: 15rem;
         filter: blur(16px);
@@ -316,26 +358,7 @@ h1 {
         letter-spacing: 0px;
         opacity: 1;
     }
-}
-
-
-
-
-
-@keyframes open-title {
-    0% {
-
-        margin-top: -50px;
-        opacity: 0;
-    }
-
-    100% {
-
-        margin-top: 0;
-        opacity: 1;
-
-    }
-}
+} */
 
 
 mark {
@@ -347,37 +370,6 @@ mark {
 }
 
 
-.open-describe {
-    color: #2c2c2c;
-    width: 100%;
-    font-size: 1.3rem;
-    font-weight: 300;
-    line-height: 4rem;
-    margin: auto;
-}
-
-/* position: relative;
-    z-index: 95;
-    animation-name: open-des;
-    animation-duration: .5s;
-    animation-delay: .5s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-}
-
-
-@keyframes open-des {
-    0% {
-        margin-top: -20px;
-        opacity: 0;
-    }
-
-    100% {
-        margin-top: 0px;
-        opacity: 1;
-    }
-} */
 
 .open-cta-area {
     width: 100%;
@@ -1285,18 +1277,16 @@ h2 {
         color: #575757;
         padding: 1rem 0;
         letter-spacing: 5px;
-
         -webkit-box-reflect: below 0 linear-gradient(transparent 20%, rgba(255, 255, 255, 0.1));
-
-  
         white-space: nowrap;
-        opacity: 0;
+
+        /* opacity: 0;
         animation: focus 1s ease-in-out;
-        animation-fill-mode: forwards;
+        animation-fill-mode: forwards; */
 
 
     }
-
+/* 
     @keyframes focus {
         0% {
             font-size: 1rem;
@@ -1310,7 +1300,7 @@ h2 {
             letter-spacing: 0px;
             opacity: 1;
         }
-    }
+    } */
 
 
     h1 {

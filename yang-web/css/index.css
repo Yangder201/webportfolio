@@ -580,7 +580,11 @@ mark {
     padding-top: 10vh;
     background: #e3e3e3;
     /* background: linear-gradient(to top, #90c7ff, #f5fb9b, #ffd4a8); */
-    background: linear-gradient(to top, #fff3dc, #f1dec2, #525252);
+    /* background: linear-gradient(to top, #fff3dc, #f1dec2, #fff7ea); */
+
+    background: linear-gradient(45deg,rgb(144 189 215) 25%, rgb(255 255 255) 0, rgb(255 211 170) 50%,#fff 0, #dfddd8 75%, rgb(255 196 123) 0);
+    background-size: 500px 500px;
+
     color: #ffffff;
     font-size: 6.5rem;
     font-weight: bold;
@@ -930,10 +934,19 @@ h2 {
 #skill-bg {
     width: 100%;
     margin: auto;
-    background: #b1c6c9;
+
+    /* background: #b1c6c9;
     background: -webkit-linear-gradient(180deg, #798f8f, #cce4e8);
-    background: linear-gradient(180deg, #798f8f, #cce4e8);
+    background: linear-gradient(180deg, #798f8f, #cce4e8); */
+
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    background-color: #DCD9D4;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+    background-blend-mode: soft-light,screen;
+
     background-attachment: fixed;
+
+
     /* background: radial-gradient(ellipse at center, rgb(233 233 233), rgb(229 229 229)); */
     height: 85vh;
     padding-top: 15vh;
@@ -995,10 +1008,17 @@ h2 {
     height: auto;
     clear: both;
     /* background: #BBD2C5; */
-    background: #ffffff9c;
+
+    /* background: #ffffff9c;
     background: -webkit-linear-gradient(180deg, #42516c, #cce4e8);
     background: linear-gradient(180deg, #42516c, #cce4e8);
-    background-attachment: fixed;
+    background-attachment: fixed; */
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    background-color: #DCD9D4;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+    background-blend-mode: soft-light,screen;
+
+
     min-height: 75vh;
     padding-top: 8vh;
     padding-bottom: 5vh;
@@ -1090,7 +1110,7 @@ h2 {
 /*工作內容細項*/
 
 .work-detal {
-    background: #f9f9f9;
+    background: #ffffff87;
     padding: 40px 30px 30px 40px;
     font-size: 1.2rem;
     line-height: 2.8rem;

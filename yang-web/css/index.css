@@ -1190,11 +1190,12 @@ h2 {
     background: #c2c2c2;
 }
 
-#footer {
+footer {
     width: 100%;
+    margin: auto;
     min-height: 50px;
     padding-top: 3vh;
-    margin: auto;
+
     font-size: 1rem;
     color: #8d8d8d;
     text-align: center;

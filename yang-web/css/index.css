@@ -498,9 +498,9 @@ mark {
 }
 
 .else-cta a:hover {
-    background: #dabe94fd;
-    color: #ffffff;
-    border: #cecece 2px solid;
+    background: #fcc35bfd;
+    color: #202020;
+    border: #fcc35bfd 2px solid;
     transition: .4s ease-out;
 }
 

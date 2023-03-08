@@ -442,6 +442,7 @@ mark {
     font-size: 1.1rem;
     font-weight: 300;
     letter-spacing: .1rem;
+    cursor: pointer;
 }
 
 .main-cta-t {
@@ -478,7 +479,6 @@ mark {
     background: #ffffff3d;
     margin: 10px;
     font-size: 1.1rem;
-
     letter-spacing: .1rem;
     font-weight: 300;
     transform: 1s;

@@ -49,7 +49,24 @@ body {
     background: #fdfdfd;
     margin: 0;
     padding: 0;
+    overflow: overlay;
 }
+
+
+::-webkit-scrollbar {
+    width: 18px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 999px;
+    border: 5px solid transparent;
+    background-clip: content-box;
+
+}
+
 
 
 section {
@@ -58,11 +75,13 @@ section {
 }
 
 
-button{
+button {
     background: none;
     border: none;
 
 }
+
+
 
 #gotop {
     display: none;
@@ -372,9 +391,9 @@ h1 {
 mark {
     padding: 2px 1px;
     border-radius: 5px;
-    background: linear-gradient(transparent 25%, rgba(255, 255, 255, 0) 50%, #effff3 65%, #ccfd8a 85%, transparent 90%)
-        /* background: linear-gradient(transparent 25%, rgba(255, 255, 255, 0) 50%, #effff3 65%, #ccfd8a 85%, transparent 90%);
-    color: #3f37bb; */
+    background: linear-gradient(transparent 25%, rgba(255, 255, 255, 0) 50%, #effff3 65%, #9cd1ff 85%, transparent 90%)
+        /* background: linear-gradient(transparent 25%, rgba(255, 255, 255, 0) 50%, #effff3 65%, #437ca5 85%, transparent 90%);
+color: #3f37bb; */
 }
 
 
@@ -586,7 +605,7 @@ mark {
     /* background: linear-gradient(to top, #90c7ff, #f5fb9b, #ffd4a8); */
     /* background: linear-gradient(to top, #fff3dc, #f1dec2, #fff7ea); */
 
-    background: linear-gradient(45deg,rgb(144 189 215) 25%, rgb(255 255 255) 0, rgb(255 211 170) 50%,#fff 0, #dfddd8 75%, rgb(255 196 123) 0);
+    background: linear-gradient(45deg, rgb(144 189 215) 25%, rgb(255 255 255) 0, rgb(255 211 170) 50%, #fff 0, #dfddd8 75%, rgb(255 196 123) 0);
     background-size: 500px 500px;
 
     color: #ffffff;
@@ -1064,7 +1083,7 @@ h2 {
     font-size: 1.8rem;
     line-height: 4.5rem;
     font-weight: 500;
-    color: #000000;
+    color: #4b96ad;
 }
 
 .company {
@@ -1304,7 +1323,8 @@ footer {
 
 
     }
-/* 
+
+    /* 
     @keyframes focus {
         0% {
             font-size: 1rem;
@@ -1382,7 +1402,7 @@ footer {
         border-radius: 30px;
         background: #ffffff00;
         margin: 6px;
-       
+
         font-size: 16px;
         font-weight: 400;
         box-shadow: 5px 5px 25px #ffffff25;
@@ -1392,7 +1412,7 @@ footer {
 
     .else-cta a {
         border-radius: 30px;
- 
+
         border: #5e5e5e 2px solid;
         color: #3a3a3a;
 
@@ -1663,12 +1683,12 @@ footer {
         line-height: 2.8rem;
     }
 
-    .intro-pic{
+    .intro-pic {
         width: 90%;
         margin: auto;
     }
 
-    .indsie-pic{
+    .indsie-pic {
         flex-wrap: wrap;
     }
 

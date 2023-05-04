@@ -485,7 +485,7 @@ color: #3f37bb; */
 .outline-inward:before {
     content: "";
     position: absolute;
-    border: #e5e4e4 solid 3px;
+    border: #ffffff solid 3px;
     border-radius: 35px;
     top: -16px;
     right: -16px;

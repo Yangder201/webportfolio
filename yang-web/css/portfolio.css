@@ -2,6 +2,7 @@
 
 html {
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 li {
@@ -506,7 +507,7 @@ mark {
 .box-tit {
     width: fit-content;
     position: absolute;
-    display: flex;
+
     bottom: 10px;
     left: 10px;
     margin: auto;
@@ -517,16 +518,17 @@ mark {
     background: #ffffffd9;
     border-radius: 3px;
     color: #404040;
-    justify-content: center;
     border: 1px solid #ffffff;
     box-shadow: 2px 2px 20px #ccc;
+    /* display: flex;
+    justify-content: center; */
 }
 
 
 
 
 .box3 {
-    width: 31%;
+    width: 30%;
     height: fit-content;
     max-height: 430px;
     margin: 50px 15px;
@@ -619,7 +621,7 @@ mark {
 }
 
 .box2 img {
-    box-shadow: 5px 5px 15px #e0e0e0c7;
+    box-shadow: 5px 5px 15px #4d4d4dc7;
 }
 
 
@@ -693,7 +695,7 @@ mark {
 }
 .box-tit4{
     width: fit-content;
-    display: flex;
+
     margin: 10px auto;
     padding: 7px 25px;
     text-align: center;
@@ -702,6 +704,7 @@ mark {
     background: #6c6c6c;
     border-radius: 10px;
     color: #afafaf;
+    display: flex;
     justify-content: center;
 }
 

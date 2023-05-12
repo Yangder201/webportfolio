@@ -188,7 +188,7 @@ button {
     border-bottom: 1px solid #ffffff;
     backdrop-filter: blur(3px);
     border-bottom: 1px solid #ffffff9e;
-    box-shadow: 5px 3px 20px #d5d5d5cc;
+    box-shadow: 5px 3px 20px -10px #8b8b8bcc;
     width: 100vw;
     z-index: 99;
     height: 65px;
@@ -877,7 +877,7 @@ h2 {
     border: 2px solid #ffffff;
     border-radius: 7px;
     padding: 10px;
-    box-shadow: 5px 5px 20px #7474744a;
+    box-shadow: 5px 5px 20px -10px #7474748c;
     align-items: center;
 }
 
@@ -949,7 +949,7 @@ h2 {
     border: 1px solid #fff;
     padding: 20px 40px;
     border-radius: 7px;
-    box-shadow: 2px 5px 10px #dbdbdba8;
+    box-shadow: 2px 5px 10px -5px #c9c9c9a8;
 
 }
 
@@ -1003,7 +1003,7 @@ h2 {
     display: flex;
     flex-wrap: nowrap;
     align-content: flex-start;
-    box-shadow: 5px 10px 30px #bababa9e;
+    box-shadow: 5px 10px 30px -10px #bababa9e;
 
 }
 

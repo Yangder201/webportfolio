@@ -34,55 +34,53 @@
 	<script src="js/jquery.isotope.min.js" type="text/javascript"></script>
 
 
-	<!--go to top js-->
 	<script type="text/javascript">
-		$(function () {
-			$("#gotop").click(function () {
-				jQuery("html,body").animate({
-					scrollTop: 0
-				}, 500);
+		//go to top
+			$(function () {
+				$("#gotop").click(function () {
+					jQuery("html,body").animate({
+						scrollTop: 0
+					}, 500);
+				});
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 300) {
+						$('#gotop').fadeIn("fast");
+					} else {
+						$('#gotop').stop().fadeOut("fast");
+					}
+				});
 			});
-			$(window).scroll(function () {
-				if ($(this).scrollTop() > 300) {
-					$('#gotop').fadeIn("fast");
-				} else {
-					$('#gotop').stop().fadeOut("fast");
-				}
+	
+		//左選單收合
+	
+			$(document).ready(function () {
+				$(".btn-menu").click(function () {
+					$("#btn-area-bg").animate({ marginLeft: "0" }, 300);
+					$(".btn-menu").animate({ display: "none" }, 300);
+				});
+	
+				$(".btn-close").click(function () {
+					$("#btn-area-bg").animate({ marginLeft: "-20%" }, 200);
+					$(".btn-menu").animate({ display: "" }, 1000);
+				});
 			});
-		});
-	</script>
-
-	<!--下滑主選單變色-->
-	<!-- <script type="text/javascript">
-		window.onscroll = function () { scrollFunction() };
-		function scrollFunction() {
-			if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-				document.getElementById("header").style.background = '#3e3e3ebf';
-				document.getElementById("header").style.height = '60px';
-			} else {
-				document.getElementById("header").style.background = '#323232f2';
-			}
-		}
-	</script> -->
-
-	<!--左選單收合-->
-	<script>
-		$(document).ready(function () {
-			$(".btn-menu").click(function () {
-				$("#btn-area-bg").animate({ marginLeft: "0" }, 300);
-				$(".btn-menu").animate({ display: "none" }, 100);
+	
+			//滑鼠移入選單按鈕出現文字變化
+			$(document).ready(function () {
+				$(".btn-menu").hover(
+					function () {
+						$(this).css({
+							background: "#ffd96b","font-size": "16px"
+						}).html("MENU");
+					},
+					function () {
+						$(this).css({
+							background: "","font-size": "" //恢復原狀
+						}).html("≡"); //恢復原狀
+					}
+				);
 			});
-
-			$(".btn-close").click(function () {
-				$("#btn-area-bg").animate({ marginLeft: "-20%" }, 200);
-				$(".btn-menu").animate({ display: "block" }, 1000);
-			});
-		});
-
-	</script>
-
-
-
+		</script>
 </head>
 
 <body>

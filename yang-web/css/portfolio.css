@@ -513,7 +513,7 @@ mark {
     z-index: 1;
     position: relative;
     border-radius: 6px;
-    max-height: 550px;
+    max-height: 350px;
     overflow: hidden;
     position: relative;
     background: #1b1b1b;
@@ -590,11 +590,11 @@ mark {
 
 
 .box3 {
-    width: 24%;
+    width: 30%;
     height: fit-content;
     background: #1b1b1b;
     max-height: 430px;
-    margin: 50px 30px;
+    margin: 50px 20px;
     border-radius: 6px;
     overflow: hidden;
     position: relative;

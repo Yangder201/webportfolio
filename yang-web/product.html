@@ -86,6 +86,22 @@
 	</script>
 
 
+	<!--左選單收合-->
+	<script>
+		$(document).ready(function () {
+			$(".btn-menu").click(function () {
+				$("#btn-area-bg").animate({ marginLeft: "0" }, 300);
+				$(".btn-menu").animate({ display: "none"}, 100);
+			});
+
+			$(".btn-close").click(function () {
+				$("#btn-area-bg").animate({ marginLeft: "-20%" }, 200);
+				$(".btn-menu").animate({ display: "block"}, 1000);
+			});
+		});
+
+	</script>
+
 	<!--下滑主選單變色-->
 	<!-- <script type="text/javascript">
 		window.onscroll = function () { scrollFunction() };
@@ -99,6 +115,21 @@
 		}
 	</script> -->
 
+	<!--左選單收合-->
+	<script>
+		$(document).ready(function () {
+			$(".btn-menu").click(function () {
+				$("#btn-area-bg").animate({ marginLeft: "0" }, 300);
+				$(".btn-menu").animate({ display: "none" }, 100);
+			});
+
+			$(".btn-close").click(function () {
+				$("#btn-area-bg").animate({ marginLeft: "-20%" }, 200);
+				$(".btn-menu").animate({ display: "block" }, 1000);
+			});
+		});
+
+	</script>
 
 </head>
 
@@ -114,10 +145,10 @@
 
 		<nav id="cssmenu">
 			<ul>
+				<li><a href="banner.html">Banner</a></li>
 				<li><a href="product.html">產品頁</a></li>
 				<li><a href="page.html">大型專案</a></li>
 				<li><a href="business.html">形象網站</a></li>
-				<li><a href="banner.html">Banner</a></li>
 				<li><a href="AD.html">電商廣告</a></li>
 				<li><a href="ill.html">電繪插圖 / ICON</a></li>
 				<li><a href="sticker.html">LINE 貼圖創作</a></li>
@@ -126,16 +157,18 @@
 		</nav>
 	</div>
 
+	<div class="btn-menu">≡</div>
 	<div id="btn-area-bg">
+		<div class="btn-close">×</div>
 		<div id="logo">
 			<a href="index.html">YANG</a>
 		</div>
 		<div class="portfolio-tit">Portfolio</div>
 		<div id="btn-area">
+			<div class="btn-box"><a href="banner.html">Banner</a></div>
 			<div class="btn-box-now">產品頁</div>
 			<div class="btn-box"><a href="page.html">大型專案</a></div>
 			<div class="btn-box"><a href="business.html">形象網站</a></div>
-			<div class="btn-box"><a href="banner.html">Banner</a></div>
 			<div class="btn-box"><a href="AD.html">電商廣告</a></div>
 			<div class="btn-box"><a href="ill.html">電繪插圖 / ICON</a></div>
 			<div class="btn-box"><a href="sticker.html">LINE 貼圖創作</a></div>
@@ -153,7 +186,7 @@
 				主要訓練跨部門溝通理解力、資訊視覺化（化繁為簡）、整合力、icon 設計、設計一致性及各種限制下選用最適當的情境圖。</p>
 		</div>
 
-		<div class="box5">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/product/001.jpg">
 				<img src="portfolio/product/001.jpg" alt="產品頁">
 			</a>
@@ -167,30 +200,30 @@
 				</svg></a></div>
 		</div>
 
-		<div class="box5">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/product/002.jpg">
 				<img src="portfolio/product/002.jpg" alt="產品頁">
 			</a>
 
 		</div>
 
-		<div class="box5">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/product/003.jpg">
 				<img src="portfolio/product/003.jpg" alt="產品頁">
 			</a>
 		</div>
 
-		<div class="box5">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/product/004.jpg">
 				<img src="portfolio/product/004.jpg" alt="產品頁">
 			</a>
 		</div>
-		<div class="box5">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/product/005.jpg">
 				<img src="portfolio/product/005.jpg" alt="產品頁">
 			</a>
 		</div>
-		<div class="box5">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/product/006.jpg">
 				<img src="portfolio/product/006.jpg" alt="產品頁">
 			</a>
@@ -204,14 +237,14 @@
 					</svg></a></div>
 		</div>
 
-		<div class="box5">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/product/007.jpg">
 				<img src="portfolio/product/007.jpg" alt="產品頁">
 			</a>
 
 		</div>
 
-		<div class="box5">
+		<div class="box4">
 
 			<a class="fancybox" href="portfolio/product/008.jpg">
 				<img src="portfolio/product/008.jpg" alt="產品頁">
@@ -219,20 +252,20 @@
 
 		</div>
 
-		<div class="box5"> <a class="fancybox" href="portfolio/product/009.jpg">
+		<div class="box4"> <a class="fancybox" href="portfolio/product/009.jpg">
 				<img src="portfolio/product/009.jpg" alt="產品頁">
 			</a>
 
 		</div>
 
-		<div class="box5">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/product/010.jpg">
 				<img src="portfolio/product/010.jpg" alt="產品頁">
 			</a>
 
 		</div>
 
-		<div class="box5">
+		<div class="box4">
 
 			<a class="fancybox" href="portfolio/product/011.png">
 				<img src="portfolio/product/011.png" alt="產品頁">
@@ -241,141 +274,141 @@
 
 
 
-		<div class="box5">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/product/015.png">
 				<img src="portfolio/product/015.png" alt="產品頁">
 			</a>
 
 		</div>
 
-		<div class="box5">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/product/016.jpg">
 				<img src="portfolio/product/016.jpg" alt="產品頁">
 			</a>
 
 		</div>
 
-		<div class="box5">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/product/017.png">
 				<img src="portfolio/product/017.png" alt="產品頁">
 			</a>
 
 		</div>
 
-		<div class="box5">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/product/018.jpg">
 				<img src="portfolio/product/018.jpg" alt="產品頁">
 			</a>
 
 		</div>
 
-		<div class="box5">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/product/019.jpg">
 				<img src="portfolio/product/019.jpg" alt="產品頁">
 			</a>
 
 		</div>
 
-		<div class="box5">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/product/020.jpg">
 				<img src="portfolio/product/020.jpg" alt="產品頁">
 			</a>
 
 		</div>
 
-		<div class="box5">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/product/021.png">
 				<img src="portfolio/product/021.png" alt="產品頁">
 			</a>
 
 		</div>
 
-		<div class="box5">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/product/022.jpg">
 				<img src="portfolio/product/022.jpg" alt="產品頁">
 			</a>
 
 		</div>
 
-		<div class="box5"> <a class="fancybox" href="portfolio/product/023.png">
+		<div class="box4"> <a class="fancybox" href="portfolio/product/023.png">
 				<img src="portfolio/product/023.png" alt="產品頁">
 			</a>
 
 		</div>
 
-		<div class="box5"> <a class="fancybox" href="portfolio/product/024.jpg">
+		<div class="box4"> <a class="fancybox" href="portfolio/product/024.jpg">
 				<img src="portfolio/product/024.jpg" alt="產品頁">
 			</a>
 
 		</div>
 
-		<div class="box5"> <a class="fancybox" href="portfolio/product/025.jpg">
+		<div class="box4"> <a class="fancybox" href="portfolio/product/025.jpg">
 				<img src="portfolio/product/025.jpg" alt="產品頁">
 			</a>
 
 		</div>
 
-		<div class="box5">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/product/026.jpg">
 				<img src="portfolio/product/026.jpg" alt="產品頁">
 			</a>
 
 		</div>
 
-		<div class="box5">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/product/027.jpg">
 				<img src="portfolio/product/027.jpg" alt="產品頁">
 			</a>
 
 		</div>
 
-		<div class="box5">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/product/028.jpg">
 				<img src="portfolio/product/028.jpg" alt="產品頁">
 			</a>
 
 		</div>
 
-		<div class="box5"> <a class="fancybox" href="portfolio/product/029.png">
+		<div class="box4"> <a class="fancybox" href="portfolio/product/029.png">
 				<img src="portfolio/product/029.png" alt="產品頁">
 			</a>
 
 		</div>
 
 
-		<div class="box5">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/product/034.jpg">
 				<img src="portfolio/product/034.jpg" alt="產品頁">
 			</a>
 		</div>
 
-		<div class="box5">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/product/033.png">
 				<img src="portfolio/product/033.png" alt="產品頁">
 			</a>
 		</div>
 
-		<div class="box5">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/product/032.png">
 				<img src="portfolio/product/032.png" alt="產品頁">
 			</a>
 		</div>
 
 
-		<div class="box5">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/product/030.jpg">
 				<img src="portfolio/product/030.jpg" alt="產品頁">
 			</a>
 		</div>
 
-		<div class="box5">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/product/031.png">
 				<img src="portfolio/product/031.png" alt="產品頁">
 			</a>
 
 		</div>
 
-		<div class="box5">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/product/035.jpg">
 				<img src="portfolio/product/035.jpg" alt="產品頁">
 			</a>

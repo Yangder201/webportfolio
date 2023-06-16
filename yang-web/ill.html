@@ -64,6 +64,21 @@
 			}
 		}
 	</script> -->
+	<!--左選單收合-->
+	<script>
+		$(document).ready(function () {
+			$(".btn-menu").click(function () {
+				$("#btn-area-bg").animate({ marginLeft: "0" }, 300);
+				$(".btn-menu").animate({ display: "none" }, 100);
+			});
+
+			$(".btn-close").click(function () {
+				$("#btn-area-bg").animate({ marginLeft: "-20%" }, 200);
+				$(".btn-menu").animate({ display: "block" }, 1000);
+			});
+		});
+
+	</script>
 
 
 </head>
@@ -94,7 +109,9 @@
 	</div>
 
 
+	<div class="btn-menu">≡</div>
 	<div id="btn-area-bg">
+		<div class="btn-close">×</div>
 		<div id="logo">
 			<a href="index.html">YANG</a>
 		</div>
@@ -129,6 +146,9 @@
 			<a class="fancybox" href="portfolio/other/001.png">
 				<img src="portfolio/other/001.png" alt="" />
 			</a>
+		</div>
+
+		<div class="box5">
 		</div>
 
 		<div class="box4">
@@ -188,30 +208,30 @@
 		</div>
 
 
-		<div class="box3">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/business/card/01.jpg">
 				<img src="portfolio/business/card/01.jpg" alt="賀卡" />
 			</a>
 		</div>
-		<div class="box3">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/business/card/02.jpg">
 				<img src="portfolio/business/card/02.jpg" alt="賀卡" />
 			</a>
 		</div>
 
-		<div class="box3">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/business/card/03.jpg">
 				<img src="portfolio/business/card/03.jpg" alt="賀卡" />
 			</a>
 		</div>
 
-		<div class="box3">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/business/card/04.jpg">
 				<img src="portfolio/business/card/04.jpg" alt="賀卡" />
 			</a>
 		</div>
 
-		<div class="box3">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/business/card/05.jpg">
 				<img src="portfolio/business/card/05.jpg" alt="賀卡" />
 			</a>

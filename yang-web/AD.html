@@ -62,6 +62,21 @@
 			}
 		}
 	</script> -->
+	<!--左選單收合-->
+	<script>
+		$(document).ready(function () {
+			$(".btn-menu").click(function () {
+				$("#btn-area-bg").animate({ marginLeft: "0" }, 300);
+				$(".btn-menu").animate({ display: "none" }, 100);
+			});
+
+			$(".btn-close").click(function () {
+				$("#btn-area-bg").animate({ marginLeft: "-20%" }, 200);
+				$(".btn-menu").animate({ display: "block" }, 1000);
+			});
+		});
+
+	</script>
 
 
 </head>
@@ -75,10 +90,10 @@
 		<div id="m-logo"><a href="index.html">YANG</a></div>
 		<nav id="cssmenu">
 			<ul>
+				<li><a href="banner.html">Banner</a></li>
 				<li><a href="product.html">產品頁</a></li>
 				<li><a href="page.html">大型專案</a></li>
 				<li><a href="business.html">形象網站</a></li>
-				<li><a href="banner.html">Banner</a></li>
 				<li><a href="AD.html">電商廣告</a></li>
 				<li><a href="ill.html">電繪插圖 / ICON</a></li>
 				<li><a href="sticker.html">LINE 貼圖創作</a></li>
@@ -86,16 +101,19 @@
 			</ul>
 		</nav>
 	</div>
+
+	<div class="btn-menu">≡</div>
 	<div id="btn-area-bg">
+		<div class="btn-close">×</div>
 		<div id="logo">
 			<a href="index.html">YANG</a>
 		</div>
 		<div class="portfolio-tit">Portfolio</div>
 		<div id="btn-area">
+			<div class="btn-box"><a href="banner.html">Banner</a></div>
 			<div class="btn-box"><a href="product.html">產品頁</a></div>
 			<div class="btn-box"><a href="page.html">大型專案</a></div>
 			<div class="btn-box"><a href="business.html">形象網站</a></div>
-			<div class="btn-box"><a href="banner.html">Banner</a></div>
 			<div class="btn-box-now">電商廣告</div>
 			<div class="btn-box"><a href="ill.html">電繪插圖 / ICON</a></div>
 			<div class="btn-box"><a href="sticker.html">LINE 貼圖創作</a></div>
@@ -103,7 +121,7 @@
 		</div>
 
 
-		
+
 	</div>
 
 
@@ -115,36 +133,36 @@
 		</div>
 
 
-		<div class="box2">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/AD/001.png">
 				<div class="box-btn">瀏覽大圖
 				</div><img src="portfolio/AD/001.png" alt="AD 電商圖示" />
 			</a>
-			
+
 		</div>
 
-		<div class="box2">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/AD/002.png">
 				<div class="box-btn">瀏覽大圖
 				</div><img src="portfolio/AD/002.png" alt="AD 電商圖示" />
 			</a>
-			
+
 		</div>
 
-		<div class="box2">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/AD/003.png">
 				<div class="box-btn">瀏覽大圖
 				</div><img src="portfolio/AD/003.png" alt="AD 電商圖示" />
 			</a>
-			
+
 		</div>
 
-		<div class="box2">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/AD/004.png">
 				<div class="box-btn">瀏覽大圖
 				</div><img src="portfolio/AD/004.png" alt="AD 電商圖示" />
 			</a>
-			
+
 		</div>
 
 
@@ -164,7 +182,7 @@
 
 
 
-		<div class="box3">
+		<div class="box2">
 			<a class="fancybox" href="portfolio/AD/012.jpg">
 				<div class="box-btn">瀏覽大圖
 				</div><img src="portfolio/AD/012.jpg" alt="AD 電商圖示" />
@@ -196,25 +214,69 @@
 
 
 		<div class="box3">
+			<a class="fancybox" href="portfolio/AD/SCTA001.png">
+				<div class="box-btn">瀏覽大圖
+				</div>
+				<img src="portfolio/AD/SCTA001.png" alt="AD 電商圖示" />
+			</a>
+		</div>
+
+		<div class="box3">
+			<a class="fancybox" href="portfolio/AD/SCTA002.png">
+				<div class="box-btn">瀏覽大圖
+				</div>
+				<img src="portfolio/AD/SCTA002.png" alt="AD 電商圖示" />
+			</a>
+		</div>
+
+		<div class="box3">
+			<a class="fancybox" href="portfolio/AD/SCTA003.png">
+				<div class="box-btn">瀏覽大圖
+				</div>
+				<img src="portfolio/AD/SCTA003.png" alt="AD 電商圖示" />
+			</a>
+		</div>
+
+
+
+
+
+		<div class="box5">
 			<a class="fancybox" href="portfolio/AD/CTA001.png">
 				<div class="box-btn">瀏覽大圖
 				</div><img src="portfolio/AD/CTA001.png" alt="CTA 按鈕圖示" />
 			</a>
 		</div>
 
-		<div class="box3">
+		<div class="box5">
 			<a class="fancybox" href="portfolio/AD/CTA002.png">
 				<div class="box-btn">瀏覽大圖
 				</div><img src="portfolio/AD/CTA002.png" alt="CTA 按鈕圖示" />
 			</a>
 		</div>
 
-		<div class="box3">
+		<div class="box5">
 			<a class="fancybox" href="portfolio/AD/CTA003.png">
 				<div class="box-btn">瀏覽大圖
 				</div><img src="portfolio/AD/CTA003.png" alt="CTA 按鈕圖示" />
 			</a>
 		</div>
+
+		<div class="box5">
+			<a class="fancybox" href="portfolio/AD/CTA004.png">
+				<div class="box-btn">瀏覽大圖
+				</div><img src="portfolio/AD/CTA004.png" alt="CTA 按鈕圖示" />
+			</a>
+		</div>
+
+		<div class="box5">
+			<a class="fancybox" href="portfolio/AD/CTA005.png">
+				<div class="box-btn">瀏覽大圖
+				</div><img src="portfolio/AD/CTA005.png" alt="CTA 按鈕圖示" />
+			</a>
+		</div>
+		
+	
 
 
 		<div class="box">
@@ -241,35 +303,28 @@
 
 
 
-		<div class="box5">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/AD/AD-Banner007.jpg">
 				<div class="box-btn">瀏覽大圖
 				</div><img src="portfolio/AD/AD-Banner007.jpg" alt="AD 電商圖示" />
 			</a>
 		</div>
 
-		<div class="box5">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/AD/AD-Banner008.jpg">
 				<div class="box-btn">瀏覽大圖
 				</div><img src="portfolio/AD/AD-Banner008.jpg" alt="AD 電商圖示" />
 			</a>
 		</div>
 
-		<div class="box5">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/AD/AD-Banner009.jpg">
 				<div class="box-btn">瀏覽大圖
 				</div><img src="portfolio/AD/AD-Banner009.jpg" alt="AD 電商圖示" />
 			</a>
 		</div>
 
-		<div class="box5">
-			<a class="fancybox" href="portfolio/AD/AD-Banner010.jpg">
-				<div class="box-btn">瀏覽大圖
-				</div><img src="portfolio/AD/AD-Banner010.jpg" alt="AD 電商圖示" />
-			</a>
-		</div>
-
-		<div class="box5">
+		<div class="box4">
 			<a class="fancybox" href="portfolio/AD/AD-Banner011.jpg">
 				<div class="box-btn">瀏覽大圖
 				</div><img src="portfolio/AD/AD-Banner011.jpg" alt="AD 電商圖示" />
@@ -277,15 +332,22 @@
 		</div>
 
 
+		<div class="box6">
+			<a class="fancybox" href="portfolio/AD/AD-Banner010.jpg">
+				<div class="box-btn">瀏覽大圖</div>
+				<img src="portfolio/AD/AD-Banner010.jpg" alt="AD 電商圖示" />
+			</a>
+		</div>
 
-		<div class="box4">
+
+		<div class="box6">
 			<a class="fancybox" href="portfolio/AD/007.png">
 				<div class="box-btn">瀏覽大圖
 				</div><img src="portfolio/AD/007.png" alt="AD 電商圖示" />
 			</a>
 		</div>
 
-		<div class="box4">
+		<div class="box6">
 			<a class="fancybox" href="portfolio/AD/008.jpg">
 				<div class="box-btn">瀏覽大圖
 				</div><img src="portfolio/AD/008.jpg" alt="AD 電商圖示" />
@@ -294,14 +356,14 @@
 
 
 
-		<div class="box4">
+		<div class="box6">
 			<a class="fancybox" href="portfolio/AD/005.jpg">
 				<div class="box-btn">瀏覽大圖
 				</div><img src="portfolio/AD/005.jpg" alt="AD 電商圖示" />
 			</a>
 		</div>
 
-		<div class="box4">
+		<div class="box6">
 			<a class="fancybox" href="portfolio/AD/006.jpg">
 				<div class="box-btn">瀏覽大圖
 				</div><img src="portfolio/AD/006.jpg" alt="AD 電商圖示" />
@@ -309,7 +371,7 @@
 		</div>
 
 
-		<div class="box2">
+		<div class="box3">
 			<a class="fancybox" href="portfolio/EDM/001.jpg">
 				<div class="box-btn">瀏覽大圖
 				</div>
@@ -317,7 +379,7 @@
 			</a>
 		</div>
 
-		<div class="box2">
+		<div class="box3">
 			<a class="fancybox" href="portfolio/EDM/002.jpg">
 				<div class="box-btn">瀏覽大圖
 				</div>
@@ -326,7 +388,7 @@
 		</div>
 
 
-		<div class="box2">
+		<div class="box3">
 			<a class="fancybox" href="portfolio/EDM/003.jpg">
 				<div class="box-btn">瀏覽大圖
 				</div>
@@ -334,16 +396,16 @@
 			</a>
 		</div>
 
-		<div class="box2">
+		<div class="box3">
 			<a class="fancybox" href="portfolio/EDM/004.jpg">
 				<div class="box-btn">瀏覽大圖
 				</div>
-			<img src="portfolio/EDM/004.jpg" alt="AD 電商圖示" />
+				<img src="portfolio/EDM/004.jpg" alt="AD 電商圖示" />
 			</a>
 		</div>
 
 
-		<div class="box2">
+		<div class="box3">
 			<a class="fancybox" href="portfolio/EDM/005.jpg">
 				<div class="box-btn">瀏覽大圖
 				</div>
@@ -351,11 +413,11 @@
 			</a>
 		</div>
 
-		<div class="box2">
+		<div class="box3">
 			<a class="fancybox" href="portfolio/EDM/006.jpg">
 				<div class="box-btn">瀏覽大圖
 				</div>
-			<img src="portfolio/EDM/006.jpg" alt="AD 電商圖示" />
+				<img src="portfolio/EDM/006.jpg" alt="AD 電商圖示" />
 			</a>
 		</div>
 
@@ -372,7 +434,7 @@
 			<a class="fancybox" href="portfolio/EDM/008.jpg">
 				<div class="box-btn">瀏覽大圖
 				</div>
-			<img src="portfolio/EDM/008.jpg" alt="AD 電商圖示" />
+				<img src="portfolio/EDM/008.jpg" alt="AD 電商圖示" />
 			</a>
 		</div>
 
@@ -388,7 +450,7 @@
 			<a class="fancybox" href="portfolio/EDM/010.jpg">
 				<div class="box-btn">瀏覽大圖
 				</div>
-			<img src="portfolio/EDM/010.jpg" alt="AD 電商圖示" />
+				<img src="portfolio/EDM/010.jpg" alt="AD 電商圖示" />
 			</a>
 		</div>
 
@@ -406,7 +468,7 @@
 			<a class="fancybox" href="portfolio/EDM/012.jpg">
 				<div class="box-btn">瀏覽大圖
 				</div>
-			<img src="portfolio/EDM/012.jpg" alt="AD 電商圖示" />
+				<img src="portfolio/EDM/012.jpg" alt="AD 電商圖示" />
 			</a>
 		</div>
 
@@ -422,7 +484,7 @@
 			<a class="fancybox" href="portfolio/EDM/014.jpg">
 				<div class="box-btn">瀏覽大圖
 				</div>
-			<img src="portfolio/EDM/014.jpg" alt="AD 電商圖示" />
+				<img src="portfolio/EDM/014.jpg" alt="AD 電商圖示" />
 			</a>
 		</div>
 
@@ -443,32 +505,25 @@
 			</a>
 		</div>
 
-		<div class="box2">
+		<div class="box3">
 			<a class="fancybox" href="portfolio/EDM/017.jpg">
 				<div class="box-btn">瀏覽大圖
 				</div>
-			<img src="portfolio/EDM/017.jpg" alt="AD 電商圖示" />
+				<img src="portfolio/EDM/017.jpg" alt="AD 電商圖示" />
 			</a>
 		</div>
 
-		<div class="box2">
-			<a class="fancybox" href="portfolio/EDM/019.png">
-				<div class="box-btn">瀏覽大圖
-				</div>
-			<img src="portfolio/EDM/019.png" alt="AD 電商圖示" />
-			</a>
-		</div>
 
 		<div class="box2">
 			<a class="fancybox" href="portfolio/EDM/018.jpg">
 				<div class="box-btn">瀏覽大圖
 				</div>
-			<img src="portfolio/EDM/018.jpg" alt="AD 電商圖示" />
+				<img src="portfolio/EDM/018.jpg" alt="AD 電商圖示" />
 			</a>
 		</div>
 
 
-
+		
 
 
 		<footer>Copyright © Yang</footer>

@@ -373,10 +373,10 @@ mark {
 }
 
 .portfolio-area {
-    width: 90vw;
+    width: 70vw;
     padding-top: 5vh;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
     height: auto;
     display: flex;
     flex-wrap: wrap;

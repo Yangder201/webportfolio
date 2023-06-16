@@ -1,13 +1,20 @@
 @charset "utf-8";
 
 
-html {
+html,body {
     box-sizing: border-box;
     font-size: 16px;
     max-width: 100%;
-
+    font-family: 'Rubik', 'Noto Sans TC', sans-serif;
+    color: #353535;
+    max-width: 100%;
+    background: #fdfdfd;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
 }
-  
+
 
 li {
     list-style: none
@@ -44,30 +51,31 @@ img {
 }
 
 
-
-
-body {
-    font-family: 'Rubik', 'Noto Sans TC', sans-serif;
-    color: #323237;
-    max-width: 100%;
-    background: #fdfdfd;
-    margin: 0;
-    padding: 0;
-    overflow: overlay;
+.line {
+    position: absolute;
+    background-image:
+        linear-gradient(90deg, rgba(255, 255, 255, 0.459) 1px, transparent 0);
+    background-size: 10%;
+    width: 100%;
+    height: 100%;
 }
 
 
 ::-webkit-scrollbar {
-    width: 18px;
+    width: 15px;
     background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(248, 248, 248, 0.753);
     border-radius: 999px;
     border: 5px solid transparent;
     background-clip: content-box;
 
+}
+
+::-webkit-scrollbar-track-piece {
+    background: #c5c5c5;
 }
 
 
@@ -233,6 +241,7 @@ button {
     width: 100%;
     height: 99vh;
     background: url(../img/bg4.jpg) fixed no-repeat;
+    /* background: linear-gradient(187deg, #ffb644, #d9b7ab, #fff6e6); */
     padding-bottom: 25px;
 }
 
@@ -586,7 +595,6 @@ color: #3f37bb; */
     padding-left: 20%;
     height: 75vh;
     padding-top: 25vh;
-    color: #222222;
     position: relative;
     z-index: 0;
     /* border-left: 2px solid #ffffff; */
@@ -724,7 +732,7 @@ color: #3f37bb; */
 
 
 #contact-icon-area {
-    width: 100PX;
+    width: 30px;
     height: 3vh;
     margin-top: 10px;
     margin-left: 30px;
@@ -1272,7 +1280,7 @@ footer {
 
     }
 
-    
+
     @keyframes focus {
         0% {
             font-size: 1rem;
@@ -1289,7 +1297,7 @@ footer {
     }
 
 
-  
+
 
 
     .open-describe {

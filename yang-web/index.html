@@ -44,29 +44,8 @@
     </script>
 
 
-
-    <!--go to top js-->
-    <script type="text/javascript">
-        $(function () {
-            $("#gotop").click(function () {
-                jQuery("html,body").animate({
-                    scrollTop: 0
-                }, 500);
-            });
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 300) {
-                    $('#gotop').fadeIn("fast");
-                } else {
-                    $('#gotop').stop().fadeOut("fast");
-                }
-            });
-        });
-    </script>
-
-
-
     <!-- 錨點滑動 -->
-    <script type="text/javascript">
+    <script>
         $(document).ready(function () {
             $("a").on("click", function (event) {
                 if (this.hash !== "") {
@@ -83,6 +62,54 @@
             });
         });
     </script>
+
+<script type="text/javascript">
+	//go to top
+		$(function () {
+			$("#gotop").click(function () {
+				jQuery("html,body").animate({
+					scrollTop: 0
+				}, 500);
+			});
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 300) {
+					$('#gotop').fadeIn("fast");
+				} else {
+					$('#gotop').stop().fadeOut("fast");
+				}
+			});
+		});
+
+	//左選單收合
+
+		$(document).ready(function () {
+			$(".btn-menu").click(function () {
+				$("#btn-area-bg").animate({ marginLeft: "0" }, 300);
+				$(".btn-menu").animate({ display: "none" }, 300);
+			});
+
+			$(".btn-close").click(function () {
+				$("#btn-area-bg").animate({ marginLeft: "-20%" }, 200);
+				$(".btn-menu").animate({ display: "" }, 1000);
+			});
+		});
+
+		//滑鼠移入選單按鈕出現文字變化
+		$(document).ready(function () {
+			$(".btn-menu").hover(
+				function () {
+					$(this).css({
+						background: "#ffd96b","font-size": "16px"
+					}).html("MENU");
+				},
+				function () {
+					$(this).css({
+						background: "","font-size": "" //恢復原狀
+					}).html("≡"); //恢復原狀
+				}
+			);
+		});
+	</script>
 
 
 </head>
@@ -394,22 +421,22 @@
                 <div class="questionList">
 
                     <div class="question" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
-                        <h3>獨立、新事物上手快、有自學力，遇事先自行解決</h3>
+                        <h3>獨立、新事物上手快、有自學力、有解決問題的能力</h3>
                         <ul>
                             <li>待過的公司共通點是同性質職位只有我一個，沒相關前輩或主管帶，很多事靠自己摸索學習</li>
                             <li>最初不會前端切排版，憑著對 HTML 和 CSS 的熱忱，在家上網自學而成</li>
                             <li>當初因標案要求一定要使用 Boostrap & RWD 製作網站，也是即刻上網自學並順利驗收</li>
-                            <li>單親加上身為長女，母親忙於工作較沒空管，從小獨立自主、自律，很多事靠自己解決</li>
+                            <li>單親加上身為長女，母親忙於工作較沒空管，從小獨立自主、自律，很多事能自行解決</li>
                         </ul>
                     </div>
 
 
                     <div class="question" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
-                        <h3>團隊合作、細心體貼、擅理解、有同理心、懂換位思考</h3>
+                        <h3>細心體貼、擅理解、有同理心、懂換位思考</h3>
                         <ul>
-                            <li>知道自己是前端，時間管控很重要，重視合作夥伴時間分配，會留意後續工程師作業時間</li>
-                            <li>理解大家都有自己的立場，溝通時懂換位思考，盡量想出雙贏方案會較好進行有效溝通</li>
-                            <li>提出建議時，能盡量傾聽理解，只要合理並具建設性都會配合修正</li>
+                            <li>身為前端時間管控很重要，重視合作夥伴時間分配，會留意後續工程師作業時間</li>
+                            <li>理解大家都有自己立場，溝通時懂換位思考，盡量想出雙贏方案會較好進行有效溝通</li>
+                            <li>提出建議時，能盡量傾聽理解，只要合理並具建設性會配合修正</li>
                             <li>搭高鐵下車時會記得收起椅背，讓後座的人也方便下車</li>
                         </ul>
                     </div>
@@ -508,7 +535,6 @@
 
         <footer>Copyright © Yang</footer>
     </div>
-
 
 
     <!--滾動效果-->

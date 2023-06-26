@@ -417,7 +417,7 @@ color: #3f37bb; */
     text-align: center;
     align-items: center;
     font-size: 1.1rem;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: .1rem;
     cursor: pointer;
 }
@@ -430,8 +430,6 @@ color: #3f37bb; */
 
 .cta-arrow {
     width: 3px;
-
-
     animation-name: cta-arrow;
     animation-duration: .6s;
     animation-delay: 1s;
@@ -636,6 +634,8 @@ color: #3f37bb; */
 .question ul li {
     list-style-type: '． ';
     margin-left: 30px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
 
 }
 
@@ -647,7 +647,7 @@ color: #3f37bb; */
     padding: 20px 25px;
     margin-top: 20px;
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     display: block;
     position: relative;
     z-index: 3;
@@ -705,7 +705,7 @@ color: #3f37bb; */
 }
 
 .job-title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding-top: 5px;
     font-weight: 500;
     line-height: 1.5rem;
@@ -947,17 +947,14 @@ h2 {
 
 
 .skill-area {
-    /* min-width: 20vw; */
-    /* max-width: 25vw; */
-    width: 20%;
-    margin: 1%;
-    /* margin-bottom: 3vh; */
+    width: 22%;
+    margin: 0 8px;
     min-height: 400px;
     background: #ffffffd9;
     border: 1px solid #fff;
-    padding: 20px 40px;
+    padding: 30px;
     border-radius: 7px;
-    box-shadow: 2px 5px 10px -5px #c9c9c9a8;
+    box-shadow: 0px 0px 30px -10px #6d6d6d61;
 
 }
 

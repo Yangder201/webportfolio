@@ -23,7 +23,7 @@
 	position: relative;
 	margin: auto;
 	z-index: 8020;
-	max-width: 80vmax;
+	max-width: 75vw;
 	height: fit-content;
 	margin-bottom: 15px;
 }
@@ -51,26 +51,26 @@
 .fancybox-outer, .fancybox-inner {
 	position: relative;
 	height: auto;
-	max-width: 79vmax;
+	max-width: 75vw;
 }
 
 .fancybox-inner {
 	overflow: hidden;
 	height: fit-content !important;
-	max-width: 78.5vmax;
+	max-width: 74vw;
 }
 
 .fancybox-type-iframe .fancybox-inner {
 	-webkit-overflow-scrolling: touch;
 	height: auto;
-	max-width: 78.5vmax;
+	max-width: 74vmax;
 }
 
 .fancybox-error {
 	color: #444;
 	font: 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
 	margin: 0;
-	padding: 8px;
+	padding: 2px;
 	white-space: nowrap;
 }
 

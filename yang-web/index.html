@@ -79,36 +79,6 @@
 				}
 			});
 		});
-
-	//左選單收合
-
-		$(document).ready(function () {
-			$(".btn-menu").click(function () {
-				$("#btn-area-bg").animate({ marginLeft: "0" }, 300);
-				$(".btn-menu").animate({ display: "none" }, 300);
-			});
-
-			$(".btn-close").click(function () {
-				$("#btn-area-bg").animate({ marginLeft: "-20%" }, 200);
-				$(".btn-menu").animate({ display: "" }, 1000);
-			});
-		});
-
-		//滑鼠移入選單按鈕出現文字變化
-		$(document).ready(function () {
-			$(".btn-menu").hover(
-				function () {
-					$(this).css({
-						background: "#ffd96b","font-size": "16px"
-					}).html("MENU");
-				},
-				function () {
-					$(this).css({
-						background: "","font-size": "" //恢復原狀
-					}).html("≡"); //恢復原狀
-				}
-			);
-		});
 	</script>
 
 
@@ -119,6 +89,7 @@
         <div class="arrow"></div>
     </div>
 
+    
     <header id="header-fixed">
         <div id="header-container">
             <div id="logo">
@@ -137,8 +108,10 @@
         </div>
     </header>
 
-
-
+    <div class="container">
+        <div class="bg">
+        </div>
+    </div>
     <div id="open-bg">
         <div id="open">
             <div id="open-logo"><a href="index.html">YANG</a></div>
@@ -164,9 +137,8 @@
         <div class="open-f">
 
         </div>
-    </div>
 
-
+      </div>
     <div id="intro-area-bg">
         <aside id="intro-area">
             Less is more
@@ -248,7 +220,7 @@
                     <div class="during-work">2011-2016 (4年up)</div>
                     <div class="company">
                         <div class="work-tit">網站前端設計</div>
-                        <div class="company-name">雙欣科技有限公司｜1-30人
+                        <div class="company-name">雙欣科技有限公司
                         </div>
                     </div>
                     <div class="company-describe">
@@ -368,13 +340,13 @@
                 <div class="skill-tit">設計規劃</div>
                 <ul class="skill">
                     <li>釐清客群及目標</li>
-                    <li>提供清楚明確的網站架構與資訊層級</li>
+                    <li>提供明確的網站架構與資訊層級</li>
                     <li>遵循用戶慣性來規劃資訊邏輯</li>
                     <li>色彩心理學運用</li>
-                    <li>資訊視覺化（盡量化繁為簡）</li>
-                    <li>擅柔和、協調的色彩搭配</li>
+                    <li>資訊視覺化（化繁為簡）</li>
+                    <li>擅柔和協調的色彩搭配</li>
                     <li>重視網站載入速度（圖片適當壓縮）</li>
-                    <li>SEO 關鍵字概念</li>
+                    <li>留意 SEO 關鍵字有效性</li>
                 </ul>
             </div>
 
@@ -385,7 +357,7 @@
                     <li>直覺、實用、好用，再來才是好看</li>
                     <li>通用 UI 設計原則</li>
                     <li>完形心理學：適當留白，少即是多</li>
-                    <li>一個畫面一個重點資訊</li>
+                    <li>一個畫面只呈現一個重點資訊</li>
                     <li>適當且有意義的動畫效果</li>
                     <li>可互動元件，給予回饋提示</li>
                     <li>icon 的可辨識性與對易用性的影響</li>
@@ -447,7 +419,7 @@
                             <li>曾被主管評過體貼、理解力良好；也曾被合作窗口稱讚都能理解提出的需求並修正</li>
                             <li>重視執行前的溝通，進行充分討論再設計，節省因誤解帶來的非必要調整，不浪費彼此時間</li>
                             <li>通常修改往返一次完成。即便使用者不知想要的是什麼，也能盡量釐清方向，減少浪費彼此時間</li>
-                            <li>做事效率高且穩定，可以從我的作品中看見4年間完成的產量及品質(部分未放上)</li>
+                            <li>做事效率高且穩定，可從我的作品中看見 4 年間完成的產量及品質(部分未放上)</li>
                         </ul>
                     </div>
 

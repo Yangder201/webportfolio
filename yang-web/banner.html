@@ -51,31 +51,26 @@
 		});
 
 	//左選單收合
-
 		$(document).ready(function () {
-			$(".btn-menu").click(function () {
+			$(".btn_menu").click(function () {
 				$("#btn-area-bg").animate({ marginLeft: "0" }, 300);
-				$(".btn-menu").animate({ display: "none" }, 300);
+				$(".btn_menu").animate({ display: "none" }, 300);
 			});
 
-			$(".btn-close").click(function () {
+			$(".btn_close").click(function () {
 				$("#btn-area-bg").animate({ marginLeft: "-20%" }, 200);
-				$(".btn-menu").animate({ display: "" }, 1000);
+				$(".btn_menu").animate({ display: "" }, 1000);
 			});
 		});
 
 		//滑鼠移入選單按鈕出現文字變化
 		$(document).ready(function () {
-			$(".btn-menu").hover(
+			$(".btn_menu").hover(
 				function () {
-					$(this).css({
-						background: "#ffd96b","font-size": "16px"
-					}).html("MENU");
+					$(this).html("MENU");
 				},
 				function () {
-					$(this).css({
-						background: "","font-size": "" //恢復原狀
-					}).html("≡"); //恢復原狀
+					$(this).html("≡"); //恢復原狀
 				}
 			);
 		});
@@ -106,10 +101,10 @@
 			</ul>
 		</nav>
 	</div>
-	<div class="btn-menu">≡</div>
+	<div class="btn_menu">≡</div>
 
 	<div id="btn-area-bg">
-		<div class="btn-close">×</div>
+		<div class="btn_close">×</div>
 
 			<div id="logo">
 				<a href="index.html">YANG</a>
@@ -133,6 +128,8 @@
 			<p>
 				2017 - 2021 新品 Banner / 得獎 Banner / email Banner / 官網主圖 Hero Image 改版規劃</p>
 		</div>
+
+
 
 
 		<div class="box">
@@ -440,12 +437,6 @@
 		</div>
 
 		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/030.jpg">
-				<img src="portfolio/banner/030.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
 			<a class="fancybox" href="portfolio/banner/031.jpg">
 				<img src="portfolio/banner/031.jpg" class="lazyload" alt="banner" />
 			</a>
@@ -566,8 +557,11 @@
 		</div>
 
 
-
-
+		<div class="box2">
+			<a class="fancybox" href="portfolio/banner/emailbanner016.jpg">
+				<img src="portfolio/banner/emailbanner016.jpg" class="lazyload" alt="banner" />
+			</a>
+		</div>
 
 		<div class="box">
 			<a class="fancybox" href="portfolio/banner/032.png">
@@ -577,18 +571,15 @@
 
 
 
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/emailbanner016.jpg">
-				<img src="portfolio/banner/emailbanner016.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
 		<div class="box2">
 			<a class="fancybox" href="portfolio/banner/emailbanner017.jpg">
 				<img src="portfolio/banner/emailbanner017.jpg" class="lazyload" alt="banner" />
 			</a>
 		</div>
+
+	
+
+
 
 		<div class="box2">
 			<a class="fancybox" href="portfolio/banner/emailbanner018.jpg">
@@ -596,38 +587,12 @@
 			</a>
 		</div>
 
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/mainBanner000.jpg">
-				<img src="portfolio/banner/mainBanner000.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/mainBanner000.jpg">
-				<img src="portfolio/banner/mainBanner001.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/mainBanner000.jpg">
-				<img src="portfolio/banner/mainBanner002.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
+	
 
 
 
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/mainBanner003.jpg">
-				<img src="portfolio/banner/mainBanner003.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
 
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/mainBanner004.jpg">
-				<img src="portfolio/banner/mainBanner004.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
+	
 
 		<footer>Copyright © Yang</footer>
 

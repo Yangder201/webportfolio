@@ -80,11 +80,11 @@
 #cssmenu>ul>li>a {
   padding: 20px 35px;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 3px;
   text-decoration: none;
   text-transform: uppercase;
-  /* color: #1c1c1c; */
+  color: #1c1c1c;
   -webkit-transition: color .2s ease;
   -moz-transition: color .2s ease;
   -ms-transition: color .2s ease;
@@ -253,7 +253,7 @@ only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
   #cssmenu ul {
     width: 100%;
     display: none;
-    background: #f9f9f9;
+    background: #ececec;
     margin-top: 5px;
   }
 
@@ -273,6 +273,7 @@ only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
   #cssmenu ul li a,
   #cssmenu ul ul li a {
     width: 100%;
+    text-align: center;
   }
 
   #cssmenu>ul>li,
@@ -333,24 +334,24 @@ only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
   #cssmenu #menu-button::after {
     content: '';
     position: absolute;
-    top: 28px;
+    top: 27px;
     right: 30px;
     display: block;
     width: 25px;
-    height: 3px;
-    background: #000000;
+    height: 2px;
+    background: #5e5e5e;
   }
 
   #cssmenu #menu-button::before {
     content: '';
     position: absolute;
-    top: 35px;
+    top: 34px;
     right: 30px;
     display: block;
     width: 25px;
-    height: 3px;
-    border-top: 3px solid #242424;
-    border-bottom: 3px solid #242424;
+    height: 5px;
+    border-top: 2px solid #5e5e5e;
+    border-bottom: 2px solid #5e5e5e;
   }
 
   #cssmenu .submenu-button {

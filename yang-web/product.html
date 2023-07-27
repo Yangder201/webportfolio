@@ -86,31 +86,26 @@
 		});
 
 	//左選單收合
-
-		$(document).ready(function () {
-			$(".btn-menu").click(function () {
+	$(document).ready(function () {
+			$(".btn_menu").click(function () {
 				$("#btn-area-bg").animate({ marginLeft: "0" }, 300);
-				$(".btn-menu").animate({ display: "none" }, 300);
+				$(".btn_menu").animate({ display: "none" }, 300);
 			});
 
-			$(".btn-close").click(function () {
+			$(".btn_close").click(function () {
 				$("#btn-area-bg").animate({ marginLeft: "-20%" }, 200);
-				$(".btn-menu").animate({ display: "" }, 1000);
+				$(".btn_menu").animate({ display: "" }, 1000);
 			});
 		});
 
 		//滑鼠移入選單按鈕出現文字變化
 		$(document).ready(function () {
-			$(".btn-menu").hover(
+			$(".btn_menu").hover(
 				function () {
-					$(this).css({
-						background: "#ffd96b","font-size": "16px"
-					}).html("MENU");
+					$(this).html("MENU");
 				},
 				function () {
-					$(this).css({
-						background: "","font-size": "" //恢復原狀
-					}).html("≡"); //恢復原狀
+					$(this).html("≡"); //恢復原狀
 				}
 			);
 		});
@@ -142,9 +137,9 @@
 		</nav>
 	</div>
 
-	<div class="btn-menu">≡</div>
+	<div class="btn_menu">≡</div>
 	<div id="btn-area-bg">
-		<div class="btn-close">×</div>
+		<div class="btn_close">×</div>
 		<div id="logo">
 			<a href="index.html">YANG</a>
 		</div>

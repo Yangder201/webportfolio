@@ -519,7 +519,7 @@ mark {
     z-index: 1;
     position: relative;
     border-radius: 6px;
-    max-height: 350px;
+    max-height: 500px;
     overflow: hidden;
     position: relative;
     background: #1b1b1b;
@@ -534,7 +534,6 @@ mark {
     transition: .5s;
     -webkit-transition: .5s;
 }
-
 
 
 .box4:hover::after {
@@ -565,6 +564,62 @@ mark {
     opacity: .5;
     transition: .3s ease-out;
 }
+
+
+
+.box4s {
+    width: 22%;
+    height: fit-content;
+    margin: 30px 15px;
+    z-index: 1;
+    position: relative;
+    border-radius: 6px;
+    max-height: 350px;
+    overflow: hidden;
+    position: relative;
+    background: #1b1b1b;
+    box-shadow: 6px 5px 20px 0px #292929c2;
+
+}
+
+.box4s a {
+    max-width: 300px;
+    border-radius: 6px;
+    height: fit-content;
+    transition: .5s;
+    -webkit-transition: .5s;
+}
+
+
+.box4s:hover::after {
+    content: '瀏覽大圖';
+    font-size: 16px;
+    pointer-events: none;
+    backdrop-filter: blur(3px);
+    -moz-backdrop-filter: blur(3px);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+
+.box4s img {
+    border-radius: 5px;
+}
+
+
+.box4s:hover img {
+    opacity: .5;
+    transition: .3s ease-out;
+}
+
 
 
 .box-tit {
@@ -748,6 +803,43 @@ mark {
     -webkit-transition: .5s;
 
 }
+
+
+
+.codebox{
+    background: #1b1b1b;
+    width: 90%;
+    height: fit-content;
+    margin: 15px;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    transition: .5s;
+    box-shadow: 6px 5px 20px 0px #292929c2;
+}
+
+.codebox a {
+    transition: .5s;
+}
+
+
+.codebox2{
+    background: #1b1b1b;
+    width: 44%;
+    height: fit-content;
+    margin: 15px;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    transition: .5s;
+    box-shadow: 6px 5px 20px 0px #292929c2;
+}
+
+.codebox2 a {
+    transition: .5s;
+}
+
+
 
 
 

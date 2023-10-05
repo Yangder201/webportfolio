@@ -27,7 +27,8 @@
     <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script src="js/menu.js" type="text/javascript"></script>
 
-
+    <!-- skrollr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js" integrity="sha512-A2+khatRDWHUE2VUtN4xUTkr1nc4YfDBw9Sg3ea6x0aRPfpcYieDZji4D2edDHy/yF5NsYzP7kL8sSM8s5EqCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
     <script type="text/javascript">
@@ -113,12 +114,14 @@
         </div>
     </div>
     <div id="open-bg">
-        <div id="open">
+        <div id="open"
+        data-0="background-color: rgba(235, 235, 235, 0.6)"
+        data-50="background-color: rgba(255,255,255,0.1)">
             <div id="open-logo"><a href="index.html">YANG</a></div>
-            <h3 class="open-describe">Web Design / UI UX</h3>
-            <h1>Portfolio</h1>
+            <h3 class="open-describe" data-0="transform: translateY(0px)" data-500="transform: translateY(100px)">Web Design / UI UX</h3>
+            <h1  data-0="transform: translateY(0px)" data-500="transform: translateY(130px)">Portfolio</h1>
 
-            <div class="open-cta-area">
+            <div class="open-cta-area"  data-0="transform: translateY(0px)" data-500="transform: translateY(100px)">
                 <a href="#intro-area-bg">
                     <button class="main-cta outline-inward">
                         <div class="main-cta-t">簡歷</div>
@@ -143,13 +146,13 @@
         <aside id="intro-area">
             Less is more
         </aside>
-        <div id="photo">
+        <div id="photo" data-bottom-top="opacity:0" data-center="opacity:1">
             <img src="img/yang.png" alt="我的照">
         </div>
         <main id="info">
-            <div class="name" data-aos="fade-right" data-aos-duration="1000">楊紫晴</div>
-            <div class="job-title" data-aos="fade-right" data-aos-duration="1000">Web Designer / UIUX / 前端</div>
-            <ul class="text" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300">
+            <div class="name">楊紫晴</div>
+            <div class="job-title">Web Designer / UIUX / 前端</div>
+            <ul class="text">
                 <li>4 年品牌企業｜網站視覺設計</li>
                 <li>4 年接案公司｜網站前端設計</li>
                 <li>亞洲大學數位媒體設計學系畢</li>
@@ -180,15 +183,19 @@
 
 
 
-    <div id="work-exp-bg">
+    <div id="work-exp-bg" 
+     data-900="background-color: rgb(244,239,228)"
+     data-1500="background-color: rgb(226,223,216)"
+     data-2300="background-color: rgb(153,153,153)">
+
         <h2 class="center">大小公司經歷，可獨立作業，也可團隊合作</h2>
 
         <main id="work-exp-area">
-            <div class="work" data-aos="fade-up" data-aos-duration="1000">
+            <div class="work" data-bottom-top="transform:translateY(100px);opacity:0" data-center="transform:translateY(0px);opacity:1">
                 <div class="work-tit-area">
                     <div class="during-work">2017-2021 (4年up)</div>
                     <div class="company">
-                        <div class="work-tit">網站視覺設計</div>
+                        <div class="work-tit"><mark>網站視覺設計</mark></div>
                         <div class="company-name">圓展科技股份有限公司
 
                         </div>
@@ -196,14 +203,12 @@
                     <div class="company-describe">B2B 自有品牌企業｜500人以上
                         </p>
                     </div>
-
-
                 </div>
                 <div class="work-detal">
                     為擴編職位，主要任務是做官網改版，持續迭代，後續就維護新增
                     <ul>
-                        <li>官網改版 → <mark>改版後流量提升</mark></li>
-                        <li>登錄頁、活動頁設計與改版 → <mark>流量與轉換率皆提升</mark></li>
+                        <li>官網改版 → 改版後流量提升</li>
+                        <li>登錄頁、活動頁設計與改版 → 流量與轉換率皆提升</li>
                         <li>三個事業部的產品頁設計及舊產品頁改版</li>
                         <li>Banner、email banner、ICON 設計</li>
                         <li>與資深工程師溝通合作</li>
@@ -215,11 +220,11 @@
                 </div>
             </div>
 
-            <div class="work" data-aos="fade-up" data-aos-duration="1000">
+            <div class="work" data-bottom-top="transform:translateY(100px);opacity:0" data-center="transform:translateY(0px);opacity:1">
                 <div class="work-tit-area">
                     <div class="during-work">2011-2016 (4年up)</div>
                     <div class="company">
-                        <div class="work-tit">網站前端設計</div>
+                        <div class="work-tit"><mark>網站前端設計</mark></div>
                         <div class="company-name">雙欣科技有限公司
                         </div>
                     </div>
@@ -255,10 +260,10 @@
 
 
     <div id="tool-bg">
-        <h2 class="center" data-aos="fade-up" data-aos-duration="1000">除了 Ps, Ai，也會手刻 HTML/CSS/RWD</h2>
+        <main class="tool-group">
+            <h2 class="center" data-bottom-top="transform:translateY(100px);opacity:0" data-center="transform:translateY(0px);opacity:1">除了 Ps, Ai，也會手刻 HTML/CSS/RWD</h2>
 
-        <main class="tool-group" data-aos="fade-up" data-aos-duration="1000">
-            <div class="tool-area">
+            <div class="tool-area" data-bottom-top="transform:translateY(100px);opacity:0" data-center="transform:translateY(0px);opacity:1">
 
                 <div class="tool">
                     <div class="tool-icon"><img src="img/ps.png" alt="Photoshop"></div>
@@ -297,10 +302,10 @@
             </div>
         </main>
 
-        <main class="tool-group" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
-            <h2 class="center">善用 JQuery 與 Js</h2>
+        <main class="tool-group">
+            <h2 class="center" data-bottom-top="transform:translateY(100px);opacity:0" data-center="transform:translateY(0px);opacity:1">善用 JQuery 與 Js</h2>
 
-            <div class="tool-area">
+            <div class="tool-area" data-bottom-top="transform:translateY(100px);opacity:0" data-center="transform:translateY(0px);opacity:1">
 
                 <div class="tool">
                     <div class="tool-icon"><img src="img/JQ.png" alt="JQuery"></div>
@@ -341,16 +346,15 @@
 
     <div id="skill-bg">
         <h2 class="center">有過完整專案流程訓練，遵循 UI.UX 設計原則</h2>
-        <main id="skill">
+        <main id="skill" data-bottom-top="transform:translateY(100px);opacity:0" data-center-top="transform:translateY(0px);opacity:1">
             <div class="skill-area">
                 <div class="skill-tit">設計規劃</div>
                 <ul class="skill">
-                    <li>釐清客群及目標</li>
-                    <li>提供明確的網站架構與資訊層級</li>
-                    <li>遵循用戶慣性來規劃資訊邏輯</li>
-                    <li>色彩心理學運用</li>
+                    <li>設計思考，釐清客群及目標</li>
+                    <li>明確的網站架構與資訊層級</li>
+                    <li>使用者旅程地圖</li>
+                    <li>遵循使用者慣性規劃資訊邏輯</li>
                     <li>資訊視覺化（化繁為簡）</li>
-                    <li>擅柔和協調的色彩搭配</li>
                     <li>重視網站載入速度（圖片適當壓縮）</li>
                     <li>留意 SEO 關鍵字有效性</li>
                 </ul>
@@ -362,8 +366,9 @@
                     <li>設計一致性</li>
                     <li>直覺、實用、好用，再來才是好看</li>
                     <li>通用 UI 設計原則</li>
-                    <li>完形心理學：適當留白，少即是多</li>
-                    <li>一個畫面只呈現一個重點資訊</li>
+                    <li>色彩心理學</li>
+                    <li>完形心理學：留白與間距運用</li>
+                    <li>少即是多，聚焦重點</li>
                     <li>適當且有意義的動畫效果</li>
                     <li>可互動元件，給予回饋提示</li>
                     <li>icon 的可辨識性與對易用性的影響</li>
@@ -372,7 +377,7 @@
 
 
             <div class="skill-area">
-                <div class="skill-tit">其他</div>
+                <div class="skill-tit">其他技能</div>
                 <ul class="skill">
                     <li>各瀏覽器跑版問題解決</li>
                     <li>無障礙網頁規範修正</li>
@@ -392,13 +397,13 @@
 
     <div id="trait-bg">
 
-        <h2 class="center">特質</h2>
+        <h2 class="center" data-bottom-top="transform:translateY(100px);opacity:0" data-center="transform:translateY(0px);opacity:1">特質</h2>
 
         <main id="trait">
             <div class="wrap">
                 <div class="questionList">
 
-                    <div class="question" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                    <div class="question" data-bottom-top="transform:translateY(100px);opacity:0" data-center="transform:translateY(0px);opacity:1">
                         <h3>獨立、新事物上手快、有自學力、有解決問題的能力</h3>
                         <ul>
                             <li>待過的公司共通點是同性質職位只有我一個，沒相關前輩或主管帶，很多事靠自己摸索學習</li>
@@ -409,7 +414,7 @@
                     </div>
 
 
-                    <div class="question" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                    <div class="question" data-bottom-top="transform:translateY(100px);opacity:0" data-center="transform:translateY(0px);opacity:1">
                         <h3>細心體貼、擅理解、有同理心、懂換位思考</h3>
                         <ul>
                             <li>身為前端時間管控很重要，重視合作夥伴時間分配，會留意後續工程師作業時間</li>
@@ -419,7 +424,7 @@
                         </ul>
                     </div>
 
-                    <div class="question" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                    <div class="question" data-bottom-top="transform:translateY(100px);opacity:0" data-center="transform:translateY(0px);opacity:1">
                         <h3>重效率、洞察需求、溝通富彈性</h3>
                         <ul>
                             <li>曾被主管評過體貼、理解力良好；也曾被合作窗口稱讚都能理解提出的需求並修正</li>
@@ -429,9 +434,7 @@
                         </ul>
                     </div>
 
-
-
-                    <div class="question" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                    <div class="question" data-bottom-top="transform:translateY(100px);opacity:0" data-center="transform:translateY(0px);opacity:1">
                         <h3>認真負責、積極主動</h3>
                         <ul>
                             <li>從來都不太需要主管督促進度，從前做專案也幾乎沒有延遲</li>
@@ -448,12 +451,9 @@
 
 
     <div id="intro-bg">
-        <h2 class="center">網站不只要好看，更要好用</h2>
+        <h2 class="center" data-bottom-top="transform:translateY(100px);opacity:0" data-center="transform:translateY(0px);opacity:1">網站不只要好看，更要好用</h2>
 
-
-
-
-        <div class="inside-content" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+        <div class="inside-content" data-bottom-top="transform:translateY(100px);opacity:0" data-center="transform:translateY(0px);opacity:1">
             <div class="inside-tit">少即是多，聚焦重點，呈現本質</div>
             <div class="inside-text">
                 <p>
@@ -473,7 +473,7 @@
 
 
 
-        <div class="inside-content" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+        <div class="inside-content" data-bottom-top="transform:translateY(100px);opacity:0" data-center="transform:translateY(0px);opacity:1">
             <div class="inside-tit">遵循使用習慣，直覺明確，而非重新發明輪子，盲目創新</div>
             <div class="inside-text">
                 <p>
@@ -493,34 +493,31 @@
 
 
 
-        <div class="inside-content" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+        <div class="inside-content" data-bottom-top="transform:translateY(100px);opacity:0" data-center="transform:translateY(0px);opacity:1">
             <div class="inside-tit">使用者會來到網站都是有其目的</div>
             <div class="inside-text">
                 <p>
-                    他們可能被關鍵字或品牌所吸引而來到網站。來網站不外乎就是想來找需要的資訊。
+                    他們可能被關鍵字或品牌所吸引而來到網站。來網站不外乎就是想找需要的資訊。
                     網站規劃首要目標，不像平面設計是要能吸引人們的目光，而是要能夠讓使用者覺得好用。
                     怎麼算好用，就是可以讓使用者很快找到他所需的資訊，或不會想在特定區塊找需要的資訊時找不到。</p>
             </div>
         </div>
 
-        <div class="inside-content" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
+        <div class="inside-content data-bottom-top="transform:translateY(100px);opacity:0" data-center="transform:translateY(0px);opacity:1">
             <div class="inside-text">
                 <p>感謝您的時間與耐心瀏覽至此。</p>
             </div>
         </div>
 
-
-
         <footer>Copyright © Yang</footer>
     </div>
 
 
-    <!--滾動效果-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 
     <script>
-        AOS.init();
+      var s = skrollr.init();
+
     </script>
 
 </body>

@@ -287,13 +287,14 @@ img {
 .btn-box a:hover {
     height: 65px;
     display: flex;
+    background: #ffffff;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
     color: #1b1b1b;
     border-radius: 5px;
-    border: 35px solid #ffffff;
-    transition: .4s ease-out;
+    border: 1px solid #ffffff;
+    transition: .2s ease-out;
     box-sizing: border-box;
 }
 

@@ -52,15 +52,18 @@
 		//左選單收合
 		$(document).ready(function () {
 			$(".btn_menu").click(function () {
-				$("#btn-area-bg").animate({ marginLeft: "0" }, 300);
+				$("#btn-area-bbg").show(5);
+				$("#btn-area-bg").animate({ marginLeft: "25%" }, 300);
 				$(".btn_menu").animate({ display: "none" }, 300);
 			});
 
 			$(".btn_close").click(function () {
-				$("#btn-area-bg").animate({ marginLeft: "-20%" }, 200);
+				$("#btn-area-bbg").hide(5);
+				$("#btn-area-bg").animate({ marginLeft: "-50%" }, 200);
 				$(".btn_menu").animate({ display: "" }, 1000);
 			});
 		});
+
 
 		//滑鼠移入選單按鈕出現文字變化
 		$(document).ready(function () {
@@ -95,7 +98,6 @@
 				<li><a href="AD.html">電商廣告</a></li>
 				<li><a href="ill.html">電繪插圖 / ICON</a></li>
 				<li><a href="sticker.html">LINE 貼圖創作</a></li>
-
 				<div class="back"><a href="index.html">回首頁</a></div>
 			</ul>
 		</nav>
@@ -118,11 +120,10 @@
 			<div class="btn-box"><a href="ill.html">電繪插圖 / ICON</a></div>
 			<div class="btn-box"><a href="sticker.html">LINE 貼圖創作</a></div>
 			<div class="btn-box-now">UI & Code</div>
-			<div class="back"><a href="index.html">回首頁</a></div>
+			<div class="btn-box-all"><a href="index.html">回首頁</a></div>
 		</div>
-
 	</div>
-
+	<div id="btn-area-bbg"></div>
 
 	<div class="portfolio-area">
 		<div class="tag-tit">手刻 UI 範本</div>

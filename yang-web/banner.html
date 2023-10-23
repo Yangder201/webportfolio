@@ -53,12 +53,14 @@
 	//左選單收合
 		$(document).ready(function () {
 			$(".btn_menu").click(function () {
-				$("#btn-area-bg").animate({ marginLeft: "0" }, 300);
+				$("#btn-area-bbg").show(5);
+				$("#btn-area-bg").animate({ marginLeft: "25%" }, 300);
 				$(".btn_menu").animate({ display: "none" }, 300);
 			});
 
 			$(".btn_close").click(function () {
-				$("#btn-area-bg").animate({ marginLeft: "-20%" }, 200);
+				$("#btn-area-bbg").hide(5);
+				$("#btn-area-bg").animate({ marginLeft: "-50%" }, 200);
 				$(".btn_menu").animate({ display: "" }, 1000);
 			});
 		});
@@ -104,6 +106,7 @@
 	</div>
 	<div class="btn_menu">≡</div>
 
+
 	<div id="btn-area-bg">
 		<div class="btn_close">×</div>
 
@@ -112,6 +115,7 @@
 			</div>
 			<div class="portfolio-tit">Portfolio</div>
 		<div id="btn-area">
+			
 			<div class="btn-box-now">Banner</div>
 			<div class="btn-box"><a href="product.html">產品頁</a></div>
 			<div class="btn-box"><a href="page.html">大型專案</a></div>
@@ -120,9 +124,11 @@
 			<div class="btn-box"><a href="ill.html">電繪插圖 / ICON</a></div>
 			<div class="btn-box"><a href="sticker.html">LINE 貼圖創作</a></div>
 			<div class="btn-box"><a href="mycode.html">UI / Code</a></div>
-			<div class="back"><a href="index.html">回首頁</a></div>
+			<div class="btn-box-all"><a href="index.html">回首頁</a></div>
 		</div>
 	</div>
+	<div id="btn-area-bbg"></div>
+
 
 	<div class="portfolio-area">
 		<div class="tag-tit">Banner</div>

@@ -53,15 +53,18 @@
 		//左選單收合
 		$(document).ready(function () {
 			$(".btn_menu").click(function () {
-				$("#btn-area-bg").animate({ marginLeft: "0" }, 300);
+				$("#btn-area-bbg").show(5);
+				$("#btn-area-bg").animate({ marginLeft: "25%" }, 300);
 				$(".btn_menu").animate({ display: "none" }, 300);
 			});
 
 			$(".btn_close").click(function () {
-				$("#btn-area-bg").animate({ marginLeft: "-20%" }, 200);
+				$("#btn-area-bbg").hide(5);
+				$("#btn-area-bg").animate({ marginLeft: "-50%" }, 200);
 				$(".btn_menu").animate({ display: "" }, 1000);
 			});
 		});
+
 
 		//滑鼠移入選單按鈕出現文字變化
 		$(document).ready(function () {
@@ -117,11 +120,10 @@
 			<div class="btn-box"><a href="ill.html">電繪插圖 / ICON</a></div>
 			<div class="btn-box"><a href="sticker.html">LINE 貼圖創作</a></div>
 			<div class="btn-box"><a href="mycode.html">UI / Code</a></div>
-			<div class="back"><a href="index.html">回首頁</a></div>
+			<div class="btn-box-all"><a href="index.html">回首頁</a></div>
 		</div>
-
 	</div>
-
+	<div id="btn-area-bbg"></div>
 
 
 	<div class="portfolio-area">
@@ -131,22 +133,7 @@
 				2017 - 2021　官網改版規劃、主視覺改版規劃、活動登錄頁設計、解決方案設計等
 			</p>
 		</div>
-<!-- 
-		
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/mainBanner001.jpg">
-				<img src="portfolio/banner/mainBanner001.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
 
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/mainBanner002.jpg">
-				<img src="portfolio/banner/mainBanner002.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div> -->
-
-		
-		
 	
 
 		<div class="box3">

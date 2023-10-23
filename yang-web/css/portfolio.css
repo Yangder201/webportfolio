@@ -174,17 +174,28 @@ img {
 }
 
 
+#btn-area-bbg{
+    width: 100%;
+    height: 100vh;
+    float: left;
+    background: #1b1b1bbe;
+    position: fixed;
+    z-index: 80;
+    backdrop-filter: blur(3.1px);
+    display: none;
+}
+
 
 #btn-area-bg {
-    width: 20%;
-    margin-left: -20%;
+    margin-left: -50%;
+    width: 50%;
     float: left;
     height: 100vh;
     font-size: 1rem;
     position: fixed;
     display: block;
     z-index: 88;
-    background:linear-gradient(90deg, #dedede, #d5d5d5ba);
+    background: linear-gradient(90deg, #dedede, #d5d5d5ba);
     backdrop-filter: blur(3.1px);
     -webkit-backdrop-filter: blur(3.1px);
     border-right: 1px solid #fff;
@@ -227,14 +238,17 @@ img {
     width: 80%;
     margin: 4vh auto 0 auto;
     height: fit-content;
-
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 
 }
 
 .btn-box-now {
-    width: 100%;
-    height: 70px;
-    /* margin: 0 5px; */
+    width: 47%;
+    height: 65px;
+    margin: 0 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -245,17 +259,16 @@ img {
     font-weight: 500;
     font-size: 1.1rem;
     color: rgb(167 167 167);
-    margin-top: 7px;
+
     /* box-shadow: -7px 5px 8px #89868661; */
     cursor: default;
 }
 
 
-
 .btn-box {
-    width: 100%;
+    width: 47%;
     height: 65px;
-    margin: 10px 0;
+    margin: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -293,13 +306,57 @@ img {
     border-radius: 5px;
     color: #1b1b1b;
     border-radius: 5px;
-    border: 2px solid #ffffff;
     transition: .2s ease-out;
     box-sizing: border-box;
 }
 
 
 
+.btn-box-all {
+    width: 100%;
+    height: 65px;
+    margin: 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+
+    /* margin-top: 8px; */
+    /* border: #666666 2px solid; */
+    /* border-top: #eeeeee 2px solid; */
+    /* border-left: #eeeeee 2px solid; */
+    /* border-bottom: #eeeeee 2px solid; */
+
+}
+
+
+.btn-box-all a {
+    width: 100%;
+    height: 65px;
+    background: #fbfbfbcf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(109, 109, 109);
+    font-weight: 500;
+    border-radius: 5px;
+    transition: .1s;
+    -webkit-transition: .1s;
+    border: 1px solid #ffffffe7
+}
+
+.btn-box-all a:hover {
+    height: 65px;
+    display: flex;
+    background: #ffffff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: #1b1b1b;
+    border-radius: 5px;
+    transition: .2s ease-out;
+    box-sizing: border-box;
+}
 
 
 mark {
@@ -1043,7 +1100,7 @@ footer {
     }
 
     .box4 {
-        width: 30%;
+        width: 45%;
         margin: 20px 10px;
 
 
@@ -1058,7 +1115,7 @@ footer {
     }
 
     .box2 {
-        width: 45%;
+        width: 80%;
         margin: 10px 10px;
 
     }
@@ -1068,7 +1125,7 @@ footer {
 
 @media only screen and (max-width: 1024px) {
     .box2 {
-        width: 45%;
+        width: 80%;
         margin: 10px 10px;
 
     }
@@ -1106,7 +1163,7 @@ footer {
 
     .back {
         width: 100%;
-        text-align: left;
+        text-align: center;
         margin: auto;
         font-size: 1rem;
         border-top: 1px solid #e3e3e3;
@@ -1123,6 +1180,7 @@ footer {
     .portfolio-area {
         width: 90vw;
         padding-top: 10vh;
+        padding-left: 4vw;
     }
 
 
@@ -1153,29 +1211,47 @@ footer {
     }
 
     .box {
-        width: 95%;
+        width: 85vw;
         margin: 5px;
     }
 
     .box2 {
-        width: 47%;
-        margin: 5px;
+        width: 93%;
+        
     }
 
     .box3 {
-        width: 40vw;
-        margin: 5px;
+        width: 80vw;
+        margin: 15px;
     }
 
     .box4 {
-        width: 40vw;
+        width: 85vw;
+        margin: 3vh auto;
+    }
+
+    .box4s{
+        width: 80vw;
+        margin: 15px;
+    }
+
+    .box5 {
+        width: 80vw;
         margin: 3vh auto;
     }
 
 
-    .box5 {
-        width: 40vw;
-        margin: 3vh auto;
+
+    .codebox{
+        width: 90%;
+
+    }
+    
+    
+    .codebox2{
+        width: 90%;
+        margin: 15px;
+
     }
 
 

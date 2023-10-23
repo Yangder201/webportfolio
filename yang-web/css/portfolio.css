@@ -1115,25 +1115,75 @@ footer {
     }
 
     .box2 {
-        width: 80%;
+        width: 45%;
         margin: 10px 10px;
 
+    }
+
+    
+    .box4s{
+        width: 30%;
     }
 
 }
 
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1025px) {
     .box2 {
-        width: 80%;
+        width: 100%;
         margin: 10px 10px;
 
+    }
+
+    .box4s{
+        width: 45%;
+    }
+    
+
+    #btn-area-bg{
+        width: 50%;
+        height: fit-content;
+        padding-bottom: 10vh;
+    }
+
+    #btn-area{
+        width: 100%;
+    }
+
+    .btn-box{
+        width: 40%;
+    }
+    .btn-box-now{
+        width: 40%;
+    }
+
+    .btn-box-all{
+        width: 85%;
     }
 
 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
+
+
+    #btn-area-bg{
+        width: 65%;
+        height: fit-content;
+        padding-bottom: 10vh;
+    }
+
+    .btn-box{
+        width: 40%;
+    }
+    .btn-box-now{
+        width: 40%;
+    }
+
+    .btn-box-all{
+        width: 85%;
+    }
+
 
     .btn_menu {
         display: none
@@ -1231,7 +1281,7 @@ footer {
     }
 
     .box4s{
-        width: 80vw;
+        width: 40%;
         margin: 15px;
     }
 
@@ -1257,7 +1307,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 426px) {
 
 
     #m-header {
@@ -1342,7 +1392,9 @@ footer {
         max-height: 350px;
     }
 
-
+    .box4s{
+        width: 100%;
+    }
     .box5 {
         width: 45%;
         max-height: 250px;

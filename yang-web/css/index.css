@@ -10,7 +10,6 @@
 
 html,body {
     height: fit-content !important;
-    box-sizing: border-box;
     font-size: 15px;
     max-width: 100%;
     font-family: 'Rubik', 'Noto Sans TC', sans-serif;
@@ -582,6 +581,7 @@ color: #3f37bb; */
     flex-wrap: nowrap;
     margin: 0;
     padding: 0;
+    background: #F6F6F6;
     /* border-top: #ffffffd9 1px solid; */
 
 }
@@ -630,7 +630,6 @@ color: #3f37bb; */
     padding-top: 25vh;
     position: relative;
     z-index: 0;
-    background: #F6F6F6;
     /* background: linear-gradient(234deg, rgba(243, 243, 243, 0.849) 0%, rgba(230, 230, 230, 0.7) 60%, rgba(255, 255, 255, 0) 100%); */
 }
 
@@ -1000,7 +999,6 @@ h2 {
 #work-exp-bg {
     max-width: 100vw;
     margin: auto;
-    min-height: 1450px;
     clear: both;
     /* background: #BBD2C5; */
     /* background: #ffffff9c;
@@ -1009,7 +1007,7 @@ h2 {
     background-attachment: fixed; */
     /* background: linear-gradient(to top, #d2d2d2 0%, #d2d2d2 1%, #dddddd 31%, #dbdbdb 75%, #f1f1f1 100%); */
     background-color: #a9a9a9;
-    height: 100vh;
+    height: fit-content;
     padding-top: 8vh;
     padding-bottom: 5vh;
     transition: .2s
@@ -1101,7 +1099,7 @@ h2 {
 /*工作內容細項*/
 
 .work-detal {
-    background: rgba(255,255,255,0.5);
+    background: rgb(255 255 255 / 85%);
     backdrop-filter: blur(3px);
     color: #000000;
     padding: 40px 30px 30px 40px;
@@ -1249,6 +1247,9 @@ footer {
 
 @media only screen and (max-width: 768px) {
 
+    h2{
+        font-size: 2.4rem;
+    }
 
 
     #gotop {
@@ -1274,7 +1275,6 @@ footer {
 
     #open {
         padding-top: 20vh;
-        height: 70vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -1335,26 +1335,25 @@ footer {
 
     .main-cta {
         font-size: 1rem;
-        background: #444444;
     }
 
 
     .else-cta {
-        border-radius: 30px;
-        background: #ffffff00;
-        margin: 6px;
-
-        font-size: 16px;
-        font-weight: 400;
-        box-shadow: 5px 5px 25px #ffffff25;
+        background: #e7e7e7;
+        color: #696969;
+        box-shadow: 0px -6px 10px white, 0px 4px 25px rgba(0, 0, 0, 0.15);
+        margin: 10px;
+        font-size: 1.1rem;
+        letter-spacing: .1rem;
+        font-weight: 300;
+        transform: 1s;
+        -moz-transform: 1s;
         transform: 1s;
         -moz-transform: 1s;
     }
 
     .else-cta a {
         border-radius: 30px;
-
-        border: #5e5e5e 2px solid;
         color: #3a3a3a;
 
 
@@ -1389,7 +1388,7 @@ footer {
 
     #intro-bg {
         padding: 10vw;
-        width: 80VW;
+        width: 100vw;
     }
 
     #info {
@@ -1407,7 +1406,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 35vh;
+        height: fit-content;
         padding-top: 5vh;
     }
 
@@ -1492,8 +1491,9 @@ footer {
     }
 
     .tool {
-        width: 70%;
-        margin: 5px;
+        width: 80%;
+        margin: 10px;
+        height: 70px;
     }
 
     #skill {
@@ -1510,6 +1510,8 @@ footer {
     .skill-area {
         width: 100vw;
         padding: 25px 30px;
+        min-height: auto;
+        margin-bottom: 15px;
     }
 
     .skill li {
@@ -1628,6 +1630,7 @@ footer {
 
     .indsie-pic {
         flex-wrap: wrap;
+        margin-top: 25px;
     }
 
 

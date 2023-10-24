@@ -23,14 +23,11 @@
         rel="stylesheet">
 
     <!--RWD MENU相關-->
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="css/styles.css" rel="stylesheet" >
     <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script src="js/menu.js" type="text/javascript"></script>
 
-    <!-- skrollr -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js" integrity="sha512-A2+khatRDWHUE2VUtN4xUTkr1nc4YfDBw9Sg3ea6x0aRPfpcYieDZji4D2edDHy/yF5NsYzP7kL8sSM8s5EqCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
+   
     <script type="text/javascript">
         window.onscroll = function () { scrollFunction() };
         function scrollFunction() {
@@ -64,7 +61,7 @@
         });
     </script>
 
-<script type="text/javascript">
+    <script type="text/javascript">
 	//go to top
 		$(function () {
 			$("#gotop").click(function () {
@@ -86,6 +83,7 @@
 </head>
 
 <body>
+    <div id="skrollr-body">
     <div id="gotop">
         <div class="arrow"></div>
     </div>
@@ -344,7 +342,7 @@
 
 
     <div id="skill-bg">
-        <h2 class="center">有過完整專案流程訓練，遵循 UI.UX 設計原則</h2>
+        <h2 class="center">完整專案流程訓練，遵循 UI.UX 設計原則</h2>
         <main id="skill" data-bottom-top="transform:translateY(100px);opacity:0" data-center-top="transform:translateY(0px);opacity:1">
             <div class="skill-area">
                 <div class="skill-tit">設計規劃</div>
@@ -511,7 +509,11 @@
         
     </div>
 
-    <script>
+
+    <!-- skrollr -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js"></script>
+    <script type="text/javascript">
         var s = skrollr.init();
-    </script>
+        </script>
+        </div>
 </body>

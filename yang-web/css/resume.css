@@ -280,9 +280,10 @@ a:active {
 }
 
 .skill li{
-    list-style-type: none;
+    list-style-type: square;
     font-size: 1rem;
     font-weight: 400;
+    list-style-position: inside;
 }
 
 

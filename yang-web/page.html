@@ -32,24 +32,28 @@
 	<script src="js/bootstrap.min.js" type="text/javascript"></script>
 	<script src="js/jquery.isotope.min.js" type="text/javascript"></script>
 
+	<!-- fancybox CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
 
 	<script type="text/javascript">
 		//go to top
-			$(function () {
-				$("#gotop").click(function () {
-					jQuery("html,body").animate({
-						scrollTop: 0
-					}, 500);
-				});
-				$(window).scroll(function () {
-					if ($(this).scrollTop() > 300) {
-						$('#gotop').fadeIn("fast");
-					} else {
-						$('#gotop').stop().fadeOut("fast");
-					}
-				});
+		$(function () {
+			$("#gotop").click(function () {
+				jQuery("html,body").animate({
+					scrollTop: 0
+				}, 500);
 			});
-	
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 300) {
+					$('#gotop').fadeIn("fast");
+				} else {
+					$('#gotop').stop().fadeOut("fast");
+				}
+			});
+		});
+
 		//左選單收合
 		$(document).ready(function () {
 			$(".btn_menu").click(function () {
@@ -77,7 +81,7 @@
 				}
 			);
 		});
-		</script>
+	</script>
 
 </head>
 
@@ -97,7 +101,6 @@
 				<li><a href="AD.html">電商廣告</a></li>
 				<li><a href="ill.html">電繪插圖 / ICON</a></li>
 				<li><a href="sticker.html">LINE 貼圖創作</a></li>
-				<li><a href="mycode.html">UI / Code</a></li>
 				<div class="back"><a href="index.html">回首頁</a></div>
 			</ul>
 		</nav>
@@ -130,27 +133,36 @@
 		<div class="tag-tit">經營品牌官網時期的內部大型專案</div>
 		<div class="tag-describe">
 			<p>
-				2017 - 2021　官網改版規劃、主視覺改版規劃、活動登錄頁設計、解決方案設計等
+				官網改版規劃、主視覺改版規劃、活動登錄頁設計、解決方案設計等
 			</p>
 		</div>
 
-	
-
 		<div class="box3">
-			<a class="fancybox" href="portfolio/page/007.jpg">
-				<img src="portfolio/page/007.jpg">
+			<a data-fancybox="gallery" data-src="portfolio/page/023.jpg" data-caption="
+			官網改版<br>
+			點圖再放大[ + ]
+			" href="portfolio/page/023.jpg">
+				<img src="portfolio/page/023-cover.jpg" />
 			</a>
-			<div class="box-tit">2020 官網全面大改版提案</div>
+			<div class="box-tit"><a href="https://jp.aver.com/default.aspx" target="_blank">
+				第一版官網全面大改版
+				<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+					class="bi bi-link-45deg" viewBox="0 0 16 16">
+					<path
+						d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
+					<path
+						d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
+				</svg></a></div>
 		</div>
 
-<!-- 		
+
+
 		<div class="box3">
-			<a class="fancybox" title="" href="portfolio/page/013.jpg">
-				<img src="portfolio/page/013.jpg" alt="">
+			<a class="fancybox" href="portfolio/page/020.jpg">
+				<img src="portfolio/page/020.jpg">
 			</a>
-			<div class="box-tit"><a
-					href="https://www.figma.com/file/HxAwcWoRXIIBxIPkBP76Yv/Untitled?t=v9k1hNbGR5qeu9bp-1"
-					target="_blank">2020 首頁大改版提案
+			<div class="box-tit"><a href="https://communication.aver.com/model/cam340plus" target="_blank">
+					產品頁改版
 					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
 						class="bi bi-link-45deg" viewBox="0 0 16 16">
 						<path
@@ -163,49 +175,40 @@
 
 
 		<div class="box3">
-			<a class="fancybox" title="" href="portfolio/page/011.jpg">
-				<img src="portfolio/page/011.jpg" alt="">
+			<a class="fancybox" href="portfolio/page/006.jpg">
+				<img src="portfolio/page/006.jpg" alt="綜合頁">
 			</a>
-			<div class="box-tit">2020 視訊會議新增產品線導引頁提案</div>
+
+			<div class="box-tit">日本客製化攝影機解決方案頁</div>
+		</div>
+
+
+
+
+		<div class="box3">
+			<a data-fancybox="gallery" data-src="portfolio/page/007.jpg" data-caption="
+			改以識別色來加深企業形象的傳遞，強調整體設計的一致性。<br>
+			以清楚直覺的情境展示產品，讓使用者對主打商品及使用情境能一目了然。<br>
+			<br>
+			整體想呈現簡潔、專業、質感、直覺易懂。<br>
+			網站整體包含首頁及內頁上下 UI 做調整，介面色系統一。<br>
+			移除原先首頁配色難以控制一致性的新品 Banner 區塊，<br>
+			以保持版面整潔及整體設計感。
+			" href="portfolio/page/007.jpg">
+				<img src="portfolio/page/007.jpg" />
+			</a>
+			<div class="box-tit">官網全面大改版提案</div>
 		</div>
 
 		<div class="box3">
-			<a class="fancybox" href="portfolio/banner/mainBanner003.jpg">
-				<img src="portfolio/banner/mainBanner003.jpg" class="lazyload" alt="banner" />
-			</a>
-			<div class="box-tit">2020 首頁主視覺 Banner 改版提案一</div>	
-		</div>
-
-		<div class="box3">
-			<a class="fancybox" href="portfolio/banner/mainBanner004.jpg">
-				<img src="portfolio/banner/mainBanner004.jpg" class="lazyload" alt="banner" />
-			</a>
-			<div class="box-tit">2020 首頁主視覺 Banner 改版提案二</div>	
-		</div>
-
-		
-		<div class="box3">
-			<a class="fancybox" href="portfolio/banner/mainBanner000.jpg">
-				<img src="portfolio/banner/mainBanner000.jpg" class="lazyload" alt="banner" />
-			</a>
-			<div class="box-tit">2020 首頁主視覺 Banner 改版提案三</div>	
-		</div>
-		
-
-		<div class="box3">
-			<a class="fancybox" title="" href="portfolio/page/012.jpg">
-				<img src="portfolio/page/012.jpg" alt="">
-			</a>
-			<div class="box-tit">2020 產品線頁面改版提案</div>
-		</div>
- -->
-
-		
-		<div class="box3">
-			<a class="fancybox" href="portfolio/page/024.jpg">
+			<a data-fancybox="gallery" data-src="portfolio/page/024.jpg" data-caption="
+			<br>
+			<br>
+			
+			" href="portfolio/page/024.jpg">
 				<img src="portfolio/page/024.jpg" alt="">
 			</a>
-			<div class="box-tit">2020 台灣視訊會議產品免費試用頁改版規劃</div>
+			<div class="box-tit">視訊會議產品免費試用頁改版規劃</div>
 		</div>
 
 
@@ -214,14 +217,14 @@
 			<a class="fancybox" href="portfolio/page/001.jpg">
 				<img src="portfolio/page/001.jpg">
 			</a>
-			<div class="box-tit">2019 視訊會議解決方案</div>
+			<div class="box-tit">視訊會議解決方案</div>
 		</div>
 
 		<div class="box3">
 			<a class="fancybox" href="portfolio/page/002.jpg">
 				<img src="portfolio/page/002.jpg" alt="綜合頁">
 			</a>
-			<div class="box-tit">2019 攝影機客製化服務登錄頁</div>
+			<div class="box-tit">攝影機客製化服務登錄頁</div>
 		</div>
 
 
@@ -229,7 +232,8 @@
 			<a class="fancybox" title="" href="portfolio/page/016.jpg">
 				<img src="portfolio/page/016.jpg" alt="">
 			</a>
-			<div class="box-tit"><a href="https://www.aver.com/helpcenter" target="_blank">2019 支援中心改版
+			<div class="box-tit"><a href="https://www.aver.com/helpcenter" target="_blank">
+					支援中心改版
 					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
 						class="bi bi-link-45deg" viewBox="0 0 16 16">
 						<path
@@ -243,7 +247,7 @@
 			<a class="fancybox" title="" href="portfolio/page/017.jpg">
 				<img src="portfolio/page/017.jpg" alt="">
 			</a>
-			<div class="box-tit"><a href="https://communication.aver.com/5-year-warranty-Campaign" target="_blank">2019
+			<div class="box-tit"><a href="https://communication.aver.com/5-year-warranty-Campaign" target="_blank">
 					3 + 2 年延長保固註冊頁
 					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
 						class="bi bi-link-45deg" viewBox="0 0 16 16">
@@ -262,7 +266,7 @@
 				<img src="portfolio/page/025.jpg">
 			</a>
 			<div class="box-tit"><a href="https://tw.communication.aver.com/aver-videoconferencing-solutions-tw.aspx"
-					target="_blank">2019 台灣視訊會議產品免費試用登錄頁改版
+					target="_blank">台灣視訊會議產品免費試用登錄頁改版
 					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
 						class="bi bi-link-45deg" viewBox="0 0 16 16">
 						<path
@@ -274,23 +278,18 @@
 
 
 
-
-
-
-
-
 		<div class="box3">
 			<a class="fancybox" href="portfolio/banner/mainBanner005.jpg">
 				<img src="portfolio/banner/mainBanner005.jpg" class="lazyload" alt="banner" />
 			</a>
-			<div class="box-tit">2018 主視覺改版提案</div>	
+			<div class="box-tit">主視覺改版提案</div>
 		</div>
 
 		<div class="box3">
 			<a class="fancybox" href="portfolio/banner/mainBanner006.jpg">
 				<img src="portfolio/banner/mainBanner006.jpg" class="lazyload" alt="banner" />
 			</a>
-			<div class="box-tit">2018 主視覺改版提案</div>	
+			<div class="box-tit">主視覺改版提案</div>
 		</div>
 
 
@@ -300,7 +299,8 @@
 				<img src="portfolio/page/004.jpg" alt="綜合頁">
 			</a>
 			<div class="box-tit">
-				<a href="https://www.avereurope.com/promote/classroom-technology" target="_blank">2018 歐洲智慧教育產品免費試用頁
+				<a href="https://www.avereurope.com/promote/classroom-technology" target="_blank">
+					歐洲智慧教育產品免費試用頁
 					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
 						class="bi bi-link-45deg" viewBox="0 0 16 16">
 						<path
@@ -317,14 +317,14 @@
 			<a class="fancybox" href="portfolio/page/008.jpg">
 				<img src="portfolio/page/008.jpg" title="測試2" alt="測試">
 			</a>
-			<div class="box-tit">2018 下載中心改版規劃</div>
+			<div class="box-tit">下載中心改版規劃</div>
 		</div>
 
 		<div class="box3">
 			<a class="fancybox" title="" href="portfolio/page/010.jpg">
 				<img src="portfolio/page/010.jpg" alt="">
 			</a>
-			<div class="box-tit">2018 內部系統 UI 改版</div>
+			<div class="box-tit">內部系統 UI 改版</div>
 		</div>
 
 
@@ -332,63 +332,22 @@
 			<a class="fancybox" title="" href="portfolio/page/018.jpg">
 				<img src="portfolio/page/018.jpg" alt="">
 			</a>
-			<div class="box-tit">2018 抽獎活動頁面設計</div>
+			<div class="box-tit">抽獎活動頁面設計</div>
 		</div>
 
 
-
-
-
-
-		<div class="box3">
-			<a class="fancybox" href="portfolio/page/023.jpg">
-				<img src="portfolio/page/023-cover.jpg">
-			</a>
-			<div class="box-tit"><a href="https://jp.aver.com/default.aspx" target="_blank">2017 官網改版
-					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-						class="bi bi-link-45deg" viewBox="0 0 16 16">
-						<path
-							d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
-						<path
-							d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
-					</svg></a></div>
-		</div>
-
-		<div class="box3">
-			<a class="fancybox" href="portfolio/page/020.jpg">
-				<img src="portfolio/page/020.jpg">
-			</a>
-			<div class="box-tit"><a href="https://communication.aver.com/model/cam340plus" target="_blank">2017 產品頁改版
-					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-						class="bi bi-link-45deg" viewBox="0 0 16 16">
-						<path
-							d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
-						<path
-							d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
-					</svg></a></div>
-		</div>
-
-
-
-		<div class="box3">
-			<a class="fancybox" href="portfolio/page/006.jpg">
-				<img src="portfolio/page/006.jpg" alt="綜合頁">
-			</a>
-
-			<div class="box-tit">2017 日本客製化攝影機解決方案頁</div>
-		</div>
 
 
 		<div class="box3">
 			<a class="fancybox" title="" href="portfolio/page/015.jpg">
 				<img src="portfolio/page/015.jpg" alt="">
 			</a>
-			<div class="box-tit">2017 內部系統 UI 改版</div>
+			<div class="box-tit">內部系統 UI 改版</div>
 		</div>
 
 
 
-	
+
 
 		<div class="box3">
 			<a class="fancybox" href="portfolio/business/023.jpg">
@@ -419,6 +378,11 @@
 
 </body>
 
+<script>
+	Fancybox.bind('[data-fancybox="gallery"]', {
+		compact: false
+	});    
+</script>
 
 <script type="text/javascript">
 	$(document).ready(function () {

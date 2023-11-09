@@ -117,8 +117,8 @@ a:active {
 }
 
 #info_area{
-    width: 24%;
-    padding: 2vh 2vw;
+    width: 23%;
+    padding: 20px 30px;
     border-right: 3px solid #69625b;
     background: #ffffff;
 }

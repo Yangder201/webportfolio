@@ -53,6 +53,7 @@ a:active {
 
 #container{
     width: 75%;
+    max-width: 1200px;
     height: 678px;
     margin: auto;
     border-radius: 5px;
@@ -74,7 +75,7 @@ a:active {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 300px;
     padding: 2vh 2vw;
-    width: 15vw;
+    width: 20%;
     height: 678px;
     background: linear-gradient(to top, #6a635ec7 0%, #cfbfa5 100%);
     position: relative;
@@ -98,8 +99,8 @@ a:active {
     font-weight: 300;
     width: 100px;
     position: absolute;
-    right: 30px;
-    bottom: 40px;
+    right: 23px;
+    bottom: 25px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -116,9 +117,9 @@ a:active {
 }
 
 #info_area{
-    width: 21%;
+    width: 24%;
     padding: 2vh 2vw;
-    border-right: 4px solid #69625b;
+    border-right: 3px solid #69625b;
     background: #ffffff;
 }
 
@@ -244,7 +245,6 @@ a:active {
 }
 
 .date{
-    letter-spacing: 1px;
     font-size: .9rem;
     display: inline;
     padding-left: 10px;
@@ -275,7 +275,7 @@ a:active {
     margin: 10px 15px;
     font-size: 1.1rem;
     font-weight: 450;
-    line-height: 2rem;
+    line-height: 1.8rem;
     height: 200px;
 }
 
@@ -330,7 +330,13 @@ a:active {
 
 }
 
+@media only screen and (max-width: 426px) {
 
+    .exp{
+        width: 90%;
+    }
+
+}
 
 
 @media only screen and (max-width: 426px) {
@@ -373,6 +379,12 @@ a:active {
     }
 
 
+    .exp{
+        width: 90%;
+    }
 
-
+    .date{
+        display: block;
+        padding-left: 0;
+    }
 }

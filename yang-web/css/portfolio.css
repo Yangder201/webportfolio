@@ -13,6 +13,7 @@ html,body {
 }
 
 
+
 li {
     list-style: none
 }
@@ -1046,6 +1047,38 @@ footer {
     backdrop-filter: blur(5px) !important;
 }
 
+.fancybox-title-float-wrap .child{
+    padding: 2px 20px;
+    background: transparent;
+    background: rgb(255 255 255 / 80%) !important;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    text-shadow: none !important;
+    color: #3f3f3f !important;
+    font-weight: 600 !important;
+    font-size: .9rem !important;
+    letter-spacing: 2px;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+
+.fancybox__content{
+    max-width: 30% !important;
+    margin-right: 25px !important;
+}
+
+.fancybox__slide.has-caption {
+    flex-direction: row;
+  }
+  
+  .fancybox__caption {
+    max-width: 250px;
+    line-height: 2rem !important;
+    padding: 1rem 3rem 1rem 1rem;
+  }
+  
 
 
 @media only screen and (max-width: 1440px) {

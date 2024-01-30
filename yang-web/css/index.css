@@ -31,17 +31,17 @@ a {
     text-decoration: none;
     transition: .5s;
     -webkit-transition: .2s;
-    color: #3d3d3d;
+    color: #17aaff;
 }
 
 a:hover {
-    color: #7a7a7a;
+    color: #17aaff;
     transform: .3s ease-out;
 
 }
 
 a:visited {
-    color: #3d3d3d;
+    color: #29538e;
 }
 
 

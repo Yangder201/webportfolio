@@ -31,17 +31,17 @@ a {
     text-decoration: none;
     transition: .5s;
     -webkit-transition: .2s;
-    color: #17aaff;
+    color: #1b82bd;
 }
 
 a:hover {
-    color: #17aaff;
+    color: #277fb2;
     transform: .3s ease-out;
 
 }
 
 a:visited {
-    color: #29538e;
+    color: #8e2929;
 }
 
 
@@ -774,6 +774,9 @@ color: #3f37bb; */
     margin-left: 15px;
 }
 
+#contact-icon-area a{
+    color: #353535;
+}
 
 /* 
 .text li::before {
@@ -1095,7 +1098,7 @@ h2 {
 /*工作內容細項*/
 
 .work-detal {
-    background: rgb(255 255 255 / 85%);
+    background: rgb(255 255 255 / 95%);
     backdrop-filter: blur(3px);
     color: #000000;
     padding: 40px 30px 30px 40px;
@@ -1194,6 +1197,18 @@ footer {
 
 
 
+#interest_area{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.interest{
+    min-width: 200px;
+    max-height: 220px;
+    margin: 7px;
+}
 
 
 

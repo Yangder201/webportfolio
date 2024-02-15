@@ -587,7 +587,7 @@ color: #3f37bb; */
 
 
 #intro-area {
-    width: 65%;
+    width: 60%;
     padding-left: 5vw;
     height: 100vh;
     padding-top: 15vh;
@@ -892,7 +892,7 @@ h2 {
 
 
 .tool-group {
-    max-width: 960px;
+    max-width: 1080px;
     margin: auto;
     padding: 3vh;
 }
@@ -1221,7 +1221,7 @@ footer {
     }
 
     #intro-area {
-        width: 65vw;
+        width: 60vw;
         min-height: 60vh;
         height: auto;
         padding: 20vh 0 0 2vw;

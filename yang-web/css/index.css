@@ -668,7 +668,7 @@ color: #3f37bb; */
 .question h3 {
     color: #333333;
     /* border: 1px solid #dddddd; */
-    background: linear-gradient(45deg, #f1d6c8, #ffefef40);
+    background: linear-gradient(45deg, #efefef, #ffefef40);
     border-radius: 5px;
     padding: 15px 35px;
     margin-top: 20px;

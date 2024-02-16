@@ -1335,9 +1335,9 @@ footer {
         border: #ffffff5c 2px solid;
     }
 
-    #open-bg {
+    /* #open-bg {
         background: url(../img/bg.jpg) fixed no-repeat 70%;
-    }
+    } */
 
 
     #open {
@@ -1514,6 +1514,11 @@ footer {
 
     .work-detal li {
         line-height: 24px;
+    }
+
+    .next-btn{
+        left: 45%;
+        top: 95%;
     }
 
     .next-btn a {

@@ -457,7 +457,8 @@ mark {
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: center;
-    background: #4b4949;
+    /* background: #4b4949; */
+    background: #2f2f2f;
     position: relative;
     z-index: 22;
 }

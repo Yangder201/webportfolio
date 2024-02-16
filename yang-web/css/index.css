@@ -888,7 +888,7 @@ h2 {
     width: 100%;
     height: 100vh;
     /* background: #f1f1f1; */
-    background: #f7f0e9;
+    background: #e9e9e9;
     min-height: 100vh;
     padding-top: 5vh;
     border-top: 2px solid #ffffff;
@@ -933,7 +933,7 @@ h2 {
     border-radius: 7px;
     padding: 15px;
     align-items: center;
-    box-shadow: 10px 5px 20px -8px #cf9064d1;
+    box-shadow: 10px 5px 20px -8px #a39489d1;
 
 }
 
@@ -1517,8 +1517,9 @@ footer {
     }
 
     .next-btn{
-        left: 45%;
-        top: 95%;
+        /* left: 45%;
+        top: 95%; */
+        display: none;
     }
 
     .next-btn a {

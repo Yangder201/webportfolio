@@ -761,7 +761,7 @@ mark {
 
 .box2 {
     background: #1b1b1b;
-    width: 45%;
+    width: 46%;
     height: fit-content;
     margin: 15px;
     border-radius: 6px;
@@ -807,7 +807,7 @@ mark {
 
 
 .box {
-    max-width: 92%;
+    max-width: 95%;
     height: fit-content;
     margin: 20px 0;
     border-radius: 6px;

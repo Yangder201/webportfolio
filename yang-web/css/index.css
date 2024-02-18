@@ -985,8 +985,8 @@ h2 {
 
 
 .skill-area {
-    width: 23%;
-    margin: 0 10px;
+    width: 25%;
+    margin: 0 12px;
     min-height: 465px;
     background: #ffffffd9;
     border: 1px solid #fff;
@@ -1093,13 +1093,13 @@ h2 {
 }
 
 .company-circle{
-    width: 25px;
-    height: 25px;
+    width: 18px;
+    height: 18px;
     background-color: #f8f8f8;
-    border: 6px solid #54b9e0;
+    border: 5px solid #279cc9;
     border-radius: 50%;
-    margin-left: -75px;
-    margin-bottom: -55px;
+    margin-left: -72px;
+    margin-bottom: -40px;
     margin-top: 20px;
 }
 

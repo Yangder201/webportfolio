@@ -21,19 +21,24 @@
 		href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap"
 		rel="stylesheet">
 
-	<!--手機板 RWD MENU 相關-->
+	<!--手機 RWD MENU -->
 	<link rel="stylesheet" href="css/styles.css">
 	<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 	<script src="js/menu.js" type="text/javascript"></script>
-	<!--中間作品集區塊相關群-->
+
+	<!--中間作品集-->
 	<link rel="stylesheet" href="css/portfolio.css" type="text/css">
 	<script src="js/jquery.min.js" type="text/javascript"></script>
 	<script src="js/bootstrap.min.js" type="text/javascript"></script>
 	<script src="js/jquery.isotope.min.js" type="text/javascript"></script>
 
+	<!-- fancybox CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
 
 	<script type="text/javascript">
-		//go to top
+	//go to top
 		$(function () {
 			$("#gotop").click(function () {
 				jQuery("html,body").animate({
@@ -49,7 +54,7 @@
 			});
 		});
 
-		//左選單收合
+	//左選單收合
 		$(document).ready(function () {
 			$(".btn_menu").click(function () {
 				$("#btn-area-bbg").show(5);
@@ -64,7 +69,6 @@
 			});
 		});
 
-
 		//滑鼠移入選單按鈕出現文字變化
 		$(document).ready(function () {
 			$(".btn_menu").hover(
@@ -76,7 +80,10 @@
 				}
 			);
 		});
+
+
 	</script>
+
 </head>
 
 <body>
@@ -126,60 +133,142 @@
 	<div id="btn-area-bbg"></div>
 
 	<div class="portfolio-area">
-		<div class="tag-tit">手刻 UI DEMO</div>
+		<div class="tag-tit">UI/UX 相關案例</div>
 		<div class="tag-describe">
-			<p>提供幾個自己手刻 UI 的質感、陰影細節、文字間距拿捏、留白拿捏，和程式碼撰寫方式供參考</p>
-		</div>
-		<p><div class="tag-tit">電子名片</div></p>
-		
-		<div class="codebox2">
-		<p class="codepen" data-height="500" data-slug-hash="jOeKVjj" data-user="loveinro" style=" box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-			<span>See the Pen <a href="https://codepen.io/loveinro/pen/jOeKVjj">
-			作業一練習-名片</a> by loveinro (<a href="https://codepen.io/loveinro">@loveinro</a>)
-			on <a href="https://codepen.io">CodePen</a>.</span>
-		  </p>
-		  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-		  </div>
-
-		<div class="codebox2">
-				<p class="codepen" data-height="500" data-slug-hash="poQoaee" data-user="loveinro" style="box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-					<span>See the Pen <a href="https://codepen.io/loveinro/pen/poQoaee">
-					電子名片練習</a> by loveinro (<a href="https://codepen.io/loveinro">@loveinro</a>)
-					on <a href="https://codepen.io">CodePen</a>.</span>
-				  </p>
-				  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-		</div>
-			
-		<p><div class="tag-tit">電子簡歷</div></p>
-		<div class="codebox">
-				<p class="codepen" data-height="1100" data-slug-hash="wvQwwRq" data-user="loveinro" style="box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-					<span>See the Pen <a href="https://codepen.io/loveinro/pen/wvQwwRq">
-					Homework 1.技能網頁</a> by loveinro (<a href="https://codepen.io/loveinro">@loveinro</a>)
-					on <a href="https://codepen.io">CodePen</a>.</span>
-				  </p>
-				  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+			<p>提供幾個 UIUX 專案歷程供參考</p>
 		</div>
 
-		<!-- <p><div class="tag-tit">品牌識別 Design Systems 編排練習</div></p>
-		<div class="codebox">
-		<p class="codepen" data-height="1100" data-slug-hash="ExdBpOm" data-user="loveinro" style="box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-			<span>See the Pen <a href="https://codepen.io/loveinro/pen/ExdBpOm">
-			project2. 實作網頁品牌視覺指導套色-讀墨</a> by loveinro (<a href="https://codepen.io/loveinro">@loveinro</a>)
-			on <a href="https://codepen.io">CodePen</a>.</span>
-		  </p>
-		  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-		</div> -->
+
+
+		<div class="UIUX_box">
+			<a data-fancybox="gallery" data-src="portfolio/page/010.jpg" title="" href="portfolio/page/010.jpg"
+				data-caption="點圖再放大[ + ]">
+				<img src="portfolio/page/010.jpg" alt="">
+			</a>
+			<div class="box-tit">內部系統 UI 改版</div>
+		</div>
+
+
+		<div class="UIUX_text">
+			<p>
+			<h2 class="UIUX_tit">內部系統 UI 改版</h2>
+			</p>
+
+			<h3 class="UIUX_title">入口概念</h3>
+			<div class="UIUX_content">此為公司內部系統整合入口。登入畫面是以公司門禁卡為概念來設計。
+			</div>
+
+			<h3 class="UIUX_title">首頁彙整多系統入口，做卡片式呈現</h3>
+			<div class="UIUX_content">
+				進入後首頁以卡片式呈現各個系統入口按鈕及系統簡介，方便現有人員
+				及新進人員更好理解各類問題應該使用哪個系統。
+				卡片式設計一目了然，於 RWD 設計上也能有靈活的變化。
+			</div>
+			<h3 class="UIUX_title">權限設計</h3>
+			<div class="UIUX_content">
+				做權限判斷，人員擁有不同權限，進入後可見系統是不同的。
+				減少操作人員看見非必要的多餘系統選項。
+			</div>
+			<h3 class="UIUX_title">風格</h3>
+			<div class="UIUX_content">
+				以公司主識別色 藍紫色 做延伸，用雙色漸層來設計，希望呈現年輕的科技感，
+				並在穩重中帶點活力。透明元素增加質感及層次。一致性的 icon 設計輔助辨識。
+			</div>
+		</div>
+
+
+		<div class="UIUX_box">
+			<a data-fancybox="gallery" data-src="portfolio/page/008.jpg" href="portfolio/page/008.jpg"
+				data-caption="點圖再放大[ + ]">
+				<img src="portfolio/page/008.jpg" title="測試2" alt="測試">
+			</a>
+			<div class="box-tit">下載中心改版規劃</div>
+		</div>
+
+
+		<div class="UIUX_text">
+			內容說明
+
+		</div>
+
+
+
+		<div class="UIUX_box">
+			<a data-fancybox="gallery" data-src="portfolio/page/015.jpg" title="" href="portfolio/page/015.jpg"
+				data-caption="點圖再放大[ + ]">
+				<img src="portfolio/page/015.jpg" alt="">
+			</a>
+			<div class="box-tit">內部系統 UI 改版</div>
+		</div>
+
+		<div class="UIUX_text">
+			<p>
+			<div class="tag-tit">內部系統 UI 改版</div>
+			</p>
+			內容說明
+
+		</div>
+
+
+
+
+
+
+
+
+		<div class="tag-tit">標題</div>
+		</p>
+
+		<div class="UIUX_box">
+			<a data-fancybox="gallery" data-src="portfolio/business/023.jpg" href="portfolio/business/023.jpg"
+				data-caption="點圖再放大[ + ]">
+
+				<img src="portfolio/business/023.jpg" alt="高雄榮總輪椅借用系統介面">
+			</a>
+			<div class="box-tit">高雄榮總醫院輪椅系統 UI</div>
+		</div>
+
+		<div class="UIUX_text">
+			內容說明
+
+		</div>
+
+
+		<div class="UIUX_box">
+			<a data-fancybox="gallery" data-src="portfolio/page/019.jpg" href="portfolio/page/019.jpg"
+				data-caption="點圖再放大[ + ]">
+
+				<img src="portfolio/page/019.jpg" alt="高雄 MLD 台鋁影城電子看板 UI" />
+			</a>
+			<div class="box-tit">高雄 MLD 台鋁影城時刻表 UI</div>
+		</div>
+
+		<div class="UIUX_text">
+			內容說明
+
+		</div>
+
+
+
 
 		<footer>Copyright © Yang</footer>
 
 	</div>
 
-</body>
 
 <!-- Add fancyBox main JS and CSS files -->
 <script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
 <link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
 
+
+
+</body>
+
+<script>
+	Fancybox.bind('[data-fancybox="gallery"]', {
+		compact: false
+	});    
+</script>
 
 <script type="text/javascript">
 	$(document).ready(function () {
@@ -212,9 +301,8 @@
 				this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
 			}
 		});
-
-
 	});
 </script>
+
 
 </html>

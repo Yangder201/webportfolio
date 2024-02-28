@@ -603,7 +603,7 @@ color: #3f37bb; */
 }
 
 #photo {
-    width: 180px;
+    width: 160px;
     height: 100vh;
     margin-left: -5%;
     margin-right: -7.2%;
@@ -1475,22 +1475,17 @@ footer {
         justify-content: center;
         align-items: center;
         height: fit-content;
-        padding-top: 5vh;
+        padding-top: 10vh;
     }
 
 
     #photo img {
-        max-width: 220px;
+        max-width: 200px;
     }
 
     .text {
         margin-top: 20px;
         font-size: 1.2rem;
-    }
-
-
-    #photo img {
-        max-width: 250px;
     }
 
     .trait-area {

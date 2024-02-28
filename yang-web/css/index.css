@@ -593,7 +593,8 @@ color: #3f37bb; */
     padding-left: 5vw;
     height: 100vh;
     padding-top: 15vh;
-    background: linear-gradient(45deg, rgb(144 189 215 / 22%) 25%, rgb(255 255 255) 0, rgb(255 211 170) 50%, #fff 0, #dfddd8 75%, rgb(255 196 123 / 24%) 0);
+    /* background: linear-gradient(45deg, rgb(144 189 215 / 22%) 25%, rgb(255 255 255) 0, rgb(255 211 170) 50%, #fff 0, #dfddd8 75%, rgb(255 196 123 / 24%) 0); */
+    background: linear-gradient(315deg, rgb(144 189 215 / 22%) 25%, rgb(255 255 255) 0, rgb(255 211 170) 50%, #fff 0, #dfddd8 75%, rgb(255 196 123 / 24%) 0);
     background-size: 500px 500px;
     color: #ffffff;
     font-size: 6.5rem;

@@ -507,6 +507,7 @@ mark {
     pointer-events: none;
     backdrop-filter: blur(3px);
     -moz-backdrop-filter: blur(3px);
+
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -516,6 +517,7 @@ mark {
     position: absolute;
     top: 0;
     left: 0;
+
 
 }
 
@@ -730,7 +732,7 @@ mark {
     border-radius: 6px;
     overflow: hidden;
     position: relative;
-    box-shadow: 6px 5px 20px 0px #292929c2;
+    box-shadow: 6px 5px 25px -5px #1d1d1dec;
 }
 
 
@@ -769,7 +771,7 @@ mark {
     overflow: hidden;
     position: relative;
     transition: .5s;
-    box-shadow: 6px 5px 20px 0px #292929c2;
+    box-shadow: 6px 5px 20px 0px #141414e6;
 }
 
 .box2 a {
@@ -905,7 +907,8 @@ mark {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    box-shadow: 13px 12px 20px -10px #2f2e2eab;
+    /* box-shadow: 13px 12px 20px -10px #2f2f2eab; */
+    box-shadow: 12px 15px 30px -7px  #1d1d1dec;
 
 }
 
@@ -916,22 +919,24 @@ mark {
     -webkit-transition: 1s;
 }
 
-
 .box a:hover img {
     opacity: .5;
     transition: .3s ease-out;
+    box-shadow: 0px -3px 40px -8px #dd8f29ab;
 }
 
 
 .box:hover::after {
     content: '瀏覽大圖';
     font-size: 18px;
+    letter-spacing: 1pt;
     pointer-events: none;
     backdrop-filter: none;
     -moz-backdrop-filter: none;
     color: #ffffff;
-    border: 150px solidrgba(27, 27, 27, 0.708)b;
-    box-sizing: border-box;
+    box-shadow: 0px -3px 40px -8px #dd8f29ab;
+    /* border: 200px solid rgba(27, 27, 27, 0.708); */
+    transition: 1s ease-out;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1016,7 +1021,7 @@ mark {
     z-index: 99;
     bottom: 10px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-51%);
     box-shadow: 5px 5px 25px -10px #333;
 }
 
@@ -1148,7 +1153,7 @@ footer {
     color: #3f3f3f !important;
     font-weight: 600 !important;
     font-size: .9rem !important;
-    letter-spacing: 2px;
+    letter-spacing: 1pt;
     line-height: 24px;
     white-space: nowrap;
 }

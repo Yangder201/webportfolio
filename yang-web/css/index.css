@@ -287,7 +287,7 @@ button {
     font-weight: 400;
     line-height: 4rem;
     margin: auto;
-    margin-bottom: 3vh;
+    margin-bottom: 5vh;
     z-index: 95;
     opacity: 0;
     animation-name: open-des;
@@ -314,7 +314,7 @@ button {
 }
 
 h1 {
-    font-size: 7rem;
+    font-size: 7.5rem;
     letter-spacing: .1pt;
     font-weight: 500;
     margin: auto;

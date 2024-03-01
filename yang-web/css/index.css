@@ -281,13 +281,13 @@ button {
 
 
 .open-describe {
-    color: #696969;
+    color: #797979;
     width: 100%;
     font-size: 1.3rem;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 4rem;
     margin: auto;
-    position: relative;
+    margin-bottom: 3vh;
     z-index: 95;
     opacity: 0;
     animation-name: open-des;
@@ -314,13 +314,13 @@ button {
 }
 
 h1 {
-    font-size: 8rem;
+    font-size: 7rem;
     letter-spacing: .1pt;
     font-weight: 500;
     margin: auto;
     color: #404040;
-    text-shadow: 0px -6px 10px #ebe6e6, 0px 4px 15px rgb(217 183 183 / 15%);
-    -webkit-box-reflect: below -30px linear-gradient(#ffffff00 20%, rgb(65 65 65 / 14%));
+    /* text-shadow: 0px -6px 10px #ebe6e6, 0px 4px 15px rgb(217 183 183 / 15%); */
+    -webkit-box-reflect: below -30px linear-gradient(#ff6b6b00 25%, rgb(159 159 159 / 10%));
     opacity: 0;
     margin-bottom: 50px;
     animation-name: open-title;
@@ -562,11 +562,11 @@ color: #3f37bb; */
 }
 
 #logo a {
-    color: #adadad !important;
+    color: #525252 !important;
 }
 
 #logo a:hover {
-    color: #575757 !important;
+    color: #d17537 !important;
     transition: .2s ease-out;
 }
 

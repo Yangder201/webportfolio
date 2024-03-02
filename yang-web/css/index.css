@@ -1393,37 +1393,40 @@ footer {
     }
 
     h1 {
-        width: 90%;
-        font-size: 4rem;
+        width: 95%;
+        font-size: 3.5rem;
         font-weight: bold;
         margin: auto;
         color: #575757;
-        padding: 1rem 0;
-        letter-spacing: 5px;
+        padding: 0;
+        letter-spacing: 0;
         -webkit-box-reflect: below -40px linear-gradient(transparent 20%, rgba(255, 255, 255, 0.1));
         opacity: 0;
         animation: focus 1s ease-in-out;
         animation-fill-mode: forwards;
+        animation-name: open-title-m;
+        animation-duration: .8s;
+        animation-delay: .4s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
 
 
     }
 
-
-    @keyframes focus {
+    @keyframes open-title-m {
         0% {
-            font-size: 1rem;
-            filter: blur(16px);
-            letter-spacing: 10px;
+    
+            margin-top: 80px;
+            opacity: 0;
         }
-
+    
         100% {
-            font-size: 3.5rem;
-            filter: blur(0px);
-            letter-spacing: 0px;
+    
+            margin-top: 10px;
             opacity: 1;
+    
         }
     }
-
 
 
 
@@ -1438,6 +1441,37 @@ footer {
 
     }
 
+
+
+    
+.open-cta-area {
+    width: 100%;
+    margin: auto;
+    margin-top: 15vh;
+    display: flex;
+    position: relative;
+    z-index: 98;
+    justify-content: center;
+    opacity: 0;
+    animation-name: open-cta;
+    animation-duration: 1s;
+    animation-delay: .8s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes open-cta {
+    0% {
+        margin-top: 150px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-top: 50px;
+        opacity: 1;
+    }
+}
 
     .main-cta {
         font-size: 1rem;
@@ -1469,6 +1503,8 @@ footer {
     #open-logo {
         left: 5vw;
     }
+
+
 
 
     #header-fixed {

@@ -342,7 +342,7 @@ h1 {
     opacity: 0;
     margin-bottom: 50px;
     animation-name: open-title;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
     animation-delay: .5s;
     animation-iteration-count: 1;
     animation-timing-function: ease;
@@ -404,7 +404,7 @@ color: #3f37bb; */
     justify-content: center;
     opacity: 0;
     animation-name: open-cta;
-    animation-duration: 1s;
+    animation-duration: 1.8s;
     animation-delay: .8s;
     animation-iteration-count: 1;
     animation-timing-function: ease;
@@ -1509,6 +1509,12 @@ footer {
 
     #header-fixed {
         min-height: 65px;
+        margin-top: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
     }
 
 

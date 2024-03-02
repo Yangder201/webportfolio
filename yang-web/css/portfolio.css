@@ -638,7 +638,7 @@ mark {
 
 .box4:hover img {
     opacity: .5;
-    transition: .3s ease-out;
+    transition: .2s ease-out;
 }
 
 
@@ -745,7 +745,7 @@ mark {
 
 .box3:hover img {
     opacity: .5;
-    transition: opacity .3s ease-out;
+    transition: opacity .2s ease-out;
 
 }
 
@@ -933,7 +933,7 @@ mark {
 
 .box a:hover img {
     opacity: .5;
-    transition: .3s ease-out;
+    transition: .2s ease-out;
     
 }
 
@@ -1511,7 +1511,7 @@ footer {
 
 
     .box {
-        width: 95%;
+        width: 90%;
         margin: 10px auto;
     }
 

@@ -252,40 +252,58 @@ button {
 #open-bg {
     width: 100%;
     height: 100vh;
-    background: url(../img/bg.jpg) fixed no-repeat;
-    /* background: linear-gradient(187deg, #db9f41, #bd735b, #ffeac6); */
+    background: url(../img/bg.jpg) fixed no-repeat; 
+    /* background: linear-gradient(187deg, #db9f41, #bd735b, #ffeac6);
     padding-bottom: 25px;
     z-index: 66;
     position: relative;
-
+    /* background: linear-gradient(315deg, rgb(144 189 215 / 22%) 25%, rgb(255 255 255) 0, rgb(255 211 170) 50%, #fff 0, #dfddd8 75%, rgb(255 196 123 / 24%) 0);
+    background-size: 400px 400px; */
+    background-attachment: fixed;
 }
+
 
 #open {
     width: 100%;
     height: 85vh;
     padding-top: 25vh;
-    /* background: radial-gradient(ellipse at center, #ffffff91, #d9d9d9d4); */
-    background: #f2f2f2;
-    background-attachment: fixed;
+    /* background: radial-gradient(ellipse at center, #ffffff, #cdc9c6); */
+    /* background: #f2f2f2; */
     text-align: center;
-    border-bottom: 3px solid rgba(255, 255, 255, 0.9);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
     box-shadow: -1px 9px 20px -5px rgb(255 237 198 / 50%);
     z-index: 66;
     position: relative;
 }
 
 .open-f {
+    height: 15vh;
     text-align: center;
     padding: 40px 25px;
+ 
 }
 
 
+#open_pic {
+    width: 60%;
+    height: 100vh;
+    /* background: linear-gradient(45deg, rgb(144 189 215 / 22%) 25%, rgb(255 255 255) 0, rgb(255 211 170) 50%, #fff 0, #dfddd8 75%, rgb(255 196 123 / 24%) 0); */
+    background: linear-gradient(315deg, rgb(144 189 215 / 22%) 25%, rgb(255 255 255) 0, rgb(255 211 170) 50%, #fff 0, #dfddd8 75%, rgb(255 196 123 / 24%) 0);
+    background-size: 500px 500px;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 13px 6px 10px #9696963d;
+    writing-mode: vertical-lr;
+}
+
 .open-describe {
-    color: #797979;
+    color: #333333;
     width: 100%;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 400;
-    line-height: 4rem;
+    letter-spacing: 1pt;
+    line-height: 3rem;
     margin: auto;
     margin-bottom: 5vh;
     z-index: 95;
@@ -303,12 +321,12 @@ button {
 
 @keyframes open-des {
     0% {
-        margin-top: -50px;
+        margin-top: 50px;
         opacity: 0;
     }
 
     100% {
-        margin-top: -20px;
+        margin-top: 0px;
         opacity: 1;
     }
 }
@@ -324,7 +342,7 @@ h1 {
     opacity: 0;
     margin-bottom: 50px;
     animation-name: open-title;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-delay: .5s;
     animation-iteration-count: 1;
     animation-timing-function: ease;
@@ -336,7 +354,7 @@ h1 {
 @keyframes open-title {
     0% {
 
-        margin-top: 0px;
+        margin-top: 80px;
         opacity: 0;
     }
 
@@ -379,20 +397,33 @@ color: #3f37bb; */
 .open-cta-area {
     width: 100%;
     margin: auto;
-    margin-top: 10vh;
+    margin-top: 15vh;
     display: flex;
     position: relative;
     z-index: 98;
     justify-content: center;
-
+    opacity: 0;
     animation-name: open-cta;
-    animation-duration: 1.5s;
-    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-delay: .8s;
     animation-iteration-count: 1;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
 }
 
+@keyframes open-cta {
+    0% {
+        margin-top: 150px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-top: 100px;
+        opacity: 1;
+    }
+}
+
+/* 
 @keyframes open-cta {
     0% {
         opacity: 0;
@@ -419,6 +450,7 @@ color: #3f37bb; */
         opacity: 1;
     }
 }
+ */
 
 
 
@@ -731,10 +763,19 @@ color: #3f37bb; */
     letter-spacing: 2pt;
 }
 
+.name::after{
+    content: 'Renee, Yang';
+    padding-left: 15px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 3rem;
+    letter-spacing: .5pt;
+}
+
 .job-title {
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding-top: 5px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.5rem;
     letter-spacing: .8pt;
 }

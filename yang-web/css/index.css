@@ -1656,6 +1656,7 @@ footer {
 
     #skill {
         max-width: 90vw;
+        width: 90%;
         height: fit-content;
         padding-top: 3vh;
     }
@@ -1667,7 +1668,7 @@ footer {
 
     .skill-area {
         width: 100vw;
-        padding: 25px 30px;
+        padding: 30px 25px;
         min-height: auto;
         margin-bottom: 15px;
     }

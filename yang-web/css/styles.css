@@ -78,7 +78,7 @@
 }
 
 #cssmenu>ul>li>a {
-  padding: 30px 35px;
+  padding: 20px 35px;
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 3px;
@@ -270,10 +270,12 @@ only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
     border-top: 1px solid rgba(120, 120, 120, 0.15);
   }
 
+
   #cssmenu ul li a,
   #cssmenu ul ul li a {
     width: 100%;
     text-align: center;
+    padding: 30px 35px;
   }
 
   #cssmenu>ul>li,

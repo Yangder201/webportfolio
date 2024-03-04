@@ -252,7 +252,10 @@ button {
 #open-bg {
     width: 100%;
     height: 100vh;
-    background: url(../img/bg.jpg) fixed no-repeat; 
+   
+    background: linear-gradient(263deg, #acd2e9, #ffd9b6, #fff6e6);
+
+ /* background: url(../img/bg.jpg) fixed no-repeat;  */
     /* background: linear-gradient(187deg, #db9f41, #bd735b, #ffeac6);
     padding-bottom: 25px;
     z-index: 66;
@@ -270,16 +273,29 @@ button {
     /* background: radial-gradient(ellipse at center, #ffffff, #cdc9c6); */
     /* background: #f2f2f2; */
     text-align: center;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-    box-shadow: -1px 9px 20px -5px rgb(255 237 198 / 50%);
+    /* border-bottom: 2px solid rgba(255, 255, 255, 0.5); */
+    /* box-shadow: -1px 9px 20px -5px rgb(255 237 198 / 50%); */
     z-index: 66;
     position: relative;
+
+    background-color: #efefef86;
+    border-bottom: solid 2px #ffffff;
+    color: #606060;
+    box-shadow: 0 5px 25px -18px rgb(193 145 96);
+
 }
 
 .open-f {
     height: 15vh;
     text-align: center;
     padding: 40px 25px;
+
+    font-size: 15rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: #f5f5f531;
+    text-align: center;
+    z-index: 0;
  
 }
 
@@ -1374,9 +1390,6 @@ footer {
         border: #ffffff5c 2px solid;
     }
 
-    /* #open-bg {
-        background: url(../img/bg.jpg) fixed no-repeat 70%;
-    } */
 
 
     #open {

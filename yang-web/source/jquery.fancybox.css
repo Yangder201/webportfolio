@@ -58,6 +58,7 @@
 	overflow: hidden;
 	height: fit-content !important;
 	max-width: 74vw;
+	width: 100% !important;
 }
 
 .fancybox-type-iframe .fancybox-inner {

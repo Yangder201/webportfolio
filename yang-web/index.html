@@ -29,7 +29,7 @@
 
 
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         window.onscroll = function () { scrollFunction() };
         function scrollFunction() {
             if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
@@ -40,7 +40,35 @@
                 document.getElementById("header-fixed").style.marginTop = '-68px';
             }
         }
+    </script> -->
+
+
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var headerFixed = document.getElementById("header-fixed");
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > 450) {
+                headerFixed.style.marginTop = "0";
+            } else {
+                headerFixed.style.marginTop = "-68px";
+            }
+        });
+
+
+        window.addEventListener("touchmove", function (event) {
+            var headerFixed = document.getElementById("header-fixed");
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > 250) {
+                headerFixed.style.marginTop = "0";
+            } else {
+                headerFixed.style.marginTop = "-68px";
+            }
+        });
     </script>
+
 
 
     <!-- 錨點滑動 -->
@@ -114,6 +142,8 @@
             <div class="arrow"></div>
         </div>
 
+
+
         <header id="header-fixed">
             <div id="header-container">
                 <div id="logo">
@@ -135,18 +165,19 @@
 
         <div id="open-bg">
             <div id="open" data-0="background-color: rgba(255,255,255,0.5)"
-                data-50="background-color: rgba(255,255,255,0.2)">
-          
+                data-100="background-color: rgba(255,255,255,0.3)">
+
 
                 <div id="open-logo"><a href="index.html">RENEE</a></div>
-            
+
                 <h3 class="open-describe" data-0="transform: translateY(0px)" data-300="transform: translateY(30px)">
                     Web Design Portfolio
                 </h3>
                 <h1 data-300="transform: translateY(0px)" data-500="transform: translateY(100px)">LESS IS MORE</h1>
 
 
-                <div class="open-cta-area" data-300="transform: translateY(0px)"  data-600="transform: translateY(100px)">
+                <div class="open-cta-area" data-300="transform: translateY(0px)"
+                    data-600="transform: translateY(100px)">
                     <a href="#intro-area-bg">
                         <button class="main-cta outline-inward">
                             <div class="main-cta-t">Resume</div>
@@ -211,7 +242,8 @@
         <div id="work-exp-bg" data-1000="background-color:rgb(229,204,180)"
             data-1800="background-color: rgb(247,247,247)" data-2500="background-color: rgb(247,247,247)">
 
-            <h2 class="center" data-bottom-top="rgb(255,255,255)" data-3000="color: rgb(26,26,26)">大小公司經歷，可獨立作業，也可團隊合作</h2>
+            <h2 class="center" data-bottom-top="rgb(255,255,255)" data-3000="color: rgb(26,26,26)">大小公司經歷，可獨立作業，也可團隊合作
+            </h2>
 
             <main id="work-exp-area">
                 <div class="work" data-bottom-top="transform:translateY(100px);opacity:0"
@@ -388,7 +420,7 @@
                         <div class="tool-name">JQuery</div>
                     </div>
 
-   
+
 
                 </div>
 
@@ -484,7 +516,7 @@
                     <p>
                         適當的微動態或許可增加好感，但若動態秒數過長只會讓人感到拖延，而失去耐心令跳出率提高。<br>
                         即便有些動態效果的確看起來很華麗，但不良的動態設計只是讓使用者從重要的資訊中分心。
-                        
+
                     </p>
                 </div>
             </div>
@@ -505,7 +537,7 @@
                 <div class="indsie-pic">
                     <img src="img/2A.png" class="intro-pic">
                     <img src="img/2B.png" class="intro-pic">
-                    
+
                 </div>
             </div>
 
@@ -521,7 +553,7 @@
                 </div>
             </div>
 
-    
+
 
 
 

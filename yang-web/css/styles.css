@@ -78,6 +78,7 @@
 }
 
 #cssmenu>ul>li>a {
+  margin-top: 2px;
   padding: 20px 35px;
   font-size: 1rem;
   font-weight: 400;
@@ -94,23 +95,31 @@
 
 #cssmenu>ul>li:hover>a{
   /* background: #537c89; */
-  border-bottom: #c2c2c2a9 3px solid;
+  /* border-bottom: #ffa12dd1 3px solid; */
+  background: #ffffff42;
+  border-radius: 3px;
+  transition: .3s;
+
 }
 
 #cssmenu>ul>li.active>a {
-  color: #333333;
+  color: #d6993c;
 
 }
 
 
 #cssmenu>ul>li.active>a:hover {
   color: #343434;
-  background: #f3f3f350;
+  background: #f3f3f371;
+  
 
 }
 
 #cssmenu>ul>li>a:focus{
-  border-bottom: #bebebef6 3px solid;
+  background: #ffffff;
+  border-radius: 10px;
+  /* border-bottom: #ee9d41f6 3px solid; */
+  transition: .7s;
 }
 
 #cssmenu>ul>li.has-sub>a {

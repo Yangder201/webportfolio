@@ -85,17 +85,15 @@ img {
     color: #353535;
     background: #ffffff;
     position: absolute;
-    right: 0;
+    right: -1px;
     top: 0;
     z-index: 99;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* border: #cdcdcd solid 1px; */
     text-align: center;
     cursor: pointer;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 .btn_close:hover{
@@ -191,7 +189,8 @@ img {
     margin-left: -51%;
     width: 50%;
     float: left;
-    height: 100vh;
+    height: 90vh;
+    margin-top: 5vh;
     font-size: 1rem;
     position: fixed;
     display: block;
@@ -201,7 +200,7 @@ img {
     -webkit-backdrop-filter: blur(3.1px);
     border-right: 1px solid #fff;
     box-shadow:4px 4px 18px -10px #696969;
-    border-radius: 3px;
+    border-radius: 8px;
 
 }
 
@@ -218,11 +217,11 @@ img {
 }
 
 #logo a {
-    color: #ffffff;
+    color: #535353;
 }
 
 #logo a:hover {
-    color: #f7923f;
+    color: #c9834a;
     transition: .2s ease-out;
 }
 
@@ -276,12 +275,6 @@ img {
     justify-content: center;
     border-radius: 5px;
 
-    /* margin-top: 8px; */
-    /* border: #666666 2px solid; */
-    /* border-top: #eeeeee 2px solid; */
-    /* border-left: #eeeeee 2px solid; */
-    /* border-bottom: #eeeeee 2px solid; */
-
 }
 
 .btn-box a {
@@ -291,7 +284,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(109, 109, 109);
+    color: rgb(63, 63, 63);
     font-weight: 500;
     border-radius: 5px;
     transition: .1s;
@@ -306,7 +299,7 @@ img {
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    border: 3px solid #e6a26b;
+    border: 3px solid #f8bb89;
     transition: .1s ease-out;
     color: #1b1b1b;
     border-radius: 5px;
@@ -340,7 +333,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(109, 109, 109);
+    color: rgb(61, 61, 61);
     font-weight: 500;
     border-radius: 5px;
     transition: .1s;
@@ -595,7 +588,7 @@ mark {
     z-index: 1;
     position: relative;
     border-radius: 6px;
-    max-height: 500px;
+    max-height: 650px;
     overflow: hidden;
     position: relative;
     background: #1b1b1b;
@@ -739,7 +732,6 @@ mark {
 }
 
 .box3 a:hover{
-
     transition: .2s ease-out;
 }
 
@@ -785,7 +777,6 @@ mark {
 }
 
 .box2 a:hover{
-    border: 2px solid #1a1a1a;
     transition: .2s ease-out;
 }
 

@@ -28,23 +28,8 @@
     <script src="js/menu.js" type="text/javascript"></script>
 
 
-
-    <!-- <script type="text/javascript">
-        window.onscroll = function () { scrollFunction() };
-        function scrollFunction() {
-            if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
-                document.getElementById("header-fixed").style.marginTop = '0';
-            }
-
-            else {
-                document.getElementById("header-fixed").style.marginTop = '-68px';
-            }
-        }
-    </script> -->
-
-
-
     <script type="text/javascript">
+        //往下滾動到一定距離，下滑出現固定上方的 主選單
         window.addEventListener("scroll", function () {
             var headerFixed = document.getElementById("header-fixed");
             var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -56,7 +41,7 @@
             }
         });
 
-
+        //手機版 手指滑動偵測 目前好像無效
         window.addEventListener("touchmove", function (event) {
             var headerFixed = document.getElementById("header-fixed");
             var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -67,12 +52,35 @@
                 headerFixed.style.marginTop = "-68px";
             }
         });
-    </script>
+
+        //往下滑動至當前 div 時，主選單加上 focus 狀態樣式
+        window.addEventListener('scroll', function () {
+            var scrollPosition = window.scrollY;
+            var menuItems = document.querySelectorAll('#cssmenu ul li a');
+
+            menuItems.forEach(function (item) {
+                var sectionId = item.getAttribute('href').substring(1);
+                var section = document.getElementById(sectionId);
+                if (section.offsetTop <= scrollPosition && section.offsetTop + section.offsetHeight > scrollPosition) {
+                    removeFocusFromMenuItems(menuItems);
+                    item.parentNode.classList.add('focus');
+                } else {
+                    item.parentNode.classList.remove('focus');
+                }
+            });
+        });
+
+        function removeFocusFromMenuItems(menuItems) {
+            menuItems.forEach(function (item) {
+                item.parentNode.classList.remove('focus');
+            });
+        }
 
 
 
-    <!-- 錨點滑動 -->
-    <script>
+
+        //錨點滑動 
+
         $(document).ready(function () {
             // 初始化 skrollr
             var s = skrollr.init({
@@ -111,9 +119,7 @@
                 }
             });
         });
-    </script>
 
-    <script type="text/javascript">
         //go to top
         $(function () {
             $("#gotop").click(function () {
@@ -153,10 +159,9 @@
                     <ul>
                         <li><a href="#intro-area-bg">簡介</a></li>
                         <li><a href="#work-exp-bg">經歷</a></li>
-                        <li><a href="#tool-bg">專長</a></li>
-                        <li><a href="#skill-bg">技能</a></li>
+                        <li><a href="#tool-bg">技能</a></li>
+                        <li><a href="#skill-bg">專長</a></li>
                         <li><a href="#trait-bg">理念</a></li>
-                        <!-- <li><a href="#trait-bg">特質</a></li> -->
                         <li><a href="banner.html">作品</a>
                     </ul>
                 </nav>
@@ -164,23 +169,25 @@
         </header>
 
         <div id="open-bg">
+
+            <div id="open-logo"><a href="index.html">RENEE</a></div>
+
+
             <div id="open" data-0="background-color: rgba(255,255,255,0.6)"
                 data-100="background-color: rgba(255,255,255,0.4)">
-
-
-                <div id="open-logo"><a href="index.html">RENEE</a></div>
 
                 <h3 class="open-describe" data-0="transform: translateY(0px)" data-300="transform: translateY(30px)">
                     Web Design Portfolio
                 </h3>
-                <h1 data-300="transform: translateY(0px)" data-500="transform: translateY(100px)">LESS IS MORE</h1>
 
+                <h1 data-300="transform: translateY(0px)" data-500="transform: translateY(60px)">LESS IS MORE</h1>
+                
+                <!-- <div class="myslogan" data-500="transform: translateY(0px)" data-600="transform: translateY(80px)">網站不只要好看，更要好用</div> -->
 
-                <div class="open-cta-area" data-300="transform: translateY(0px)"
-                    data-600="transform: translateY(100px)">
+                <div class="open-cta-area" data-500="transform: translateY(0px)" data-700="transform: translateY(80px)">
                     <a href="#intro-area-bg">
                         <button class="main-cta outline-inward">
-                            <div class="main-cta-t">Resume</div>
+                            <div class="main-cta-t">關於我</div>
                             <div class="cta-arrow">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-caret-down-fill" viewBox="0 0 16 16">
@@ -190,7 +197,7 @@
                             </div>
                         </button>
                     </a>
-                    <button class="else-cta"><a href="banner.html">Work</a></button>
+                    <button class="else-cta"><a href="banner.html">作品</a></button>
                 </div>
             </div>
             <div class="open-f">
@@ -204,9 +211,9 @@
             <aside id="intro-area">
                 RENEE, YANG
             </aside>
-            <div id="photo" data-bottom-top="opacity:0" data-center="opacity:1">
-                <img src="img/yang.png" alt="我的照">
-            </div>
+            <!-- <div id="photo" data-bottom-top="opacity:0" data-center="opacity:1">
+                <img src="img/yang2.png" alt="我的照">
+            </div> -->
             <main id="info">
                 <div class="name">楊紫晴</div>
                 <div class="job-title">網站視覺/ UI.UX / 前端</div>
@@ -242,7 +249,8 @@
         <div id="work-exp-bg" data-1000="background-color:rgb(229,204,180)"
             data-1800="background-color: rgb(247,247,247)" data-2500="background-color: rgb(247,247,247)">
 
-            <h2 class="center" data-center-top="color: rgb(120,120,120)" data-center-bottom="color: rgb(55,55,55)">大小公司經歷，可獨立作業，也能團隊合作
+            <h2 class="center" data-center-top="color: rgb(120,120,120)" data-center-bottom="color: rgb(55,55,55)">
+                大小公司經歷，可獨立作業，也能團隊合作
             </h2>
 
             <main id="work-exp-area">
@@ -255,9 +263,10 @@
 
                         </div>
                         <div class="work-tit-detal">
+                            <div class="during-work">4 年 4 個月</div>
                             <div class="company-name">圓展科技股份有限公司</div>
                             <div class="company-describe">B2B 自有品牌企業．500人以上</div>
-                            <div class="during-work">4 年 4 個月</div>
+
                         </div>
                     </div>
                     <div class="work-detal">
@@ -285,24 +294,23 @@
                             <div class="work-tit">網站前端設計</div>
                         </div>
                         <div class="work-tit-detal">
+                            <div class="during-work">4 年 10 個月</div>
                             <div class="company-name">雙欣科技有限公司</div>
                             <div class="company-describe">
                                 資訊系統服務(Apple 授權企業經銷商)．1~30人
                             </div>
-                            <div class="during-work">4 年 10 個月</div>
+
                         </div>
                     </div>
                     <div class="work-detal">
                         網站設計接案公司，客製化不套版，專案流程完整。多做無障礙網站及標案規劃。
                         <ul>
-                            <li>客戶需求討論</li>
-                            <li>網站架構規劃、報價</li>
+                            <li>客戶需求討論、網站架構規劃、報價</li>
                             <li>各類網站版面設計</li>
-                            <li>前端切排版（HTML﹑CSS﹑RWD﹑前端框架運用）</li>
+                            <li>前端切排版</li>
                             <li>與後台工程師團隊合作</li>
                             <li>無障礙網站設計</li>
-                            <li>政府標案</li>
-                            <li>專案文件撰寫</li>
+                            <li>政府標案﹑專案文件撰寫</li>
                             <li>驗收、教育訓練安排</li>
                             <li>Flash 互動問答遊戲製作（現為 Adobe Animate）</li>
                             <li>維護合約事宜處理</li>
@@ -321,7 +329,7 @@
             <main class="tool-group">
                 <h2 class="center" data-bottom-top="transform:translateY(100px);opacity:0"
                     data-center="transform:translateY(0px);opacity:1">
-                    除了軟體操作及工具使用</h2>
+                    軟體與工具</h2>
 
                 <div class="tool-area" data-bottom-top="transform:translateY(100px);opacity:0"
                     data-center="transform:translateY(0px);opacity:1">
@@ -377,9 +385,9 @@
 
             <main class="tool-group">
                 <h2 class="center" data-bottom-top="transform:translateY(100px);opacity:0"
-                    data-center="transform:translateY(0px);opacity:1">也會自寫前端</h2>
+                    data-center="transform:translateY(0px);opacity:1">前端技能</h2>
 
-                <div class="tool-area" data-bottom-top="transform:translateY(100px);opacity:0"
+                <div class="tool-area" data-bottom-center="transform:translateY(50px);opacity:0"
                     data-center="transform:translateY(0px);opacity:1">
 
 
@@ -432,7 +440,8 @@
 
 
         <div id="skill-bg">
-            <h2 class="center" data-center-top="color: rgb(120,120,120)" data-center-bottom="color: rgb(55,55,55)">完整專案流程訓練，遵循 UI.UX 設計原則
+            <h2 class="center" data-center-top="color: rgb(120,120,120)" data-center-bottom="color: rgb(55,55,55)">
+                完整專案流程訓練，遵循 UI.UX 設計原則
             </h2>
             <main id="skill" data-bottom-top="transform:translateY(100px);opacity:0"
                 data-center-top="transform:translateY(0px);opacity:1">
@@ -488,7 +497,6 @@
 
 
         <div id="trait-bg">
-
             <h2 class="center" data-bottom-top="transform:translateY(100px);opacity:0"
                 data-center="transform:translateY(0px);opacity:1">網站不只要好看，更要好用</h2>
 
@@ -531,7 +539,7 @@
                         但極難操作使用，除了不符合使用者習慣外，過於複雜或太過創新的介面，
                         反而令使用者不知如何操作，甚至要學習才能使用，那只會讓人覺得＂不好用＂。
                         所以我認為網站規劃還是要遵循一定的通用設計準則與規範，而非盲目創新。
-                        如同輪子圓形已是最有效的設計，不需再重新發明。
+                        如同輪子圓形已是最有效最通用的設計，不需再重新發明。
                     </p>
                 </div>
                 <div class="indsie-pic">
@@ -555,134 +563,38 @@
 
 
 
-            <div class="inside-content" data-center-bottom="transform:translateY(100px);opacity:0"
-            data-center="transform:translateY(0px);opacity:1">
-            <div class="inside-tit"></div>
-            <div class="inside-text">
-                <p>感謝您的時間與耐心瀏覽至此。</p>
+
+
+        
+
+        
+  
+
+    
+
+            <div class="thank" data-center-bottom="transform:translateY(100px);opacity:0"
+                data-center="transform:translateY(0px);opacity:1">
+
+                <p>感謝你的時間與耐心瀏覽至此。</p>
+
             </div>
+
+
+            <footer>Copyright © RENEE</footer>
+
+
+            <!-- skrollr -->
+            <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js"></script>
+            <script type="text/javascript">
+                var s = skrollr.init();
+                document.body.id = "skrollr-body"
+            </script>
+
+
+
         </div>
-   
-   
-   
-        <footer>Copyright © RENEE</footer>
-   
 
-
-        </div>
-
-<!-- 
-        <div id="intro-bg">
-
-            <h2 class="center" data-bottom-top="transform:translateY(100px);opacity:0"
-             data-center="transform:translateY(0px);opacity:1">特質與實例</h2>
-
-         <main id="trait">
-             <div class="wrap">
-                 <div class="questionList">
-
-                     <div class="question" data-bottom-top="transform:translateY(100px);opacity:0"
-                         data-center="transform:translateY(0px);opacity:1">
-                         <h3>獨立、新事物上手快、有自學力、解決問題的能力</h3>
-                         <ul>
-                             <li>單親加上身為長女，母親忙於工作較沒空管，從小獨立自主、自律，很多事能自行解決</li>
-                             <li>待過的公司共通點是同性質職位只有我一個，沒相關前輩或主管帶，很多事靠自己摸索學習</li>
-                             <li>最初不會前端切排版，憑著對 HTML 和 CSS 的熱忱，在家上網自學而成</li>
-                             <li>當初因標案突要求一定要使用 Bootstrap & RWD 製作網站，即刻上網自學並在期限內順利驗收</li>
-                         </ul>
-                     </div>
-
-
-                     <div class="question" data-bottom-top="transform:translateY(100px);opacity:0"
-                         data-center="transform:translateY(0px);opacity:1">
-                         <h3>細心體貼、擅理解傾聽、有同理心、懂換位思考</h3>
-                         <ul>
-                             <li>曾被主管評過體貼、理解力良好；也曾被合作窗口稱讚都能理解提出的需求並修正</li>
-                             <li>自知身為前端時間管控很重要，重視合作夥伴時間分配，會留意後續工程師作業時間</li>
-                             <li>理解大家都有自己立場，溝通時懂換位思考，盡量想出雙贏方案較好進行有效溝通</li>
-                             <li>搭高鐵下車時會記得收起椅背，讓後座的人也方便下車</li>
-                         </ul>
-                     </div>
-
-                     <div class="question" data-bottom-top="transform:translateY(100px);opacity:0"
-                         data-center="transform:translateY(0px);opacity:1">
-                         <h3>能洞察使用者需求、溝通富彈性，善於團隊合作</h3>
-                         <ul>
-                             <li>重視執行前的溝通，進行充分討論再設計，節省因誤解帶來的非必要調整，不浪費彼此時間</li>
-                             <li>通常修改往返一次完成。即便使用者不知想要的是什麼，也能盡量釐清方向，減少浪費彼此時間</li>
-                             <li>收到建議時，保持開放心態，理性思考，能盡量傾聽，只要合理並具建設性不會固執己見</li>
-                         </ul>
-                     </div>
-
-                     <div class="question" data-bottom-top="transform:translateY(100px);opacity:0"
-                         data-center="transform:translateY(0px);opacity:1">
-                         <h3>認真負責、積極主動</h3>
-                         <ul>
-                             <li>不太需主管督促進度，從前做專案也幾乎很少延遲</li>
-                             <li>盡量謹慎不出錯，萬一有錯會立即反應，想辦法先改進及以解決問題為優先</li>
-                             <li>曾負責公司所有合約、網域管理與追蹤，沒建系統，自己注意續約期限，不需公司督促與提醒</li>
-                         </ul>
-                     </div>
-
-
-                     <div class="question" data-bottom-top="transform:translateY(100px);opacity:0"
-                         data-center="transform:translateY(0px);opacity:1">
-                         <h3>其他關於我的關鍵字</h3>
-                         <ul>
-                             <li>共情能力高，以人為本</li>
-                             <li>擅長挖掘事物的本質</li>
-                             <li>理解複雜概念並化繁為簡</li>
-                             <li>能挖掘事物間的規律與關聯</li>
-                             <li>擁抱開放心態，了解對立資訊並從中獲得新觀點</li>
-                             <li>理性與感性兼具：期許自己看待事情公正客觀，並能兼顧他人感受</li>
-                             <li>深思熟慮：較常用慢想系統回應事情，或許臨場反應不會太快，但輸出的資訊相對較有品質</li>
-                         </ul>
-                     </div>
-
-
-                     <div class="question" data-bottom-top="transform:translateY(100px);opacity:0"
-                         data-center="transform:translateY(0px);opacity:1">
-                         <h3>興趣</h3>
-                         <ul>
-                             <li>閱讀、聽書。類型：心理學、個人成長、職場類、人際溝通、人格養成類</li>
-                             <li>了解多元觀點：瀏覽論壇討論話題，觀看談話或知識型 Youtuber，觀察留言區</li>
-                             <li>聽 Podcast：下一本讀什麼、大人學（職場與理性思考）﹑啟點文化（心理學）﹑<br>
-                                 哇賽心理學﹑思維槓桿、呱吉新資料夾（最新時事與觀點分享）</li>
-                             <li>MBTI 與榮格八維理論：是一個很好促進與人相處的理論框架‧更好去理解跟自己思考和決策模式差很多的人的想法，促進團隊溝通合作</li>
-                             <li><a href="https://icook.tw/users/1816471264" target="_blank">烹飪</a>﹑<a
-                                     href="https://store.line.me/stickershop/author/2492203/zh-Hant"
-                                     target="_blank">畫畫</a>﹑電影﹑動畫﹑遊戲﹑跑步﹑散步
-                             </li>
-                         </ul>
-
-                         <div id="interest_area">
-                             <div class="interest"><img src="img/medal.jpg" alt=""></div>
-                             <div class="interest"><img src="img/cooking_1.jpg" alt=""></div>
-                             <div class="interest"><img src="img/cooking_2.jpg" alt=""></div>
-                             <div class="interest"><img src="img/cooking_3.png" alt=""></div>
-                         </div>
-                     </div>
-
-                 </div>
-
-             </div>
-         </main>
-
- -->
-
-
-     <!-- skrollr -->
-     <script type="text/javascript"
-         src="https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js"></script>
-     <script type="text/javascript">
-         var s = skrollr.init();
-         document.body.id = "skrollr-body"
-     </script>
-
-
-
-<!-- 
-     </div> -->
 
 
 

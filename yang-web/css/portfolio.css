@@ -1177,6 +1177,21 @@ footer {
   }
   
 
+.btn-back a{
+    width: fit-content;
+    padding: 10px 20px;
+    margin: 5vh 0;
+    background: #49494948;
+    border-radius: 5px;
+    border: 2px solid #ffffff73;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 
 @media only screen and (max-width: 1440px) {
 

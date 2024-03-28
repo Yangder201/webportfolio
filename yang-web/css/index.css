@@ -281,7 +281,7 @@ button {
     z-index: 66;
     position: relative;
     background-color: #efefef86;
-    border: solid 2px #ffffff;
+    border: solid 4px #ffffff88;
     color: #606060;
     box-shadow: 0 5px 20px -13px rgb(159 102 42);
 
@@ -675,12 +675,11 @@ mark {
 }
 #info {
     width: 30%;
-    padding-left: 4vw;
+    padding-left: 9vw;
     height: 100vh;
-    padding-top: 35vh;
+    padding-top: 40vh;
     position: relative;
     z-index: 0;
-
 }
 
 

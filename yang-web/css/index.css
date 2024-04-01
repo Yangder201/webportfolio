@@ -1649,11 +1649,22 @@ footer {
 
     #intro-area {
         width: 90vw;
-        height: 90vh;
+        height: fit-content;
         padding-top: 10vh;
+        padding-bottom: 5vh;
         padding-left: 5vw;
         font-size: 4rem;
         background-size: 400px 400px;
+    }
+
+    .intro-tit{
+        font-size: 2.8rem;
+        line-height: 4rem;
+    }
+
+    #intro-area span{
+        font-size: 1.3rem;
+        line-height: 2.5rem !important;
     }
 
     #intro-bg {
@@ -1823,7 +1834,7 @@ footer {
     }
 
     .company-circle{
-        margin-left: -22px;
+        margin-left: -42px;
 
     }
 

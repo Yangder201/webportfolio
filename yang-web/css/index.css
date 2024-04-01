@@ -730,17 +730,18 @@ mark {
 }
 
 .wrap {
-    max-width: 900px;
+    max-width: 850px;
     margin: 0 auto;
 }
 
 .question {
-    margin: 3vh auto 5vh auto;
+    margin: 0 auto 5vh auto;
 }
 
 .question ul {
     padding: 15px 30px;
     line-height: 3rem;
+    font-weight: 500;
 }
 
 .question ul li {
@@ -782,34 +783,60 @@ mark {
 
 
 
-
-/*特質標籤區*/
-
 .trait-area {
-    max-width: 20vw;
+    width: 100%;
+    margin: auto;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-top: 7vh;
 }
 
+.trait-item{
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
 .trait {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-weight: 400;
-    color: #5a5a5a;
-    padding: 5px 10px;
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: 600;
+    padding: 10px 5px;
+    border-bottom: 3px solid #313131;
+    /* border-radius: 10px; */
+    color: #121212;
+}
+
+/* .trait::after {
+    content: '： ';
+} */
+
+.trait-ex-area{
+    width: 100%;
+}
+
+.trait-ex-area ul{
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 1.2rem;
+    line-height: 2rem;
 
 }
 
-.trait::before {
-    content: '# ';
-    font-size: 1rem;
-    font-weight: 300;
-
+.trait-ex-area ul li{
+    list-style-type: none;
+    margin:0px;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    border-bottom: 1px #666666 dashed;
 }
-
 
 
 .name {
@@ -1294,7 +1321,7 @@ h2 {
     height: fit-content;
     width: 100%;
     padding: 10vh 0 0 0;
-    background: radial-gradient(ellipse at center, #ffffff, #fdfdfd);
+    background: radial-gradient(ellipse at center, #ffffff, #f7f7f7);
 }
 
 

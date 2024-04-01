@@ -686,7 +686,7 @@ mark {
 }
 
 #photo {
-    width: 170px;
+    width: 160px;
     height: 100vh;
     margin-left: -5%;
     margin-right: -7.2%;
@@ -883,24 +883,37 @@ mark {
 }
 
 
-#contact-icon-area {
-    width: 30px;
-    height: 3vh;
+#contact-icon-area a{
+    width: 110px;
+    height: 45px;
+    padding: 5px 10px;
+    border: 1px solid #cdbeb3;
+    border-radius: 10px;
+    background: #f3ece8;
+    /* color: #ebb46d; */
     margin-top: 10px;
-    margin-left: 30px;
+    margin-left: 20px;
     font-size: 1rem;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: left;
+    justify-content: center;
+    align-items: center;
 }
 
-#contact-icon-area img {
-    max-width: 25px;
-    margin-left: 15px;
+#contact-icon-area p{
+    padding: 5px;
 }
+
 
 #contact-icon-area a{
-    color: #353535;
+    color: #aa8870;
+}
+
+#contact-icon-area a:hover{
+    background: #e4cabb;
+    color: #645044;
+    border: 1px solid #aa8870;
+
 }
 
 /* 

@@ -665,7 +665,7 @@ mark {
     padding-right: 15vw;
     height: 100vh;
     padding-top: 25vh;
-    background: linear-gradient(321deg, rgb(144 189 215 / 22%) 25%, rgb(255 255 255) 0, rgb(255 211 170) 50%, #fff 0, #dfddd8 75%, rgb(255 196 123 / 24%) 0);
+    background: linear-gradient(321deg, rgb(144 189 215 / 22%) 25%, rgb(255 255 255) 0, rgb(249 229 209) 50%, #fff 0, #dfddd8 75%, rgb(255 196 123 / 24%) 0);
     background-size: 1050px 750px;
     color: #2c2c2c;
  
@@ -1168,7 +1168,7 @@ h2 {
 
 
 .during-work {
-    padding: 5px 15px 0 15px;
+    padding: 5px 15px 0 0;
     border-right: 1px solid #ccc;
     margin-right: 15px;
 }

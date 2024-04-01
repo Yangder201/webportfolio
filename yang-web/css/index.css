@@ -660,13 +660,13 @@ mark {
 
 
 #intro-area {
-    width: 65%;
+    width: 63%;
     padding-left: 15vw;
-    padding-right: 15vw;
+    padding-right: 13vw;
     height: 100vh;
     padding-top: 25vh;
     background: linear-gradient(321deg, rgb(144 189 215 / 22%) 25%, rgb(255 255 255) 0, rgb(249 229 209) 50%, #fff 0, #dfddd8 75%, rgb(255 196 123 / 24%) 0);
-    background-size: 1050px 750px;
+    background-size: 1050px 780px;
     color: #2c2c2c;
  
     /* text-shadow: 13px 6px 10px #9696963d; */
@@ -702,9 +702,9 @@ mark {
 }
 #info {
     width: 30%;
-    padding-left: 9vw;
+    padding-left: 8vw;
     height: 100vh;
-    padding-top: 35vh;
+    padding-top: 38vh;
     position: relative;
     z-index: 0;
 }

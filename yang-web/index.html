@@ -29,29 +29,29 @@
 
 
     <script type="text/javascript">
-        //往下滾動到一定距離，下滑出現固定上方的 主選單
-        window.addEventListener("scroll", function () {
-            var headerFixed = document.getElementById("header-fixed");
-            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        // //往下滾動到一定距離，下滑出現固定上方的 主選單
+        // window.addEventListener("scroll", function () {
+        //     var headerFixed = document.getElementById("header-fixed");
+        //     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-            if (scrollTop > 550) {
-                headerFixed.style.marginTop = "15px";
-            } else {
-                headerFixed.style.marginTop = "-68px";
-            }
-        });
+        //     if (scrollTop > 550) {
+        //         headerFixed.style.marginTop = "15px";
+        //     } else {
+        //         headerFixed.style.marginTop = "-68px";
+        //     }
+        // });
 
-        //手機版 手指滑動偵測 目前好像無效
-        window.addEventListener("touchmove", function (event) {
-            var headerFixed = document.getElementById("header-fixed");
-            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        // //手機版 手指滑動偵測 目前好像無效
+        // window.addEventListener("touchmove", function (event) {
+        //     var headerFixed = document.getElementById("header-fixed");
+        //     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-            if (scrollTop > 450) {
-                headerFixed.style.marginTop = "0";
-            } else {
-                headerFixed.style.marginTop = "-68px";
-            }
-        });
+        //     if (scrollTop > 450) {
+        //         headerFixed.style.marginTop = "0";
+        //     } else {
+        //         headerFixed.style.marginTop = "-68px";
+        //     }
+        // });
 
         //往下滑動至當前 div 時，主選單加上 focus 狀態樣式
         window.addEventListener('scroll', function () {
@@ -153,36 +153,37 @@
         <header id="header-fixed">
             <div id="header-container">
                 <div id="logo">
-                    <a href="#open-bg">RENEE</a>
+                    <a href="#intro-area-bg">RENEE</a>
                 </div>
                 <nav id="cssmenu">
                     <ul>
-                        <li><a href="#intro-area-bg">簡介</a></li>
+                        <li><a href="#intro-area-bg">關於我</a></li>
                         <li><a href="#work-exp-bg">經歷</a></li>
-                        <li><a href="#tool-bg">技能</a></li>
+                        <li><a href="#tool-bg">會什麼</a></li>
                         <li><a href="#skill-bg">專長</a></li>
                         <li><a href="#trait-bg">理念</a></li>
+                        <!-- <li><a href="#intro-bg">特質實例</a></li> -->
                         <li><a href="banner.html">作品</a>
                     </ul>
                 </nav>
             </div>
         </header>
 
-        <div id="open-bg">
+        <!-- <div id="open-bg">
 
             <div id="open-logo"><a href="index.html">RENEE</a></div>
 
 
             <div id="open" data-0="background-color: rgba(255,255,255,0.6)"
-                data-100="background-color: rgba(255,255,255,0.4)">
+                data-200="background-color: rgba(255,255,255,0.4)">
 
                 <h3 class="open-describe" data-0="transform: translateY(0px)" data-300="transform: translateY(30px)">
-                    Web Design Portfolio
+                    Hi! I'm Renee
                 </h3>
 
-                <h1 data-300="transform: translateY(0px)" data-500="transform: translateY(60px)">LESS IS MORE</h1>
+                <h1 data-300="transform: translateY(0px)" data-500="transform: translateY(60px)">A web designer with 8 years of experience.</h1>
                 
-                <!-- <div class="myslogan" data-500="transform: translateY(0px)" data-600="transform: translateY(80px)">網站不只要好看，更要好用</div> -->
+                <div class="myslogan" data-500="transform: translateY(0px)" data-600="transform: translateY(80px)">網站不只要好看，更要好用</div>
 
                 <div class="open-cta-area" data-500="transform: translateY(0px)" data-700="transform: translateY(80px)">
                     <a href="#intro-area-bg">
@@ -204,26 +205,30 @@
                 Nice to meet you
             </div>
 
-        </div>
+        </div> -->
 
 
         <div id="intro-area-bg">
             <aside id="intro-area">
-                RENEE, YANG
+                <div class="intro-tit">找到的人做不久？設計師太過堅持難溝通？搞不懂客戶需求嗎？</div>
+                    <span>
+                        考慮我！我獨立自主、有效率、新事物上手快﹑有即戰力。8 年豐富的網站實戰經驗讓我很擅長理解跟洞察需求。溝通風格富彈性，能很好的進行團隊合作。我精通 HTML、CSS、RWD，並能巧妙運用前端框架，能提供有建設性的設計提案。具同理心讓我總能站在使用者的立場思考，並提供品質穩定、清晰直覺兼具質感的介面設計。
+                    </span>
             </aside>
             <div id="photo" data-bottom-top="opacity:0" data-center="opacity:1">
                 <img src="img/yang2.png" alt="我的照">
             </div>
             <main id="info">
                 <div class="name">楊紫晴</div>
-                <div class="job-title">網站視覺/ UI.UX / 前端</div>
+                <div class="job-title">網站設計/ UI.UX / 前端</div>
                 <ul class="text">
-                    <li>4 年品牌企業．網站視覺</li>
-                    <li>4 年接案公司．網站前端</li>
+                    <li>4 年 B2B 品牌企業．網站視覺</li>
+                    <li>4 年 B2C 接案公司．網站前端</li>
                     <li>亞洲大學 數位媒體設計學系畢</li>
-                    <li>高雄人，定居新北新莊</li>
+                    <li>高雄人，已定居新北新莊</li>
+                    <li>獨立．體貼．溝通富彈性</li>
                     <div id="contact-icon-area">
-                        <a href="mailto:yangder201@gmail.com" title="透過 Email 聯絡我">
+                        <a href="mailto:yangyangmemo@gmail.com" title="透過 Email 聯絡我">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
                                 class="bi bi-envelope" viewBox="0 0 16 16">
                                 <path
@@ -246,10 +251,10 @@
             </main>
         </div>
 
-        <div id="work-exp-bg" data-1000="background-color:rgb(229,204,180)"
-            data-1800="background-color: rgb(247,247,247)" data-2500="background-color: rgb(247,247,247)">
+        <div id="work-exp-bg" data-500="background-color:rgb(33,33,33)" data-800="background-color: rgb(247,247,247)"
+            data-1000="background-color: rgb(247,247,247)">
 
-            <h2 class="center" data-center-top="color: rgb(120,120,120)" data-center-bottom="color: rgb(55,55,55)">
+            <h2 class="center" data-center-top="color: rgb(255,255,255)" data-center-bottom="color: rgb(55,55,55)">
                 大小公司經歷，可獨立作業，也能團隊合作
             </h2>
 
@@ -296,9 +301,7 @@
                         <div class="work-tit-detal">
                             <div class="during-work">4 年 10 個月</div>
                             <div class="company-name">雙欣科技有限公司</div>
-                            <div class="company-describe">
-                                資訊系統服務(Apple 授權企業經銷商)．1~30人
-                            </div>
+                            <div class="company-describe">B2C 資訊系統服務(Apple 授權企業經銷商)．1~30人</div>
 
                         </div>
                     </div>
@@ -448,11 +451,13 @@
                 <div class="skill-area">
                     <div class="skill-tit">設計規劃流程</div>
                     <ul class="skill">
-                        <li>以人為本，注重本質</li>
-                        <li>首先釐清客群及明確目標</li>
-                        <li>清楚的架構規劃與資訊層級</li>
+                        <li>先釐清使用客群及明確目標</li>
+                        <li>競品分析</li>
+                        <li>清晰的架構規劃與資訊層級</li>
                         <li>遵循使用者慣性規劃資訊邏輯</li>
-                        <li>資訊視覺化（化繁為簡）</li>
+                        <li>資訊視覺化直覺呈現（化繁為簡）</li>
+                        <li>素材收集與設計發想</li>
+                        <li>提供高擬真原型</li>
                         <li>重視網站載入速度</li>
                         <li>留意 SEO 關鍵字有效性</li>
                     </ul>
@@ -461,12 +466,12 @@
                 <div class="skill-area">
                     <div class="skill-tit">遵循設計原則</div>
                     <ul class="skill">
-                        <li>設計一致性</li>
-                        <li>直覺實用，再來才是好看</li>
-                        <li>通用 UI 設計原則</li>
-                        <li>色彩心理學運用</li>
+                        <li>設計一致性，降低認知負荷</li>
+                        <li>直覺實用，好用再來才是好看</li>
+                        <li>通用 UI 設計原則，提升易用性</li>
+                        <li>色彩心理學運用，降低認知疲勞</li>
                         <li>完形心理學：留白與間距</li>
-                        <li>少即是多，聚焦重點</li>
+                        <li>少即是多，減少干擾，聚焦重點</li>
                         <li>適當且有意義的動畫效果</li>
                         <li>可互動元件，給予回饋提示</li>
                         <li>icon 的辨識性對易用性的影響</li>
@@ -480,10 +485,10 @@
                         <li>各瀏覽器跑版問題解決</li>
                         <li>無障礙網頁規範修正</li>
                         <li>Adobe Animate 動畫製作</li>
-                        <li>印刷輸出概念</li>
+                        <li>印刷輸出觀念</li>
                         <li>文案撰寫</li>
                         <li>手繪﹑電繪</li>
-                        <li>Chat GPT 輔助使用</li>
+                        <li>ChatGPT﹑Gemini 輔助使用</li>
                         <li>AI 生成圖片輔助使用</li>
                     </ul>
                 </div>
@@ -498,7 +503,7 @@
 
         <div id="trait-bg">
             <h2 class="center" data-bottom-top="transform:translateY(100px);opacity:0"
-                data-center="transform:translateY(0px);opacity:1">網站不只要好看，更要好用</h2>
+                data-center="transform:translateY(0px);opacity:1">設計不只是裝飾，更要好用</h2>
 
             <div class="inside-content" data-bottom-top="transform:translateY(100px);opacity:0"
                 data-center="transform:translateY(0px);opacity:1">
@@ -565,9 +570,7 @@
 
 
 
-        
-
-        
+    
   
 
     

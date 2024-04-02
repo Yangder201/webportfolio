@@ -886,12 +886,11 @@ mark {
 
 #contact-icon-area a{
     width: 110px;
-    height: 45px;
+    height: 40px;
     padding: 5px 10px;
     border: 1px solid #cdbeb3;
-    border-radius: 10px;
+    border-radius: 8px;
     background: #f3ece8;
-    /* color: #ebb46d; */
     margin-top: 10px;
     margin-left: 20px;
     font-size: 1rem;

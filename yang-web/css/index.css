@@ -1162,12 +1162,6 @@ h2 {
     max-width: 100vw;
     margin: auto;
     clear: both;
-    /* background: #BBD2C5; */
-    /* background: #ffffff9c;
-    background: -webkit-linear-gradient(180deg, #42516c, #cce4e8);
-    background: linear-gradient(180deg, #42516c, #cce4e8);
-    background-attachment: fixed; */
-    /* background: linear-gradient(to top, #d2d2d2 0%, #d2d2d2 1%, #dddddd 31%, #dbdbdb 75%, #f1f1f1 100%); */
     background-color: #a9a9a9;
     height: 165vh;
     padding-top: 10vh;
@@ -1596,6 +1590,10 @@ footer {
     }
 
 
+    #work-exp-bg {
+        height: fit-content;
+    
+    }
 
     
 .open-cta-area {
@@ -1669,8 +1667,11 @@ footer {
         border-radius: 0;
         z-index: 100;
         margin-top: 0;
- 
+
     }
+
+
+
 
     #header-container{
         max-width: 100vw;
@@ -1710,7 +1711,7 @@ footer {
 
     #intro-bg {
         padding: 10vw;
-        width: 90vw;
+        width: 100vw;
     }
 
     #info {
@@ -1910,7 +1911,7 @@ footer {
 
     #trait {
         margin: auto;
-        width: 85%;
+        width: 90%;
         height: fit-content;
         padding: 0 0 5vh 0;
     }

@@ -1432,6 +1432,29 @@ footer {
 }
 
 
+.btn-mywork a{
+    width: fit-content;
+    padding: 15px 30px;
+    margin: 5vh auto;
+    background: #ffffff48;
+    border-radius: 8px;
+    border: 2px solid #272727a6;
+    color: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.btn-mywork a:hover{
+    background: #272727f6;
+    border: 2px solid rgba(41, 41, 41, 0.808);
+    color: #ffffff;
+}
+
+
+
 @media only screen and (max-width: 1440px) {
 
 

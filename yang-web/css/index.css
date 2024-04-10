@@ -1452,6 +1452,15 @@ footer {
         max-width: 85vw;
     }
 
+    #work-exp-bg {
+        height: fit-content;
+
+    }
+
+    #trait-bg{
+        height: fit-content;
+    }
+
     #intro-area {
         width: 65vw;
         min-height: 60vh;
@@ -1491,6 +1500,15 @@ footer {
         padding: 5vh 0;
     }
 
+    #skill{
+        width: 100%;
+        height: fit-content;
+    }
+
+    .skill-area{
+        width: 28%;
+    }
+
 }
 
 
@@ -1519,6 +1537,14 @@ footer {
         font-weight: 500;
         line-height: 2.5rem !important;
     }
+
+
+    .skill-area{
+        width: 40%;
+        margin-bottom: 5vh;
+    }
+
+
 }
 
 
@@ -1864,10 +1890,11 @@ footer {
     }
 
     .skill-area {
-        width: 100vw;
+        width: 60vw;
         padding: 30px 25px;
         min-height: auto;
-        margin-bottom: 15px;
+        margin-top: 5vh;
+        margin-bottom: 3vh;
     }
 
     .skill li {
@@ -2202,6 +2229,14 @@ footer {
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
+    }
+
+    .skill-area {
+        width: 90vw;
+        padding: 30px 25px;
+        min-height: auto;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
     }
     
 

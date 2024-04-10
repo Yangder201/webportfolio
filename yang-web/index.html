@@ -53,6 +53,13 @@
         //     }
         // });
 
+        //首頁第一個主選單預設 focus
+        window.addEventListener('DOMContentLoaded', function () {
+            removeFocusFromMenuItems(menuItems);
+            var firstMenuItem = document.querySelector('#cssmenu ul li:first-child a');
+            firstMenuItem.parentNode.classList.add('focus');
+        });
+
         //往下滑動至當前 div 時，主選單加上 focus 狀態樣式
         window.addEventListener('scroll', function () {
             var scrollPosition = window.scrollY;
@@ -75,9 +82,6 @@
                 item.parentNode.classList.remove('focus');
             });
         }
-
-
-
 
         //錨點滑動 
 
@@ -157,7 +161,7 @@
                 </div>
                 <nav id="cssmenu">
                     <ul>
-                        <li><a href="#intro-area-bg">關於我</a></li>
+                        <li class="focus"><a href="#intro-area-bg">關於我</a></li>
                         <li><a href="#work-exp-bg">經歷</a></li>
                         <li><a href="#tool-bg">會什麼</a></li>
                         <li><a href="#skill-bg">設計流程</a></li>
@@ -175,11 +179,24 @@
             <aside id="intro-area">
                 <div class="intro-tit">找到的人做不久？設計師太過堅持難溝通？搞不懂客戶需求嗎？</div>
                 <span>
-                    考慮我！我有 8 年豐富的網站實戰經驗讓我很擅長理解跟洞察需求。溝通風格富彈性，能很好的進行團隊合作。我精通
-                    HTML、CSS、RWD，並能巧妙運用前端框架，能提供有建設性的設計提案。
+                    考慮我！我有 8 年豐富的網站實戰經驗讓我很擅長理解跟洞察需求。溝通風格富彈性，能很好的進行團隊合作。
+                    我精通 HTML、CSS、RWD，並能巧妙運用前端框架，能提供有建設性的設計提案。
                     具同理心讓我總能站在使用者的立場思考，並提供品質穩定、資訊傳達清晰﹑直覺易用兼具質感的介面設計。
                 </span>
+
+                
+                <div class="next-btn" >
+                    <a href="#work-exp-bg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" />
+                        </svg></a>
+                </div>
+
             </aside>
+
+
             <div id="photo" data-bottom-top="opacity:0" data-center="opacity:1">
                 <img src="img/yang2.png" alt="我的照">
             </div>
@@ -206,15 +223,7 @@
                     </div>
                 </ul>
 
-                <!-- <div class="next-btn">
-                    <a href="#work-exp-bg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
-                            class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" />
-                        </svg></a>
-                </div> -->
-
+                
             </main>
         </div>
 
@@ -274,7 +283,7 @@
                         </div>
                     </div>
                     <div class="work-detal">
-                        網站設計接案公司，客製化不套版，專案流程完整。一樣同性質職位只有自己。<br>
+                        網站設計接案公司，客製化不套版，專案流程完整。同性質職位只有自己。<br>
                         在這間公司起薪才2萬低的可憐，自己爭取22k方案，陸續加薪，最終加薪幅度達 75%。
                         <ul>
                             <li>客戶需求討論、網站架構規劃、報價</li>
@@ -412,9 +421,13 @@
 
 
         <div id="skill-bg">
-            <h2 class="center" data-center-top="color: rgb(120,120,120)" data-center-bottom="color: rgb(55,55,55)">
-                完整專案流程訓練，遵循 UI/UX 設計原則
-            </h2>
+            <h2 class="center"data-bottom-top="transform:translateY(30px);opacity:0"
+            data-center="transform:translateY(0px);opacity:1">
+                完整專案流程訓練，遵循 UI/UX 設計原則</h2>
+            <h3 data-bottom-top="transform:translateY(130px);opacity:0"
+                data-center="transform:translateY(10px);opacity:1">我所了解的設計知識與概念</h3>
+
+
             <main id="skill" data-bottom-top="transform:translateY(100px);opacity:0"
                 data-center-top="transform:translateY(0px);opacity:1">
                 <div class="skill-area">
@@ -471,8 +484,10 @@
 
 
         <div id="trait-bg">
-            <h2 class="center" data-bottom-top="transform:translateY(100px);opacity:0"
+            <h2 data-bottom-top="transform:translateY(100px);opacity:0"
                 data-center="transform:translateY(0px);opacity:1">設計不只是裝飾，更要好用</h2>
+            <h3 data-bottom-top="transform:translateY(120px);opacity:0"
+                data-center="transform:translateY(0px);opacity:1">大多數作品在思考設計規劃時都以下面幾個核心理念為原則，在此統一說明。</h3>
 
             <div class="inside-content" data-bottom-top="transform:translateY(100px);opacity:0"
                 data-center="transform:translateY(0px);opacity:1">
@@ -543,6 +558,8 @@
 
             <h2 class="center" data-bottom-top="transform:translateY(100px);opacity:0"
                 data-center="transform:translateY(0px);opacity:1">特質與實例</h2>
+            <h3 data-bottom-top="transform:translateY(120px);opacity:0"
+                data-center="transform:translateY(0px);opacity:1">更具體的了解我的性格與行動</h3>
 
             <main id="trait">
                 <div class="wrap">
@@ -554,7 +571,7 @@
                             <ul>
                                 <li>我了解員工跟公司之間是互利共生的關係，公司賺錢，員工也才能跟著賺錢，反之亦然</li>
                                 <li>第一份起薪很慘只有 2 萬，提議公司去申請 22k 方案補助，未入職就幫公司省 6 萬，我也加薪</li>
-                                <li>以前 Flash 遊戲專案都外包，利潤低。公司並未要求，我在時間許可下，主動研究外包回來的技術，
+                                <li>以前互動遊戲專案都外包，利潤低。公司並未要求，我在時間許可下，主動研究外包回來的技術，
                                     該專案每半年固定發案，後續自己接下來做，一個專案執行約一個半月就幫公司扎實賺進 9 萬多，自己也有分紅獎勵</li>
                                 <li>即便只是小事也用心，像是名片印刷或公司採買軟體時，自己貨比三家，確保是最佳利益</li>
                             </ul>

@@ -1361,6 +1361,7 @@ h3 {
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
+    margin-top: 2vh;
 }
 
 .intro-pic {

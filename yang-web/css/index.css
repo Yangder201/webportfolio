@@ -1259,6 +1259,15 @@ h2 {
     padding: 4vh 0 2vh 0;
 }
 
+
+.yellow{
+    color: #dbae5d;
+}
+
+.gray{
+    color: #b9b9b9;
+}
+
 h3 {
     font-size: 1.2rem;
     font-weight: 500;
@@ -1369,7 +1378,8 @@ h3 {
     padding-top: 10vh;
     /* background-image: linear-gradient(to top, #e0e0e0 0%, #e9e9e9 1%, #e4e4e4 31%, #dbad8a 75%, #9f6565 100%); */
     /* background: linear-gradient(179deg, #acd2e9, #ffd9b6, #fff6e6); */
-    background: linear-gradient(179deg, #b8d3e1, #eddfd2, #fff6e6);
+    /* background: linear-gradient(179deg, #b8d3e1, #eddfd2, #fff6e6); */
+    background: linear-gradient(179deg, #232323, #2b2b2b, #9d855b);
     background-attachment: fixed;
     border-top: #f7f7f7e1 1px solid;
     border-bottom: #f7f7f7e1 1px solid;

@@ -71,21 +71,24 @@ img {
 }
 
 
+
+/* 卷軸顏色 */
+
 ::-webkit-scrollbar {
     width: 15px;
     background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(248, 248, 248, 0.753);
-    border-radius: 999px;
+    background-color: rgba(61, 61, 61, 0.753);
+    border-radius: 100px;
     border: 5px solid transparent;
     background-clip: content-box;
 
 }
 
 ::-webkit-scrollbar-track-piece {
-    background: #c5c5c5;
+    background: #eeeeee;
 }
 
 

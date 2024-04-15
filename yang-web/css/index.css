@@ -2416,10 +2416,14 @@ footer {
     }
 
     #intro-area span {
-        font-size: 1.3rem;
-        line-height: 2.3rem !important;
+        font-size: 1.1rem;
+        line-height: 2.2rem !important;
     }
 
+    #photo {
+
+        padding-top: 3vh;
+    }
 
     .trait-item {
         margin: 2vh auto;
@@ -2503,7 +2507,8 @@ footer {
     }
 
     .intro-tit{
-        font-size: 2.5rem;
+        font-size: 2.3rem;
+        line-height: 3rem;
     }
 
 

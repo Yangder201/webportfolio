@@ -841,14 +841,14 @@ mark {
     letter-spacing: 2pt;
 }
 
-/* .name::after{
+.name::after{
     content: 'Renee, Yang';
     padding-left: 7px;
     font-size: 1.1rem;
     font-weight: 500;
     line-height: 3rem;
     letter-spacing: .5pt;
-} */
+}
 
 .job-title {
     font-size: 1.1rem;
@@ -1408,7 +1408,7 @@ h3 {
 .skill-area {
     width: 25%;
     margin: 0 12px;
-    min-height: 505px;
+    min-height: 440px;
     background: #ffffffd9;
     border: 1px solid #fff;
     padding: 30px;
@@ -1619,10 +1619,10 @@ h3 {
 }
 
 .thank {
-    max-width: 800px;
-    margin: 15vh auto 0 auto;
-    padding: 5vh auto;
+    max-width: 600px;
+    margin: 10vh auto 0 auto;
     text-align: center;
+    line-height: 1.7rem;
 
 }
 
@@ -1737,6 +1737,199 @@ footer {
     border: 2px solid rgba(41, 41, 41, 0.808);
     color: #ffffff;
 }
+
+
+
+
+
+/*--------------------------------風琴收合作品集區塊--------------------------------------*/
+
+
+
+#case-area {
+    width: 100%;
+    height: 105vh;
+    padding-top: 11vh;
+    position: relative;
+    background: linear-gradient(87deg, #2b2b2b, #1c1c1c);
+}
+
+
+#case {
+    display: none;
+
+}
+
+.case-box {
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+    background: #2a2b2b;
+    border: #cccccc 1px solid;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.case {
+    width: 85vw;
+    height: 70vh;
+    display: flex;
+    gap: 7px;
+    margin: auto;
+}
+
+
+.case .item {
+    flex: 1 1;
+    border-radius: 20px;
+    overflow: hidden;
+    background-size: cover;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    transition: .3s ease-out;
+    border: 3px solid #a5a5a530;
+}
+
+
+.case .item a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    background: #0000007a;
+    transition: .3s ease-in-out;
+}
+
+
+.case .item a:hover {
+    width: 100%;
+    height: 100%;
+    background: none;
+    transition: .3s ease-in-out;
+}
+
+
+.case .item:hover {
+    border-radius: 10px;
+    border: #171717a6 4px solid;
+    transition: .3s ease-in-out;
+    background-position: top;
+}
+
+
+.case .item1 {
+    flex: 4 1;
+}
+
+
+.case-tit {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    z-index: 88;
+    opacity: 1;
+
+}
+
+
+.case-info {
+    position: relative;
+    /* margin-bottom: -49.5vh; */
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    color: #ffffff;
+    z-index: 88;
+    opacity: 1;
+
+}
+
+.case .item:hover .case-tit {
+    opacity: 0;
+    transition-delay: .2s;
+    transition-duration: .4s;
+}
+
+.case .item:hover .case-info {
+    opacity: 0;
+    transition-duration: .4s;
+}
+
+
+.case .item:hover .case-tit.case-info {
+    opacity: 1;
+}
+
+.case .item:nth-child(1) {
+    background-image: url(../portfolio/page/000.jpg);
+
+}
+
+.case .item:nth-child(2) {
+    background-image: url(../portfolio/page/001.jpg);
+}
+
+
+.case .item:nth-child(3) {
+    background-image: url(../portfolio/page/004.jpg);
+}
+
+.case .item:nth-child(4) {
+    background-image: url(../portfolio/page/007.jpg);
+}
+
+
+
+
+.case-box a {
+    max-width: 100%;
+    padding-top: 43.2vh;
+    height: auto;
+    position: relative;
+    z-index: 80;
+    display: block;
+    opacity: .5;
+
+}
+
+.case-box a:hover {
+    opacity: 1;
+    color: #ffffff;
+    text-shadow: 3px 3px 15px #5b5b5b8d;
+
+}
+
+.light {
+    color: #f1f1f1;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.tit-en {
+    font-size: .9rem;
+    line-height: 2rem;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    padding-top: 5px;
+    color: #dbdbdb;
+}
+
+
+
+
+
+
+
+
 
 
 

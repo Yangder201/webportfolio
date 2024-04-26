@@ -420,7 +420,7 @@ h1 {
 mark {
     padding: 2px 1px;
     border-radius: 5px;
-    background: linear-gradient(transparent 25%, rgba(255, 255, 255, 0) 50%, #ffffff 65%, #ffee6a 85%, transparent 90%)
+    background: linear-gradient(transparent 25%, rgba(255, 255, 255, 0) 50%, #ffffff 65%, #eee17c62 85%, transparent 90%)
 }
 
 

@@ -1309,6 +1309,7 @@ h3 {
     padding-top: 5vh;
     border-top: 2px solid #ffffff;
     position: relative;
+    border-bottom: #f7f7f7e1 1px solid;
 }
 
 
@@ -1391,7 +1392,6 @@ h3 {
     /* background: linear-gradient(179deg, #232323, #2b2b2b, #9d855b); */
     background: linear-gradient(179deg, #8f8f8f, #eddfd2, #fff6e6);
     background-attachment: fixed;
-    border-top: #f7f7f7e1 1px solid;
     border-bottom: #f7f7f7e1 1px solid;
     position: relative;
 }

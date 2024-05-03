@@ -204,12 +204,15 @@ button {
 
 
 #header-fixed {
-    /* background: linear-gradient(90deg, #000000bf, #291f12f2); */
+    /* background: linear-gradient(90deg, #f3e2d894, #e7cfa9bf);
+    border: 3px solid #ffffffb8; */
+
     background: linear-gradient(90deg, #ffffff94, #d3d3d3bf);
+    /* background: linear-gradient(90deg, #000000bf, #291f12f2); */
     /* background: linear-gradient(90deg, #ffffffb8, #efefeff5); */
     backdrop-filter: blur(3.1px);
     -webkit-backdrop-filter: blur(3.1px);
-    border-bottom: 1px solid #ffffffb8;
+    /* border-bottom: 1px solid #ffffffb8; */
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.13);
     width: 80vw;
     left: 10vw;
@@ -625,7 +628,7 @@ mark {
 }
 
 #logo a {
-    color: #4d4d4d !important;
+    color: #1e1e1e !important;
 }
 
 #logo a:hover {
@@ -656,7 +659,7 @@ mark {
     padding-right: 12vw;
     height: 100vh;
     padding-top: 30vh;
-    background: linear-gradient(321deg, rgb(144 189 215 / 22%) 25%, rgb(255 255 255) 0, rgb(249 229 209) 50%, #fff 0, #dfddd8 75%, rgb(255 196 123 / 24%) 0);
+    background: linear-gradient(321deg, rgb(144 189 215 / 22%) 25%, rgb(255 255 255) 0, rgb(255 246 238) 50%, #fff 0, #dfddd8 75%, rgb(255 196 123 / 24%) 0);
     background-size: 1050px 780px;
     color: #2c2c2c;
 

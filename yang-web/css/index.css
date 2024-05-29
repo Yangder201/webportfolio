@@ -625,30 +625,30 @@ mark {
 #logo {
     padding: 23px;
     width: 25%;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: bold;
     position: relative;
     z-index: 88;
     float: left;
 
-    animation-name: loading;
+    /* animation-name: loading;
     animation-duration: 0.3s;
     animation-delay: 1.8s;
     animation-iteration-count: 1;
     animation-timing-function: ease;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
-
+/* 
 @keyframes loading {
     0% {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
     100% {
         font-size: 1.3rem;
     }
-}
+} */
 
 
 #logo a {

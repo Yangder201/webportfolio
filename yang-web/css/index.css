@@ -230,7 +230,7 @@ button {
     overflow: hidden;
     opacity: 0;
 
-    animation: index_open 1.5s ease 2s 1 forwards;
+    animation: index_open 1.5s ease 1.5s 1 forwards;
     /* animation-duration: 1.5s;
     animation-delay: 0;
     animation-iteration-count: 1;
@@ -241,7 +241,7 @@ button {
 
 @keyframes index_open {
     0% {
-        top: 2vh;
+        top: 1vh;
         width: 70vw;
         opacity: 0;
     }
@@ -625,25 +625,29 @@ mark {
 #logo {
     padding: 23px;
     width: 25%;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-weight: bold;
     position: relative;
     z-index: 88;
     float: left;
 
-    /* animation-name: loading;
-    animation-duration: 0.5s;
-    animation-delay: 0s;
+    animation-name: loading;
+    animation-duration: 0.3s;
+    animation-delay: 1.8s;
     animation-iteration-count: 1;
     animation-timing-function: ease;
-    animation-fill-mode: forwards; */
+    animation-fill-mode: forwards;
 }
 
 
 @keyframes loading {
-    0% {}
+    0% {
+        font-size: 1.6rem;
+    }
 
-    100% {}
+    100% {
+        font-size: 1.3rem;
+    }
 }
 
 
@@ -721,7 +725,7 @@ mark {
     padding: 0 0 30px 0;
     /* color: #485077; */
     opacity: 0;
-    animation: open-tit 1s ease 0s .5 forwards;
+    animation: open-tit .8s ease 0s 1 forwards;
 
 }
 
@@ -746,7 +750,7 @@ mark {
     line-height: 2.8rem !important;
     color: #494949;
     opacity: 0;
-    animation: open-t 1s ease .8s .8 forwards;
+    animation: open-t 1s ease .5s 1 forwards;
 
 }
 
@@ -782,7 +786,7 @@ mark {
     border-radius: 100%;
 
     opacity: 0;
-    animation: index-photo 1s ease 1.3s 1 forwards;
+    animation: index-photo 1s ease 1s 1 forwards;
 
 }
 
@@ -807,7 +811,7 @@ mark {
     z-index: 0;
 
     opacity: 0;
-    animation: index-info .7s ease 1.5s 1 forwards;
+    animation: index-info .7s ease 1.2s 1 forwards;
 
 }
 

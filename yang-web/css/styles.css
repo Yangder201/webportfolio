@@ -36,7 +36,7 @@
   height: 65px;
   opacity: 0;
 
-  animation: open_menu .8s ease .5s 1 forwards;
+  animation: open_menu .7s ease 2s 1 forwards;
 
 
 }

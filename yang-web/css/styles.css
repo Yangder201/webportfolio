@@ -34,7 +34,25 @@
 #cssmenu {
   line-height: 1;
   height: 65px;
+  opacity: 0;
 
+  animation-name: open_menu;
+  animation-duration: .8s;
+  animation-delay: .5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes open_menu {
+  0%{
+      opacity: 0;
+  }
+
+  100%{
+     opacity: 1;
+  }
 }
 
 /* #menu-line {

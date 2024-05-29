@@ -36,12 +36,8 @@
   height: 65px;
   opacity: 0;
 
-  animation-name: open_menu;
-  animation-duration: .8s;
-  animation-delay: .5s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
+  animation: open_menu .8s ease .5s 1 forwards;
+
 
 }
 

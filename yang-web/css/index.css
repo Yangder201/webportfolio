@@ -211,9 +211,10 @@ button {
 
 
 #header-fixed {
-    background: linear-gradient(90deg, #ffffff94, #d3d3d3bf);
-    backdrop-filter: blur(3.1px);
-    -webkit-backdrop-filter: blur(3.1px);
+    /* background: linear-gradient(90deg, #ffffff94, #d3d3d3bf); */
+    background: #ffffff54;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.13);
     width: 75vw;
     border-radius: 15px;
@@ -394,7 +395,7 @@ h1 {
     letter-spacing: .1pt;
     font-weight: bold;
     margin: auto;
-    color: #2d2d2d;
+    color: #0f0f0f;
 
 }
 
@@ -743,6 +744,7 @@ mark {
     font-size: 1.3rem;
     font-weight: 400;
     line-height: 2.8rem !important;
+    color: #494949;
     opacity: 0;
     animation: open-t 1s ease .8s .8 forwards;
 

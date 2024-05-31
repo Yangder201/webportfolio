@@ -130,25 +130,20 @@
             });
         });
 
+        //手機板選單
+        $(document).ready(function () {
+            $(".btn_menu-m").click(function () {
+                $("#header-m").slideToggle(300);
+            });
+        });
+
+        $(document).ready(function () {
+            $("#btn-area-m li").click(function () {
+                $("#header-m").css("display", "none");
+            });
+        });
 
 
-        // document.addEventListener("DOMContentLoaded", function() {
-        //     const text = "＃獨立 ＃體貼 ＃擅理解 ＃同理心 ＃換位思考 ＃溝通富彈性 ＃高效";
-        //     let i = 0;
-        //     const speed = 30; // 打字速度（毫秒）
-
-        //     function typeWriter() {
-        //         if (i < text.length) {
-        //             document.getElementById("slogan").innerHTML += text.charAt(i);
-        //             i++;
-        //             setTimeout(typeWriter, speed);
-        //         }
-        //     }
-
-        //     typeWriter();
-        // });
-
-        
     </script>
 
 
@@ -157,6 +152,37 @@
 
 <body>
 
+    <div class="btn_menu-m">≡</div>
+    <!-- 手機版選單 -->
+    <div id="header-m">
+        <div id="btn-area-m">
+            <li><a href="#intro-area-bg">關於我</a></li>
+            <li><a href="#work-exp-bg">經歷</a></li>
+            <li><a href="#tool-bg">會什麼</a></li>
+            <li><a href="#skill-bg">設計流程</a></li>
+            <li><a href="#trait-bg">設計理念</a></li>
+            <li><a href="banner.html">作品集</a></li>
+        </div>
+    </div>
+
+    <header id="header-fixed">
+        <div id="header-container">
+            <div id="logo">
+                <a href="index.html">RENEE</a>
+            </div>
+            <nav id="cssmenu">
+                <ul>
+                    <li class="focus"><a href="#intro-area-bg">關於我</a></li>
+                    <li><a href="#work-exp-bg">經歷</a></li>
+                    <li><a href="#tool-bg">會什麼</a></li>
+                    <li><a href="#skill-bg">設計流程</a></li>
+                    <li><a href="#trait-bg">設計理念</a></li>
+                    <li><a href="banner.html">作品集</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
     <div id="skrollr-body">
 
         <div id="gotop">
@@ -165,24 +191,6 @@
 
 
 
-        <header id="header-fixed">
-            <div id="header-container">
-                <div id="logo">
-                    <a href="index.html">RENEE</a>
-                </div>
-                <nav id="cssmenu">
-                    <ul>
-                        <li class="focus"><a href="#intro-area-bg">關於我</a></li>
-                        <li><a href="#work-exp-bg">經歷</a></li>
-                        <li><a href="#tool-bg">會什麼</a></li>
-                        <li><a href="#skill-bg">設計流程</a></li>
-                        <li><a href="#trait-bg">設計理念</a></li>
-                        <li><a href="banner.html">作品集</a></li>
-                    </ul>
-                   
-                </nav>
-            </div>
-        </header>
 
 
 
@@ -570,14 +578,14 @@
                         使用者來網站不外乎是找尋他需要的資訊，因此設計的首要目標是幫助使用者快速找到所需內容，再來才是美化為良好體驗加分，而不是過度裝飾。
                     </p>
                 </div>
-            </div>     
-    
+            </div>
+
         </div>
 
 
-      
 
-  <footer>Copyright © RENEE</footer>
+
+        <footer>Copyright © RENEE</footer>
 
         </main>
 

@@ -42,12 +42,12 @@
 }
 
 @keyframes open_menu {
-  0%{
-      opacity: 0;
+  0% {
+    opacity: 0;
   }
 
-  100%{
-     opacity: 1;
+  100% {
+    opacity: 1;
   }
 }
 
@@ -107,7 +107,7 @@
   transition: color .2s ease;
 }
 
-#cssmenu>ul>li:hover>a{
+#cssmenu>ul>li:hover>a {
   /* background: #537c89; */
   /* border-bottom: #ffa12dd1 3px solid; */
   background: #ffffff42;
@@ -125,7 +125,7 @@
 #cssmenu>ul>li.active>a:hover {
   color: #343434;
   background: #f3f3f371;
-  
+
 
 }
 
@@ -135,7 +135,7 @@
   transition: .7s;
 } */
 
-.focus{
+.focus {
   background: #ffffff;
   border-radius: 10px;
   transition: .7s;
@@ -266,6 +266,22 @@
   border-color: #ffffff;
 }
 
+
+
+@media only screen and (max-width: 1440px) {
+
+
+
+  #cssmenu {
+    line-height: 1;
+    height: 65px;
+    opacity: 1;
+
+    animation: none;
+  }
+
+}
+
 @media all and (max-width: 768px),
 only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px),
 only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px),
@@ -358,7 +374,7 @@ only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
-  
+
   }
 
   #cssmenu #menu-button::after {
@@ -416,7 +432,7 @@ only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
     display: block;
     width: 11px;
     height: 2px;
-    background:  rgb(85, 85, 85);
+    background: rgb(85, 85, 85);
     z-index: 99;
   }
 

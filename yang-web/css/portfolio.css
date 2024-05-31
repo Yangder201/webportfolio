@@ -101,6 +101,36 @@ img {
 }
 
 
+
+.btn_close-m {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #353535;
+    background: #ffffff;
+    position: absolute;
+    right: -1px;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.btn_close-m:hover{
+    opacity: .8;
+}
+
+
+.btn_menu-m {
+display: none;
+}
+
+
 ::-webkit-scrollbar {
     width: 15px;
     background-color: transparent;
@@ -204,6 +234,11 @@ img {
     border-radius: 8px;
 
 }
+
+#btn-area-bg-m{
+    display: none;
+}
+
 
 #portfolio{
     width: 100vw;
@@ -1328,7 +1363,7 @@ footer {
         width: 45%;
     }
     
-
+    .btn-box
     #btn-area-bg{
         width: 50%;
         height: fit-content;
@@ -1357,29 +1392,15 @@ footer {
 
 
     #btn-area-bg{
-        width: 65%;
+        width: 50%;
         height: fit-content;
         padding-bottom: 10vh;
     }
 
-    .btn-box{
-        width: 40%;
-    }
-    .btn-box-now{
-        width: 40%;
-    }
 
-    .btn-box-all{
-        width: 85%;
-    }
-
-
-    .btn_menu {
-        display: none
-    }
 
     #m-header {
-        display: block;
+        display: none;
         width: 100%;
         height: 70px;
         background: linear-gradient(90deg, #ffffffcc, #e3e3e3);
@@ -1429,22 +1450,24 @@ footer {
     }
 
 
-    #btn-area-bg {
-        display: none;
+    .btn-box{
+        width: 80%;
     }
 
+
     #btn-area {
-        width: 80%;
+        width: 100%;
         margin: 10px auto;
+
     }
 
     .btn-box-now {
-        width: 46%;
+        width: 40%;
         border-radius: 6px;
     }
 
     .btn-box {
-        width: 46%;
+        width: 40%;
         border-radius: 6px;
         border: 2px solid #ffffff;
     }
@@ -1495,6 +1518,81 @@ footer {
 }
 
 @media only screen and (max-width: 426px) {
+    .btn_menu-m{
+        display: flex;
+        width: 60px;
+        height: 60px;
+        font-size: 35px;
+        font-weight: 500;
+        color: #333;
+        position: fixed;
+        right: 5px;
+        top: 5px;
+        z-index: 99;
+        justify-content: center;
+        align-items: center;
+        /* border: #ffffff solid 2px; */
+        text-align: center;
+        cursor: pointer;
+        border-radius: 2px;
+        transition: background .5s;
+    }
+
+    #btn-area-bg-m {
+        display: none;
+        margin-top: 100%;
+        width: 100%;
+        float: left;
+        height: 100vh;
+        margin-top: 10vh;
+        font-size: 1rem;
+        position: fixed;
+        z-index: 88;
+        background: linear-gradient(90deg, #dedede, #d5d5d5ba);
+        backdrop-filter: blur(3.1px);
+        -webkit-backdrop-filter: blur(3.1px);
+        border-right: 1px solid #fff;
+        box-shadow:4px 4px 18px -10px #696969;
+        background: #292929;
+    }
+    
+    #btn-area-m {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+
+    
+.btn-box-m {
+    width: 100%;
+    height: 65px;
+    margin: 3px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+
+}
+
+.btn-box-m a {
+    width: 100%;
+    height: 65px;
+    background: #fbfbfbcf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(63, 63, 63);
+    font-weight: 500;
+    border-radius: 5px;
+    transition: .1s;
+    -webkit-transition: .1s;
+    border: 1px solid #ffffffe7
+}
 
 
     #m-header {
@@ -1504,7 +1602,7 @@ footer {
         background: linear-gradient(90deg, #ffffffcc, #e3e3e3);
         border-bottom: 2px solid #d6d6d6;
         position: fixed;
-        z-index: 88;
+        z-index: 98;
     }
 
     #m-logo {
@@ -1519,6 +1617,9 @@ footer {
 
     }
 
+    .btn_menu{
+        display: none;
+    }
 
 
 
@@ -1541,6 +1642,23 @@ footer {
         width: 46%;
         border-radius: 6px;
     }
+
+    .btn-box-now-m {
+        width: 100%;
+        border-radius: 5px;
+        height: 65px;
+        margin: 3px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #ffffff53;
+        font-weight: 500;
+        font-size: 1.1rem;
+        color: rgb(167 167 167);
+        cursor: default;
+    }
+
+
 
     .btn-box {
         width: 46%;

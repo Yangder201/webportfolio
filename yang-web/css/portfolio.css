@@ -820,7 +820,7 @@ mark {
     background: #1b1b1b;
     width: 46%;
     height: fit-content;
-    margin: 15px;
+    margin: 25px 15px;
     border-radius: 6px;
     overflow: hidden;
     position: relative;
@@ -1451,17 +1451,15 @@ footer {
 
     .box {
         width: 85vw;
-        margin: 5px;
     }
 
     .box2 {
-        width: 93%;
+        width: 85vw;
         
     }
 
     .box3 {
-        width: 80vw;
-        margin: 15px;
+        width: 85vw;
     }
 
     .box4 {

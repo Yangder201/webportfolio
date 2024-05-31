@@ -32,16 +32,14 @@
 	<script src="js/bootstrap.min.js" type="text/javascript"></script>
 	<script src="js/jquery.isotope.min.js" type="text/javascript"></script>
 
-<!-- fancybox CDN -->
+	<!-- fancybox CDN -->
 	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-	<link
-	  rel="stylesheet"
-	  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
-	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
 
 
 	<script type="text/javascript">
-	//go to top
+		//go to top
 		$(function () {
 			$("#gotop").click(function () {
 				jQuery("html,body").animate({
@@ -57,7 +55,7 @@
 			});
 		});
 
-	//左選單收合
+		//左選單收合
 		$(document).ready(function () {
 			$(".btn_menu").click(function () {
 				$("#btn-area-bbg").show(5);
@@ -118,12 +116,12 @@
 	<div id="btn-area-bg">
 		<div class="btn_close">×</div>
 
-			<div id="logo">
-				<a href="index.html">YANG</a>
-			</div>
-			<div class="portfolio-tit">Portfolio</div>
+		<div id="logo">
+			<a href="index.html">YANG</a>
+		</div>
+		<div class="portfolio-tit">Portfolio</div>
 		<div id="btn-area">
-			
+
 			<div class="btn-box-now">Banner</div>
 			<div class="btn-box"><a href="product.html">產品頁</a></div>
 			<div class="btn-box"><a href="page.html">大型專案</a></div>
@@ -145,529 +143,111 @@
 				有新品 Banner / 得獎 Banner / email Banner，以及官網主圖 Hero Image 改版</p>
 		</div>
 
-		  
-		<div class="box">
-			<a class="fancybox" href="portfolio/banner/heroimage001.jpg" title="官網主視覺改版">
-				<img src="portfolio/banner/heroimage001.jpg" alt="banner" />
-			</a>
-		</div>
 
-		<div class="box3">
-			<a class="fancybox" href="portfolio/banner/heroimage001b.jpg" title="官網主視覺改版">
-				<img src="portfolio/banner/heroimage001b.jpg" alt="banner" />
-			</a>
-		</div>
+		<div id="portfolio"></div>
+
+		<script>
+			var portfolioDiv = document.getElementById('portfolio');
+
+			const images = [
+				{ className: 'box', href: 'heroimage001.jpg', alt: '官網主視覺改版' },
+				{ className: 'box3', href: 'heroimage001b.jpg', alt: '官網主視覺改版' },
+				{ className: 'box3', href: 'heroimage001c.jpg', alt: '官網主視覺改版' },
+				{ className: 'box3', href: 'heroimage004.jpg', alt: '官網主視覺改版' },
+				{ className: 'box', href: '001.png', alt: '強調藍芽連線 & 科技感' },
+				{ className: 'box2', href: '002.png', alt: '強調科技感與細緻音質' },
+				{ className: 'box2', href: '003.png', alt: '追蹤攝影機,強調科技與追蹤的概念' },
+				{ className: 'box2', href: '006.png', alt: '呈現全方位多功能的互動控制盒的概念' },
+				{ className: 'box2', href: '007.jpg', alt: '呈現聲歷其境的合作體驗的概念' },
+				{ className: 'box', href: '005.png', alt: '實物攝影機，超高畫質沉浸體驗' },
+				{ className: 'box2', href: '004.jpg', alt: '' },
+				{ className: 'box2', href: '008.png', alt: '產品得獎橫幅提案一' },
+				{ className: 'box2', href: '009.png', alt: '產品得獎橫幅提案二_定案' },
+				{ className: 'box2', href: '010.png', alt: '產品得獎橫幅提案三' },
+				{ className: 'box', href: 'awardbanner012.png', alt: '台灣金質獎得獎產品,以金質獎 LOGO 的緞帶及色彩作為意象來呈現' },
+				{ className: 'box2', href: 'awardbanner011.jpg', alt: '' },
+				{ className: 'box2', href: 'awardbanner010.png', alt: '' },
+				{ className: 'box2', href: 'awardbanner007.png', alt: '' },
+				{ className: 'box2', href: 'awardbanner014.jpg', alt: '' },
+				{ className: 'box', href: 'awardbanner019.png', alt: '' },
+				{ className: 'box2', href: 'awardbanner015.png', alt: '' },
+				{ className: 'box2', href: 'awardbanner016.jpg', alt: '' },
+				{ className: 'box2', href: 'awardbanner017.png', alt: '' },
+				{ className: 'box2', href: 'awardbanner002.jpg', alt: '' },
+				{ className: 'box', href: 'awardbanner001.jpg', alt: '' },
+				{ className: 'box2', href: 'awardbanner003.png', alt: '' },
+				{ className: 'box2', href: 'awardbanner018.jpg', alt: '' },
+				{ className: 'box2', href: 'awardbanner004.jpg', alt: '' },
+				{ className: 'box2', href: 'awardbanner006.jpg', alt: '' },
+				{ className: 'box2', href: 'awardbanner008.png', alt: '' },
+				{ className: 'box2', href: 'awardbanner009.jpg', alt: '' },
+				{ className: 'box', href: '013.png', alt: '' },
+				{ className: 'box2', href: '011.jpg', alt: '' },
+				{ className: 'box2', href: '015.png', alt: '' },
+				{ className: 'box2', href: '016.jpg', alt: '' },
+				{ className: 'box2', href: '017.png', alt: '' },
+				{ className: 'box2', href: '018.jpg', alt: '' },
+				{ className: 'box2', href: '019.png', alt: '' },
+				{ className: 'box2', href: '020.jpg', alt: '' },
+				{ className: 'box2', href: '021.png', alt: '' },
+				{ className: 'box2', href: '022.jpg', alt: '' },
+				{ className: 'box2', href: '023.png', alt: '' },
+				{ className: 'box', href: '014.png', alt: '' },
+				{ className: 'box2', href: '033.jpg', alt: '' },
+				{ className: 'box2', href: '025.png', alt: '' },
+				{ className: 'box2', href: '026.jpg', alt: '' },
+				{ className: 'box2', href: '027.jpg', alt: '' },
+				{ className: 'box2', href: '028.png', alt: '' },
+				{ className: 'box2', href: '029.jpg', alt: '' },
+				{ className: 'box2', href: '031.jpg', alt: '' },
+				{ className: 'box2', href: '024.png', alt: '' },
+				{ className: 'box2', href: '012.png', alt: '' },
+				{ className: 'box2', href: 'emailbanner000.png', alt: '' },
+				{ className: 'box2', href: 'emailbanner001.png', alt: '' },
+				{ className: 'box2', href: 'emailbanner002.png', alt: '' },
+				{ className: 'box2', href: 'emailbanner003.png', alt: '' },
+				{ className: 'box2', href: 'emailbanner004.png', alt: '' },
+				{ className: 'box2', href: 'emailbanner005.png', alt: '' },
+				{ className: 'box2', href: 'emailbanner007.png', alt: '' },
+				{ className: 'box2', href: 'emailbanner008.png', alt: '' },
+				{ className: 'box2', href: 'emailbanner009.png', alt: '' },
+				{ className: 'box2', href: 'emailbanner010.jpg', alt: '' },
+				{ className: 'box2', href: 'emailbanner011.png', alt: '' },
+				{ className: 'box2', href: 'emailbanner012.png', alt: '' },
+				{ className: 'box2', href: 'emailbanner013.png', alt: '' },
+				{ className: 'box2', href: 'emailbanner014.png', alt: '' },
+				{ className: 'box2', href: 'emailbanner015.png', alt: '' },
+				{ className: 'box', href: '032.jpg', alt: '' },
+				{ className: 'box2', href: 'emailbanner017.jpg', alt: '' },
+				{ className: 'box2', href: 'emailbanner016.jpg', alt: '' },
+				{ className: 'box2', href: 'emailbanner018.jpg', alt: '' }
+
+			];
+
+			images.forEach(image => {
+				const { className, href, alt } = image;
+
+				const div = document.createElement('div');
+				div.className = className;
+
+				const a = document.createElement('a');
+				a.className = 'fancybox';
+				a.href = `portfolio/banner/${href}`;
+				a.title = alt;
+
+				const img = document.createElement('img');
+				img.src = `portfolio/banner/${href}`;
+				img.alt = alt;
+
+				a.appendChild(img);
+				div.appendChild(a);
+
+				portfolioDiv.appendChild(div);
+			});
 
-		<div class="box3">
-			<a class="fancybox" href="portfolio/banner/heroimage001c.jpg" title="官網主視覺改版">
-				<img src="portfolio/banner/heroimage001c.jpg" alt="banner" />
-			</a>
-		</div>
+		</script>
 
 
-		<div class="box3">
-			<a class="fancybox" href="portfolio/banner/heroimage004.jpg" title="官網主視覺改版">
-				<img src="portfolio/banner/heroimage004.jpg" alt="banner" />
-			</a>
-		</div>
-
-<!-- 
-		<div class="box3">
-			<a class="fancybox" href="portfolio/banner/heroimage002.jpg" title="官網主視覺改版">
-				<img src="portfolio/banner/heroimage002.jpg" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box3">
-			<a class="fancybox" href="portfolio/banner/heroimage005.jpg" title="官網主視覺改版">
-				<img src="portfolio/banner/heroimage005.jpg" alt="banner" />
-			</a>
-		</div>
-		
-		<div class="box3">
-			<a class="fancybox" href="portfolio/banner/heroimage009.jpg" title="官網主視覺改版">
-				<img src="portfolio/banner/heroimage009.jpg" alt="banner" />
-			</a>
-		</div> -->
-
-		<div class="box">
-			<a class="fancybox" href="portfolio/banner/001.png" title="強調藍芽連線 & 科技感">
-				<img src="portfolio/banner/001.png" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/002.png" title="強調科技感與細緻音質">
-				<img src="portfolio/banner/002.png" alt="banner" />
-			</a>
-		</div>
-
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/003.png" title="追蹤攝影機,強調科技與追蹤的概念">
-				<img src="portfolio/banner/003.png" alt="banner" />
-			</a>
-		</div>
-
-
-
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/006.png" title="呈現全方位多功能的互動控制盒的概念">
-				<img src="portfolio/banner/006.png" alt="banner" />
-			</a>
-		</div>
-
-
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/007.jpg" title="呈現聲歷其境的合作體驗的概念">
-				<img src="portfolio/banner/007.jpg" alt="banner" />
-			</a>
-		</div>
-
-
-		<div class="box">
-			<a class="fancybox" href="portfolio/banner/005.png" title="實物攝影機，超高畫質沉浸體驗">
-				<img src="portfolio/banner/005.png" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/004.jpg" title="">
-				<img src="portfolio/banner/004.jpg" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/008.png" title="產品得獎橫幅提案一">
-				<img src="portfolio/banner/008.png" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/009.png" title="產品得獎橫幅提案二_定案">
-				<img src="portfolio/banner/009.png" class="lazyload" alt="" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/010.png" title="產品得獎橫幅提案三">
-				<img src="portfolio/banner/010.png" class="lazyload" alt="" />
-			</a>
-		</div>
-
-
-
-
-		
-		<div class="box">
-			<a class="fancybox" href="portfolio/banner/awardbanner012.png" title="台灣金質獎得獎產品,以金質獎 LOGO 的緞帶及色彩作為意象來呈現">
-				<img src="portfolio/banner/awardbanner012.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/awardbanner011.jpg" title="">
-				<img src="portfolio/banner/awardbanner011.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/awardbanner010.png">
-				<img src="portfolio/banner/awardbanner010.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-
-
-
-
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/awardbanner007.png">
-				<img src="portfolio/banner/awardbanner007.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/awardbanner014.png">
-				<img src="portfolio/banner/awardbanner014.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box">
-			<a class="fancybox" href="portfolio/banner/awardbanner019.png">
-				<img src="portfolio/banner/awardbanner019.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/awardbanner015.png">
-				<img src="portfolio/banner/awardbanner015.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/awardbanner016.jpg">
-				<img src="portfolio/banner/awardbanner016.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/awardbanner017.png">
-				<img src="portfolio/banner/awardbanner017.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/awardbanner002.jpg">
-				<img src="portfolio/banner/awardbanner002.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box">
-			<a class="fancybox" href="portfolio/banner/awardbanner001.jpg">
-				<img src="portfolio/banner/awardbanner001.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/awardbanner003.png">
-				<img src="portfolio/banner/awardbanner003.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		
-		
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/awardbanner018.jpg">
-				<img src="portfolio/banner/awardbanner018.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/awardbanner004.jpg">
-				<img src="portfolio/banner/awardbanner004.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/awardbanner006.jpg">
-				<img src="portfolio/banner/awardbanner006.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/awardbanner008.png">
-				<img src="portfolio/banner/awardbanner008.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/awardbanner009.jpg">
-				<img src="portfolio/banner/awardbanner009.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-
-		<div class="box">
-			<a class="fancybox" href="portfolio/banner/013.png">
-				<img src="portfolio/banner/013.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/011.jpg">
-				<img src="portfolio/banner/011.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/015.png">
-				<img src="portfolio/banner/015.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/016.jpg">
-				<img src="portfolio/banner/016.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/017.png">
-				<img src="portfolio/banner/017.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/018.jpg">
-				<img src="portfolio/banner/018.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/019.png">
-				<img src="portfolio/banner/019.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/020.jpg">
-				<img src="portfolio/banner/020.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/021.png">
-				<img src="portfolio/banner/021.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/022.jpg">
-				<img src="portfolio/banner/022.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/023.png">
-				<img src="portfolio/banner/023.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-
-		<div class="box">
-			<a class="fancybox" href="portfolio/banner/014.png">
-				<img src="portfolio/banner/014.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/033.jpg">
-				<img src="portfolio/banner/033.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/025.png">
-				<img src="portfolio/banner/025.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/026.jpg">
-				<img src="portfolio/banner/026.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/027.jpg">
-				<img src="portfolio/banner/027.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/028.png">
-				<img src="portfolio/banner/028.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/029.jpg">
-				<img src="portfolio/banner/029.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/031.jpg">
-				<img src="portfolio/banner/031.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-
-
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/024.png">
-				<img src="portfolio/banner/024.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-
-
-
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/012.png">
-				<img src="portfolio/banner/012.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-
-
-
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/emailbanner000.png">
-				<img src="portfolio/banner/emailbanner000.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/emailbanner001.png">
-				<img src="portfolio/banner/emailbanner001.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/emailbanner002.png">
-				<img src="portfolio/banner/emailbanner002.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/emailbanner003.png">
-				<img src="portfolio/banner/emailbanner003.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/emailbanner004.png">
-				<img src="portfolio/banner/emailbanner004.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/emailbanner005.png">
-				<img src="portfolio/banner/emailbanner005.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<!-- <div class="box2">
-				<a class="fancybox" href="portfolio/banner/emailbanner006.png"><img src="portfolio/banner/emailbanner006.png" class="lazyload"
-						alt="banner" /></a>
-			</div> -->
-
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/emailbanner007.png">
-				<img src="portfolio/banner/emailbanner007.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/emailbanner008.png">
-				<img src="portfolio/banner/emailbanner008.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/emailbanner009.png">
-				<img src="portfolio/banner/emailbanner009.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/emailbanner010.jpg">
-				<img src="portfolio/banner/emailbanner010.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/emailbanner011.png">
-				<img src="portfolio/banner/emailbanner011.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/emailbanner012.png">
-				<img src="portfolio/banner/emailbanner012.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/emailbanner013.png">
-				<img src="portfolio/banner/emailbanner013.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/emailbanner014.png">
-				<img src="portfolio/banner/emailbanner014.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/emailbanner015.png">
-				<img src="portfolio/banner/emailbanner015.png" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-
-		<div class="box">
-			<a class="fancybox" href="portfolio/banner/032.jpg">
-				<img src="portfolio/banner/032.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/emailbanner017.jpg">
-				<img src="portfolio/banner/emailbanner017.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-	
-
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/emailbanner016.jpg">
-				<img src="portfolio/banner/emailbanner016.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-
-
-		<div class="box2">
-			<a class="fancybox" href="portfolio/banner/emailbanner018.jpg">
-				<img src="portfolio/banner/emailbanner018.jpg" class="lazyload" alt="banner" />
-			</a>
-		</div>
-
-	
-
-
-
-
-	
 
 		<footer>Copyright © Yang</footer>
 

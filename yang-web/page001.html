@@ -11,6 +11,7 @@
 
   gtag('config', 'G-CYET5RW10T');
 </script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,16 +31,19 @@
 		href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap"
 		rel="stylesheet">
 
-	<!--手機板 RWD MENU 相關-->
+	<!--MENU RWD 相關-->
 	<link rel="stylesheet" href="css/styles.css">
-	<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 	<script src="js/menu.js" type="text/javascript"></script>
-	<!--中間作品集區塊相關群-->
-	<link rel="stylesheet" href="css/portfolio.css" type="text/css">
-	<script src="js/jquery.min.js" type="text/javascript"></script>
-	<script src="js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="js/jquery.isotope.min.js" type="text/javascript"></script>
+	<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
+	<!-- fancybox CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+	<!-- Google icon -->
+
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 	<script type="text/javascript">
 		//go to top
@@ -86,6 +90,7 @@
 			);
 		});
 	</script>
+
 </head>
 
 <body>
@@ -96,9 +101,6 @@
 	<div id="gotop">
 		<div class="arrow"></div>
 	</div>
-
-	<!--gotop回上面-->
-
 
 	<div id="m-header">
 		<div id="m-logo"><a href="index.html">YANG</a></div>
@@ -127,72 +129,61 @@
 		<div id="btn-area">
 			<div class="btn-box"><a href="banner.html">Banner</a></div>
 			<div class="btn-box"><a href="product.html">產品頁</a></div>
-			<div class="btn-box"><a href="page.html">大型專案</a></div>
+			<div class="btn-box-now">大型專案</div>
 			<div class="btn-box"><a href="AD.html">電商廣告</a></div>
 			<div class="btn-box"><a href="ill.html">電繪插圖 / ICON</a></div>
 			<div class="btn-box"><a href="sticker.html">LINE 貼圖創作</a></div>
-			<div class="btn-box-now">UI & Code</div>
+			<div class="btn-box"><a href="mycode.html">UI / Code</a></div>
 			<div class="btn-box"><a href="business.html">形象網站</a></div>
 			<div class="btn-box-all"><a href="index.html">關於我</a></div>
 		</div>
 	</div>
 	<div id="btn-area-bbg"></div>
 
-	<div class="portfolio-area">
-		<div class="tag-tit">手刻 UI DEMO</div>
+
+	<div class="page_area">
+		<div class="tag-tit">第一版官網全面大改版</div>
 		<div class="tag-describe">
-			<p>提供幾個自己手刻 UI 的質感、陰影細節、文字間距拿捏、留白拿捏，和程式碼撰寫方式供參考</p>
+			<p>
+				2017年 官網改版　說明<br>
+			</p>
 		</div>
-		<p><div class="tag-tit">電子名片</div></p>
-		
-		<div class="codebox2">
-		<p class="codepen" data-height="500" data-slug-hash="jOeKVjj" data-user="loveinro" style=" box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-			<span>See the Pen <a href="https://codepen.io/loveinro/pen/jOeKVjj">
-			作業一練習-名片</a> by loveinro (<a href="https://codepen.io/loveinro">@loveinro</a>)
-			on <a href="https://codepen.io">CodePen</a>.</span>
-		  </p>
-		  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-		  </div>
 
-		<div class="codebox2">
-				<p class="codepen" data-height="500" data-slug-hash="poQoaee" data-user="loveinro" style="box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-					<span>See the Pen <a href="https://codepen.io/loveinro/pen/poQoaee">
-					電子名片練習</a> by loveinro (<a href="https://codepen.io/loveinro">@loveinro</a>)
-					on <a href="https://codepen.io">CodePen</a>.</span>
-				  </p>
-				  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-		</div>
+		<div class="page_box">
 			
-		<p><div class="tag-tit">電子簡歷</div></p>
-		<div class="codebox">
-				<p class="codepen" data-height="1100" data-slug-hash="wvQwwRq" data-user="loveinro" style="box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-					<span>See the Pen <a href="https://codepen.io/loveinro/pen/wvQwwRq">
-					Homework 1.技能網頁</a> by loveinro (<a href="https://codepen.io/loveinro">@loveinro</a>)
-					on <a href="https://codepen.io">CodePen</a>.</span>
-				  </p>
-				  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+				<img src="portfolio/page/023-cover.jpg" />
+	
+		
 		</div>
 
-		<!-- <p><div class="tag-tit">品牌識別 Design Systems 編排練習</div></p>
-		<div class="codebox">
-		<p class="codepen" data-height="1100" data-slug-hash="ExdBpOm" data-user="loveinro" style="box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-			<span>See the Pen <a href="https://codepen.io/loveinro/pen/ExdBpOm">
-			project2. 實作網頁品牌視覺指導套色-讀墨</a> by loveinro (<a href="https://codepen.io/loveinro">@loveinro</a>)
-			on <a href="https://codepen.io">CodePen</a>.</span>
-		  </p>
-		  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-		</div> -->
+
+		<div class="page_box"></div>
+
+
+
+
+		<div class="btn-back">
+			<a href="javascript:void(0);" onclick="history.back();">
+				Back
+				<span class="material-symbols-outlined">undo</span>
+			</a>
+		</div>
 
 		<footer>Copyright © Yang</footer>
 
 	</div>
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
 
 </body>
 
-<!-- Add fancyBox main JS and CSS files -->
-<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
-<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
-
+<script>
+	Fancybox.bind('[data-fancybox="gallery"]', {
+		compact: false
+	});    
+</script>
 
 <script type="text/javascript">
 	$(document).ready(function () {
@@ -225,8 +216,6 @@
 				this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
 			}
 		});
-
-
 	});
 </script>
 

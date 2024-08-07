@@ -90,12 +90,16 @@ img {
     padding: 10px 20px !important;
     margin: 13px 0 !important;
     background: #d5ccc3 !important;
-    border-radius: 15px !important;
+    border-radius: 10px !important;
 
 }
 
+.btn_focus img{
+    display: inline;
+}
+
 .btn_focus a:hover {
-    border-radius: 15px !important;
+    border-radius: 10px !important;
     background: #eee6dd !important;
 
 
@@ -839,6 +843,7 @@ mark {
     opacity: 0;
     animation: index-photo .5s ease 1.5s 1 forwards;
     filter: drop-shadow(4px 3px 8px rgba(59, 58, 54, 0.3));
+    /* border: 15px solid #efe2d2; */
 
 }
 
@@ -860,7 +865,7 @@ mark {
     background: linear-gradient(347deg, #494949, #4b4b4b, #7e7368);
     color: #ffffff;
     height: 100vh;
-    padding-top: 43vh;
+    padding-top: 40vh;
     position: relative;
     z-index: 0;
     opacity: 0;
@@ -1625,7 +1630,7 @@ h3 {
 .skill-area {
     width: 25%;
     margin: 0 12px;
-    min-height: 440px;
+    min-height: 450px;
     background: #ffffffd9;
     border: 1px solid #fff;
     padding: 30px;
@@ -1639,7 +1644,7 @@ h3 {
     font-weight: 600;
     margin-bottom: 20px;
     padding-bottom: 15px;
-    border-bottom: #cfcfcfd9 2px solid;
+    border-bottom: #e5e5e5d9 2px solid;
     padding-left: 10px;
 }
 

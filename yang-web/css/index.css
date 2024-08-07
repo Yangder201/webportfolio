@@ -96,6 +96,7 @@ img {
 
 .btn_focus a:hover{
     border-radius: 15px !important;
+    background: #eee6dd !important;
 
 
 }

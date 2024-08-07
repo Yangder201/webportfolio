@@ -1464,7 +1464,7 @@ mark {
 h2 {
     font-size: 2.6rem;
     font-weight: bold;
-    color: #060606;
+    color: #312c27;
     text-align: center;
     line-height: 4rem;
     padding: 5vh 0 2vh 0;
@@ -1655,9 +1655,9 @@ h3 {
 #work-exp-bg {
     max-width: 100vw;
     margin: auto;
-    clear: both;
-    background: linear-gradient(347deg, #494949, #4b4b4b, #494949);
-    height: 167vh;
+    background: linear-gradient(347deg, #776e64, #494949, #4a4a4a);
+    height: fit-content;
+    padding-bottom: 5vh;
     padding-top: 10vh;
     transition: .2s;
     position: relative;
@@ -1774,6 +1774,13 @@ h3 {
 
 
 .company-describe {
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 5px 20px 0 15px;
+    border-left: 2px solid #b3a488
+}
+
+.company-describe2 {
     font-size: 1rem;
     line-height: 1rem;
     padding: 5px 20px 0 15px;
@@ -2439,9 +2446,10 @@ footer {
     }
 
     h2 {
-        color: #060606 !important;
-
+        color: #1b1b1b;
+        font-size: 2.1rem;
     }
+
 
 
     .btn_menu-m {
@@ -2519,33 +2527,6 @@ footer {
 
     }
 
-    #contact-icon-area a {
-        color: #997171;
-        font-weight: 400;
-        width: 110px;
-        height: 40px;
-        padding: 5px 10px;
-        border: 2px solid #c49d7ee0;
-        border-radius: 8px;
-        background: #ffffff78;
-        margin-top: 2vh;
-        margin-left: 20px;
-        font-size: 1rem;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 2px 3px 15px -5px #fff3e456;
-    }
-
-    #contact-icon-area a:hover {
-        margin-top: 2.2vh;
-        background: #363331da;
-        color: #ffffff;
-        font-weight: 300;
-        border: 2px solid #303030bd;
-        box-shadow: none
-    }
 
 
     h1 {
@@ -2568,9 +2549,6 @@ footer {
 
     }
 
-    h2 {
-        font-size: 2.1rem;
-    }
 
 
     #gotop {
@@ -2737,7 +2715,7 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
         align-content: flex-start;
-        background: #F6F6F6;
+        
     }
 
 
@@ -2772,8 +2750,8 @@ footer {
         line-height: 33px;
         list-style-type: none;
         font-size: 1.5rem;
-        color: #1f1f1f;
-        background: #F6F6F6;
+        color: #f5f5f5;
+        background: none;
         height: fit-content;
     }
 
@@ -2856,7 +2834,8 @@ footer {
     }
 
     #tool-bg {
-        padding-top: 10vh;
+        padding-top: 0;
+        padding-bottom: 5vh;
     }
 
     .tool {
@@ -2915,7 +2894,7 @@ footer {
         width: 100%;
         border-right: 0px;
         padding: 5px 0 20px 30px;
-        border-bottom: #e9e9e9 1px solid;
+        /* border-bottom: #e9e9e9 1px solid; */
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
         border-bottom-left-radius: 0;
@@ -3023,6 +3002,14 @@ footer {
         border-left: 0
     }
 
+    .company-describe2 {
+        width: 40%;
+        font-size: 1rem;
+        line-height: 1.3rem;
+        padding: 2px 0 0 0;
+        border-left: 0
+    }
+
     .during-work {
         width: fit-content;
         padding: 10px 15px 0 0;
@@ -3035,7 +3022,7 @@ footer {
         width: fit-content;
         padding: 10px 15px 0 5px;
         margin: 5px 15px 10px 0;
-        border-right: 1px solid #c7c7c7;
+        border-right:2px solid #a79a81;
     }
 
     .interest_area {
@@ -3090,14 +3077,14 @@ footer {
     }
 
     h2 {
-        margin: 15px;
+        margin: 0;
     }
 
     h3 {
         margin: 15px;
     }
 
-    
+
     #intro-area-bg {
         background: linear-gradient(347deg, #494949, #4b4b4b, #7e7368);
     }
@@ -3114,7 +3101,7 @@ footer {
 
     }
 
-  
+
 
     #intro-bg {
         padding: 8vw;
@@ -3160,6 +3147,14 @@ footer {
         line-height: 1rem;
         padding: 5px 20px 0 0;
         border-left: 0;
+    }
+
+    .company-describe2 {
+        width: 100%;
+        font-size: 1rem;
+        line-height: 1.3rem;
+        padding: 2px 0 0 0;
+        border-left: 0
     }
 
     .during-work {
@@ -3227,8 +3222,8 @@ footer {
         height: fit-content;
         padding-bottom: 15vh;
 
-        
-    
+
+
     }
 
     .intro-tit {
@@ -3389,4 +3384,19 @@ footer {
 
 
 
+}
+
+
+@media only screen and (max-width: 375px) {
+
+    #info {
+        margin-left: 2vw;
+    }
+
+    .text {
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+        font-size: 1.2rem;
+    }
 }

@@ -135,11 +135,13 @@ button {
     cursor: pointer;
     z-index: 999;
     border: #ffffff5c 2px solid;
+    transition: .3s;
+    
 }
 
 #gotop:hover {
-    opacity: .6;
-
+    background: #383838fd;
+    bottom: 4.5%;
 }
 
 .arrow {
@@ -678,7 +680,8 @@ mark {
     flex-wrap: nowrap;
     margin: 0;
     padding: 0;
-    background: #F6F6F6;
+    /* background: #F6F6F6; */
+    background: linear-gradient(347deg, #494949, #4b4b4b, #7e7368);
     position: relative;
     /* border-top: #ffffffd9 1px solid; */
 
@@ -692,11 +695,27 @@ mark {
     padding-right: 12vw;
     height: 100vh;
     padding-top: 30vh;
-    background: linear-gradient(321deg, rgb(144 189 215 / 22%) 25%, rgb(255 255 255) 0, rgb(255 246 238) 50%, #fff 0, #dfddd8 75%, rgb(255 196 123 / 24%) 0);
+    /* background: linear-gradient(321deg, rgb(144 189 215 / 22%) 25%, rgb(255 255 255) 0, rgb(255 246 238) 50%, #fff 0, #dfddd8 75%, rgb(255 196 123 / 24%) 0); */
+    background: linear-gradient(321deg, rgb(228 238 243) 25%, rgb(255 255 255) 0, rgb(255 246 238) 50%, #fff 0, #dfddd8 75%, rgb(239 226 210) 0);
     background-size: 1050px 780px;
     color: #2c2c2c;
 
     /* text-shadow: 13px 6px 10px #9696963d; */
+    opacity: 0;
+    animation: open-area 1.2s ease 0s 1 forwards;
+}
+
+
+@keyframes open-area {
+    0% {
+        opacity: 0;
+        margin-left: -200px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 0;
+    }
 
 }
 
@@ -733,12 +752,12 @@ mark {
     line-height: 5rem;
     padding: 0 0 30px 0;
     /* color: #485077; */
-    opacity: 0;
-    animation: open-tit .8s ease 0s 1 forwards;
+    /* opacity: 0;
+    animation: open-tit .8s ease 0s 1 forwards; */
 
 }
 
-@keyframes open-tit {
+/* @keyframes open-tit {
     0% {
         opacity: 0;
         margin-left: -20px;
@@ -749,7 +768,7 @@ mark {
         margin-left: 0;
     }
 
-}
+} */
 
 
 .intor-text {
@@ -793,9 +812,9 @@ mark {
 #photo img {
     max-width: 100%;
     border-radius: 100%;
-
     opacity: 0;
-    animation: index-photo 1s ease 1s 1 forwards;
+    animation: index-photo .5s ease 1.5s 1 forwards;
+    /* filter: drop-shadow(4px 3px 5px rgba(59, 58, 54, 0.3)); */
 
 }
 
@@ -812,13 +831,14 @@ mark {
 }
 
 #info {
-    width: 30%;
+    width: 38%;
     padding-left: 8vw;
+    background: linear-gradient(347deg, #494949, #4b4b4b, #7e7368);
+    color: #ffffff;
     height: 100vh;
     padding-top: 43vh;
     position: relative;
     z-index: 0;
-
     opacity: 0;
     animation: index-info .7s ease 1.2s 1 forwards;
 
@@ -827,12 +847,12 @@ mark {
 @keyframes index-info {
     0% {
         opacity: 0;
-        margin-left: 20px;
+        /* margin-left: 20px; */
     }
 
     100% {
         opacity: 1;
-        margin-left: 0;
+        /* margin-left: 0; */
     }
 
 
@@ -843,8 +863,10 @@ mark {
     width: 100%;
     margin: auto;
     padding-top: 10vh;
-    padding-bottom: 5vh;
-    height: 100vmax;
+    padding-bottom: 1vh;
+    /* height: 100vmax; */
+    height: fit-content;
+    margin-bottom: 10vh;
     max-width: 1000px;
     font-size: 1.2rem;
     font-weight: 400;
@@ -999,7 +1021,6 @@ mark {
     font-size: 1rem;
     font-weight: 400;
     line-height: 2.2rem;
-    color: #303030;
     margin-left: -8px;
 }
 
@@ -1014,21 +1035,6 @@ mark {
 }
 
 
-#contact-icon-area a {
-    width: 110px;
-    height: 40px;
-    padding: 5px 10px;
-    border: 1px solid #cdbeb3;
-    border-radius: 8px;
-    background: #f3ece8;
-    margin-top: 10px;
-    margin-left: 20px;
-    font-size: 1rem;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-}
 
 #contact-icon-area p {
     padding: 5px;
@@ -1036,13 +1042,32 @@ mark {
 
 
 #contact-icon-area a {
-    color: #aa8870;
+    color: #ebebea;
+    font-weight: 100;
+    width: 110px;
+    height: 40px;
+    padding: 5px 10px;
+    border: 2px solid #e3dcd780;
+    border-radius: 8px;
+    background: #81818178;
+    margin-top: 2vh;
+    margin-left: 20px;
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 3px 15px -5px #fff3e456;
+
 }
 
 #contact-icon-area a:hover {
-    background: #e4cabb;
-    color: #645044;
-    border: 1px solid #aa8870;
+    margin-top: 2.2vh;
+    background: #363331da;
+    color: #ffffff;
+    font-weight: 300;
+    border: 2px solid #303030bd;
+    box-shadow: none
 
 }
 
@@ -1419,7 +1444,7 @@ h2 {
     color: #060606;
     text-align: center;
     line-height: 4rem;
-    padding: 4vh 0 2vh 0;
+    padding: 5vh 0 2vh 0;
 }
 
 
@@ -1435,8 +1460,9 @@ h2 {
 
 h3 {
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 400;
     text-align: center;
+    color: #757575;
 }
 
 
@@ -2092,6 +2118,13 @@ footer {
 }
 
 
+.thanks {
+    text-align: center;
+    color: #e9e9e9;
+    font-size: 1.5em;
+    height: 5vh;
+}
+
 
 
 
@@ -2127,7 +2160,7 @@ footer {
     }
 
     #intro-area {
-        width: 65vw;
+        width: 68vw;
         min-height: 60vh;
         height: auto;
         padding: 25vh 10vw 0 10vw;
@@ -2139,9 +2172,27 @@ footer {
         align-content: flex-start;
     }
 
+
+
+    .intor-text {
+        width: 100%;
+        margin-top: 5vh;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 2.8rem !important;
+        color: #494949;
+        opacity: 0;
+        animation: open-t 1s ease .5s 1 forwards;
+
+    }
+
     .intro-tit {
         font-size: 2.8rem;
         padding-bottom: 0;
+    }
+
+    #photo{
+        margin-right: -6%;
     }
 
     #intro-area span {
@@ -2184,7 +2235,7 @@ footer {
 
     }
 
-    
+
     #btn-area-m li a {
         width: 100%;
         height: 65px;
@@ -2210,8 +2261,8 @@ footer {
     }
 
     #info {
-        width: 30%;
-        padding-left: 2vw;
+        width: 35%;
+        padding-left: 5vw;
         height: 100vh;
         padding-top: 48vh;
         position: relative;
@@ -2223,6 +2274,21 @@ footer {
         line-height: 3.5rem;
         padding-bottom: 2vh;
     }
+
+    #intro-area {
+        width: 66vw;
+        min-height: 60vh;
+        height: auto;
+        padding: 25vh 10vw 0 10vw;
+        font-size: 5rem;
+        display: flex;
+        align-items: flex-start;
+        clear: both;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+
 
     #intro-area span {
         font-size: 1.2rem;
@@ -2250,7 +2316,7 @@ footer {
     }
 
 
-    
+
 
     #header-fixed {
         min-height: 65px;
@@ -2288,13 +2354,13 @@ footer {
         transition: background .5s;
     }
 
-    
-    #btn-area-m li{
+
+    #btn-area-m li {
         padding: 5px 15px;
 
     }
 
-    #btn-area-m li a{
+    #btn-area-m li a {
         color: #1c1c1c;
 
 
@@ -2327,7 +2393,7 @@ footer {
 
 @media only screen and (max-width: 768px) {
 
-    
+
 
     #work-exp-bg {
         height: fit-content;
@@ -2339,8 +2405,8 @@ footer {
         color: #060606 !important;
 
     }
-    
-    
+
+
     .btn_menu-m {
         display: flex;
         width: 60px;
@@ -2389,8 +2455,8 @@ footer {
 
     }
 
-    
-    #btn-area-m li{
+
+    #btn-area-m li {
         width: 100%;
         height: 65px;
         margin: 3px 10px;
@@ -2416,7 +2482,34 @@ footer {
 
     }
 
-
+    #contact-icon-area a {
+        color: #997171;
+        font-weight: 400;
+        width: 110px;
+        height: 40px;
+        padding: 5px 10px;
+        border: 2px solid #c49d7ee0;
+        border-radius: 8px;
+        background: #ffffff78;
+        margin-top: 2vh;
+        margin-left: 20px;
+        font-size: 1rem;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 3px 15px -5px #fff3e456;
+    }
+    
+    #contact-icon-area a:hover {
+        margin-top: 2.2vh;
+        background: #363331da;
+        color: #ffffff;
+        font-weight: 300;
+        border: 2px solid #303030bd;
+        box-shadow: none
+    
+    }
 
 
     h1 {
@@ -2639,6 +2732,7 @@ footer {
         line-height: 33px;
         list-style-type: none;
         font-size: 1.5rem;
+        color: #1f1f1f;
         background: #F6F6F6;
         height: fit-content;
     }

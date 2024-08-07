@@ -1707,9 +1707,21 @@ footer {
         width: 100%;
     }
     .box5 {
-        width: 45%;
+        width: 90%;
         max-height: 250px;
         margin: 10px auto;
+    }
+
+    .box6{
+        width: 90%;
+        max-height: 300px;
+        margin: 10px auto;
+    }
+
+    .box6 img{
+        width: 100%;
+        height: 100%;
+  
     }
 
     .next-btn a {

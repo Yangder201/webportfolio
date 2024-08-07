@@ -114,20 +114,20 @@ img {
 /* 卷軸顏色 */
 
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 18px;
     background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(61, 61, 61, 0.753);
+    background-color: rgba(218, 218, 218, 0.753);
     border-radius: 100px;
-    border: 5px solid transparent;
+    border: 7px solid transparent;
     background-clip: content-box;
 
 }
 
 ::-webkit-scrollbar-track-piece {
-    background: #eeeeee;
+    background: #363636;
 }
 
 

@@ -74,6 +74,14 @@
 			});
 		});
 
+		//手機板選單
+		$(document).ready(function () {
+			$(".btn_menu-m").click(function () {
+				$("#btn-area-bg-m").slideToggle(300);
+			});
+		});
+
+
 		//滑鼠移入選單按鈕出現文字變化
 		$(document).ready(function () {
 			$(".btn_menu").hover(
@@ -98,6 +106,7 @@
 		<div class="arrow"></div>
 	</div>
 
+	<div class="btn_menu-m">≡</div>
 	<div id="m-header">
 		<div id="m-logo"><a href="index.html">YANG</a></div>
 		<nav id="cssmenu">
@@ -131,11 +140,27 @@
 			<div class="btn-box"><a href="sticker.html">LINE 貼圖創作</a></div>
 			<div class="btn-box"><a href="mycode.html">UI / Code</a></div>
 			<div class="btn-box"><a href="business.html">形象網站</a></div>
-			<div class="btn-box-all"><a href="index.html">關於我</a></div>
+			<div class="btn-box-all"><a href="index.html">回首頁</a></div>
 		</div>
 	</div>
 	<div id="btn-area-bbg"></div>
 
+
+		<!-- 手機版選單 -->
+		<div id="btn-area-bg-m">
+			<div id="btn-area-m">
+				<div class="btn-box-m"><a href="banner.html">Banner</a></div>
+				<div class="btn-box-m"><a href="product.html">產品頁</a></div>
+				<div class="btn-box-m"><a href="page.html">大型專案</a></div>
+				<div class="btn-box-now-m">電商廣告</div>
+				<div class="btn-box-m"><a href="ill.html">電繪插圖 / ICON</a></div>
+				<div class="btn-box-m"><a href="sticker.html">LINE 貼圖創作</a></div>
+				<div class="btn-box-m"><a href="mycode.html">UI / Code</a></div>
+				<div class="btn-box-m"><a href="business.html">形象網站</a></div>
+				<div class="btn-box-m"><a href="index.html">回首頁</a></div>
+			</div>
+		</div>
+	
 
 	<div class="portfolio-area">
 		<div class="tag-tit">電商廣告</div>

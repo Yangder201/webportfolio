@@ -2,15 +2,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CYET5RW10T"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CYET5RW10T"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-  gtag('config', 'G-CYET5RW10T');
-</script>
+		gtag('config', 'G-CYET5RW10T');
+	</script>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -74,6 +74,14 @@
 		});
 
 
+		//手機板選單
+		$(document).ready(function () {
+			$(".btn_menu-m").click(function () {
+				$("#btn-area-bg-m").slideToggle(300);
+			});
+		});
+
+
 		//滑鼠移入選單按鈕出現文字變化
 		$(document).ready(function () {
 			$(".btn_menu").hover(
@@ -90,8 +98,8 @@
 
 <body>
 	<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMHNKVM3"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMHNKVM3" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
 	<div id="gotop">
 		<div class="arrow"></div>
@@ -99,7 +107,7 @@
 
 	<!--gotop回上面-->
 
-
+	<div class="btn_menu-m">≡</div>
 	<div id="m-header">
 		<div id="m-logo"><a href="index.html">YANG</a></div>
 		<nav id="cssmenu">
@@ -133,44 +141,106 @@
 			<div class="btn-box"><a href="sticker.html">LINE 貼圖創作</a></div>
 			<div class="btn-box-now">UI & Code</div>
 			<div class="btn-box"><a href="business.html">形象網站</a></div>
-			<div class="btn-box-all"><a href="index.html">關於我</a></div>
+			<div class="btn-box-all"><a href="index.html">回首頁</a></div>
 		</div>
 	</div>
 	<div id="btn-area-bbg"></div>
+
+	<!-- 手機版選單 -->
+	<div id="btn-area-bg-m">
+		<div id="btn-area-m">
+			<div class="btn-box-m"><a href="banner.html">Banner</a></div>
+			<div class="btn-box-m"><a href="product.html">產品頁</a></div>
+			<div class="btn-box-m"><a href="page.html">大型專案</a></div>
+			<div class="btn-box-m"><a href="AD.html">電商廣告</a></div>
+			<div class="btn-box-m"><a href="ill.html">電繪插圖 / ICON</a></div>
+			<div class="btn-box-m"><a href="sticker.html">LINE 貼圖創作</a></div>
+			<div class="btn-box-now-m">UI & Code</div>
+			<div class="btn-box-m"><a href="business.html">形象網站</a></div>
+			<div class="btn-box-m"><a href="index.html">回首頁</a></div>
+		</div>
+	</div>
+
+
 
 	<div class="portfolio-area">
 		<div class="tag-tit">手刻 UI DEMO</div>
 		<div class="tag-describe">
 			<p>提供幾個自己手刻 UI 的質感、陰影細節、文字間距拿捏、留白拿捏，和程式碼撰寫方式供參考</p>
 		</div>
-		<p><div class="tag-tit">電子名片</div></p>
-		
-		<div class="codebox2">
-		<p class="codepen" data-height="500" data-slug-hash="jOeKVjj" data-user="loveinro" style=" box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-			<span>See the Pen <a href="https://codepen.io/loveinro/pen/jOeKVjj">
-			作業一練習-名片</a> by loveinro (<a href="https://codepen.io/loveinro">@loveinro</a>)
-			on <a href="https://codepen.io">CodePen</a>.</span>
-		  </p>
-		  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-		  </div>
+		<p>
+		<div class="tag-tit">電子名片</div>
+		</p>
+
+
 
 		<div class="codebox2">
-				<p class="codepen" data-height="500" data-slug-hash="poQoaee" data-user="loveinro" style="box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-					<span>See the Pen <a href="https://codepen.io/loveinro/pen/poQoaee">
-					電子名片練習</a> by loveinro (<a href="https://codepen.io/loveinro">@loveinro</a>)
+			<p class="codepen" data-height="500" data-slug-hash="jOeKVjj" data-user="loveinro"
+				style=" box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+				<span>See the Pen <a href="https://codepen.io/loveinro/pen/jOeKVjj">
+						作業一練習-名片</a> by loveinro (<a href="https://codepen.io/loveinro">@loveinro</a>)
 					on <a href="https://codepen.io">CodePen</a>.</span>
-				  </p>
-				  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+			</p>
+			<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 		</div>
-			
-		<p><div class="tag-tit">電子簡歷</div></p>
-		<div class="codebox">
-				<p class="codepen" data-height="1100" data-slug-hash="wvQwwRq" data-user="loveinro" style="box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-					<span>See the Pen <a href="https://codepen.io/loveinro/pen/wvQwwRq">
-					Homework 1.技能網頁</a> by loveinro (<a href="https://codepen.io/loveinro">@loveinro</a>)
+
+		<div class="codebox2">
+			<p class="codepen" data-height="500" data-slug-hash="poQoaee" data-user="loveinro"
+				style="box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+				<span>See the Pen <a href="https://codepen.io/loveinro/pen/poQoaee">
+						電子名片練習</a> by loveinro (<a href="https://codepen.io/loveinro">@loveinro</a>)
 					on <a href="https://codepen.io">CodePen</a>.</span>
-				  </p>
-				  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+			</p>
+			<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+		</div>
+
+
+
+		<!--手機版-->
+		<div class="codebox2-m">
+			<p class="codepen" data-height="300" data-slug-hash="jOeKVjj" data-user="loveinro"
+				style=" box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+				<span>See the Pen <a href="https://codepen.io/loveinro/pen/jOeKVjj">
+						作業一練習-名片</a> by loveinro (<a href="https://codepen.io/loveinro">@loveinro</a>)
+					on <a href="https://codepen.io">CodePen</a>.</span>
+			</p>
+			<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+		</div>
+
+
+		<div class="codebox2-m">
+			<p class="codepen" data-height="300" data-slug-hash="poQoaee" data-user="loveinro"
+				style="box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+				<span>See the Pen <a href="https://codepen.io/loveinro/pen/poQoaee">
+						電子名片練習</a> by loveinro (<a href="https://codepen.io/loveinro">@loveinro</a>)
+					on <a href="https://codepen.io">CodePen</a>.</span>
+			</p>
+			<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+		</div>
+
+		<p>
+		<div class="tag-tit">電子簡歷</div>
+		</p>
+
+
+		<div class="codebox">
+			<p class="codepen" data-height="1100" data-slug-hash="wvQwwRq" data-user="loveinro"
+				style="box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+				<span>See the Pen <a href="https://codepen.io/loveinro/pen/wvQwwRq">
+						Homework 1.技能網頁</a> by loveinro (<a href="https://codepen.io/loveinro">@loveinro</a>)
+					on <a href="https://codepen.io">CodePen</a>.</span>
+			</p>
+			<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+		</div>
+
+		<div class="codebox-m">
+			<p class="codepen" data-height="600" data-slug-hash="wvQwwRq" data-user="loveinro"
+				style="box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+				<span>See the Pen <a href="https://codepen.io/loveinro/pen/wvQwwRq">
+						Homework 1.技能網頁</a> by loveinro (<a href="https://codepen.io/loveinro">@loveinro</a>)
+					on <a href="https://codepen.io">CodePen</a>.</span>
+			</p>
+			<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 		</div>
 
 		<!-- <p><div class="tag-tit">品牌識別 Design Systems 編排練習</div></p>

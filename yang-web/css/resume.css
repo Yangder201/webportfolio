@@ -126,7 +126,7 @@ a:active {
 }
 
 #info_area {
-    width: 24%;
+    width: 30%;
     height: inherit;
     min-height: 678px;
     padding: 20px 30px;
@@ -169,19 +169,37 @@ a:active {
 
 #tools_area {
     margin-top: 20px;
+    width: 100%;
+ 
+}
 
+.tools_h_area{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .tools {
     padding-top: 20px;
+    margin-left: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
     align-items: center;
 }
 
+.tools-h {
+    width: 45%;
+    margin: 5px;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: center;
+}
+
 .tools_icon {
-    width: 60px;
+    width: 50px;
     height: 40px;
 
 }
@@ -192,9 +210,10 @@ a:active {
 }
 
 .tool_name {
+    font-size: .9em;
     font-weight: 800;
     color: #434343;
-    letter-spacing: 1px;
+   
 }
 
 .tit {
@@ -287,7 +306,7 @@ a:active {
 }
 
 .skill {
-    width: fit-content;
+    width: 40%;
     margin: 10px 15px;
     font-size: 1.1rem;
     font-weight: 450;

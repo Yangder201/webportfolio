@@ -1081,6 +1081,10 @@ mark {
     transition: .5s;
 }
 
+.codebox-m{
+    display: none;
+}
+
 
 .codebox2{
     background: #1b1b1b;
@@ -1099,7 +1103,9 @@ mark {
 }
 
 
-
+.codebox2-m{
+    display: none;
+}
 
 
 .link-btn {
@@ -1709,4 +1715,35 @@ footer {
     .next-btn a {
         position: relative !important;
     }
+
+
+    .codebox2{
+        display: none;
+    }
+
+
+    
+    .codebox2-m{
+        display: block;
+        width: 90vw;
+        margin: 2vh auto;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .codebox{
+        display: none;
+    }
+
+
+    .codebox-m{
+        display: block;
+        width: 90vw;
+        margin: 2vh auto;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+
+    
 }

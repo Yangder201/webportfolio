@@ -708,7 +708,8 @@ mark {
     margin: 0;
     padding: 0;
     /* background: #F6F6F6; */
-    background: linear-gradient(347deg, #494949, #4b4b4b, #7e7368);
+    /* background: linear-gradient(347deg, #494949, #4b4b4b, #7e7368); */
+    background: linear-gradient(347deg, #453d38, #443c38, #272220);
     position: relative;
     /* border-top: #ffffffd9 1px solid; */
 
@@ -862,7 +863,8 @@ mark {
 #info {
     width: 40%;
     padding-left: 8vw;
-    background: linear-gradient(347deg, #494949, #4b4b4b, #7e7368);
+    /* background: linear-gradient(347deg, #494949, #4b4b4b, #7e7368); */
+    background: linear-gradient(347deg, #41342d, #4b4b4b, #7e7368);
     color: #ffffff;
     height: 100vh;
     padding-top: 40vh;
@@ -1660,7 +1662,8 @@ h3 {
 #work-exp-bg {
     max-width: 100vw;
     margin: auto;
-    background: linear-gradient(347deg, #776e64, #494949, #4a4a4a);
+    /* background: linear-gradient(347deg, #776e64, #494949, #4a4a4a); */
+    background: linear-gradient(19deg, #ffc88b, #45433f, #423630);
     height: fit-content;
     padding-bottom: 5vh;
     padding-top: 10vh;

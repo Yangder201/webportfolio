@@ -82,6 +82,26 @@ img {
 
 }
 
+
+.btn_focus a{
+    color: #7c7873 !important;
+    font-size: 1rem !important;
+    /* height: 30px; */
+    padding: 10px 20px !important;
+    margin: 13px 0 !important;
+    background: #d5ccc3 !important;
+    border-radius: 15px !important;
+
+}
+
+.btn_focus a:hover{
+    border-radius: 15px !important;
+
+
+}
+
+
+
 #header-m {
     display: none;
 }
@@ -702,7 +722,7 @@ mark {
 
     /* text-shadow: 13px 6px 10px #9696963d; */
     opacity: 0;
-    animation: open-area 1.2s ease 0s 1 forwards;
+    animation: open-area 1s ease 0s 1 forwards;
 }
 
 

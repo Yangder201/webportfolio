@@ -370,7 +370,8 @@ footer{
         padding-left: 10vw;
         padding-top: 10vh;
         border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
         height: fit-content;
     }
 
@@ -379,7 +380,9 @@ footer{
         font-size: 1em;
     }
 
-
+    footer{
+        padding-top: 8vh;
+    }
 }
 
 @media only screen and (max-width:1024px) {
@@ -418,6 +421,7 @@ footer{
     }
 
 
+
 }
 
 
@@ -452,7 +456,7 @@ footer{
 
     #ride_side {
         width: 100%;
-        padding-left: 7vw;
+        padding-left: 5vw;
     }
 
 
@@ -506,7 +510,7 @@ footer{
     #ride_side {
         width: 100%;
         border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
+        border-bottom-right-radius: 10px;
         height: fit-content;
 
     }
@@ -563,4 +567,11 @@ footer{
         background: #dedede2c;
 
     }
+
+
+    .skill{
+        width: 100%;
+        margin: 10px 0;
+    }
+
 }

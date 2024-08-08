@@ -50,17 +50,17 @@
 
 
     <script type="text/javascript">
-        //往下滾動到一定距離，下滑出現固定上方的 主選單
-        window.addEventListener("scroll", function () {
-            var headerFixed = document.getElementById("header-fixed");
-            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        //往下滾動到一定距離，變動上方主選單
+        // window.addEventListener("scroll", function () {
+        //     var headerFixed = document.getElementById("header-fixed");
+        //     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-            if (scrollTop > 550) {
-                headerFixed.style.background = "#edededb0";
-            } else {
-                headerFixed.style.background = "";
-            }
-        });
+        //     if (scrollTop > 600) {
+        //         headerFixed.style.border = "2px solid #ffffff73";
+        //     } else {
+        //         headerFixed.style.border = "";
+        //     }
+        // });
 
 
         //首頁第一個主選單預設 focus
@@ -240,7 +240,7 @@
 
 
             <div id="photo" data-bottom-top="opacity:0" data-center="opacity:1">
-                <img src="img/yang3.png" alt="我的照">
+                <img src="img/yang.png" alt="我的照">
             </div>
             <main id="info">
                 <div class="name">楊紫晴</div>
@@ -268,8 +268,10 @@
             </main>
         </div>
 
-        <div id="work-exp-bg" data-500="background-color:rgb(74,74,74)" data-800="background-color: rgb(231,231,231)"
-            data-1000="background-color: rgb(231,231,231)">
+        <!-- <div id="work-exp-bg" data-500="background-color:rgb(74,74,74)" data-800="background-color: rgb(231,231,231)"
+            data-1000="background-color: rgb(231,231,231)"> -->
+
+            <div id="work-exp-bg" data-500="background-color:rgb(74,74,74)" data-1000="background-color:rgb(74,74,74)">
 
             <!-- <h2 class="center" data-center-top="color: rgb(255,255,255)" data-center-bottom="color: rgb(55,55,55)">
                 大小公司經歷，能獨立作業，也能團隊合作
@@ -465,6 +467,7 @@
                         <div class="tool-icon"><img src="img/JQ.png" alt="JQuery"></div>
                         <div class="tool-name">JQuery</div>
                     </div>
+                    
                 </div>
 
             </main>
@@ -490,7 +493,10 @@
 
             <main id="skill" data-bottom-top="transform:translateY(100px);opacity:0"
                 data-center-top="transform:translateY(0px);opacity:1">
-                <div class="skill-area">
+
+
+                <div class="skill-area" data-bottom-top="transform:translateY(50px);opacity:0"
+                data-center-top="transform:translateY(0px);opacity:1">
                     <div class="skill-tit">設計規劃流程</div>
                     <ul class="skill">
                         <li>釐清使用客群與目標</li>
@@ -504,7 +510,8 @@
                     </ul>
                 </div>
 
-                <div class="skill-area">
+                <div class="skill-area" data-bottom-top="transform:translateY(100px);opacity:0"
+                data-center-top="transform:translateY(0px);opacity:1">
                     <div class="skill-tit">遵循設計原則</div>
                     <ul class="skill">
                         <li>設計一致性，降低認知負荷</li>
@@ -518,7 +525,8 @@
                 </div>
 
 
-                <div class="skill-area">
+                <div class="skill-area" data-bottom-top="transform:translateY(150px);opacity:0"
+                data-center-top="transform:translateY(0px);opacity:1">
                     <div class="skill-tit">其他相關技能</div>
                     <ul class="skill">
                         <li>瀏覽器相容性問題解決</li>
@@ -529,7 +537,7 @@
                         <li>文案撰寫</li>
                         <li>電繪技術</li>
                         <li>AI 工具輔助（如 ChatGPT）</li>
-                        <li>GA、Hotjar 等熱點分析輔助</li>
+        
                     </ul>
                 </div>
 

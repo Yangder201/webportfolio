@@ -244,7 +244,8 @@ a:active {
 
 
 #ride_side {
-    background: #e9e3d7;
+    /* background: #e9e3d7; */
+    background: #f3f3f3;
     height: inherit;
     min-height: 678px;
     width: 60%;

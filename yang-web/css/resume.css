@@ -83,7 +83,7 @@ a:active {
     border-bottom-left-radius: 300px;
     padding: 2vh 2vw;
     width: 20%;
-    height: inherit;
+    height: initial;
     min-height: 678px;
     background: linear-gradient(to top, #6a635ec7 0%, #cfbfa5 100%);
     position: relative;
@@ -358,6 +358,7 @@ footer{
 
     #photo_area {
         width: 30%;
+        height: initial;
     }
 
     #info_area {
@@ -542,7 +543,7 @@ footer{
     }
 
     .photo img {
-        max-width: 150px;
+        max-width: 130px;
     }
 
     #tag_area {

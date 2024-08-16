@@ -263,7 +263,7 @@ button {
     transition: 0.3s;
     overflow: hidden;
     opacity: 0;
-
+    /* border: 1px solid #ffffff73; */
     animation: index_open 1.5s ease 1.5s 1 forwards;
     /* animation-duration: 1.5s;
     animation-delay: 0;
@@ -431,6 +431,12 @@ h1 {
     font-weight: bold;
     margin: auto;
     color: #0f0f0f;
+
+    /* text-shadow: 0 2px 16px rgba(82, 92, 102, 0.24);
+    background: linear-gradient(0deg, #d8ecf8 0, #c57736 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
 
 }
 
@@ -717,16 +723,16 @@ mark {
 
 
 #intro-area {
-    width: 66vw;
-    padding-left: 16vw;
-    padding-right: 12vw;
-    height: 95vh;
-    padding-top: 30vh;
+    width: 75vw;
+    padding-left: 15vw;
+    padding-right: 18vw;
+    height: 85vh;
+    padding-top: 25vh;
     /* background: linear-gradient(321deg, rgb(144 189 215 / 22%) 25%, rgb(255 255 255) 0, rgb(255 246 238) 50%, #fff 0, #dfddd8 75%, rgb(255 196 123 / 24%) 0); */
     background: linear-gradient(321deg, rgb(228 238 243) 25%, rgb(255 255 255) 0, rgb(255 246 238) 50%, #fff 0, #dfddd8 75%, rgb(239 226 210) 0);
     background-size: 1050px 780px;
     color: #2c2c2c;
-    border-bottom-right-radius: 150px;
+    border-bottom-right-radius: 200px;
     /* text-shadow: 13px 6px 10px #9696963d; */
     opacity: 0;
     z-index: 5;
@@ -781,8 +787,6 @@ mark {
     line-height: 5rem;
     padding: 0 0 30px 0;
     /* color: #485077; */
-    /* opacity: 0;
-    animation: open-tit .8s ease 0s 1 forwards; */
 
 }
 
@@ -809,6 +813,7 @@ mark {
     opacity: 0;
     animation: open-t 1s ease .5s 1 forwards;
 
+
 }
 
 @keyframes open-t {
@@ -827,7 +832,7 @@ mark {
 
 
 #photo {
-    width: 200px;
+    width: 230px;
     height: 100vh;
     margin-left: -5%;
     margin-right: -4.5%;
@@ -835,6 +840,8 @@ mark {
     overflow: hidden;
     position: relative;
     z-index: 10;
+
+    
 }
 
 #photo img {
@@ -1235,7 +1242,7 @@ mark {
         top: 0px;
         left: 50%;
         transform: translateX(-50%);
-        background-color: #333333;
+        background-color: #eeeeee;
         border-radius: 50%;
         opacity: 1;
         animation: wheel 2s infinite;
@@ -1275,7 +1282,7 @@ mark {
         top: 80px;
         left: 50%;
         transform: translateX(-50%);
-        background-color: #444444;
+        background-color: #b1b1b1;
         border-radius: 50%;
         opacity: 0;
         animation: wheel2 2s infinite;
@@ -1474,6 +1481,14 @@ h2 {
     text-align: center;
     line-height: 4rem;
     padding: 5vh 0 2vh 0;
+
+    /* color: #d8ecf8;
+    text-shadow: 0 2px 16px rgba(82, 92, 102, 0.24);
+    background: linear-gradient(0deg, #d8ecf8 0, #c57736 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+
 }
 
 

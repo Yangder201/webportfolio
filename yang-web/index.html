@@ -2,26 +2,26 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CYET5RW10T"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CYET5RW10T"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-CYET5RW10T');
-</script>
-<!-- Hotjar Tracking Code for Site 5078820 (name missing) -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:5078820,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+        gtag('config', 'G-CYET5RW10T');
+    </script>
+    <!-- Hotjar Tracking Code for Site 5078820 (name missing) -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 5078820, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,6 +48,9 @@
     <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script src="js/menu.js" type="text/javascript"></script>
 
+
+    <!--lottie 動態 JSON-->
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 
     <script type="text/javascript">
         //往下滾動到一定距離，變動上方主選單
@@ -171,9 +174,9 @@
 </head>
 
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMHNKVM3"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMHNKVM3" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div class="btn_menu-m">≡</div>
     <!-- 手機版選單 -->
@@ -202,7 +205,7 @@
                     <li><a href="#skill-bg">設計流程</a></li>
                     <li><a href="#trait-bg">設計理念</a></li>
                     <li class="btn_focus"><a href="banner.html">作品集</a></li>
-                    <li class="btn_focus"><a href="resume.html" target="_blank">單頁簡歷</a></li>
+                    <!-- <li class="btn_focus"><a href="resume.html" target="_blank">單頁簡歷</a></li> -->
                 </ul>
 
             </nav>
@@ -226,9 +229,11 @@
                     8 年網站實戰經驗讓我很擅長理解跟洞察需求，溝通富彈性，能很好的進行團隊合作。精通
                     HTML、CSS、RWD，能巧妙運用前端框架，提供有建設性的設計提案。具同理心，讓我總能站在使用者的立場思考，並提供品質穩定、資訊傳達清晰﹑直覺易用兼具質感的介面設計。
                 </div>
-
-
-
+                <div id="cat">
+                    <a href="resume.html" target="_blank">
+                    <dotlottie-player src="https://lottie.host/0c533ee4-8428-42e1-835a-09106151f991/lE3sBOIwUT.json" background="transparent" speed="1" style="width: 300px; height: 400px;" loop autoplay></dotlottie-player>
+                </a>
+                </div>
 
             </aside>
 
@@ -259,19 +264,25 @@
                 </ul>
 
             </main>
-            
+
+       
             <div class="next-btn">
                 <a href="#work-exp-bg">
                     <div class="mouse2"></div>
                     <div class="mouse"></div>
                 </a>
             </div>
+
+  
         </div>
+
+
+     
 
         <!-- <div id="work-exp-bg" data-500="background-color:rgb(74,74,74)" data-800="background-color: rgb(231,231,231)"
             data-1000="background-color: rgb(231,231,231)"> -->
 
-            <div id="work-exp-bg" data-500="background-color:rgb(74,74,74)" data-1000="background-color:rgb(74,74,74)">
+        <div id="work-exp-bg" data-500="background-color:rgb(74,74,74)" data-1000="background-color:rgb(74,74,74)">
 
             <!-- <h2 class="center" data-center-top="color: rgb(255,255,255)" data-center-bottom="color: rgb(55,55,55)">
                 大小公司經歷，能獨立作業，也能團隊合作
@@ -467,7 +478,7 @@
                         <div class="tool-icon"><img src="img/JQ.png" alt="JQuery"></div>
                         <div class="tool-name">JQuery</div>
                     </div>
-                    
+
                 </div>
 
             </main>
@@ -496,7 +507,7 @@
 
 
                 <div class="skill-area" data-bottom-top="transform:translateY(50px);opacity:0"
-                data-center-top="transform:translateY(0px);opacity:1">
+                    data-center-top="transform:translateY(0px);opacity:1">
                     <div class="skill-tit">設計規劃流程</div>
                     <ul class="skill">
                         <li>釐清使用客群與目標</li>
@@ -511,7 +522,7 @@
                 </div>
 
                 <div class="skill-area" data-bottom-top="transform:translateY(100px);opacity:0"
-                data-center-top="transform:translateY(0px);opacity:1">
+                    data-center-top="transform:translateY(0px);opacity:1">
                     <div class="skill-tit">遵循設計原則</div>
                     <ul class="skill">
                         <li>設計一致性，降低認知負荷</li>
@@ -527,7 +538,7 @@
 
 
                 <div class="skill-area" data-bottom-top="transform:translateY(150px);opacity:0"
-                data-center-top="transform:translateY(0px);opacity:1">
+                    data-center-top="transform:translateY(0px);opacity:1">
                     <div class="skill-tit">其他相關技能</div>
                     <ul class="skill">
                         <li>瀏覽器相容性問題解決</li>
@@ -538,7 +549,7 @@
                         <li>文案撰寫</li>
                         <li>電繪技術</li>
                         <li>AI 工具輔助（如 ChatGPT）</li>
-        
+
                     </ul>
                 </div>
 

@@ -24,6 +24,7 @@
 
 #cat::after{
     content: '戳貓看簡歷';
+    font-size: 1rem;
     position: absolute;
     right: 4vw;
     bottom: 30vh;
@@ -92,7 +93,7 @@ html,
 body {
     font-size: 15px;
     max-width: 100%;
-    font-family: 'Rubik', 'Noto Sans TC', sans-serif;
+    font-family: 'Rubik', 'Noto Sans TC',"微軟正黑體", sans-serif;
     letter-spacing: .6pt;
     color: #353535;
     background: #fdfdfd;
@@ -2260,14 +2261,20 @@ footer {
 @media only screen and (max-width: 1440px) {
 
 
+    #cat{
+        width: 280px;
+        height: 370px;
+    }
+
 
     #logo {
-        width: 10%;
+        width: 20%;
     }
 
     #photo {
-        margin-right: -5.5%;
+        margin-right: -10vw;
         margin-left: -6%;
+        width: 180px;
     }
 
     #photo img {
@@ -2285,7 +2292,7 @@ footer {
 
     #info {
 
-        margin-left: 0;
+        margin-left: 4vw;
     }
 
 
@@ -2391,7 +2398,9 @@ footer {
 @media only screen and (max-width: 1024px) {
 
 
-
+    #cat{
+        display: none;
+    }
 
     h1 {
         font-size: 6rem;
@@ -2437,6 +2446,7 @@ footer {
     #photo {
         margin-right: -8%;
         margin-left: -8%;
+        width: 180px;
     }
 
 

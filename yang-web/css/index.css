@@ -4,9 +4,23 @@
 #cat{
     position: absolute;
     right: -10px;
-    bottom: -100px;
+    bottom: -300px;
     z-index: 999;
+
+    animation: catopen 1s forwards;
+    animation-delay: 3s;
 }
+
+@keyframes catopen {
+    0%{
+        bottom: -300px
+    }
+
+    100%{
+        bottom: -100px
+    }
+}
+
 
 #cat::after{
     content: '戳貓看簡歷';
@@ -23,7 +37,7 @@
     opacity: 0;
 
     animation: cat .5s forwards;
-    animation-delay: 3s;
+    animation-delay: 5s;
 
 }
 
@@ -51,19 +65,10 @@
     opacity: 0;
 
     animation: cat 2s forwards;
-    animation-delay: 3s;
+    animation-delay: 5s;
 
 }
 
-@keyframes cat {
-    0%{
-        opacity: 0;
-    }
-
-    100%{
-        opacity: 1;
-    }
-}
 
 
 

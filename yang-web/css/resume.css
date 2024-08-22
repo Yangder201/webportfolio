@@ -11,11 +11,11 @@
 
 
 #cat::after{
-    content: '戳貓回首頁';
+    content: '了解更多';
     position: absolute;
     right: 4vw;
     bottom: 30vh;
-    width: 85px;
+    width: 65px;
     height: 20px;
     padding: 8px 15px 10px 15px;
     text-align: center;

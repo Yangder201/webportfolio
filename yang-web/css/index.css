@@ -2547,6 +2547,9 @@ footer {
 @media only screen and (max-width: 768px) {
 
 
+    #logo{
+        width: 50%;
+    }
 
     #work-exp-bg {
         height: fit-content;
@@ -3193,6 +3196,9 @@ footer {
         margin: 15px;
     }
 
+    #logo{
+        width: 80%;
+    }
 
     #intro-area-bg {
         background: linear-gradient(347deg, #494949, #4b4b4b, #7e7368);

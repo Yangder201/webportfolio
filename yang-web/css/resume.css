@@ -1,5 +1,64 @@
 @charset "utf-8";
 
+
+
+#cat{
+    position: absolute;
+    right: -200px;
+    bottom: -130px;
+    z-index: 99;
+}
+
+
+#cat::after{
+    content: '戳貓回首頁';
+    position: absolute;
+    right: 4vw;
+    bottom: 30vh;
+    width: 85px;
+    height: 20px;
+    padding: 8px 15px 10px 15px;
+    text-align: center;
+    border-radius: 20px;
+    background: #ebeaea;
+    color: #664b3e;
+    opacity: 0;
+
+    animation: cat .5s forwards;
+    animation-delay: 1s;
+
+}
+
+@keyframes cat {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+#cat::before{
+    content: '';
+    position: absolute;
+    right: 5vw;
+    bottom: 30vh;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    border-radius: 2px;
+    background: #ffffff;
+    color: #000000;
+    opacity: 0;
+
+    animation: cat .5s forwards;
+    animation-delay: 1.2s;
+
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -26,6 +85,7 @@ body {
     background: linear-gradient(347deg, #494949, #4b4b4b, #7e7368);
     display: flex;
     justify-content: center;
+
 }
 
 
@@ -65,6 +125,7 @@ a:active {
     display: flex;
     flex-wrap: nowrap;
     box-shadow: 0 5px 35px -18px rgba(14, 14, 14, 0.881);
+    position: relative;
 }
 
 
@@ -132,6 +193,7 @@ a:active {
     padding: 20px 30px;
     /* border-right: 2px solid #69625b; */
     background: #ffffff;
+    overflow: hidden;
 }
 
 .info {

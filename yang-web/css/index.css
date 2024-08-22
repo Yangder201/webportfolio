@@ -1,6 +1,72 @@
 @charset "utf-8";
 
 
+#cat{
+    position: absolute;
+    right: -10px;
+    bottom: -100px;
+    z-index: 999;
+}
+
+#cat::after{
+    content: '戳貓看簡歷';
+    position: absolute;
+    right: 4vw;
+    bottom: 30vh;
+    width: 85px;
+    height: 18px;
+    padding: 12px 15px;
+    text-align: center;
+    border-radius: 20px;
+    background: #ebeaea;
+    color: #664b3e;
+    opacity: 0;
+
+    animation: cat .5s forwards;
+    animation-delay: 3s;
+
+}
+
+@keyframes cat {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+#cat::before{
+    content: '';
+    position: absolute;
+    right: 5vw;
+    bottom: 30vh;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    border-radius: 2px;
+    background: #ffffff;
+    color: #000000;
+    opacity: 0;
+
+    animation: cat 2s forwards;
+    animation-delay: 3s;
+
+}
+
+@keyframes cat {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
 :root {
     --primary-color: ;
     --secondary-color: ;
@@ -1683,6 +1749,12 @@ h3 {
     padding-top: 10vh;
     transition: .2s;
     position: relative;
+
+
+    /* background-image: url(../img/bg2.png);
+    background-repeat: no-repeat;
+    background-position:  bottom right; */
+
 }
 
 #work-exp-area {

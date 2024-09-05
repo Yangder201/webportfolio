@@ -157,11 +157,11 @@ img {
 
 .btn_focus a {
     color: #5f5952 !important;
+    background: #d5ccc3 !important;
     font-size: 1rem !important;
     /* height: 30px; */
     padding: 10px 25px !important;
     margin: 13px 0 !important;
-    background: #d5ccc3 !important;
     border-radius: 8px !important;
 
 }
@@ -854,9 +854,9 @@ mark {
 
 
 .intro-tit {
-    font-size: 2.9rem;
+    font-size: 2.5rem;
     font-weight: bold;
-    line-height: 5rem;
+    line-height: 4rem;
     padding: 0 0 30px 0;
     /* color: #485077; */
 
@@ -1792,7 +1792,7 @@ h3 {
     width: 100%;
     height: inherit;
     padding: 5px 0 20px 60px;
-    border-left: #ffbb66 5px solid;
+    border-left: #ffbe43 5px solid;
     /* background: #ffffff; */
 
 }
@@ -1809,7 +1809,7 @@ h3 {
     font-size: 2rem;
     line-height: 4.5rem;
     font-weight: 500;
-    color: #ffc179;
+    color: #ffbe43;
 }
 
 /* .work-tit span{

@@ -69,7 +69,7 @@ a:active {
     flex-wrap: nowrap;
     box-shadow: 0 5px 35px -18px rgba(14, 14, 14, 0.881);
     position: relative;
-  
+
 }
 
 
@@ -464,7 +464,7 @@ footer {
         z-index: 99;
     }
 
-    
+
     #cat::after {
         content: '了解更多';
         position: absolute;
@@ -478,13 +478,13 @@ footer {
         background: #898989;
         color: #ffffff;
         opacity: 0;
-    
+
         animation: cat .5s forwards;
         animation-delay: 1s;
-    
+
     }
-    
-    
+
+
     #cat::before {
         content: '';
         position: absolute;
@@ -497,10 +497,10 @@ footer {
         background: #898989;
         color: #ffffff;
         opacity: 0;
-    
+
         animation: cat .5s forwards;
         animation-delay: 1.2s;
-    
+
     }
 }
 
@@ -538,6 +538,7 @@ footer {
         width: 100%;
         padding-left: 10vw;
     }
+
     #cat {
         position: absolute;
         right: -50px;
@@ -615,7 +616,7 @@ footer {
     }
 
     #container {
-        width: 75%;
+        width: 80%;
         height: fit-content;
         margin-top: 50px;
         margin-left: auto;
@@ -705,26 +706,82 @@ footer {
         margin: 10px 0;
     }
 
+
     #cat {
         position: absolute;
-        right: -110px;
+        right: -100px;
         bottom: -130px;
         z-index: 99;
     }
 
-    
+
+    #cat::after {
+        content: '了解更多';
+        position: absolute;
+        right: 18vw;
+        bottom: 33vh;
+        width: 65px;
+        height: 20px;
+        padding: 8px 15px 10px 15px;
+        text-align: center;
+        border-radius: 20px;
+        background: #898989;
+        color: #ffffff;
+        opacity: 0;
+
+        animation: cat .5s forwards;
+        animation-delay: 1s;
+
+    }
+
+
+    #cat::before {
+        content: '';
+        position: absolute;
+        right: 25vw;
+        bottom: 33vh;
+        width: 30px;
+        height: 30px;
+        transform: rotate(45deg);
+        border-radius: 2px;
+        background: #898989;
+        color: #ffffff;
+        opacity: 0;
+
+        animation: cat .5s forwards;
+        animation-delay: 1.2s;
+
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 375px) {
+
+
+#cat {
+    position: absolute;
+    right: -130px;
+    bottom: -130px;
+    z-index: 99;
+}
+
+
 #cat::after {
     content: '了解更多';
     position: absolute;
-    right: 18vw;
+    right: 22vw;
     bottom: 33vh;
-    width: 65px;
+    width: 60px;
     height: 20px;
     padding: 8px 15px 10px 15px;
     text-align: center;
+    font-size: 14px;
     border-radius: 20px;
     background: #898989;
-        color: #ffffff;
+    color: #ffffff;
     opacity: 0;
 
     animation: cat .5s forwards;
@@ -733,17 +790,18 @@ footer {
 }
 
 
+
 #cat::before {
     content: '';
     position: absolute;
-    right: 25vw;
+    right: 27vw;
     bottom: 33vh;
     width: 30px;
     height: 30px;
     transform: rotate(45deg);
     border-radius: 2px;
     background: #898989;
-        color: #ffffff;
+    color: #ffffff;
     opacity: 0;
 
     animation: cat .5s forwards;

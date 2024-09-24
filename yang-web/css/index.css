@@ -917,7 +917,7 @@ mark {
 }
 
 #photo img {
-    max-width: 180px;
+    max-width: 160px;
     border-radius: 100%;
     opacity: 0;
     animation: index-photo .5s ease 1.5s 1 forwards;

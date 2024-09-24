@@ -854,7 +854,7 @@ mark {
 
 
 .intro-tit {
-    font-size: 2.5rem;
+    font-size: 2.9rem;
     font-weight: bold;
     line-height: 4rem;
     padding: 0 0 30px 0;
@@ -917,7 +917,7 @@ mark {
 }
 
 #photo img {
-    max-width: 160px;
+    max-width: 150px;
     border-radius: 100%;
     opacity: 0;
     animation: index-photo .5s ease 1.5s 1 forwards;

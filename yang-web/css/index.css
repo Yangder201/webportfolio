@@ -91,7 +91,7 @@
 
 html,
 body {
-    font-size: 15px;
+    font-size: 16px;
     max-width: 100%;
     font-family: 'Rubik', 'Noto Sans TC',"微軟正黑體", sans-serif;
     letter-spacing: .6pt;
@@ -854,9 +854,9 @@ mark {
 
 
 .intro-tit {
-    font-size: 2.9rem;
+    font-size: 2.7rem;
     font-weight: bold;
-    line-height: 4rem;
+    line-height: 4.5rem;
     padding: 0 0 30px 0;
     /* color: #485077; */
 
@@ -940,12 +940,12 @@ mark {
 
 #info {
     width: 40%;
-    padding-left: 8vw;
+    padding-left: 5vw;
     background: linear-gradient(347deg, #494949, #4b4b4b, #7e7368);
     /* background: linear-gradient(347deg, #41342d, #4b4b4b, #7e7368); */
     color: #ffffff;
     height: 100vh;
-    padding-top: 40vh;
+    padding-top: 45vh;
     position: relative;
     z-index: 0;
     opacity: 0;
@@ -2003,24 +2003,24 @@ footer {
 }
 
 
-#interest_area {
-    width: 100%;
-    height: 200px;
+.interest_area {
+    width: 80vw;
+    height: auto;
     padding: 15px;
     display: flex;
     flex-wrap: nowrap;
 }
 
 .interest {
-    min-width: 250px;
+    min-width: 20vw;
     min-height: 200px;
     margin: 7px;
 }
 
 .interest img {
-    max-width: 250px;
+    max-width: 350px;
     margin: 0 15px;
-    max-height: 200px;
+    max-height: 250px;
     overflow-y: hidden;
     border-radius: 10px;
     margin-bottom: 25px;
@@ -2028,15 +2028,15 @@ footer {
 
 .interest-tit {
     max-width: 250px;
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1.3rem;
+    font-weight: 600;
     margin: 10px 15px;
 }
 
 .interest-text {
     font-size: 1.1rem;
     line-height: 1.8rem;
-    max-width: 250px;
+    max-width: 330px;
     margin: 10px 15px;
 }
 
@@ -2254,6 +2254,7 @@ footer {
     font-size: 1.5em;
     height: 5vh;
 }
+
 
 
 
@@ -3142,7 +3143,7 @@ footer {
     }
 
 
-    #interest_area {
+    .interest_area {
         width: 100vw;
         padding: 15px;
         display: flex;

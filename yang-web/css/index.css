@@ -94,6 +94,7 @@ body {
     font-size: 16px;
     max-width: 100%;
     font-family: 'Rubik', 'Noto Sans TC',"微軟正黑體", sans-serif;
+
     letter-spacing: .6pt;
     color: #353535;
     background: #fdfdfd;
@@ -1764,7 +1765,7 @@ h3 {
 }
 
 #work-exp-area {
-    max-width: 800px;
+    max-width: 820px;
     margin: auto;
     height: auto;
 

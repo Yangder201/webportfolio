@@ -12,6 +12,7 @@
         gtag('config', 'G-CYET5RW10T');
     </script>
     <!-- Hotjar Tracking Code for Site 5078820 (name missing) -->
+
     <script>
         (function (h, o, t, j, a, r) {
             h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
@@ -22,6 +23,7 @@
             a.appendChild(r);
         })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,146 +33,29 @@
     <meta property="og:description" content="嗨!這是 楊紫晴 的 Web & UI/UX 設計作品集個人網站，擁有 8 年以上網站設計經歷，欲瞭解更多歡迎來信諮詢！" />
     <meta property="og:type" content="Web.UI.Design" />
     <meta property="og:url" content="https://yangder201.github.io/webportfolio/yang-web/" />
-    <mtea property="og:image" content="https://yangder201.github.io/webportfolio/yang-web/img/share-img.jpg"></mtea>
+    <meta property="og:image" content="https://yangder201.github.io/webportfolio/yang-web/img/share-img.jpg">
+    </meta>
     <link rel="icon" href="img/title-icon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
+    
 
-    <!--Google Fonts-->
+
+    <!--Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap"
         rel="stylesheet">
 
+
+
     <!--RWD MENU相關-->
     <link href="css/styles.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script src="js/menu.js" type="text/javascript"></script>
 
-
-    <!--lottie 動態 JSON-->
-    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-
-    <script type="text/javascript">
-        //往下滾動到一定距離，變動上方主選單
-        // window.addEventListener("scroll", function () {
-        //     var headerFixed = document.getElementById("header-fixed");
-        //     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-        //     if (scrollTop > 600) {
-        //         headerFixed.style.border = "2px solid #ffffff73";
-        //     } else {
-        //         headerFixed.style.border = "";
-        //     }
-        // });
-
-
-        //首頁第一個主選單預設 focus
-        window.addEventListener('DOMContentLoaded', function () {
-            removeFocusFromMenuItems(menuItems);
-            var firstMenuItem = document.querySelector('#cssmenu ul li:first-child a');
-            firstMenuItem.parentNode.classList.add('focus');
-        });
-
-        //往下滑動至當前 div 時，主選單加上 focus 狀態樣式
-        window.addEventListener('scroll', function () {
-            var scrollPosition = window.scrollY;
-            var menuItems = document.querySelectorAll('#cssmenu ul li a');
-
-            menuItems.forEach(function (item) {
-                var sectionId = item.getAttribute('href').substring(1);
-                var section = document.getElementById(sectionId);
-                if (section.offsetTop <= scrollPosition && section.offsetTop + section.offsetHeight > scrollPosition) {
-                    removeFocusFromMenuItems(menuItems);
-                    item.parentNode.classList.add('focus');
-                } else {
-                    item.parentNode.classList.remove('focus');
-                }
-            });
-        });
-
-        function removeFocusFromMenuItems(menuItems) {
-            menuItems.forEach(function (item) {
-                item.parentNode.classList.remove('focus');
-            });
-        }
-
-        //錨點滑動 
-
-        $(document).ready(function () {
-            // 初始化 skrollr
-            var s = skrollr.init({
-                smoothScrolling: true,
-                smoothScrollingDuration: 3500,
-                forceHeight: false,
-                mobileDeceleration: 0.004,
-            });
-
-            // 在視窗滾動時刷新 skrollr
-            $(window).on('scroll', function () {
-                s.refresh();
-            });
-
-            // 處理錨點連結的點擊事件
-            $("a").on("click", function (event) {
-                console.log("Link clicked");
-                if (this.hash !== "") {
-                    // 阻止預設的錨點跳轉行為
-                    event.preventDefault();
-
-                    // 獲取錨點目標的位置
-                    var hash = this.hash;
-                    var targetOffset = $(hash).offset().top;
-
-                    // 滑動至目標位置，並在動畫完成後刷新 skrollr
-                    $("html, body").animate(
-                        {
-                            scrollTop: targetOffset
-                        },
-                        800,
-                        function () {
-                            s.refresh();
-                        }
-                    );
-                }
-            });
-        });
-
-        //go to top
-        $(function () {
-            $("#gotop").click(function () {
-                jQuery("html,body").animate({
-                    scrollTop: 0
-                }, 500);
-            });
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 300) {
-                    $('#gotop').fadeIn("fast");
-                } else {
-                    $('#gotop').stop().fadeOut("fast");
-                }
-            });
-        });
-
-        //手機板選單
-        $(document).ready(function () {
-            $(".btn_menu-m").click(function () {
-                $("#header-m").slideToggle(300);
-            });
-        });
-
-        $(document).ready(function () {
-            $("#btn-area-m li").click(function () {
-                $("#header-m").css("display", "none");
-            });
-        });
-
-
-    </script>
-
-
-
+   
 </head>
 
 <body>
@@ -178,6 +63,16 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMHNKVM3" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
+
+
+    <div id="skrollr-body">
+
+        <div id="gotop">
+            <div class="arrow"></div>
+        </div>
+
+        
     <div class="btn_menu-m">≡</div>
     <!-- 手機版選單 -->
     <div id="header-m">
@@ -205,29 +100,19 @@
                     <li><a href="#skill-bg">設計流程</a></li>
                     <li><a href="#trait-bg">設計理念</a></li>
                     <li class="btn_focus"><a href="banner.html">作品集</a></li>
-                    <!-- <li class="btn_focus"><a href="resume.html" target="_blank">單頁簡歷</a></li> -->
                 </ul>
 
             </nav>
         </div>
     </header>
-    <div id="skrollr-body">
-
-        <div id="gotop">
-            <div class="arrow"></div>
-        </div>
-
-
-
-
-
 
         <div id="intro-area-bg">
             <aside id="intro-area">
-                <h1 class="intro-tit">＃獨立 ＃體貼 ＃擅理解 ＃同理 ＃換位思考 ＃溝通富彈性</h1>
+                <h1 class="intro-tit">＃獨立 ＃體貼 ＃理性感性兼具 ＃換位思考 ＃溝通富彈性</h1>
                 <div class="intor-text">
-                    8 年網站實戰經驗讓我很擅長理解跟洞察需求，溝通富彈性，能很好的進行團隊合作。精通
-                    HTML、CSS、RWD，能巧妙運用前端框架，提供有建設性的設計提案。具同理心，讓我總能站在使用者的立場思考，並提供品質穩定、資訊傳達清晰﹑直覺易用兼具質感的介面設計。
+                    8 年網站實戰經驗讓我擅長理解跟洞察需求，溝通富彈性，常成為溝通橋梁，能很好的進行團隊合作。
+                    HTML、CSS、RWD 熟練，能巧妙運用前端框架，提供有建設性的設計提案。同理心讓我總能站在使用者的立場思考，
+                    並提供品質穩定、資訊傳達清晰﹑直覺易用兼具質感的介面設計。
                 </div>
 
                 <div id="cat">
@@ -282,15 +167,8 @@
 
 
 
-        <!-- <div id="work-exp-bg" data-500="background-color:rgb(74,74,74)" data-800="background-color: rgb(231,231,231)"
-            data-1000="background-color: rgb(231,231,231)"> -->
 
         <div id="work-exp-bg" data-500="background-color:rgb(74,74,74)" data-1000="background-color:rgb(74,74,74)">
-
-            <!-- <h2 class="center" data-center-top="color: rgb(255,255,255)" data-center-bottom="color: rgb(55,55,55)">
-                大小公司經歷，能獨立作業，也能團隊合作
-            </h2> -->
-
 
             <h2 class="center" data-center-top="color: rgb(245,214,165)" data-center-bottom="color: rgb(255,255,255)">
                 大小公司經歷，能獨立作業，也能團隊合作
@@ -314,7 +192,7 @@
 
                     <div class="work-detal">
                         B2B 品牌企業，獨立完成公司網站的改版及後續更新。<br>
-                        期間陸續加薪，獲提晉升一次。
+                        至新公司加薪幅度 20%(不含年終)，期間陸續加薪，獲提晉升一次。
                         <ul>
                             <li>網站改版後，流量有顯著提升</li>
                             <li>活動頁和登錄頁的設計和改版，提高了轉化率</li>
@@ -478,8 +356,8 @@
                     </div>
 
                     <div class="tool">
-                        <div class="tool-icon"><img src="img/JQ.png" alt="JQuery"></div>
-                        <div class="tool-name">JQuery</div>
+                        <div class="tool-icon"><img src="" alt="Vue"></div>
+                        <div class="tool-name">Vue</div>
                     </div>
 
                 </div>
@@ -536,7 +414,7 @@
                         <li>適當動畫效果，避免過度</li>
                         <li>可互動元件，提供回饋提示</li>
                         <li>icon 的可辨識性</li>
-                        
+
                     </ul>
                 </div>
 
@@ -637,31 +515,17 @@
         </div>
 
 
+
         <div class="thanks">Thank you for your time.</div>
 
         <footer>Copyright © RENEE, YANG</footer>
 
-        </main>
+
+    <!-- skrollr -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js"></script>
+    <!--lottie 動態 JSON-->
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 
 
-
-
-        <!-- skrollr -->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js"></script>
-        <script type="text/javascript">
-            var s = skrollr.init();
-            document.body.id = "skrollr-body"
-        </script>
-
-
-    </div>
-
-
-
-
-    </div>
-
-
-
-
+    <script src="js/index.js" type="text/javascript"></script>
 </body>

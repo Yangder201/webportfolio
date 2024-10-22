@@ -561,11 +561,12 @@
 
 
 
-
-		<footer>Copyright © Yang</footer>
+		<div id="footer"></div>
 
 	</div>
 
+	<script src="js/rotuer.js" type="text/javascript"></script>
+	<script src="js/portfolio.js" type="text/javascript"></script>
 
 </body>
 
@@ -573,48 +574,6 @@
 <script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
 <link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
 
-<script type="text/javascript">
-	$(document).ready(function () {
-		// FancyBox 設定
-		$('.fancybox').fancybox({
-			autoSize: true,
-			scrolling: 'auto',
-			fitToView: false,
-			width: 'auto',
-			maxWidth: '100%',
-
-
-			beforeShow: function () {
-				var $img = $(this.element).find('img');
-				var dataSrc = $img.attr('data-src');
-				if (dataSrc) {
-					$img.attr('src', dataSrc);
-				}
-			}
-		});
-
-		$('.fancybox-buttons').fancybox({
-			openEffect: 'none',
-			closeEffect: 'none',
-
-			prevEffect: 'none',
-			nextEffect: 'none',
-
-			closeBtn: false,
-
-			helpers: {
-				title: {
-					type: 'inside'
-				},
-				buttons: {}
-			},
-
-			afterLoad: function () {
-				this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
-			}
-		});
-	});
-
-</script>
+<script src="js/fancybox.js" type="text/javascript"></script>
 
 </html>

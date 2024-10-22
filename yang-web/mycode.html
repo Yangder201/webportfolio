@@ -243,7 +243,7 @@
 			<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 		</div>
 
-		<!-- <p><div class="tag-tit">品牌識別 Design Systems 編排練習</div></p>
+		<p><div class="tag-tit">品牌識別 Design System 編排模擬</div></p>
 		<div class="codebox">
 		<p class="codepen" data-height="1100" data-slug-hash="ExdBpOm" data-user="loveinro" style="box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
 			<span>See the Pen <a href="https://codepen.io/loveinro/pen/ExdBpOm">
@@ -251,53 +251,22 @@
 			on <a href="https://codepen.io">CodePen</a>.</span>
 		  </p>
 		  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-		</div> -->
+		</div>
 
-		<footer>Copyright © Yang</footer>
+
+		<div id="footer"></div>
 
 	</div>
 
+	<script src="js/rotuer.js" type="text/javascript"></script>
+	<script src="js/portfolio.js" type="text/javascript"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+
 </body>
 
-<!-- Add fancyBox main JS and CSS files -->
-<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
-<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
-
-
-<script type="text/javascript">
-	$(document).ready(function () {
-
-		$('.fancybox').fancybox({
-			autoSize: true,
-			scrolling: 'auto',
-			fitToView: false,
-			width: 'auto',
-			maxWidth: '100%',
-		});
-
-		$('.fancybox-buttons').fancybox({
-			openEffect: 'none',
-			closeEffect: 'none',
-
-			prevEffect: 'none',
-			nextEffect: 'none',
-
-			closeBtn: false,
-
-			helpers: {
-				title: {
-					type: 'inside'
-				},
-				buttons: {}
-			},
-
-			afterLoad: function () {
-				this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
-			}
-		});
-
-
-	});
-</script>
-
+<script src="js/fancybox.js" type="text/javascript"></script>
 </html>

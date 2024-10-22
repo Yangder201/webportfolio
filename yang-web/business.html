@@ -362,36 +362,46 @@
 
 <script type="text/javascript">
 	$(document).ready(function () {
+			// FancyBox 設定
+			$('.fancybox').fancybox({
+				autoSize: true,
+				scrolling: 'auto',
+				fitToView: false,
+				width: 'auto',
+				maxWidth: '100%',
 
-		$('.fancybox').fancybox({
-			autoSize: true,
-			scrolling: 'auto',
-			fitToView: false,
-			width: 'auto',
-			maxWidth: '100%',
-		});
 
-		$('.fancybox-buttons').fancybox({
-			openEffect: 'none',
-			closeEffect: 'none',
+				beforeShow: function () {
+					var $img = $(this.element).find('img');
+					var dataSrc = $img.attr('data-src');
+					if (dataSrc) {
+						$img.attr('src', dataSrc);  
+					}
+				}
+			});
 
-			prevEffect: 'none',
-			nextEffect: 'none',
+			$('.fancybox-buttons').fancybox({
+				openEffect: 'none',
+				closeEffect: 'none',
 
-			closeBtn: false,
+				prevEffect: 'none',
+				nextEffect: 'none',
 
-			helpers: {
-				title: {
-					type: 'inside'
+				closeBtn: false,
+
+				helpers: {
+					title: {
+						type: 'inside'
+					},
+					buttons: {}
 				},
-				buttons: {}
-			},
 
-			afterLoad: function () {
-				this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
-			}
+				afterLoad: function () {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
 		});
-	});
+
 </script>
 
 

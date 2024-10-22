@@ -2,15 +2,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CYET5RW10T"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CYET5RW10T"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-  gtag('config', 'G-CYET5RW10T');
-</script>
+		gtag('config', 'G-CYET5RW10T');
+	</script>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,21 +44,21 @@
 
 	<script type="text/javascript">
 		//go to top
-			$(function () {
-				$("#gotop").click(function () {
-					jQuery("html,body").animate({
-						scrollTop: 0
-					}, 500);
-				});
-				$(window).scroll(function () {
-					if ($(this).scrollTop() > 300) {
-						$('#gotop').fadeIn("fast");
-					} else {
-						$('#gotop').stop().fadeOut("fast");
-					}
-				});
+		$(function () {
+			$("#gotop").click(function () {
+				jQuery("html,body").animate({
+					scrollTop: 0
+				}, 500);
 			});
-	
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 300) {
+					$('#gotop').fadeIn("fast");
+				} else {
+					$('#gotop').stop().fadeOut("fast");
+				}
+			});
+		});
+
 		//左選單收合
 		$(document).ready(function () {
 			$(".btn_menu").click(function () {
@@ -93,14 +93,14 @@
 				}
 			);
 		});
-		</script>
+	</script>
 
 </head>
 
 <body>
 	<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMHNKVM3"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMHNKVM3" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
 	<div id="gotop">
 		<div class="arrow"></div>
@@ -146,21 +146,21 @@
 	<div id="btn-area-bbg"></div>
 
 
-		<!-- 手機版選單 -->
-		<div id="btn-area-bg-m">
-			<div id="btn-area-m">
-				<div class="btn-box-m"><a href="banner.html">Banner</a></div>
-				<div class="btn-box-m"><a href="product.html">產品頁</a></div>
-				<div class="btn-box-m"><a href="page.html">大型專案</a></div>
-				<div class="btn-box-now-m">電商廣告</div>
-				<div class="btn-box-m"><a href="ill.html">電繪插圖 / ICON</a></div>
-				<div class="btn-box-m"><a href="sticker.html">LINE 貼圖創作</a></div>
-				<div class="btn-box-m"><a href="mycode.html">UI / Code</a></div>
-				<div class="btn-box-m"><a href="business.html">形象網站</a></div>
-				<div class="btn-box-m"><a href="index.html">回首頁</a></div>
-			</div>
+	<!-- 手機版選單 -->
+	<div id="btn-area-bg-m">
+		<div id="btn-area-m">
+			<div class="btn-box-m"><a href="banner.html">Banner</a></div>
+			<div class="btn-box-m"><a href="product.html">產品頁</a></div>
+			<div class="btn-box-m"><a href="page.html">大型專案</a></div>
+			<div class="btn-box-now-m">電商廣告</div>
+			<div class="btn-box-m"><a href="ill.html">電繪插圖 / ICON</a></div>
+			<div class="btn-box-m"><a href="sticker.html">LINE 貼圖創作</a></div>
+			<div class="btn-box-m"><a href="mycode.html">UI / Code</a></div>
+			<div class="btn-box-m"><a href="business.html">形象網站</a></div>
+			<div class="btn-box-m"><a href="index.html">回首頁</a></div>
 		</div>
-	
+	</div>
+
 
 	<div class="portfolio-area">
 		<div class="tag-tit">電商廣告</div>
@@ -311,8 +311,8 @@
 				</div><img src="portfolio/AD/CTA005.png" alt="CTA 按鈕圖示" />
 			</a>
 		</div>
-		
-	
+
+
 
 
 		<div class="box">
@@ -559,7 +559,7 @@
 		</div>
 
 
-		
+
 
 
 		<footer>Copyright © Yang</footer>
@@ -575,13 +575,22 @@
 
 <script type="text/javascript">
 	$(document).ready(function () {
-
+		// FancyBox 設定
 		$('.fancybox').fancybox({
 			autoSize: true,
 			scrolling: 'auto',
 			fitToView: false,
 			width: 'auto',
 			maxWidth: '100%',
+
+
+			beforeShow: function () {
+				var $img = $(this.element).find('img');
+				var dataSrc = $img.attr('data-src');
+				if (dataSrc) {
+					$img.attr('src', dataSrc);
+				}
+			}
 		});
 
 		$('.fancybox-buttons').fancybox({
@@ -604,9 +613,8 @@
 				this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
 			}
 		});
-
-
 	});
+
 </script>
 
 </html>

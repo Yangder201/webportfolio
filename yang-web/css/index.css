@@ -741,7 +741,7 @@ mark {
 #logo {
     padding: 23px;
     width: 25%;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: bold;
     position: relative;
     z-index: 88;
@@ -768,7 +768,7 @@ mark {
 
 
 #logo a {
-    color: #1e1e1e !important;
+    color: #353535 !important;
 }
 
 #logo a:hover {
@@ -881,7 +881,7 @@ mark {
     width: 100%;
     font-size: 1.3rem;
     font-weight: 400;
-    line-height: 2.8rem !important;
+    line-height: 2.5rem !important;
     color: #494949;
     opacity: 0;
     animation: open-t 1s ease .5s 1 forwards;

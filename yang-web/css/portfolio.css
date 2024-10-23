@@ -488,10 +488,10 @@ mark {
 }
 
 .portfolio-area {
-    width: 70vw;
+    width: 76vw;
     padding-top: 5vh;
-    padding-left: 15vw;
-    padding-right: 15vw;
+    padding-left: 12vw;
+    padding-right: 12vw;
     min-height: 100vh;
     height: auto;
     display: flex;
@@ -820,6 +820,7 @@ mark {
     overflow: hidden;
     position: relative;
     box-shadow: 6px 5px 25px -5px #1d1d1dec;
+    transition: 1s;
 }
 
 .box3 a:hover{
@@ -1020,6 +1021,7 @@ mark {
 }
 
 
+
 .box:hover::after {
     content: '瀏覽大圖';
     font-size: 18px;
@@ -1028,7 +1030,6 @@ mark {
     backdrop-filter: none;
     -moz-backdrop-filter: none;
     color: #ffffff;
-    /* border: 200px solid rgba(27, 27, 27, 0.708); */
     transition: 1s ease-out;
     display: flex;
     align-items: center;
@@ -1224,10 +1225,10 @@ mark {
 
 
 
-footer {
+#footer {
     width: 100%;
-    min-height: 50px;
-    margin-top: 50px;
+    height: 70px;
+    padding-top: 5vh;
     margin: auto;
     font-size: 1rem;
     color: #878787;
@@ -1250,7 +1251,7 @@ footer {
     border-radius: 15px;
     text-shadow: none !important;
     color: #3f3f3f !important;
-    font-weight: 600 !important;
+    font-weight: 500 !important;
     font-size: .9rem !important;
     letter-spacing: 1pt;
     line-height: 24px;

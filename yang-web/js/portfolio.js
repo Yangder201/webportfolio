@@ -1,3 +1,15 @@
+document.querySelectorAll("script").forEach(script => {
+    const newScript = document.createElement("script");
+    if (script.src) {
+        newScript.src = script.src;
+    } else {
+        newScript.textContent = script.innerHTML;
+    }
+    document.body.appendChild(newScript);
+});
+
+
+
 //go to top
 $(function () {
     $("#gotop").click(function () {

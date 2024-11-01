@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 	<!-- Google tag (gtag.js) -->
@@ -30,7 +30,70 @@
 		href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap"
 		rel="stylesheet">
 
+	<!--手機板 RWD MENU 相關-->
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script src="js/menu.js" type="text/javascript"></script>
+	<!--中間作品集區塊相關群-->
+	<link rel="stylesheet" href="css/portfolio.css" type="text/css">
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/jquery.isotope.min.js" type="text/javascript"></script>
 
+
+	<script type="text/javascript">
+		//go to top
+		$(function () {
+			$("#gotop").click(function () {
+				jQuery("html,body").animate({
+					scrollTop: 0
+				}, 500);
+			});
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 300) {
+					$('#gotop').fadeIn("fast");
+				} else {
+					$('#gotop').stop().fadeOut("fast");
+				}
+			});
+		});
+
+		//左選單收合
+		$(document).ready(function () {
+			$(".btn_menu").click(function () {
+				$("#btn-area-bbg").show(5);
+				$("#btn-area-bg").animate({ marginLeft: "25%" }, 300);
+				$(".btn_menu").animate({ display: "none" }, 300);
+			});
+
+			$(".btn_close").click(function () {
+				$("#btn-area-bbg").hide(5);
+				$("#btn-area-bg").animate({ marginLeft: "-51%" }, 200);
+				$(".btn_menu").animate({ display: "" }, 1000);
+			});
+		});
+
+
+		//手機板選單
+		$(document).ready(function () {
+			$(".btn_menu-m").click(function () {
+				$("#btn-area-bg-m").slideToggle(300);
+			});
+		});
+
+
+		//滑鼠移入選單按鈕出現文字變化
+		$(document).ready(function () {
+			$(".btn_menu").hover(
+				function () {
+					$(this).html("MENU");
+				},
+				function () {
+					$(this).html("≡"); //恢復原狀
+				}
+			);
+		});
+	</script>
 </head>
 
 <body>
@@ -38,9 +101,65 @@
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMHNKVM3" height="0" width="0"
 			style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
-	
+	<div id="gotop">
+		<div class="arrow"></div>
+	</div>
 
-	<div id="portfolio_menu"></div>
+	<!--gotop回上面-->
+
+	<div class="btn_menu-m">≡</div>
+	<div id="m-header">
+		<div id="m-logo"><a href="index.html">YANG</a></div>
+		<nav id="cssmenu">
+			<ul>
+				<li><a href="banner.html">Banner</a></li>
+				<li><a href="product.html">產品頁</a></li>
+				<li><a href="page.html">大型專案</a></li>
+				<li><a href="AD.html">電商廣告</a></li>
+				<li><a href="ill.html">電繪插圖 / ICON</a></li>
+				<li><a href="sticker.html">LINE 貼圖創作</a></li>
+				<li><a href="business.html">形象網站</a></li>
+				<div class="back"><a href="index.html">關於我</a></div>
+			</ul>
+		</nav>
+	</div>
+
+
+	<div class="btn_menu">≡</div>
+	<div id="btn-area-bg">
+		<div class="btn_close">×</div>
+		<div id="logo">
+			<a href="index.html">YANG</a>
+		</div>
+		<div class="portfolio-tit">Portfolio</div>
+		<div id="btn-area">
+			<div class="btn-box"><a href="banner.html">Banner</a></div>
+			<div class="btn-box"><a href="product.html">產品頁</a></div>
+			<div class="btn-box"><a href="page.html">大型專案</a></div>
+			<div class="btn-box"><a href="AD.html">電商廣告</a></div>
+			<div class="btn-box"><a href="ill.html">電繪插圖 / ICON</a></div>
+			<div class="btn-box"><a href="sticker.html">LINE 貼圖創作</a></div>
+			<div class="btn-box-now">UI & Code</div>
+			<div class="btn-box"><a href="business.html">形象網站</a></div>
+			<div class="btn-box-all"><a href="index.html">回首頁</a></div>
+		</div>
+	</div>
+	<div id="btn-area-bbg"></div>
+
+	<!-- 手機版選單 -->
+	<div id="btn-area-bg-m">
+		<div id="btn-area-m">
+			<div class="btn-box-m"><a href="banner.html">Banner</a></div>
+			<div class="btn-box-m"><a href="product.html">產品頁</a></div>
+			<div class="btn-box-m"><a href="page.html">大型專案</a></div>
+			<div class="btn-box-m"><a href="AD.html">電商廣告</a></div>
+			<div class="btn-box-m"><a href="ill.html">電繪插圖 / ICON</a></div>
+			<div class="btn-box-m"><a href="sticker.html">LINE 貼圖創作</a></div>
+			<div class="btn-box-now-m">UI & Code</div>
+			<div class="btn-box-m"><a href="business.html">形象網站</a></div>
+			<div class="btn-box-m"><a href="index.html">回首頁</a></div>
+		</div>
+	</div>
 
 
 
@@ -139,20 +258,15 @@
 
 	</div>
 
-	<script src="js/router.js" type="text/javascript"></script>
-
-	<!--手機板 RWD MENU 相關-->
-	<link rel="stylesheet" href="css/styles.css">
-	<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-	<script src="js/menu.js" type="text/javascript"></script>
+	<script src="js/rotuer.js" type="text/javascript"></script>
 	<script src="js/portfolio.js" type="text/javascript"></script>
-	<script src="js/portfolio_menu.js" type="text/javascript"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
 
 </body>
 
-<!-- fancyBox main JS and CSS files -->
-<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
-<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
 <script src="js/fancybox.js" type="text/javascript"></script>
-
 </html>

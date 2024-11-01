@@ -68,7 +68,7 @@ img {
     text-align: center;
     cursor: pointer;
     border-radius: 2px;
-    transition: background .8s;
+    transition: background .5s;
 }
 
 .btn_menu:hover{
@@ -1306,10 +1306,6 @@ mark {
 
         font-size: 2.5rem;
 
-    }
-
-    #btn-area{
-        width: 95%;
     }
 
     #tool-bg {

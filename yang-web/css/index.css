@@ -778,7 +778,7 @@ mark {
 
 
 
-#intro-area-bg {
+#intro_area_bg {
     width: 100%;
     height: 100vh;
     margin-top: 5vh;
@@ -787,7 +787,8 @@ mark {
     margin: 0;
     padding: 0;
     /* background: #F6F6F6; */
-    background: linear-gradient(347deg, #494949, #4b4b4b, #7e7368);
+    background: linear-gradient(347deg, #303030, #313131, #313131);
+    /* background: linear-gradient(347deg, #494949, #4b4b4b, #7e7368); */
     /* background: linear-gradient(347deg, #453d38, #443c38, #272220); */
     position: relative;
 
@@ -795,7 +796,7 @@ mark {
 
 
 
-#intro-area {
+#intro_area {
     width: 75vw;
     padding-left: 15vw;
     padding-right: 18vw;
@@ -809,7 +810,8 @@ mark {
     /* text-shadow: 13px 6px 10px #9696963d; */
     opacity: 0;
     z-index: 5;
-    box-shadow: 2px 5px 20px -5px #41382ff0;
+    /* box-shadow: 2px 5px 20px -5px #41382ff0; */
+    box-sizing: 12px 6px 20px -5px #6b5e52f0;
     animation: open-area 1s ease 0s 1 forwards;
 }
 
@@ -854,7 +856,7 @@ mark {
 }
 
 
-.intro-tit {
+.intro_tit {
     font-size: 2.8rem;
     font-weight: bold;
     line-height: 4.5rem;
@@ -877,9 +879,9 @@ mark {
 } */
 
 
-.intor-text {
+.intor_text {
     width: 100%;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 400;
     line-height: 2.5rem !important;
     color: #494949;
@@ -941,8 +943,9 @@ mark {
 
 #info {
     width: 40%;
-    padding-left: 5vw;
-    background: linear-gradient(347deg, #494949, #4b4b4b, #7e7368);
+    padding-left: 7vw;
+    background: linear-gradient(347deg, #313131, #303030, #7e7368);
+    /* background: linear-gradient(347deg, #494949, #4b4b4b, #7e7368); */
     /* background: linear-gradient(347deg, #41342d, #4b4b4b, #7e7368); */
     color: #ffffff;
     height: 100vh;
@@ -969,7 +972,7 @@ mark {
 }
 
 
-#trait-bg {
+#trait_bg {
     width: 100%;
     margin: auto;
     padding-top: 10vh;
@@ -1105,7 +1108,7 @@ mark {
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 2.5rem;
-    letter-spacing: 2pt;
+    letter-spacing: 1pt;
 }
 
 .name::after {
@@ -1117,12 +1120,12 @@ mark {
     letter-spacing: .5pt;
 }
 
-.job-title {
+.job_title {
     font-size: 1.1rem;
     padding-top: 3px;
     font-weight: 500;
     line-height: 1.5rem;
-    letter-spacing: .8pt;
+    letter-spacing: .7pt;
 }
 
 
@@ -1214,21 +1217,21 @@ mark {
 }
 
 
-.next-btn {
+.next_btn {
     position: absolute;
     bottom: 1vh;
     left: 49%;
 
 }
 
-.next-btn-work {
+.next_btn-work {
     position: absolute;
     top: 80vh;
     left: 49%;
 
 }
 
-.next-btn2 {
+.next_btn2 {
     position: absolute;
     bottom: 5px;
     left: 49%;
@@ -1236,14 +1239,14 @@ mark {
 }
 
 
-.next-btn-m {
+.next_btn-m {
     position: absolute;
     top: 85vh;
     left: 46%;
 
 }
 
-.next-btn a {
+.next_btn a {
     color: #7a7a7a;
     display: block;
     text-align: center;
@@ -1259,7 +1262,7 @@ mark {
     animation-direction: alternate;*/
 }
 
-.next-btn a:hover {
+.next_btn a:hover {
     color: #000000;
     transform: .5s ease-out;
 }
@@ -1599,7 +1602,7 @@ h3 {
     padding-bottom: 35px;
 }
 
-#tool-bg {
+#tool_bg {
     width: 100%;
     height: 100vh;
     /* background: #2b2b2b; */
@@ -1612,17 +1615,17 @@ h3 {
 }
 
 
-.tool-group {
+.tool_group {
     max-width: 1080px;
     margin: auto;
     padding: 3vh;
 }
 
-/* .tool-group h2{
+/* .tool_group h2{
     color: #ffffff;
 } */
 
-.tool-area {
+.tool_area {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1661,16 +1664,16 @@ h3 {
 
 }
 
-.tool-icon {
+.tool_icon {
     padding: 0 5px;
 }
 
-.tool-icon img {
+.tool_icon img {
     max-width: 35px;
     height: auto;
 }
 
-.tool-name {
+.tool_name {
     max-width: 300px;
     padding: 0 10px;
     display: flex;
@@ -1680,7 +1683,7 @@ h3 {
     font-size: 1.1rem;
 }
 
-#skill-bg {
+#skill_bg {
     width: 100%;
     height: 100vh;
     margin: auto;
@@ -1716,7 +1719,7 @@ h3 {
 }
 
 
-.skill-area {
+.skill_area {
     width: 25%;
     margin: 0 12px;
     min-height: 450px;
@@ -1746,10 +1749,11 @@ h3 {
 }
 
 
-#work-exp-bg {
+#work_exp_bg {
     max-width: 100vw;
     margin: auto;
-    background: linear-gradient(347deg, #776e64, #494949, #4a4a4a);
+    background: linear-gradient(347deg, #636363, #353434, #2f2f2f);
+    /* background: linear-gradient(347deg, #776e64, #494949, #4a4a4a); */
     /* background: linear-gradient(19deg, #ffc88b, #45433f, #423630); */
     height: fit-content;
     padding-bottom: 5vh;
@@ -1764,8 +1768,8 @@ h3 {
 
 }
 
-#work-exp-area {
-    max-width: 820px;
+#work_exp_area {
+    max-width: 850px;
     margin: auto;
     height: auto;
 
@@ -1789,31 +1793,50 @@ h3 {
 
 
 /*整個 職務 tit 區域*/
-.work-tit-area {
+.work_tit_area {
     width: 100%;
     height: inherit;
     padding: 5px 0 20px 60px;
-    border-left: #ffbe43 5px solid;
+    /* border-left: #ffbe43 5px solid; */
     /* background: #ffffff; */
-
+    color: #ffbe43;
 }
 
 
-.during-work {
-    padding: 5px 15px 0 0;
-    border-right: 2px solid #b3a488;
-    margin-right: 15px;
+.during_work {
+    padding: 5px 5px 0 0;
+    /* border-right: 2px solid #b3a488;
+    margin-right: 15px; */
 }
 
-.work-tit {
+.work_tit {
     width: 100%;
     font-size: 2rem;
     line-height: 4.5rem;
     font-weight: 500;
-    color: #ffbe43;
 }
 
-/* .work-tit span{
+.company_circle {
+    width: 16px;
+    height: 16px;
+    background-color: #67615b;
+    border: 4px solid #ffb765;
+    border-radius: 50%;
+    margin-left: -70px;
+    margin-bottom: -40px;
+    margin-top: 20px;
+}
+
+
+.work_tit_detal {
+    width: 100%;
+    font-weight: 500;
+    display: flex;
+    flex-wrap: nowrap;
+  
+}
+
+/* .work_tit span{
     font-size: 1.1rem;
     line-height: 4.5rem;
     font-weight: 600;
@@ -1827,16 +1850,7 @@ h3 {
     font-weight: 600;
 }
 
-.company-circle {
-    width: 16px;
-    height: 16px;
-    background-color: #67615b;
-    border: 4px solid #fbb965;
-    border-radius: 50%;
-    margin-left: -70px;
-    margin-bottom: -40px;
-    margin-top: 20px;
-}
+
 
 .company-logo {
     width: 65px;
@@ -1850,49 +1864,42 @@ h3 {
 }
 
 
-.work-tit-detal {
-    width: 100%;
-    font-weight: 500;
-    display: flex;
-    flex-wrap: nowrap;
-    color: #eed6aa;
-}
 
-.company-name {
+.company_name {
     width: auto;
-    padding: 0 20px 0 0;
+    padding: 0 5px 0 0;
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.5rem;
 
 }
 
-.company-name img {
+.company_name img {
     width: 16px;
     height: auto;
     margin: 5px;
 }
 
 
-.company-describe {
+.company_describe {
     font-size: 1rem;
     line-height: 1rem;
-    padding: 5px 20px 0 15px;
-    border-left: 2px solid #b3a488
+    padding: 5px 5px 0 0;
+    /* border-left: 2px solid #b3a488 */
 }
 
-.company-describe2 {
+.company_describe2 {
     font-size: 1rem;
     line-height: 1rem;
-    padding: 5px 20px 0 15px;
-    border-left: 2px solid #b3a488
+    padding: 5px 5px 0 0;
+    /* border-left: 2px solid #b3a488 */
 }
 
 /*工作內容細項*/
 
-.work-detal {
+.work_detal {
     /* background: rgb(255 255 255 / 95%); */
-    border-left: #7b7b7b 5px solid;
+    /* border-left: #7b7b7b 5px solid; */
     backdrop-filter: blur(3px);
     color: #ffffff;
     padding: 10px 30px 0 70px;
@@ -1903,9 +1910,19 @@ h3 {
     border-bottom-right-radius: 7px;
 }
 
-.work-detal li {
+.work_detal p{
+    border-left: 2px solid #c7c7c7;
+    padding-left: 30px;
+    margin-left: -10px;
+    margin-bottom: 15px;
+    line-height: 2rem;
+    font-weight: 200;
+}
+
+.work_detal li {
     list-style-type: '． ';
     margin-left: 20px;
+    font-weight: 300;
 }
 
 
@@ -1938,7 +1955,7 @@ h3 {
 
 
 
-.inside-content {
+.inside_content {
     max-width: 820px;
     margin: 3vh auto 5vh auto;
 }
@@ -1952,7 +1969,7 @@ h3 {
 }
 
 
-.inside-tit {
+.inside_tit {
     width: 100%;
     font-size: 2rem;
     line-height: 3rem;
@@ -1961,12 +1978,12 @@ h3 {
     color: #000000;
 }
 
-.inside-text {
+.inside_text {
     font-size: 1.2rem;
     line-height: 2.5rem;
 }
 
-.indsie-pic {
+.indsie_pic {
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
@@ -2303,11 +2320,11 @@ footer {
     }
 
 
-    #trait-bg {
+    #trait_bg {
         height: fit-content;
     }
 
-    #intro-area {
+    #intro_area {
         width: 70vw;
         min-height: 60vh;
         height: auto;
@@ -2322,7 +2339,7 @@ footer {
 
 
 
-    .intor-text {
+    .intor_text {
         width: 100%;
         margin-top: 5vh;
         font-size: 1.25rem;
@@ -2334,28 +2351,28 @@ footer {
 
     }
 
-    .intro-tit {
+    .intro_tit {
         font-size: 2.8rem;
         padding-bottom: 0;
     }
 
 
 
-    #intro-area span {
+    #intro_area span {
         font-size: 1.3rem;
         font-weight: bold;
         line-height: 3rem !important;
     }
 
 
-    #tool-bg {
+    #tool_bg {
         width: 100vw;
         margin: auto;
         height: fit-content;
     }
 
 
-    #skill-bg {
+    #skill_bg {
         width: 100vw;
         height: fit-content;
         margin: auto;
@@ -2367,7 +2384,7 @@ footer {
         height: fit-content;
     }
 
-    .skill-area {
+    .skill_area {
         width: 28%;
     }
 
@@ -2418,13 +2435,13 @@ footer {
         z-index: 0;
     }
 
-    .intro-tit {
+    .intro_tit {
         font-size: 2.3rem;
         line-height: 3.5rem;
         padding-bottom: 2vh;
     }
 
-    #intro-area {
+    #intro_area {
         width: 75vw;
         min-height: 60vh;
         height: auto;
@@ -2439,7 +2456,7 @@ footer {
 
 
 
-    #intro-area span {
+    #intro_area span {
         font-size: 1.2rem;
         font-weight: 500;
         line-height: 2.5rem !important;
@@ -2452,7 +2469,7 @@ footer {
     }
 
 
-    .skill-area {
+    .skill_area {
         width: 40%;
         margin-bottom: 5vh;
     }
@@ -2553,7 +2570,7 @@ footer {
         width: 50%;
     }
 
-    #work-exp-bg {
+    #work_exp_bg {
         height: fit-content;
         background-color: #f7f7f7 !important;
 
@@ -2731,7 +2748,7 @@ footer {
     }
 
 
-    #work-exp-bg {
+    #work_exp_bg {
         height: fit-content;
 
     }
@@ -2821,7 +2838,7 @@ footer {
     }
 
 
-    #intro-area-bg {
+    #intro_area_bg {
         width: 100%;
         height: fit-content;
         padding-top: 5vh;
@@ -2833,7 +2850,7 @@ footer {
     }
 
 
-    #intro-area {
+    #intro_area {
         width: 100vw;
         height: 80vh;
         padding-top: 10vh;
@@ -2843,12 +2860,12 @@ footer {
         background-size: 400px 400px;
     }
 
-    .intro-tit {
+    .intro_tit {
         font-size: 2.6rem;
         line-height: 4rem;
     }
 
-    #intro-area span {
+    #intro_area span {
         font-size: 1.3rem;
         line-height: 2.5rem !important;
     }
@@ -2901,35 +2918,35 @@ footer {
         text-align: center;
     }
 
-    .job-title {
+    .job_title {
         font-size: 1.2rem;
         text-align: center;
         font-weight: bold;
     }
 
-    .work-detal {
+    .work_detal {
         padding: 20px 30px 0 30px;
         border-top-right-radius: 0;
         border-bottom-left-radius: 7px;
     }
 
-    .work-detal li {
+    .work_detal li {
         line-height: 24px;
     }
 
-    .next-btn {
+    .next_btn {
         display: none;
     }
 
-    .next-btn-work {
+    .next_btn-work {
         display: none;
     }
 
-    .next-btn2 {
+    .next_btn2 {
         display: none;
     }
 
-    .next-btn-m {
+    .next_btn-m {
         display: none;
     }
 
@@ -2947,7 +2964,7 @@ footer {
         padding-top: 20px;
     }
 
-    #tool-bg {
+    #tool_bg {
         padding-top: 0;
         padding-bottom: 5vh;
     }
@@ -2965,12 +2982,12 @@ footer {
         padding-top: 3vh;
     }
 
-    #skill-bg {
+    #skill_bg {
         width: 100%;
         padding: 5vh 0;
     }
 
-    .skill-area {
+    .skill_area {
         width: 60vw;
         padding: 30px 25px;
         min-height: auto;
@@ -2989,7 +3006,7 @@ footer {
 
     }
 
-    #work-exp-area {
+    #work_exp_area {
         max-width: 85%;
         margin: auto;
         height: auto;
@@ -3004,7 +3021,7 @@ footer {
         flex-wrap: wrap;
     }
 
-    .work-tit-area {
+    .work_tit_area {
         width: 100%;
         border-right: 0px;
         padding: 5px 0 20px 30px;
@@ -3014,22 +3031,22 @@ footer {
         border-bottom-left-radius: 0;
     }
 
-    .company-circle {
+    .company_circle {
         margin-left: -42px;
 
     }
 
-    .work-detal {
+    .work_detal {
         line-height: 2rem;
         width: 100%;
         padding-bottom: 5vh;
     }
 
-    .work-detal ul {
+    .work_detal ul {
         padding-top: 20px;
     }
 
-    .work-detal ul li {
+    .work_detal ul li {
         line-height: 2rem;
     }
 
@@ -3040,7 +3057,7 @@ footer {
         padding-bottom: 15px;
     }
 
-    #trait-bg {
+    #trait_bg {
         padding: 5vh 0;
     }
 
@@ -3052,7 +3069,7 @@ footer {
         padding: 0 0 5vh 0;
     }
 
-    .inside-tit {
+    .inside_tit {
         width: 80vw;
         font-size: 1.6rem;
         line-height: 2rem;
@@ -3060,17 +3077,17 @@ footer {
         padding: 3rem 0 1rem 0;
     }
 
-    .inside-text {
+    .inside_text {
         line-height: 2.2rem;
 
     }
 
 
-    .tool-group {
+    .tool_group {
         padding: 3vh;
     }
 
-    .inside-content {
+    .inside_content {
         max-width: 800px;
         padding: 0 12vw;
         margin: auto;
@@ -3085,7 +3102,7 @@ footer {
         margin: 10px 0;
     }
 
-    .inside-tit {
+    .inside_tit {
         width: 100%;
         font-size: 1.9rem;
         line-height: 2.8rem;
@@ -3096,19 +3113,19 @@ footer {
         margin: auto;
     }
 
-    .indsie-pic {
+    .indsie_pic {
         flex-wrap: wrap;
         margin-top: 25px;
     }
 
-    .work-tit-detal {
+    .work_tit_detal {
         width: 100%;
         font-weight: 500;
         display: flex;
         flex-wrap: nowrap;
     }
 
-    .company-describe {
+    .company_describe {
         width: 40%;
         font-size: 1rem;
         line-height: 1rem;
@@ -3116,7 +3133,7 @@ footer {
         border-left: 0
     }
 
-    .company-describe2 {
+    .company_describe2 {
         width: 40%;
         font-size: 1rem;
         line-height: 1.3rem;
@@ -3124,7 +3141,7 @@ footer {
         border-left: 0
     }
 
-    .during-work {
+    .during_work {
         width: fit-content;
         padding: 10px 15px 0 0;
         margin: 10px 15px 10px 0;
@@ -3132,7 +3149,7 @@ footer {
     }
 
 
-    .company-name {
+    .company_name {
         width: fit-content;
         padding: 10px 15px 0 5px;
         margin: 5px 15px 10px 0;
@@ -3202,11 +3219,11 @@ footer {
         width: 80%;
     }
 
-    #intro-area-bg {
+    #intro_area_bg {
         background: linear-gradient(347deg, #494949, #4b4b4b, #7e7368);
     }
 
-    .intor-text {
+    .intor_text {
         width: 100%;
         margin-top: 1vh;
         font-size: 1.25rem;
@@ -3228,7 +3245,7 @@ footer {
         width: 100%;
     }
 
-    #trait-bg {
+    #trait_bg {
         height: fit-content;
         padding: 5vh 5vw;
     }
@@ -3237,7 +3254,7 @@ footer {
         margin: 0;
     }
 
-    #intro-area span {
+    #intro_area span {
         font-size: 1.1rem;
         line-height: 2.2rem !important;
     }
@@ -3251,14 +3268,14 @@ footer {
         margin: 2vh auto;
     }
 
-    .work-tit-detal {
+    .work_tit_detal {
         width: 100%;
         font-weight: 500;
         display: flex;
         flex-wrap: wrap;
     }
 
-    .company-describe {
+    .company_describe {
         width: 100%;
         font-size: 1rem;
         line-height: 1rem;
@@ -3266,7 +3283,7 @@ footer {
         border-left: 0;
     }
 
-    .company-describe2 {
+    .company_describe2 {
         width: 100%;
         font-size: 1rem;
         line-height: 1.3rem;
@@ -3274,13 +3291,13 @@ footer {
         border-left: 0
     }
 
-    .during-work {
+    .during_work {
         width: 100%;
         padding: 0;
         border-right: 0;
     }
 
-    .company-name {
+    .company_name {
         border-right: 0;
         padding: 0;
     }
@@ -3308,7 +3325,7 @@ footer {
 
 
 
-    .inside-content {
+    .inside_content {
         max-width: 100%;
         padding: 0 5vw;
         margin: auto;
@@ -3316,7 +3333,7 @@ footer {
 
 
 
-    #intro-area {
+    #intro_area {
         width: 90vw;
         height: fit-content;
         padding: 10vh 5vw 5vh 8vw;
@@ -3343,7 +3360,7 @@ footer {
 
     }
 
-    .intro-tit {
+    .intro_tit {
         font-size: 2.8rem;
         line-height: 4rem;
     }
@@ -3368,7 +3385,7 @@ footer {
         align-items: center;
     }
 
-    .skill-area {
+    .skill_area {
         width: 90vw;
         padding: 30px 25px;
         min-height: auto;
@@ -3402,7 +3419,7 @@ footer {
     }
 
 
-    #work-exp-bg {
+    #work_exp_bg {
         padding-top: 1px;
     }
 
@@ -3512,7 +3529,7 @@ footer {
         margin-left: 2vw;
     }
 
-    .intro-tit {
+    .intro_tit {
         font-size: 2.5rem;
         line-height: 4rem;
     }

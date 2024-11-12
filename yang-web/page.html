@@ -1,247 +1,64 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<div class="tag-tit">品牌時期內部大型專案</div>
+<div class="tag-describe">
+	<p>
+		官網改版、產品頁改版﹑活動登陸頁設計、解決方案設計等。<br>
+	</p>
+</div>
 
-<head>
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CYET5RW10T"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'G-CYET5RW10T');
-	</script>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta property="og:title" content="Yang 網站設計作品集｜Web Design Portfolio" />
-	<meta property="og:description" content="網站設計｜UI.UX 設計" />
-	<meta property="og:type" content="Web.UI.Design" />
-	<meta property="og:url" content="https://yangder201.github.io/webportfolio/yang-web/" />
-	<title>Portfolio｜YANG</title>
-	<link rel="icon" href="img/title-icon.ico" type="image/x-icon" />
-	<link href="css/reset.css" rel="stylesheet">
-	<link href="css/portfolio.css" rel="stylesheet">
-
-	<!--Google Fonts-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap"
-		rel="stylesheet">
-
-	<!--MENU RWD 相關-->
-	<link rel="stylesheet" href="css/styles.css">
-	<script src="js/menu.js" type="text/javascript"></script>
-	<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-
-	<!-- fancybox CDN -->
-	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-
-
-	<script type="text/javascript">
-		//go to top
-		$(function () {
-			$("#gotop").click(function () {
-				jQuery("html,body").animate({
-					scrollTop: 0
-				}, 500);
-			});
-			$(window).scroll(function () {
-				if ($(this).scrollTop() > 300) {
-					$('#gotop').fadeIn("fast");
-				} else {
-					$('#gotop').stop().fadeOut("fast");
-				}
-			});
-		});
-
-		//左選單收合
-		$(document).ready(function () {
-			$(".btn_menu").click(function () {
-				$("#btn-area-bbg").show(5);
-				$("#btn-area-bg").animate({ marginLeft: "25%" }, 300);
-				$(".btn_menu").animate({ display: "none" }, 300);
-			});
-
-			$(".btn_close").click(function () {
-				$("#btn-area-bbg").hide(5);
-				$("#btn-area-bg").animate({ marginLeft: "-51%" }, 200);
-				$(".btn_menu").animate({ display: "" }, 1000);
-			});
-		});
-
-		//手機板選單
-		$(document).ready(function () {
-			$(".btn_menu-m").click(function () {
-				$("#btn-area-bg-m").slideToggle(300);
-			});
-		});
-
-
-
-		//滑鼠移入選單按鈕出現文字變化
-		$(document).ready(function () {
-			$(".btn_menu").hover(
-				function () {
-					$(this).html("MENU");
-				},
-				function () {
-					$(this).html("≡"); //恢復原狀
-				}
-			);
-		});
-	</script>
-
-</head>
-
-<body>
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMHNKVM3" height="0" width="0"
-			style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
-	<div id="gotop">
-		<div class="arrow"></div>
-	</div>
-	<div class="btn_menu-m">≡</div>
-	<div id="m-header">
-		<div id="m-logo"><a href="index.html">YANG</a></div>
-		<nav id="cssmenu">
-			<ul>
-				<li><a href="banner.html">Banner</a></li>
-				<li><a href="product.html">產品頁</a></li>
-				<li><a href="page.html">大型專案</a></li>
-				<li><a href="AD.html">電商廣告</a></li>
-				<li><a href="ill.html">電繪插圖 / ICON</a></li>
-				<li><a href="sticker.html">LINE 貼圖創作</a></li>
-				<li><a href="business.html">形象網站</a></li>
-				<div class="back"><a href="index.html">關於我</a></div>
-			</ul>
-		</nav>
-	</div>
-
-
-	<div class="btn_menu">≡</div>
-	<div id="btn-area-bg">
-		<div class="btn_close">×</div>
-		<div id="logo">
-			<a href="index.html">YANG</a>
-		</div>
-		<div class="portfolio-tit">Portfolio</div>
-		<div id="btn-area">
-			<div class="btn-box"><a href="banner.html">Banner</a></div>
-			<div class="btn-box"><a href="product.html">產品頁</a></div>
-			<div class="btn-box-now">大型專案</div>
-			<div class="btn-box"><a href="AD.html">電商廣告</a></div>
-			<div class="btn-box"><a href="ill.html">電繪插圖 / ICON</a></div>
-			<div class="btn-box"><a href="sticker.html">LINE 貼圖創作</a></div>
-			<div class="btn-box"><a href="mycode.html">UI / Code</a></div>
-			<div class="btn-box"><a href="business.html">形象網站</a></div>
-			<div class="btn-box-all"><a href="index.html">回首頁</a></div>
-		</div>
-	</div>
-	<div id="btn-area-bbg"></div>
-
-	<!-- 手機版選單 -->
-	<div id="btn-area-bg-m">
-		<div id="btn-area-m">
-			<div class="btn-box-m"><a href="banner.html">Banner</a></div>
-			<div class="btn-box-m"><a href="product.html">產品頁</a></div>
-			<div class="btn-box-now-m">大型專案</div>
-			<div class="btn-box-m"><a href="AD.html">電商廣告</a></div>
-			<div class="btn-box-m"><a href="ill.html">電繪插圖 / ICON</a></div>
-			<div class="btn-box-m"><a href="sticker.html">LINE 貼圖創作</a></div>
-			<div class="btn-box-m"><a href="mycode.html">UI / Code</a></div>
-			<div class="btn-box-m"><a href="business.html">形象網站</a></div>
-			<div class="btn-box-m"><a href="index.html">回首頁</a></div>
-		</div>
-	</div>
-
-
-
-	<div class="portfolio-area">
-		<div class="tag-tit">品牌時期內部大型專案</div>
-		<div class="tag-describe">
-			<p>
-				官網改版、產品頁改版﹑活動登陸頁設計、解決方案設計等。<br>
-			</p>
-		</div>
-
-		<div class="box3">
-			<a data-fancybox="gallery" data-src="portfolio/page/023.jpg" data-caption="
+<div class="box3">
+	<a data-fancybox="gallery" data-src="portfolio/page/023.jpg" data-caption="
 			官網改版<br>
 			點圖再放大[ + ]" href="portfolio/page/023.jpg">
 
-				<img src="portfolio/page/023-cover.jpg" />
-			</a>
+		<img src="portfolio/page/023-cover.jpg" />
+	</a>
 
-			<div class="box-tit">
-				第一版官網改版
-				<!-- <a href="page001.html">
-					詳細說明
-					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-						class="bi bi-link-45deg" viewBox="0 0 16 16">
-						<path
-							d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
-						<path
-							d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
-					</svg>
-				</a> -->
-			</div>
-		</div>
+	<div class="box-tit">
+		第一版官網改版
+
+	</div>
+</div>
 
 
-		<!-- 		
-		<div class="box3">
-			<a data-fancybox="gallery" data-src="portfolio/page/023.jpg" data-caption="
-			官網改版<br>
-			點圖再放大[ + ]" href="portfolio/page/023.jpg">
-
-				<img src="portfolio/page/023-cover.jpg" />
-			</a>
-
-		</div> -->
 
 
-		<div class="box3">
-			<a data-fancybox="gallery" data-src="portfolio/page/020.jpg" data-caption="
+<div class="box3">
+	<a data-fancybox="gallery" data-src="portfolio/page/020.jpg" data-caption="
 			後台有固定板型，因此可改動幅度有些限制。<br>
 			主要增加一個主視覺應用情境區塊，讓客戶可以一眼快速了解產品使用情境。<br>
 			以及拓寬底下賣點區塊圖片寬度限制，讓版面編排能夠再生動靈活一些。<br>
 			點圖再放大[ + ]" href="portfolio/page/020.jpg">
-				<img src="portfolio/page/020.jpg">
-			</a>
-			<div class="box-tit"><a href="https://communication.aver.com/model/cam340plus" target="_blank">
-					產品頁改版
-					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-						class="bi bi-link-45deg" viewBox="0 0 16 16">
-						<path
-							d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
-						<path
-							d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
-					</svg></a></div>
-		</div>
+		<img src="portfolio/page/020.jpg">
+	</a>
+	<div class="box-tit"><a href="https://communication.aver.com/model/cam340plus" target="_blank">
+			產品頁改版
+			<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-link-45deg"
+				viewBox="0 0 16 16">
+				<path
+					d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
+				<path
+					d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
+			</svg></a></div>
+</div>
 
 
 
-		<div class="box3">
-			<a data-fancybox="gallery" data-src="portfolio/page/006.jpg" href="portfolio/page/006.jpg" data-caption="
+<div class="box3">
+	<a data-fancybox="gallery" data-src="portfolio/page/006.jpg" href="portfolio/page/006.jpg" data-caption="
 			當初窗口需求希望以手繪漫畫﹑說故事的風格呈現，<br>
 			感覺上較能吸引人瀏覽<br>
 			點圖再放大[ + ]">
-				<img src="portfolio/page/006.jpg" alt="綜合頁">
-			</a>
+		<img src="portfolio/page/006.jpg" alt="綜合頁">
+	</a>
 
-			<div class="box-tit">日本客製化攝影機解決方案頁</div>
-		</div>
-
-
+	<div class="box-tit">日本客製化攝影機解決方案頁</div>
+</div>
 
 
-		<div class="box3">
-			<a data-fancybox="gallery" data-src="portfolio/page/007.jpg" data-caption="
+
+
+<div class="box3">
+	<a data-fancybox="gallery" data-src="portfolio/page/007.jpg" data-caption="
 			2021 網站改版
 			改以識別色來加深企業形象的傳遞，強調整體設計的一致性。<br>
 			以清楚直覺的情境展示產品，讓使用者對主打商品及使用情境能一目了然。<br>
@@ -252,86 +69,86 @@
 			以保持版面整潔及整體設計感。
 			點圖再放大[ + ]
 			" href="portfolio/page/007.jpg">
-				<img src="portfolio/page/007.jpg" />
-			</a>
-			<div class="box-tit">第二版官網全面大改版提案</div>
-		</div>
+		<img src="portfolio/page/007.jpg" />
+	</a>
+	<div class="box-tit">第二版官網全面大改版提案</div>
+</div>
 
-		<div class="box3">
-			<a data-fancybox="gallery" data-src="portfolio/page/024.jpg" data-caption="
+<div class="box3">
+	<a data-fancybox="gallery" data-src="portfolio/page/024.jpg" data-caption="
 			
 			點圖再放大[ + ]
 			" href="portfolio/page/024.jpg">
-				<img src="portfolio/page/024.jpg" alt="">
-			</a>
-			<div class="box-tit">視訊會議產品免費試用頁改版規劃</div>
-		</div>
+		<img src="portfolio/page/024.jpg" alt="">
+	</a>
+	<div class="box-tit">視訊會議產品免費試用頁改版規劃</div>
+</div>
 
 
 
-		<div class="box3">
-			<a data-fancybox="gallery" data-src="portfolio/page/001.jpg" href="portfolio/page/001.jpg"
-				data-caption="點圖再放大[ + ]">
-				<img src="portfolio/page/001.jpg">
-			</a>
-			<div class="box-tit">視訊會議解決方案</div>
-		</div>
+<div class="box3">
+	<a data-fancybox="gallery" data-src="portfolio/page/001.jpg" href="portfolio/page/001.jpg"
+		data-caption="點圖再放大[ + ]">
+		<img src="portfolio/page/001.jpg">
+	</a>
+	<div class="box-tit">視訊會議解決方案</div>
+</div>
 
-		<div class="box3">
-			<a data-fancybox="gallery" data-src="portfolio/page/002.jpg" href="portfolio/page/002.jpg" data-caption="
+<div class="box3">
+	<a data-fancybox="gallery" data-src="portfolio/page/002.jpg" href="portfolio/page/002.jpg" data-caption="
 			
 			點圖再放大[ + ]">
-				<img src="portfolio/page/002.jpg" alt="綜合頁">
-			</a>
-			<div class="box-tit">攝影機客製化服務登陸頁</div>
-		</div>
+		<img src="portfolio/page/002.jpg" alt="綜合頁">
+	</a>
+	<div class="box-tit">攝影機客製化服務登陸頁</div>
+</div>
 
 
-		<div class="box3">
-			<a data-fancybox="gallery" data-src="portfolio/page/016.jpg" href="portfolio/page/016.jpg"
-				data-caption="新增支援中心<br>點圖再放大[ + ]">
-				<img src="portfolio/page/016.jpg" alt="">
-			</a>
-			<div class="box-tit"><a href="https://www.aver.com/helpcenter" target="_blank">
-					新增支援中心
-					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-						class="bi bi-link-45deg" viewBox="0 0 16 16">
-						<path
-							d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
-						<path
-							d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
-					</svg></a></div>
-		</div>
+<div class="box3">
+	<a data-fancybox="gallery" data-src="portfolio/page/016.jpg" href="portfolio/page/016.jpg"
+		data-caption="新增支援中心<br>點圖再放大[ + ]">
+		<img src="portfolio/page/016.jpg" alt="">
+	</a>
+	<div class="box-tit"><a href="https://www.aver.com/helpcenter" target="_blank">
+			新增支援中心
+			<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-link-45deg"
+				viewBox="0 0 16 16">
+				<path
+					d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
+				<path
+					d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
+			</svg></a></div>
+</div>
 
-		<div class="box3">
-			<a data-fancybox="gallery" data-src="portfolio/page/017.jpg" title="" href="portfolio/page/017.jpg"
-				data-caption="點圖再放大[ + ]">
-				<img src="portfolio/page/017.jpg" alt="">
-			</a>
-			<div class="box-tit"><a href="https://communication.aver.com/5-year-warranty-Campaign" target="_blank">
-					3 + 2 年延長保固註冊頁
-					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-						class="bi bi-link-45deg" viewBox="0 0 16 16">
-						<path
-							d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
-						<path
-							d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
-					</svg></a></div>
-		</div>
-
-
-
-		<div class="box3">
-			<a data-fancybox="gallery" data-src="portfolio/page/017-2.jpg" href="portfolio/page/017-2.jpg"
-				data-caption="點圖再放大[ + ]">
-				<img src="portfolio/page/017-2.jpg" alt="">
-			</a>
-		</div>
+<div class="box3">
+	<a data-fancybox="gallery" data-src="portfolio/page/017.jpg" title="" href="portfolio/page/017.jpg"
+		data-caption="點圖再放大[ + ]">
+		<img src="portfolio/page/017.jpg" alt="">
+	</a>
+	<div class="box-tit"><a href="https://communication.aver.com/5-year-warranty-Campaign" target="_blank">
+			3 + 2 年延長保固註冊頁
+			<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-link-45deg"
+				viewBox="0 0 16 16">
+				<path
+					d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
+				<path
+					d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
+			</svg></a></div>
+</div>
 
 
 
-		<div class="box3">
-			<a data-fancybox="gallery" data-src="portfolio/page/025.jpg" href="portfolio/page/025.jpg" data-caption="
+<div class="box3">
+	<a data-fancybox="gallery" data-src="portfolio/page/017-2.jpg" href="portfolio/page/017-2.jpg"
+		data-caption="點圖再放大[ + ]">
+		<img src="portfolio/page/017-2.jpg" alt="">
+	</a>
+</div>
+
+
+
+<div class="box3">
+	<a data-fancybox="gallery" data-src="portfolio/page/025.jpg" href="portfolio/page/025.jpg" data-caption="
 			台灣視訊會議產品免費試用登陸頁改版<br>
 			增加整體頁面風格一致性，減少雜亂感。選用清爽明確的產品+情境圖，<br>
 			讓使用者一進到頁面就能一目了然產品及用途。<br>
@@ -339,133 +156,115 @@
 			以便使用者能更好的選擇所需產品。<br>
 			
 			點圖再放大[ + ]">
-				<img src="portfolio/page/025.jpg">
-			</a>
-			<div class="box-tit"><a href="https://tw.communication.aver.com/aver-videoconferencing-solutions-tw.aspx"
-					target="_blank">台灣視訊會議產品免費試用登陸頁改版
-					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-						class="bi bi-link-45deg" viewBox="0 0 16 16">
-						<path
-							d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
-						<path
-							d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
-					</svg></a></div>
-		</div>
+		<img src="portfolio/page/025.jpg">
+	</a>
+	<div class="box-tit"><a href="https://tw.communication.aver.com/aver-videoconferencing-solutions-tw.aspx"
+			target="_blank">台灣視訊會議產品免費試用登陸頁改版
+			<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-link-45deg"
+				viewBox="0 0 16 16">
+				<path
+					d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
+				<path
+					d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
+			</svg></a></div>
+</div>
 
 
 
-		<div class="box3">
-			<a data-fancybox="gallery" data-src="portfolio/banner/mainBanner005.jpg"
-				href="portfolio/banner/mainBanner005.jpg" data-caption="點圖再放大[ + ]">
-				<img src="portfolio/banner/mainBanner005.jpg" class="lazyload" alt="banner" />
-			</a>
-			<div class="box-tit">主視覺改版提案</div>
-		</div>
+<div class="box3">
+	<a data-fancybox="gallery" data-src="portfolio/banner/mainBanner005.jpg" href="portfolio/banner/mainBanner005.jpg"
+		data-caption="點圖再放大[ + ]">
+		<img src="portfolio/banner/mainBanner005.jpg" class="lazyload" alt="banner" />
+	</a>
+	<div class="box-tit">主視覺改版提案</div>
+</div>
 
-		<div class="box3">
-			<a data-fancybox="gallery" data-src="portfolio/banner/mainBanner006.jpg"
-				href="portfolio/banner/mainBanner006.jpg" data-caption="點圖再放大[ + ]">
-				<img src="portfolio/banner/mainBanner006.jpg" class="lazyload" alt="banner" />
-			</a>
-			<div class="box-tit">主視覺改版提案</div>
-		</div>
-
-
-
-		<div class="box3">
-			<a data-fancybox="gallery" data-src="portfolio/page/004.jpg" href="portfolio/page/004.jpg"
-				data-caption="點圖再放大[ + ]">
-				<img src="portfolio/page/004.jpg" alt="綜合頁">
-			</a>
-			<div class="box-tit">
-				<a href="https://www.avereurope.com/promote/classroom-technology" target="_blank">
-					歐洲智慧教育產品免費試用頁
-					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-						class="bi bi-link-45deg" viewBox="0 0 16 16">
-						<path
-							d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
-						<path
-							d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
-					</svg></a>
-			</div>
-		</div>
+<div class="box3">
+	<a data-fancybox="gallery" data-src="portfolio/banner/mainBanner006.jpg" href="portfolio/banner/mainBanner006.jpg"
+		data-caption="點圖再放大[ + ]">
+		<img src="portfolio/banner/mainBanner006.jpg" class="lazyload" alt="banner" />
+	</a>
+	<div class="box-tit">主視覺改版提案</div>
+</div>
 
 
 
-		<div class="box3">
-			<a data-fancybox="gallery" data-src="portfolio/page/008.jpg" href="portfolio/page/008.jpg"
-				data-caption="點圖再放大[ + ]">
-				<img src="portfolio/page/008.jpg" title="測試2" alt="測試">
-			</a>
-			<div class="box-tit">下載中心改版規劃</div>
-		</div>
-
-		<div class="box3">
-			<a data-fancybox="gallery" data-src="portfolio/page/010.jpg" title="" href="portfolio/page/010.jpg"
-				data-caption="點圖再放大[ + ]">
-				<img src="portfolio/page/010.jpg" alt="">
-			</a>
-			<div class="box-tit">內部系統 UI 改版</div>
-		</div>
-
-
-		<div class="box3">
-			<a data-fancybox="gallery" data-src="portfolio/page/018.jpg" title="" href="portfolio/page/018.jpg"
-				data-caption="點圖再放大[ + ]">
-				<img src="portfolio/page/018.jpg" alt="">
-			</a>
-			<div class="box-tit">抽獎活動頁面設計</div>
-		</div>
-
-
-
-
-		<div class="box3">
-			<a data-fancybox="gallery" data-src="portfolio/page/015.jpg" title="" href="portfolio/page/015.jpg"
-				data-caption="點圖再放大[ + ]">
-				<img src="portfolio/page/015.jpg" alt="">
-			</a>
-			<div class="box-tit">內部系統 UI 改版</div>
-		</div>
-
-
-
-
-
-		<div class="box3">
-			<a data-fancybox="gallery" data-src="portfolio/business/023.jpg" href="portfolio/business/023.jpg"
-				data-caption="點圖再放大[ + ]">
-
-				<img src="portfolio/business/023.jpg" alt="高雄榮總輪椅借用系統介面">
-			</a>
-			<div class="box-tit">高雄榮總醫院輪椅系統 UI</div>
-		</div>
-
-
-
-		<div class="box3">
-			<a data-fancybox="gallery" data-src="portfolio/page/019.jpg" href="portfolio/page/019.jpg"
-				data-caption="點圖再放大[ + ]">
-
-				<img src="portfolio/page/019.jpg" alt="高雄 MLD 台鋁影城電子看板 UI" />
-			</a>
-			<div class="box-tit">高雄 MLD 台鋁影城時刻表 UI</div>
-		</div>
-
-		<div id="footer"></div>
-
+<div class="box3">
+	<a data-fancybox="gallery" data-src="portfolio/page/004.jpg" href="portfolio/page/004.jpg"
+		data-caption="點圖再放大[ + ]">
+		<img src="portfolio/page/004.jpg" alt="綜合頁">
+	</a>
+	<div class="box-tit">
+		<a href="https://www.avereurope.com/promote/classroom-technology" target="_blank">
+			歐洲智慧教育產品免費試用頁
+			<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-link-45deg"
+				viewBox="0 0 16 16">
+				<path
+					d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
+				<path
+					d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
+			</svg></a>
 	</div>
-
-	<script src="js/rotuer.js" type="text/javascript"></script>
-	<script src="js/portfolio.js" type="text/javascript"></script>
-
-	<!-- Add fancyBox main JS and CSS files -->
-	<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
-	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
+</div>
 
 
 
-</body>
+<div class="box3">
+	<a data-fancybox="gallery" data-src="portfolio/page/008.jpg" href="portfolio/page/008.jpg"
+		data-caption="點圖再放大[ + ]">
+		<img src="portfolio/page/008.jpg" title="測試2" alt="測試">
+	</a>
+	<div class="box-tit">下載中心改版規劃</div>
+</div>
 
-<script src="js/fancybox.js" type="text/javascript"></script>
-</html>
+<div class="box3">
+	<a data-fancybox="gallery" data-src="portfolio/page/010.jpg" title="" href="portfolio/page/010.jpg"
+		data-caption="點圖再放大[ + ]">
+		<img src="portfolio/page/010.jpg" alt="">
+	</a>
+	<div class="box-tit">內部系統 UI 改版</div>
+</div>
+
+
+<div class="box3">
+	<a data-fancybox="gallery" data-src="portfolio/page/018.jpg" title="" href="portfolio/page/018.jpg"
+		data-caption="點圖再放大[ + ]">
+		<img src="portfolio/page/018.jpg" alt="">
+	</a>
+	<div class="box-tit">抽獎活動頁面設計</div>
+</div>
+
+
+
+
+<div class="box3">
+	<a data-fancybox="gallery" data-src="portfolio/page/015.jpg" title="" href="portfolio/page/015.jpg"
+		data-caption="點圖再放大[ + ]">
+		<img src="portfolio/page/015.jpg" alt="">
+	</a>
+	<div class="box-tit">內部系統 UI 改版</div>
+</div>
+
+
+
+
+
+<div class="box3">
+	<a data-fancybox="gallery" data-src="portfolio/business/023.jpg" href="portfolio/business/023.jpg"
+		data-caption="點圖再放大[ + ]">
+
+		<img src="portfolio/business/023.jpg" alt="高雄榮總輪椅借用系統介面">
+	</a>
+	<div class="box-tit">高雄榮總醫院輪椅系統 UI</div>
+</div>
+
+
+
+<div class="box3">
+	<a data-fancybox="gallery" data-src="portfolio/page/019.jpg" href="portfolio/page/019.jpg"
+		data-caption="點圖再放大[ + ]">
+
+		<img src="portfolio/page/019.jpg" alt="高雄 MLD 台鋁影城電子看板 UI" />
+	</a>
+	<div class="box-tit">高雄 MLD 台鋁影城時刻表 UI</div>
+</div>

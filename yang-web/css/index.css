@@ -1799,7 +1799,7 @@ h3 {
     padding: 5px 0 20px 60px;
     /* border-left: #ffbe43 5px solid; */
     /* background: #ffffff; */
-    color: #ffbe43;
+    color: #ffcd5c;
 }
 
 
@@ -1808,6 +1808,13 @@ h3 {
     /* border-right: 2px solid #b3a488;
     margin-right: 15px; */
 }
+
+
+.during_work::after {
+    content: '．';
+}
+
+
 
 .work_tit {
     width: 100%;
@@ -1871,6 +1878,11 @@ h3 {
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.5rem;
+
+}
+
+.company_name::after {
+    content: '．';
 
 }
 
@@ -2925,7 +2937,7 @@ footer {
     }
 
     .work_detal {
-        padding: 20px 30px 0 30px;
+        padding: 20px 20px 0 20px;
         border-top-right-radius: 0;
         border-bottom-left-radius: 7px;
     }
@@ -3007,7 +3019,7 @@ footer {
     }
 
     #work_exp_area {
-        max-width: 85%;
+        max-width: 90%;
         margin: auto;
         height: auto;
         display: flex;
@@ -3134,7 +3146,7 @@ footer {
     }
 
     .company_describe2 {
-        width: 40%;
+        width: 45%;
         font-size: 1rem;
         line-height: 1.3rem;
         padding: 2px 0 0 0;
@@ -3143,17 +3155,16 @@ footer {
 
     .during_work {
         width: fit-content;
-        padding: 10px 15px 0 0;
-        margin: 10px 15px 10px 0;
+        padding: 10px 0 0 0;
+        margin: 10px 0 10px 0;
         border-left: 0;
     }
 
 
     .company_name {
         width: fit-content;
-        padding: 10px 15px 0 5px;
-        margin: 5px 15px 10px 0;
-        border-right:2px solid #a79a81;
+        padding: 10px 0 0 5px;
+        margin: 5px 0 10px 0;
     }
 
     .interest_area {
@@ -3286,8 +3297,7 @@ footer {
     .company_describe2 {
         width: 100%;
         font-size: 1rem;
-        line-height: 1.3rem;
-        padding: 2px 0 0 0;
+        line-height: 1.4rem;
         border-left: 0
     }
 
@@ -3518,6 +3528,14 @@ footer {
     }
 
 
+    .during_work::after {
+        content: '';
+    }
+    
+    .company_name::after {
+        content: '';
+    
+    }
 
 
 }
@@ -3526,7 +3544,7 @@ footer {
 @media only screen and (max-width: 375px) {
 
     #info {
-        margin-left: 2vw;
+        margin-left: 0;
     }
 
     .intro_tit {
@@ -3540,4 +3558,5 @@ footer {
         margin-top: 20px;
         font-size: 1.2rem;
     }
+
 }

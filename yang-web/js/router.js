@@ -1,18 +1,15 @@
-// 載入 header
-fetch('header.html')
-.then(response => response.text())
-.then(data => {
-    document.getElementById('portfolio_menu').innerHTML = data;
-})
-.catch(error => console.error('Error loading header:', error));
+document.querySelectorAll('.btn-box').forEach(button => {
+    button.addEventListener('click', () => {
+        const page = button.getAttribute('data-page');
+        loadContent(page);
+    });
+});
 
-// 載入 footer
-fetch('footer.html')
-.then(response => response.text())
-.then(data => {
-    document.getElementById('footer').innerHTML = data;
-})
-.catch(error => console.error('Error loading footer:', error));
-
-
-
+function loadContent(url) {
+    fetch(url)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('portfolio-area').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading:', error));
+}

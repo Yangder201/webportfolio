@@ -1581,7 +1581,8 @@ footer {
         width: 100%;
         float: left;
         height: 100vh;
-        margin-top: 10vh;
+        margin-top: 7vh;
+        padding-top: 3vh;
         font-size: 1rem;
         position: fixed;
         z-index: 88;
@@ -1589,7 +1590,7 @@ footer {
         backdrop-filter: blur(3.1px);
         -webkit-backdrop-filter: blur(3.1px);
         border-right: 1px solid #fff;
-        box-shadow:4px 4px 18px -10px #696969;
+        box-shadow: 4px 4px 18px -10px #696969;
         background: #292929;
     }
     

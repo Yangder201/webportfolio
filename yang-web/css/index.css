@@ -395,10 +395,12 @@ button {
 
 @keyframes opentext_en {
     0% {
+        padding-top: 15vh;
         opacity: 0;
     }
 
     100% {
+        padding-top: 20vh;
         opacity: 1;
     }
 }
@@ -407,7 +409,7 @@ button {
     display: none;
 }
 
-.open_text_en_s{
+.open_text_en_s {
     display: none;
 }
 
@@ -419,9 +421,10 @@ button {
     height: 45vh;
     overflow: hidden;
     text-align: center;
-    font-size: 5.5rem;
-    line-height: 7.5rem;
+    font-size: 5.4rem;
     font-weight: bold;
+    line-height: 7.5rem;
+
     /* color: #ffffffb7; */
 
     background: linear-gradient(180deg,
@@ -1123,7 +1126,7 @@ mark {
             #c0b098 15%, #c0b098 25%,
             #998972 25%, #998972 100%);
     z-index: 99;
-    
+
     animation: slowshow 1s ease 3s forwards;
 
 }
@@ -1310,7 +1313,7 @@ mark {
 }
 
 
-#contact_icon_area{
+#contact_icon_area {
     margin-top: 3vh;
 }
 
@@ -1374,7 +1377,7 @@ mark {
 
 .next_btn {
     position: absolute;
-    top:10vh;
+    top: 10vh;
     bottom: 1vh;
     left: 49%;
 
@@ -1931,38 +1934,30 @@ h3 {
 
 }
 
-/*包覆 工作tit 和 工作細項,分兩欄呈現*/
+
 .work {
     max-width: 100%;
-    /* border: 2px solid #ffffff9e;
-    border-radius: 10px; */
     margin: 50px 0;
-    /* padding-bottom: 35px; */
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    /* box-shadow: 5px 10px 30px -10px #bababa9e; */
+
     position: relative;
 
 }
 
 
 
-/*整個 職務 tit 區域*/
 .work_tit_area {
     width: 100%;
     height: inherit;
     padding: 5px 0 20px 60px;
-    /* border-left: #ffbe43 5px solid; */
-    /* background: #ffffff; */
-    color: #ff9866;
+    color: #ffd066;
 }
 
 
 .during_work {
     padding: 5px 5px 0 0;
-    /* border-right: 2px solid #b3a488;
-    margin-right: 15px; */
 }
 
 
@@ -3525,11 +3520,11 @@ footer {
         display: none;
     }
 
-    .open_text_en_m{
+    .open_text_en_m {
         display: none;
     }
 
-    .open_text_en_s{
+    .open_text_en_s {
         width: 90vw;
         margin: auto;
         text-align: center;
@@ -3543,7 +3538,7 @@ footer {
 
         animation: opentext_en 1s ease 2.2s forwards;
     }
-    
+
 
     .open_text {
         display: none;
@@ -3558,11 +3553,12 @@ footer {
 
 
     }
+
     .open_text_xs {
         display: block;
         width: 80vw;
         margin: auto;
-        font-size: 2.4rem;
+        font-size: 2.2rem;
         font-weight: bold;
         line-height: 4rem;
         text-align: left;
@@ -3582,14 +3578,15 @@ footer {
         transform: translateX(-75%);
         bottom: -30px;
     }
+
     .main_photo img {
         max-width: 270px;
     }
 
-    .colorline{
+    .colorline {
         display: none;
     }
- 
+
 
     h1 {
         margin-bottom: 3vh;
@@ -3877,7 +3874,7 @@ footer {
 
     }
 
-    #btn-area-m ul{
+    #btn-area-m ul {
         width: 100%;
     }
 
@@ -3924,11 +3921,11 @@ footer {
 
 @media only screen and (max-width: 375px) {
 
-    .main_photo img{
+    .main_photo img {
         max-width: 280px;
     }
 
-    .open_text_en_s{
+    .open_text_en_s {
         width: 90vw;
         margin: auto;
         text-align: center;
@@ -3942,6 +3939,7 @@ footer {
 
         animation: opentext_en 1s ease 2.2s forwards;
     }
+
     .open_text_xs {
         display: block;
         width: 88vw;
@@ -3980,11 +3978,11 @@ footer {
 
 @media only screen and (max-width: 320px) {
 
-    .main_photo img{
+    .main_photo img {
         max-width: 270px;
     }
 
-    .open_text_en_s{
+    .open_text_en_s {
         width: 90vw;
         margin: auto;
         text-align: center;
@@ -3998,6 +3996,7 @@ footer {
 
         animation: opentext_en 1s ease 2.2s forwards;
     }
+
     .open_text_xs {
         display: block;
         width: 88vw;

@@ -578,16 +578,6 @@ button {
 
 }
 
-@keyframes slowshow {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-
-}
 
 
 
@@ -1102,7 +1092,7 @@ mark {
 }
 
 #info_area {
-    width: 66vw;
+    width: 70vw;
     color: #ffffff;
     height: 80vh;
     position: relative;
@@ -1113,10 +1103,10 @@ mark {
 
 #info {
     width: 100vw;
+    height: 100vh;
     text-align: center;
     float: right;
     color: #ffffff;
-    height: 80vh;
     position: relative;
 
 }
@@ -1124,15 +1114,16 @@ mark {
 
 .colorline {
     float: right;
-    width: 60%;
+    width: 50%;
     height: 20px;
     opacity: 0;
     background: linear-gradient(to right, #ffffff 0%, #ffffff 5%,
             #f5dfaf 5%, #f5dfaf 15%,
             #c0b098 15%, #c0b098 25%,
             #998972 25%, #998972 100%);
-
-    animation: slowshow show 1s ease 3s forwards;
+    z-index: 99;
+    
+    animation: slowshow 1s ease 3s forwards;
 
 }
 
@@ -1306,7 +1297,7 @@ mark {
 
 
 .text {
-    margin-top: 15px;
+    margin-top: 3vh;
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 3rem;
@@ -1390,6 +1381,7 @@ mark {
 
 .next_btn {
     position: absolute;
+    top:10vh;
     bottom: 1vh;
     left: 49%;
 
@@ -3112,7 +3104,7 @@ footer {
         margin: auto;
         margin-top: 15vh;
         display: flex;
-        z-index: 98;
+        z-index: 8;
         justify-content: center;
         opacity: 0;
         animation: open-cta 1s ease 3s forwards;
@@ -3740,7 +3732,7 @@ footer {
     }
 
     #info {
-        width: 90vw;
+        width: 100vw;
         margin: auto;
         line-height: 2rem;
         list-style-type: none;
@@ -3859,8 +3851,8 @@ footer {
         margin-top: 100%;
         width: 100%;
         float: left;
-        height: fit-content;
-        margin-top: 7vh;
+        height: 100vh;
+        margin-top: 9vh;
         font-size: 1rem;
         position: fixed;
         z-index: 88;
@@ -3880,6 +3872,10 @@ footer {
         align-items: center;
         justify-content: center;
 
+    }
+
+    #btn-area-m ul{
+        width: 100%;
     }
 
 

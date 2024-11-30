@@ -303,6 +303,7 @@ button {
     background-color: #121212;
     position: relative;
     background-image: url(../img/bg.jpg);
+    background-attachment: fixed;
 
 }
 
@@ -568,6 +569,7 @@ button {
     background: linear-gradient(1deg, #302f2f, #1b1b1b);
 }
 
+
 #info_slogan {
     width: 30vw;
     margin-top: -50px;
@@ -581,7 +583,6 @@ button {
     animation: slowshow 1s ease 3s forwards;
 
 }
-
 
 
 
@@ -3558,7 +3559,7 @@ footer {
         display: block;
         width: 80vw;
         margin: auto;
-        font-size: 2.2rem;
+        font-size: 2.rem;
         font-weight: bold;
         line-height: 4rem;
         text-align: left;

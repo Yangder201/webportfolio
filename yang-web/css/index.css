@@ -3514,7 +3514,7 @@ footer {
 
 
     #open_index {
-        height: 80vh;
+        height: 90vh;
     }
 
     #info_slogan {
@@ -3974,4 +3974,43 @@ footer {
         font-size: 1.2rem;
     }
 
+}
+
+
+
+
+
+@media only screen and (max-width: 320px) {
+
+    .main_photo img{
+        max-width: 270px;
+    }
+
+    .open_text_en_s{
+        width: 90vw;
+        margin: auto;
+        text-align: center;
+        padding-top: 18vh;
+        font-size: 1.5rem;
+        line-height: 2.3rem;
+        font-weight: bold;
+        color: #ffffff;
+        display: block;
+        opacity: 0;
+
+        animation: opentext_en 1s ease 2.2s forwards;
+    }
+    .open_text_xs {
+        display: block;
+        width: 88vw;
+        margin: auto;
+        font-size: 1.8rem;
+        font-weight: bold;
+        line-height: 3rem;
+        text-align: left;
+        color: #ffffff;
+        opacity: 0;
+        animation: opentext 2s ease 2.5s forwards;
+
+    }
 }

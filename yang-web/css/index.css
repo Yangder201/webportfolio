@@ -376,6 +376,7 @@ button {
 }
 
 
+
 .open_text_en {
     width: 1250px;
     margin: auto;
@@ -413,12 +414,12 @@ button {
 
 .open_text {
     /* padding-top: 21vh; */
-    width: 1180px;
+    width: 1200px;
     margin: auto;
     height: 45vh;
     overflow: hidden;
     text-align: center;
-    font-size: 6rem;
+    font-size: 5.5rem;
     line-height: 7.5rem;
     font-weight: bold;
     /* color: #ffffffb7; */
@@ -1289,9 +1290,8 @@ mark {
 
 .job_title {
     font-size: 1.3rem;
-    padding-top: 3px;
     font-weight: 500;
-    line-height: 3rem;
+    line-height: 2.8rem;
     letter-spacing: .7pt;
 }
 
@@ -1310,48 +1310,41 @@ mark {
 }
 
 
-
+#contact_icon_area{
+    margin-top: 3vh;
+}
 
 #contact_icon_area p {
-    padding: 5px;
+    padding: 10px;
 }
 
 
 #contact_icon_area a {
     color: #ebebea;
     font-weight: 100;
-    width: 110px;
-    height: 40px;
-    padding: 5px 10px;
-    border: 2px solid #e3dcd780;
-    border-radius: 8px;
-    background: #81818178;
+    width: 130px;
+    height: 45px;
+    padding: 10px 5px;
+    border: 2px solid #f8f8f8fd;
+    border-radius: 12px;
     margin: 15px auto;
     font-size: 1rem;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    box-shadow: 2px 3px 15px -5px #fff3e456;
+    /* box-shadow: 2px 3px 15px -5px #fff3e456; */
 
 }
 
 #contact_icon_area a:hover {
     margin-top: 2.2vh;
-    background: #363331da;
-    color: #ffffff;
-    font-weight: 300;
+    background: #ffffffb9;
+    color: #2c2c2c;
+    font-weight: 500;
     border: 2px solid #303030bd;
-    box-shadow: 2px 3px 20px -2px #fff3e456;
+    /* box-shadow: 2px 3px 20px -2px #fff3e456; */
 }
-
-/* 
-.text li::before {
-    content: '▪　';
-    font-weight: 200;
-    color: #b1b1b1;
-} */
-
 
 
 .about-title {
@@ -2455,12 +2448,12 @@ footer {
 @media only screen and (max-width: 1440px) {
 
     .open_text {
-        width: 75vw;
+        width: 76vw;
         margin: auto;
-        height: 45vh;
+        height: 50vh;
         overflow: hidden;
         text-align: center;
-        font-size: 5.5rem;
+        font-size: 5rem;
         font-weight: bold;
     }
 
@@ -2474,9 +2467,8 @@ footer {
         font-weight: bold;
         color: #ffffffec;
         line-height: 5.5rem;
-        z-index: 0;
         opacity: 0;
-        animation: opentext_en 1s ease 2s forwards;
+        animation: opentext_en 1s ease 2.5s forwards;
 
     }
 
@@ -2632,7 +2624,7 @@ footer {
 
 
     #info_slogan {
-        width: fit-content;
+        width: 30vw;
         height: 900px;
         margin-top: -50px;
         padding-left: 3vw;
@@ -2656,21 +2648,20 @@ footer {
         height: fit-content;
         padding-top: 25vh;
         text-align: center;
-        font-size: 4rem;
+        font-size: 3.7rem;
         font-weight: bold;
         color: #ffffffec;
         line-height: 5.5rem;
-        z-index: 0;
         opacity: 0;
-        animation: opentext_en 1s ease 2s forwards;
+        animation: opentext_en 1s ease 2.3s forwards;
 
     }
 
     .open_text_m {
         display: block;
         width: 84vw;
-        font-size: 4.3rem;
-        line-height: 5rem;
+        font-size: 4.2rem;
+        line-height: 6rem;
         margin: auto;
         height: 80vh;
         text-align: center;
@@ -2686,10 +2677,9 @@ footer {
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
-        z-index: 0;
         opacity: 0;
 
-        animation: opentext 2s ease 2s forwards;
+        animation: opentext 2s ease 2.5s forwards;
     }
 
     @keyframes opentext {
@@ -2743,7 +2733,7 @@ footer {
     }
 
     #intro_area {
-        width: 75vw;
+        width: 70vw;
         min-height: 60vh;
         height: auto;
         padding: 25vh 10vw 0 6vw;
@@ -2875,14 +2865,15 @@ footer {
     .open_text_en_m {
         width: 90vw;
         margin: auto;
-        padding-top: 30vh;
-        font-size: 4rem;
+        padding-top: 27vh;
+        font-size: 3rem;
         font-weight: bold;
         line-height: 5.5rem;
         text-align: center;
         color: #ffffff;
         display: block;
-
+        opacity: 0;
+        animation: opentext_en 1s ease 2.3s forwards;
     }
 
 
@@ -2891,14 +2882,16 @@ footer {
     }
 
     .open_text_s {
-        width: 90vw;
+        width: 92vw;
         margin: auto;
-        font-size: 3.5rem;
+        font-size: 3.3rem;
         font-weight: bold;
         line-height: 5rem;
         text-align: center;
         color: #ffffff;
         display: block;
+        opacity: 0;
+        animation: opentext 2s ease 3s forwards;
     }
 
 
@@ -3537,14 +3530,18 @@ footer {
     }
 
     .open_text_en_s{
-        width: 100vw;
+        width: 90vw;
+        margin: auto;
         text-align: center;
-        padding-top: 25vh;
-        font-size: 2.2rem;
+        padding-top: 13vh;
+        font-size: 2rem;
         line-height: 4rem;
         font-weight: bold;
         color: #ffffff;
         display: block;
+        opacity: 0;
+
+        animation: opentext_en 1s ease 2.2s forwards;
     }
     
 
@@ -3565,13 +3562,15 @@ footer {
 
     .open_text_xs {
         display: block;
-        width: 90vw;
+        width: 88vw;
         margin: auto;
-        font-size: 2.2rem;
+        font-size: 2.4rem;
         font-weight: bold;
         line-height: 4rem;
-        text-align: center;
+        text-align: left;
         color: #ffffff;
+        opacity: 0;
+        animation: opentext 2s ease 2.5s forwards;
 
     }
 
@@ -3581,12 +3580,18 @@ footer {
     }
 
     .main_photo {
-        bottom: -32px;
+        left: 75%;
+        transform: translateX(-75%);
+        bottom: -30px;
+    }
+    .main_photo img {
+        max-width: 300px;
     }
 
-    .main_photo img {
-        max-width: 260px;
+    .colorline{
+        display: none;
     }
+ 
 
     h1 {
         margin-bottom: 3vh;
@@ -3920,6 +3925,38 @@ footer {
 
 
 @media only screen and (max-width: 375px) {
+
+    .main_photo img{
+        max-width: 280px;
+    }
+
+    .open_text_en_s{
+        width: 90vw;
+        margin: auto;
+        text-align: center;
+        padding-top: 23vh;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        font-weight: bold;
+        color: #ffffff;
+        display: block;
+        opacity: 0;
+
+        animation: opentext_en 1s ease 2.2s forwards;
+    }
+    .open_text_xs {
+        display: block;
+        width: 88vw;
+        margin: auto;
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 3rem;
+        text-align: left;
+        color: #ffffff;
+        opacity: 0;
+        animation: opentext 2s ease 2.5s forwards;
+
+    }
 
     #info {
         margin-left: 0;

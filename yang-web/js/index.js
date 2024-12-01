@@ -2,15 +2,12 @@ var s = skrollr.init();
 document.body.id = "skrollr-body"
 
 
-//首頁第一個主選單預設 focus
-// window.addEventListener('DOMContentLoaded', function () {
-//     removeFocusFromMenuItems(menuItems);
-//     var firstMenuItem = document.querySelector('#cssmenu ul li:first-child a');
-//     firstMenuItem.parentNode.classList.add('focus');
-// });
+
+
 //往下滑動至當前 div 時，主選單加上 focus 狀態樣式
+
 window.addEventListener('scroll', function () {
-    var scrollPosition = window.scrollY + 100;  // 加上適當的偏移量，根據需要調整
+    var scrollPosition = window.scrollY + 50;  // 加上適當的偏移量，根據需要調整
 
     var menuItems = document.querySelectorAll('#cssmenu ul li a');
 
@@ -150,7 +147,7 @@ document.addEventListener('mousemove', function (event) {
 });
 
 
-
+//淺底背景時，主選單文字顏色變化
 document.addEventListener("DOMContentLoaded", function() {
     const elementsToChange = document.querySelectorAll("#cssmenu > ul > li > a, #logo a");
 
@@ -180,3 +177,31 @@ document.addEventListener("DOMContentLoaded", function() {
     // 觀察目標元素
     sections.forEach(section => observer.observe(section));
 });
+
+
+
+
+// 初始化 ScrollMagic 控制器
+const controller = new ScrollMagic.Controller();
+
+// 設定逐行顯示文字的動畫
+const tl = gsap.timeline();
+
+// 逐行顯示 .line 文字
+tl.to('.info_text:nth-child(1)', { opacity: 1, y: 0, duration: 1 })
+  .to('.info_text:nth-child(2)', { opacity: 1, y: 0, duration: 1 })
+  .to('.info_text:nth-child(3)', { opacity: 1, y: 0, duration: 1 })
+  .to('.info_text:nth-child(4)', { opacity: 1, y: 0, duration: 1 })
+  .to('.info_text:nth-child(5)', { opacity: 1, y: 0, duration: 1 })
+  .to('.info_text:nth-child(6)', { opacity: 1, y: 0, duration: 1 })
+  .to('.info_text:nth-child(7)', { opacity: 1, y: 0, duration: 1 });
+
+// 觸發動畫的 ScrollMagic Scene
+const textScene = new ScrollMagic.Scene({
+    triggerElement: '#base_info',
+    triggerHook: 0,    // 當滾動到頁面的頂端時觸發
+    duration: '100%'   // 動畫的長度
+})
+.setPin('#base_info')  // 鎖定 #base_info 區域
+.setTween(tl)          // 設定動畫
+.addTo(controller);

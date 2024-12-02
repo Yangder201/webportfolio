@@ -568,7 +568,8 @@ button {
 
 #base_info {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    padding-bottom: 15vh;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
@@ -696,7 +697,7 @@ button {
     height: 100%;
     position: absolute;
     right: -5%;
-    top: 0;
+    bottom: 0;
     background: url(../img/bg2.png);
     background-size: 90%;
     background-repeat: no-repeat;
@@ -1513,6 +1514,21 @@ mark {
     }
     
 }
+
+
+/* .next_btn_open::before{
+    content: 'Scroll Down';
+    position: absolute;
+    width: 70px;
+    height: 10px;
+    left: -5px;
+    bottom: 0;
+    font-size: .6rem;
+    font-weight: 200;
+    color: #ffffff7a;
+} */
+
+
 
 
 .next_btn {
@@ -2581,6 +2597,17 @@ footer {
 
 
 @media only screen and (max-width: 1440px) {
+
+    .base_bg{
+        right: -10%;
+        bottom: 0;
+        background: url(../img/bg2.png);
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+    
+    
 
     .open_text {
         width: 76vw;
@@ -3877,7 +3904,10 @@ footer {
     }
 
     #info_area {
-        width: 100vw;
+        height: fit-content;
+        padding-top: 10vh;
+        width: 80vw;
+        margin: auto;
     }
 
     #info {
@@ -3896,6 +3926,16 @@ footer {
     .intro_tit {
         font-size: 2.8rem;
         line-height: 4rem;
+    }
+
+
+    .info_text:nth-child(2){
+        opacity: 0;
+        transform: translateY(50px);
+        font-size: 1.5rem;  /* 增大字體 */
+        line-height: 4rem;
+        margin-bottom: 15px;
+        font-weight: 500;
     }
 
 
@@ -3976,6 +4016,8 @@ footer {
 
 
     .btn_menu-m {
+        position: fixed;
+        top: 0;
         display: flex;
         width: 60px;
         height: 60px;

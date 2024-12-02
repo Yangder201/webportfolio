@@ -305,9 +305,8 @@ button {
 #open_index {
     width: 100vw;
     height: 90vh;
-    background-color: #121212;
     position: relative;
-    background-image: url(../img/bg.jpg);
+    background: url(../img/bg.jpg);
     background-attachment: fixed;
 
 }
@@ -324,7 +323,7 @@ button {
     left: 0;
     padding-top: 40vh;
     width: 100%;
-    height: 60%;
+    height: 56%;
     background-color: #121212f6;
     z-index: 1;
     animation: fadeout 4s ease forwards;
@@ -348,6 +347,7 @@ button {
     100% {
         content: '';
         opacity: 0;
+
     }
 }
 
@@ -442,7 +442,7 @@ button {
     background-clip: text;
     color: transparent;
 
-    z-index: 0;
+    z-index: 5;
     opacity: 0;
 
     animation: opentext 2s ease 2.5s forwards;
@@ -586,7 +586,7 @@ button {
     font-size: 8rem;
     font-weight: bold;
     writing-mode: vertical-lr;
-    color: #38383844;
+    color: #64646460;
     opacity: 0;
     animation: slowshow 1s ease 3s forwards;
 
@@ -601,7 +601,6 @@ button {
     text-align: left;
     justify-content: center;
     color: #ffffff;
-
     position: relative;
     z-index: 4;
 

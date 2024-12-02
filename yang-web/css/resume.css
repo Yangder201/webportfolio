@@ -356,7 +356,7 @@ footer {
 
 
 #cat::after {
-    content: '了解更多';
+    content: '看詳細版';
     position: absolute;
     right: 4vw;
     bottom: 30vh;

@@ -595,7 +595,7 @@ button {
 
 #info_area {
     width: 60vw;
-    height: 100vh;
+    height: 75vh;
     margin: auto;
     margin-top: 25vh;
     text-align: left;
@@ -1497,8 +1497,21 @@ mark {
     z-index: 99;
     bottom: -8vh;
     left: 50%;
+    opacity: 0;
     transform: translateX(-50%);
 
+    animation: opennextbtn 1s ease 6s forwards;
+
+}
+
+@keyframes opennextbtn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
 }
 
 

@@ -360,7 +360,7 @@ button {
     bottom: -54px;
     left: 51%;
     transform: translateX(-51%);
-    z-index: 5;
+    z-index: 2;
     filter: drop-shadow(10px -10px 30px rgba(0, 0, 0, 0.5));
     opacity: 0;
     animation: showme 3.5s ease 2s forwards;
@@ -1488,6 +1488,16 @@ mark {
     margin-top: 5vh;
     position: relative;
     z-index: 95;
+
+}
+
+
+.next_btn_open {
+    position: absolute;
+    z-index: 99;
+    bottom: -8vh;
+    left: 50%;
+    transform: translateX(-50%);
 
 }
 

@@ -99,21 +99,55 @@ $(document).ready(function () {
 
 
 
-//go to top
-$(function () {
-    $("#gotop").click(function () {
-        jQuery("html,body").animate({
-            scrollTop: 0
-        }, 500);
+//原版 有效的 go to top 但手機有問題
+// $(function () {
+//     $("#gotop").click(function () {
+//         jQuery("html,body").animate({
+//             scrollTop: 0
+//         }, 500);
+//     });
+//     $(window).scroll(function () {
+//         if ($(this).scrollTop() > 300) {
+//             $('#gotop').fadeIn("fast");
+//         } else {
+//             $('#gotop').stop().fadeOut("fast");
+//         }
+//     });
+// });
+
+
+
+
+
+//go to top 
+document.addEventListener("DOMContentLoaded", function () {
+    const gotopButton = document.getElementById("gotop");
+    const scrollTarget = document.getElementById("skrollr-body");
+
+    // 點擊按鈕回到頂部
+    gotopButton.addEventListener("click", function () {
+        scrollTarget.scrollTo({
+            scrollTop: 0,
+            behavior: 'smooth' // 平滑滾動
+        });
     });
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-            $('#gotop').fadeIn("fast");
+
+
+    // 滾動事件
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+            gotopButton.style.display = "block"; // 顯示按鈕
         } else {
-            $('#gotop').stop().fadeOut("fast");
+            gotopButton.style.display = "none"; // 隱藏按鈕
         }
     });
 });
+
+
+
+
+
+
 
 //手機板選單
 $(document).ready(function () {
@@ -148,7 +182,7 @@ document.addEventListener('mousemove', function (event) {
 
 
 //淺底背景時，主選單文字顏色變化
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const elementsToChange = document.querySelectorAll("#cssmenu > ul > li > a, #logo a");
 
     // 定義顏色變更的函數
@@ -189,12 +223,15 @@ const tl = gsap.timeline();
 
 // 逐行顯示 .line 文字
 tl.to('.info_text:nth-child(1)', { opacity: 1, y: 0, duration: 1 })
-  .to('.info_text:nth-child(2)', { opacity: 1, y: 0, duration: 1 })
-  .to('.info_text:nth-child(3)', { opacity: 1, y: 0, duration: 1 })
-  .to('.info_text:nth-child(4)', { opacity: 1, y: 0, duration: 1 })
-  .to('.info_text:nth-child(5)', { opacity: 1, y: 0, duration: 1 })
-  .to('.info_text:nth-child(6)', { opacity: 1, y: 0, duration: 1 })
-  .to('.info_text:nth-child(7)', { opacity: 1, y: 0, duration: 1 });
+    .to('.info_text:nth-child(2)', { opacity: 1, y: 0, duration: 1 })
+    .to('.info_text:nth-child(3)', { opacity: 1, y: 0, duration: 1 })
+    .to('.info_text:nth-child(4)', { opacity: 1, y: 0, duration: 1 })
+    .to('.info_text:nth-child(5)', { opacity: 1, y: 0, duration: 1 })
+    .to('.info_text:nth-child(6)', { opacity: 1, y: 0, duration: 1 })
+    .to('.info_text:nth-child(7)', { opacity: 1, y: 0, duration: 1 })
+    .to('.info_text:nth-child(8)', { opacity: 1, y: 0, duration: 1 })
+    .to('.info_text:nth-child(9)', { opacity: 1, y: 0, duration: 1 });
+
 
 // 觸發動畫的 ScrollMagic Scene
 const textScene = new ScrollMagic.Scene({
@@ -202,6 +239,11 @@ const textScene = new ScrollMagic.Scene({
     triggerHook: 0,    // 當滾動到頁面的頂端時觸發
     duration: '100%'   // 動畫的長度
 })
-.setPin('#base_info')  // 鎖定 #base_info 區域
-.setTween(tl)          // 設定動畫
-.addTo(controller);
+    .setPin('#base_info')  // 鎖定 #base_info 區域
+    .setTween(tl)          // 設定動畫
+    .addTo(controller);
+
+
+
+
+

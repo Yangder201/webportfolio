@@ -100,48 +100,22 @@ $(document).ready(function () {
 
 
 //原版 有效的 go to top 但手機有問題
-// $(function () {
-//     $("#gotop").click(function () {
-//         jQuery("html,body").animate({
-//             scrollTop: 0
-//         }, 500);
-//     });
-//     $(window).scroll(function () {
-//         if ($(this).scrollTop() > 300) {
-//             $('#gotop').fadeIn("fast");
-//         } else {
-//             $('#gotop').stop().fadeOut("fast");
-//         }
-//     });
-// });
-
-
-
-
-
-//go to top 
-document.addEventListener("DOMContentLoaded", function () {
-    const gotopButton = document.getElementById("gotop");
-    const scrollTarget = document.getElementById("skrollr-body");
-
-    // 點擊按鈕回到頂部
-    gotopButton.addEventListener("click", function () {
-        scrollTarget.scrollTo({
-            scrollTop: 0,
-            behavior: 'smooth' // 平滑滾動
-        });
+$(function () {
+    $("#gotop").click(function () {
+        jQuery("html,body").animate({
+            scrollTop: 0
+        }, 500);
     });
-
-
-    // 滾動事件
-    window.addEventListener("scroll", function () {
-        if (window.scrollY > 300) {
-            gotopButton.style.display = "block"; // 顯示按鈕
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            $('#gotop').fadeIn("fast");
         } else {
-            gotopButton.style.display = "none"; // 隱藏按鈕
+            $('#gotop').stop().fadeOut("fast");
         }
     });
 });
+
+
 
 
 

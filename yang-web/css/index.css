@@ -1901,12 +1901,12 @@ mark {
 
 /*首頁大標題*/
 h2 {
-    font-size: 4.7rem;
+    font-size: 4rem;
     font-family: 'ChenYuLuoyan Thin';
     font-weight: 550;
     color: #312c27;
     text-align: center;
-    line-height: 4rem;
+    line-height: 5rem;
     padding: 5vh 0 2vh 0;
 
     /* color: #d8ecf8;

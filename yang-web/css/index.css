@@ -408,7 +408,7 @@ button {
     width: 1200px;
     margin: auto;
     height: fit-content;
-    padding-top: 18vh;
+    padding-top: 10vh;
     text-align: center;
     font-size: 4.5rem;
     font-family: 'CP Font';
@@ -423,12 +423,12 @@ button {
 
 @keyframes opentext_en {
     0% {
-        padding-top: 5vh;
+        padding-top: 10vh;
         opacity: 0;
     }
 
     100% {
-        padding-top: 18vh;
+        padding-top: 25vh;
         opacity: 1;
     }
 }
@@ -601,11 +601,12 @@ button {
     position: absolute;
     left: 3vw;
     top: -50px;
-    z-index: 8;
-    font-size: 8rem;
+    z-index: 98;
+    font-family: 'CP Font';
+    font-size: 6rem;
     font-weight: bold;
     writing-mode: vertical-lr;
-    color: #64646460;
+    color: #ffffff0a;
     opacity: 0;
     animation: slowshow 1s ease 3s forwards;
 
@@ -2065,7 +2066,7 @@ h3 {
     position: relative;
 }
 
-#skill_bg::after{
+#skill_bg::before{
     content: '';
     position: absolute;
     top: 0;

@@ -1,6 +1,7 @@
 @charset "utf-8";
 
-html,body {
+html,
+body {
     font-family: 'Rubik', 'Noto Sans TC', sans-serif;
     color: rgb(68, 67, 67);
     width: 100%;
@@ -15,7 +16,8 @@ html,body {
 
 /* 使 Lightbox 圖片垂直置中 */
 .lightbox img {
-    max-width: 90vw; /* 控制圖片寬度，保持在視窗的 90% 內 */
+    max-width: 90vw;
+    /* 控制圖片寬度，保持在視窗的 90% 內 */
     max-height: 100%;
 }
 
@@ -78,7 +80,7 @@ img {
     transition: background .8s;
 }
 
-.btn_menu:hover{
+.btn_menu:hover {
     font-size: 14px;
     background: #ffd96b;
 }
@@ -103,7 +105,7 @@ img {
     border-radius: 3px;
 }
 
-.btn_close:hover{
+.btn_close:hover {
     opacity: .8;
 }
 
@@ -128,13 +130,13 @@ img {
     border-radius: 3px;
 }
 
-.btn_close-m:hover{
+.btn_close-m:hover {
     opacity: .8;
 }
 
 
 .btn_menu-m {
-display: none;
+    display: none;
 }
 
 
@@ -211,7 +213,7 @@ display: none;
 
 
 
-#btn-area-bbg{
+#btn-area-bbg {
     width: 100%;
     height: 100vh;
     float: left;
@@ -237,17 +239,17 @@ display: none;
     backdrop-filter: blur(3.1px);
     -webkit-backdrop-filter: blur(3.1px);
     border-right: 1px solid #fff;
-    box-shadow:4px 4px 18px -10px #696969;
+    box-shadow: 4px 4px 18px -10px #696969;
     border-radius: 8px;
 
 }
 
-#btn-area-bg-m{
+#btn-area-bg-m {
     display: none;
 }
 
 
-#portfolio{
+#portfolio {
     width: 100vw;
     height: auto;
     display: flex;
@@ -261,14 +263,14 @@ display: none;
     padding: 20px;
     width: 80%;
     margin: 2vh auto 0 auto;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: bold;
     position: relative;
     z-index: 88;
 }
 
 #logo a {
-    color: #8b8b8b;
+    color: #ffffff;
 }
 
 #logo a:hover {
@@ -283,7 +285,7 @@ display: none;
     font-weight: bold;
     line-height: 2rem;
     /* text-align: center; */
-    color: #ffffff;
+    color: #ffffffc4;
 }
 
 #btn-area {
@@ -327,7 +329,6 @@ display: none;
     border-radius: 5px;
     background: #fbfbfbcf;
     border: 1px solid #ffffffe7
-
 }
 
 .btn-box a {
@@ -479,11 +480,23 @@ mark {
 
 .tag-tit {
     width: 90%;
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 3rem;
+    font-size: 3rem;
+    font-family: 'ChenYuLuoyan Thin';
+    font-weight: 500;
+    line-height: 8rem;
     color: #ffffff;
 }
+
+
+.tag-tit2 {
+    width: 90%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 3rem;
+    color: #ffffff;
+    margin-top: 2.5vh;
+}
+
 
 
 .tag-describe {
@@ -502,16 +515,19 @@ mark {
     padding-top: 5vh;
     padding-left: 12vw;
     padding-right: 12vw;
-    min-height: 100vh;
     height: auto;
+    min-height: 100vh;
+    background: #262626;
+    
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: center;
-    /* background: #4b4949; */
-    background: #262626;
+   
+
     position: relative;
     z-index: 22;
+
 }
 
 .page-title {
@@ -537,7 +553,7 @@ mark {
 
 
 .page_box {
-    width:90vw;
+    width: 90vw;
     height: fit-content;
     margin: 5vh 0;
     border-radius: 6px;
@@ -547,13 +563,13 @@ mark {
     display: flex;
     flex-wrap: wrap;
     /* box-shadow: 13px 12px 20px -10px #2f2f2eab; */
-    box-shadow: 12px 15px 30px -7px  #1d1d1dec;
+    box-shadow: 12px 15px 30px -7px #1d1d1dec;
 
 }
 
 
 
-.btn-back a{
+.btn-back a {
     width: fit-content;
     padding: 10px 20px;
     margin: 5vh auto;
@@ -682,6 +698,7 @@ mark {
 
 
 .box4 {
+    
     width: 22%;
     height: fit-content;
     margin: 30px 15px;
@@ -743,7 +760,7 @@ mark {
     z-index: 1;
     position: relative;
     border-radius: 6px;
-    max-height:500px;
+    max-height: 500px;
     overflow: hidden;
     position: relative;
     background: #1b1b1b;
@@ -807,10 +824,10 @@ mark {
     color: #404040;
     border: 1px solid #ffffff;
     box-shadow: 6px 5px 20px -5px #5d5d5d8c;
-    
+
 }
 
-.box-tit a {  
+.box-tit a {
     opacity: 0.8;
 }
 
@@ -820,6 +837,7 @@ mark {
 
 
 .box3 {
+    
     width: 30%;
     height: fit-content;
     background: #1b1b1b;
@@ -833,7 +851,7 @@ mark {
     transition: 1s;
 }
 
-.box3 a:hover{
+.box3 a:hover {
     transition: .2s ease-out;
 }
 
@@ -863,6 +881,7 @@ mark {
 }
 
 .box2 {
+    
     background: #1b1b1b;
     width: 46%;
     height: fit-content;
@@ -878,7 +897,7 @@ mark {
     transition: .5s;
 }
 
-.box2 a:hover{
+.box2 a:hover {
     transition: .2s ease-out;
 }
 
@@ -912,7 +931,7 @@ mark {
 }
 
 
-.UIUX_box{
+.UIUX_box {
     background: #1b1b1b;
     width: 46%;
     height: fit-content;
@@ -962,7 +981,7 @@ mark {
 
 
 
-.UIUX_text{
+.UIUX_text {
     min-height: 400px;
     background: #f0f0f0;
     width: 42%;
@@ -974,18 +993,18 @@ mark {
     overflow: hidden;
     position: relative;
     transition: .5s;
-    box-shadow: 6px 5px 20px 0px #292929c2; 
+    box-shadow: 6px 5px 20px 0px #292929c2;
 }
 
 
-.UIUX_tit{
+.UIUX_tit {
     color: #0a0a0a;
     font-size: 1.3rem;
     font-weight: bold;
     padding: 20px 0 40px 0;
 }
 
-.UIUX_title{
+.UIUX_title {
     font-size: 1.1rem;
     font-weight: 600;
     border-left: #c96931 solid 5px;
@@ -994,13 +1013,14 @@ mark {
     margin-top: 10px;
 }
 
-.UIUX_content{
+.UIUX_content {
     padding: 5px 15px 10px 25px;
 }
 
 
 
 .box {
+    
     max-width: 95%;
     height: fit-content;
     margin: 20px 0;
@@ -1011,7 +1031,7 @@ mark {
     display: flex;
     flex-wrap: wrap;
     /* box-shadow: 13px 12px 20px -10px #2f2f2eab; */
-    box-shadow: 12px 15px 30px -7px  #1d1d1dec;
+    box-shadow: 12px 15px 30px -7px #1d1d1dec;
 
 }
 
@@ -1027,7 +1047,7 @@ mark {
 .box a:hover img {
     opacity: .5;
     transition: .2s ease-out;
-    
+
 }
 
 
@@ -1076,7 +1096,7 @@ mark {
 
 
 
-.codebox{
+.codebox {
     background: #1b1b1b;
     width: 90%;
     height: fit-content;
@@ -1092,12 +1112,12 @@ mark {
     transition: .5s;
 }
 
-.codebox-m{
+.codebox-m {
     display: none;
 }
 
 
-.codebox2{
+.codebox2 {
     background: #1b1b1b;
     width: 44%;
     height: fit-content;
@@ -1114,7 +1134,7 @@ mark {
 }
 
 
-.codebox2-m{
+.codebox2-m {
     display: none;
 }
 
@@ -1142,9 +1162,9 @@ mark {
     -moz-transform: .5s;
 }
 
-.link-btn:hover{
+.link-btn:hover {
     opacity: 0.9;
-   
+
 }
 
 
@@ -1249,11 +1269,11 @@ footer {
 }
 
 
-.fancybox-lock .fancybox-overlay{
+.fancybox-lock .fancybox-overlay {
     backdrop-filter: blur(5px) !important;
 }
 
-.fancybox-title-float-wrap .child{
+.fancybox-title-float-wrap .child {
     padding: 2px 20px;
     background: transparent;
     background: rgb(255 255 255 / 80%) !important;
@@ -1270,21 +1290,21 @@ footer {
 }
 
 
-.fancybox__content{
+.fancybox__content {
     max-width: 30% !important;
     margin-right: 25px !important;
 }
 
 .fancybox__slide.has-caption {
     flex-direction: row;
-  }
-  
-  .fancybox__caption {
+}
+
+.fancybox__caption {
     max-width: 250px;
     line-height: 2rem !important;
     padding: 1rem 3rem 1rem 1rem;
-  }
-  
+}
+
 
 
 
@@ -1313,12 +1333,12 @@ footer {
 
     }
 
-    #btn-area-bg{
+    #btn-area-bg {
         width: 50%;
         height: fit-content;
         padding-bottom: 10vh;
     }
-    
+
 
     .portfolio-tit {
 
@@ -1326,7 +1346,7 @@ footer {
 
     }
 
-    #btn-area{
+    #btn-area {
         width: 95%;
     }
 
@@ -1373,16 +1393,16 @@ footer {
 
     }
 
-    
-    .box4s{
+
+    .box4s {
         width: 30%;
     }
 
-    .btn-box{
+    .btn-box {
         width: 40%;
     }
 
-    .btn-box-all{
+    .btn-box-all {
         width: 85%;
     }
 
@@ -1397,37 +1417,36 @@ footer {
 
     }
 
-    .box4s{
+    .box4s {
         width: 45%;
     }
-    
-    .btn-box
-    #btn-area-bg{
+
+    .btn-box #btn-area-bg {
         width: 50%;
         height: fit-content;
         padding-bottom: 10vh;
     }
 
-    #btn-area{
+    #btn-area {
         width: 100%;
     }
 
-    .btn-box{
+    .btn-box {
         width: 40%;
     }
 
-    .btn-box-all{
+    .btn-box-all {
         width: 85%;
     }
 
-    
-    .codebox{
+
+    .codebox {
         width: 94%;
 
     }
-    
-    
-    .codebox2{
+
+
+    .codebox2 {
         width: 94%;
         margin: 15px;
 
@@ -1438,7 +1457,7 @@ footer {
 @media only screen and (max-width: 769px) {
 
 
-    #btn-area-bg{
+    #btn-area-bg {
         width: 50%;
         height: fit-content;
         padding-bottom: 10vh;
@@ -1497,7 +1516,7 @@ footer {
     }
 
 
-    .btn-box{
+    .btn-box {
         width: 80%;
     }
 
@@ -1525,7 +1544,7 @@ footer {
 
     .box2 {
         width: 85vw;
-        
+
     }
 
     .box3 {
@@ -1537,7 +1556,7 @@ footer {
         margin: 3vh auto;
     }
 
-    .box4s{
+    .box4s {
         width: 40%;
         margin: 15px;
     }
@@ -1555,7 +1574,7 @@ footer {
 }
 
 @media only screen and (max-width: 426px) {
-    .btn_menu-m{
+    .btn_menu-m {
         display: flex;
         width: 60px;
         height: 60px;
@@ -1593,7 +1612,7 @@ footer {
         box-shadow: 4px 4px 18px -10px #696969;
         background: #292929;
     }
-    
+
     #btn-area-m {
         width: 100%;
         height: fit-content;
@@ -1601,26 +1620,26 @@ footer {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-    
+
     }
 
 
-    
-.btn_box_m {
-    width: 100%;
-    height: 65px;
-    margin: 3px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    font-weight: 500;
-    background: #fbfbfbcf;
-    color: rgb(63, 63, 63);
-    border: 1px solid #ffffffe7;
-    transition: .1s;
-    -webkit-transition: .1s;
-}
+
+    .btn_box_m {
+        width: 100%;
+        height: 65px;
+        margin: 3px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        font-weight: 500;
+        background: #fbfbfbcf;
+        color: rgb(63, 63, 63);
+        border: 1px solid #ffffffe7;
+        transition: .1s;
+        -webkit-transition: .1s;
+    }
 
 
 
@@ -1646,7 +1665,7 @@ footer {
 
     }
 
-    .btn_menu{
+    .btn_menu {
         display: none;
     }
 
@@ -1726,25 +1745,26 @@ footer {
         max-height: 350px;
     }
 
-    .box4s{
+    .box4s {
         width: 100%;
     }
+
     .box5 {
         width: 90%;
         max-height: 250px;
         margin: 10px auto;
     }
 
-    .box6{
+    .box6 {
         width: 90%;
         max-height: 300px;
         margin: 10px auto;
     }
 
-    .box6 img{
+    .box6 img {
         width: 100%;
         height: 100%;
-  
+
     }
 
     .next-btn a {
@@ -1752,13 +1772,13 @@ footer {
     }
 
 
-    .codebox2{
+    .codebox2 {
         display: none;
     }
 
 
-    
-    .codebox2-m{
+
+    .codebox2-m {
         display: block;
         width: 90vw;
         margin: 2vh auto;
@@ -1766,12 +1786,12 @@ footer {
         overflow: hidden;
     }
 
-    .codebox{
+    .codebox {
         display: none;
     }
 
 
-    .codebox-m{
+    .codebox-m {
         display: block;
         width: 90vw;
         margin: 2vh auto;
@@ -1780,5 +1800,5 @@ footer {
     }
 
 
-    
+
 }

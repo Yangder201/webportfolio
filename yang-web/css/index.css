@@ -683,7 +683,7 @@ button {
     /* 增大字體 */
     line-height: 1.5rem;
     margin-bottom: 20px;
-    font-weight: 600;
+    font-weight: 500;
     color: #fcd39e;
 }
 
@@ -1906,7 +1906,7 @@ h2 {
     font-weight: 550;
     color: #312c27;
     text-align: center;
-    line-height: 5rem;
+    line-height: 4rem;
     padding: 5vh 0 2vh 0;
 
     /* color: #d8ecf8;
@@ -4013,7 +4013,7 @@ footer {
         /* 增大字體 */
         line-height: 4rem;
         margin-bottom: 15px;
-        font-weight: 500;
+        font-weight: 300;
     }
 
 

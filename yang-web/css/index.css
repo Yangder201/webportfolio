@@ -423,12 +423,12 @@ button {
 
 @keyframes opentext_en {
     0% {
-        padding-top: 15vh;
+        padding-top: 5vh;
         opacity: 0;
     }
 
     100% {
-        padding-top: 20vh;
+        padding-top: 18vh;
         opacity: 1;
     }
 }
@@ -1310,6 +1310,16 @@ mark {
 
 }
 
+#trait_area{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 5vh;
+    position: relative;
+
+   
+}
+
+
 #trait {
     width: 100%;
     min-height: 80vh;
@@ -2055,6 +2065,18 @@ h3 {
     position: relative;
 }
 
+#skill_bg::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/cover_bg2.png') no-repeat top;
+    background-size: cover; /* 確保圖片覆蓋整個區域 */
+    z-index: 0; /* 確保這層蓋在其他內容上 */
+}
+
 #skill {
     width: 80%;
     padding-top: 10vh;
@@ -2067,6 +2089,8 @@ h3 {
     justify-content: center;
     align-items: flex-start;
     align-content: flex-start;
+
+    
 
 }
 

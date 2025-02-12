@@ -1,5 +1,10 @@
 @charset "utf-8";
 @font-face {
+    font-family: 'CP Font'; 
+    src: url('/fonts/CP_Font.woff2') format('opentype');
+    font-style: normal;
+}
+@font-face {
     font-family: 'ChenYuLuoyan Thin'; 
     src: url('/fonts/ChenYuluoyan-Thin.woff2') format('truetype');
     font-style: normal;

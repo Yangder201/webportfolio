@@ -59,6 +59,7 @@ img {
 
 
 
+
 .btn_menu {
     width: 60px;
     height: 60px;
@@ -483,7 +484,8 @@ mark {
     font-size: 3rem;
     font-family: 'ChenYuLuoyan Thin';
     font-weight: 500;
-    line-height: 8rem;
+    line-height: 5rem;
+    margin-top: 3vh;
     color: #ffffff;
 }
 
@@ -504,9 +506,8 @@ mark {
     font-size: 1rem;
     line-height: 2rem;
     color: #d7d7d7;
-    margin-bottom: 1vh;
+    margin-bottom: 5vh;
     font-weight: 300;
-
 
 }
 

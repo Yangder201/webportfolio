@@ -523,7 +523,6 @@ button {
 
 
 .open_text {
-    /* padding-top: 21vh; */
     width: 1200px;
     margin: auto;
     height: 45vh;
@@ -4336,7 +4335,7 @@ footer {
         width: 90vw;
         margin: auto;
         text-align: center;
-        padding-top: 23vh;
+        padding-top: 18vh;
         font-size: 1.6rem;
         line-height: 2.5rem;
         font-weight: 400;
@@ -4393,7 +4392,7 @@ footer {
         width: 90vw;
         margin: auto;
         text-align: center;
-        padding-top: 12vh;
+        padding-top: 15vh;
         font-size: 1.5rem;
         line-height: 2.3rem;
         font-weight: 400;

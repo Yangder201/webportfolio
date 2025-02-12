@@ -2775,18 +2775,18 @@ footer {
         overflow: hidden;
         text-align: center;
         font-size: 5rem;
-        font-weight: bold;
+        font-weight: 400;
     }
 
     .open_text_en {
-        width: 90vw;
+        width: 85vw;
         margin: auto;
         height: fit-content;
         padding-top: 27vh;
         text-align: center;
-        font-size: 4.7rem;
-        font-weight: bold;
-        color: #ffffffec;
+        font-size: 4.5rem;
+        font-weight: 400;
+        color: #ffffff66;
         line-height: 5.5rem;
         opacity: 0;
         animation: opentext_en 1s ease 2.5s forwards;
@@ -3000,8 +3000,8 @@ footer {
         padding-top: 20vh;
         text-align: center;
         font-size: 3.5rem;
-        font-weight: bold;
-        color: #ffffffec;
+        font-weight: 400;
+        color: #ffffffb4;
         line-height: 5.5rem;
         opacity: 0;
         animation: opentext_en 1s ease 2.3s forwards;
@@ -3221,7 +3221,7 @@ footer {
         margin: auto;
         padding-top: 15vh;
         font-size: 2.8rem;
-        font-weight: bold;
+        font-weight: 400;
         line-height: 5.5rem;
         text-align: center;
         color: #ffffff;
@@ -3241,7 +3241,7 @@ footer {
         width: 92vw;
         margin: auto;
         font-size: 3.3rem;
-        font-weight: bold;
+        font-weight: 400;
         line-height: 5rem;
         text-align: center;
         color: #ffffff;
@@ -3901,10 +3901,10 @@ footer {
         width: 90vw;
         margin: auto;
         text-align: center;
-        padding-top: 7vh;
+        padding-top: 5vh;
         font-size: 1.7rem;
         line-height: 4rem;
-        font-weight: bold;
+        font-weight: 400;
         color: #ffffff;
         display: block;
         opacity: 0;
@@ -3930,7 +3930,7 @@ footer {
 
     .open_text_xs {
         display: block;
-        width: 90vw;
+        width: 80vw;
         margin: auto;
         font-size: 2.3rem;
         font-weight: 400;
@@ -3944,6 +3944,9 @@ footer {
 
     }
 
+    .tit-m{
+        color: #f5d6a5 !important;
+    }
 
     .name {
         padding-top: 10vh;
@@ -4336,7 +4339,7 @@ footer {
         padding-top: 23vh;
         font-size: 1.6rem;
         line-height: 2.5rem;
-        font-weight: bold;
+        font-weight: 400;
         color: #ffffff;
         display: block;
         opacity: 0;
@@ -4346,10 +4349,10 @@ footer {
 
     .open_text_xs {
         display: block;
-        width: 90vw;
+        width: 85vw;
         margin: auto;
         font-size: 2rem;
-        font-weight: bold;
+        font-weight: 400;
         line-height: 3rem;
         text-align: left;
         color: #ffffff;
@@ -4390,7 +4393,7 @@ footer {
         width: 90vw;
         margin: auto;
         text-align: center;
-        padding-top: 18vh;
+        padding-top: 12vh;
         font-size: 1.5rem;
         line-height: 2.3rem;
         font-weight: 400;

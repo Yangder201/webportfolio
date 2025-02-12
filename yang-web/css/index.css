@@ -691,7 +691,7 @@ button {
     width: 60vw;
     height: 75vh;
     margin: auto;
-    margin-top: 25vh;
+    margin-top: 20vh;
     text-align: left;
     justify-content: center;
     color: #ffffff;
@@ -717,7 +717,7 @@ button {
     border: 3px solid #ffffff;
     color: #383838;
     text-align: left;
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 20px 20px;
     position: absolute;
     font-size: 1.1rem;
@@ -757,13 +757,13 @@ button {
     font-size: 2.5rem;
     /* 增大字體 */
     line-height: 1.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     font-weight: 500;
     color: #fcd39e;
 }
 
 .info_text:nth-child(7) {
-    margin-top: 15px;
+    margin-top: 20px;
     opacity: 0;
     transform: translateY(50px);
     color: #bfbfbf;

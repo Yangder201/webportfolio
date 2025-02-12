@@ -353,30 +353,30 @@ button {
     display: inline-block;
     transform-origin: bottom center; 
 
-    animation: cathand 4s .1s ease forwards;
+    animation: cathand 4s ease forwards;
 }
 
 @keyframes cathand {
     0% {
-        background-position: 50% 120%;
+        background-position: 50% 125%;
         transform: rotate(0deg);
         opacity: 1;
     }
     15% {
-        background-position: 50% 105%;
+        background-position: 50% 110%;
         transform: rotate(0deg);
     }
 
     25%{
-        transform: rotate(-5deg);
+        transform: rotate(-2deg);
     }
     30%{
-        transform: rotate(10deg);
+        transform: rotate(5deg);
     }
     35%{
         transform: rotate(-10deg);
     }
-    40%{
+    45%{
         transform: rotate(10deg);
     }
 
@@ -393,7 +393,7 @@ button {
 
     100% {
         
-        transform: rotate(-20deg);
+        transform: rotate(-5deg);
         background-position: 50% 180%;
         opacity: 0;
     }
@@ -1384,13 +1384,15 @@ mark {
 }
 
 #trait_area{
-    width: 100%;
+    width: 90vw;
+    margin: auto;
+    border-radius: 100px;
+    margin-top: 10vh;
+    box-shadow: -1px -13px 20px #bfbfbd59;
     height: fit-content;
     padding-bottom: 5vh;
     position: relative;
-    
     background: linear-gradient( #f8f8f8, #e2e2e2);
-
    
 }
 
@@ -2134,12 +2136,12 @@ h3 {
     ); */
 
 
-    background: linear-gradient(179deg, #9d9a92, #eddfd2b3, #fff6e6);
+    background: linear-gradient(179deg, #9d9a92, #eddfd2, #fff6e6);
     background-attachment: fixed;
     border-bottom: #f7f7f7e1 1px solid;
     position: relative;
 }
-/* 
+
 #skill_bg::before{
     content: '';
     position: absolute;
@@ -2151,7 +2153,7 @@ h3 {
     background-size: cover; 
     z-index: 0; 
     opacity: .6;
-} */
+}
 
 #skill {
     width: 80%;

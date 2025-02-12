@@ -689,7 +689,7 @@ button {
 
 #info_area {
     width: 60vw;
-    height: 75vh;
+    height: 80vh;
     margin: auto;
     margin-top: 20vh;
     text-align: left;
@@ -798,14 +798,14 @@ button {
 
 .base_bg {
     width: 50%;
-    height: 100%;
+    height: 100vh;
     position: absolute;
     right: -5%;
     bottom: 0;
     background: url(../img/bg2.png);
-    background-size: 90%;
+    background-size: 80%;
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: right bottom;
 }
 
 
@@ -999,11 +999,12 @@ mark {
     align-items: center;
     justify-content: center;
     border-radius: 30px;
-    width: 150px;
+    width: 170px;
     height: 55px;
     padding-right: 10px;
     margin: 0 5px;
     font-weight: 400;
+    font-size: 1.5rem;
     background: #ffffff;
     border: 2px solid #ffffff;
     color: #0a0a0a;
@@ -1012,7 +1013,7 @@ mark {
 
 
 .main_cta a:hover {
-    width: 150px;
+    width: 170px;
     height: 55px;
     background: #ffffff;
     box-shadow: inset 5px 3px 5px white, inset 0px 2px 5px rgba(0, 0, 0, 0.15);
@@ -2762,7 +2763,7 @@ footer {
 
 
     .open_text {
-        width: 76vw;
+        width: 80vw;
         margin: auto;
         height: 50vh;
         overflow: hidden;
@@ -2939,9 +2940,11 @@ footer {
 }
 
 
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1024px) {
 
-
+    h2{
+        font-size: 3.8rem;
+    }
 
     #base_info {
         height: fit-content;
@@ -2954,7 +2957,7 @@ footer {
         margin-top: -50px;
         padding-left: 3vw;
         z-index: 8;
-        font-size: 7.5rem;
+        font-size: 5rem;
         font-weight: bold;
         writing-mode: vertical-lr;
         color: #9b9b9b4b;
@@ -2988,9 +2991,9 @@ footer {
         width: 90vw;
         margin: auto;
         height: fit-content;
-        padding-top: 25vh;
+        padding-top: 20vh;
         text-align: center;
-        font-size: 3.7rem;
+        font-size: 3.5rem;
         font-weight: bold;
         color: #ffffffec;
         line-height: 5.5rem;
@@ -3039,7 +3042,7 @@ footer {
 
     .main_photo {
         position: absolute;
-        bottom: -54px;
+        bottom: -15vh;
         left: 50%;
         transform: translateX(-50%);
         z-index: 5;
@@ -3210,14 +3213,16 @@ footer {
     .open_text_en_m {
         width: 90vw;
         margin: auto;
-        padding-top: 27vh;
-        font-size: 3rem;
+        padding-top: 15vh;
+        font-size: 2.8rem;
         font-weight: bold;
         line-height: 5.5rem;
         text-align: center;
         color: #ffffff;
         display: block;
         opacity: 0;
+        font-family: 'CP Font';
+        font-weight: bolder;
         animation: opentext_en 1s ease 2.3s forwards;
     }
 
@@ -3236,6 +3241,8 @@ footer {
         color: #ffffff;
         display: block;
         opacity: 0;
+        font-family: 'CP Font';
+        font-weight: bolder;
         animation: opentext 2s ease 3s forwards;
     }
 
@@ -3261,7 +3268,7 @@ footer {
 
     h2 {
         color: #1b1b1b;
-        font-size: 2.1rem;
+        font-size: 2.8rem;
     }
 
 
@@ -3888,14 +3895,15 @@ footer {
         width: 90vw;
         margin: auto;
         text-align: center;
-        padding-top: 13vh;
-        font-size: 1.9rem;
+        padding-top: 10vh;
+        font-size: 1.7rem;
         line-height: 4rem;
         font-weight: bold;
         color: #ffffff;
         display: block;
         opacity: 0;
-
+        font-family: 'CP Font';
+        font-weight: bolder;
         animation: opentext_en 1s ease 2.2s forwards;
     }
 
@@ -3918,12 +3926,14 @@ footer {
         display: block;
         width: 80vw;
         margin: auto;
-        font-size: 2rem;
+        font-size: 2.3rem;
         font-weight: bold;
         line-height: 3.5rem;
         text-align: left;
         color: #ffffff;
         opacity: 0;
+        font-family: 'CP Font';
+        font-weight: bolder;
         animation: opentext 2s ease 2.5s forwards;
 
     }
@@ -4113,12 +4123,17 @@ footer {
     }
 
 
+    
+    .info_text:nth-child(1) {
+        font-size: 2.2rem;
+        line-height: 2rem;
+    }
+
     .info_text:nth-child(2) {
         opacity: 0;
         transform: translateY(50px);
-        font-size: 1.5rem;
-        /* 增大字體 */
-        line-height: 4rem;
+        font-size: 1.8rem;
+        line-height: 3rem;
         margin-bottom: 15px;
         font-weight: 300;
     }
@@ -4306,7 +4321,7 @@ footer {
         margin: auto;
         text-align: center;
         padding-top: 23vh;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         line-height: 2.5rem;
         font-weight: bold;
         color: #ffffff;

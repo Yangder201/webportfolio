@@ -410,7 +410,8 @@ button {
     content: '你好';
     color: #ffffffc9;
     font-size: 8rem;
-    font-family: 'ChenYuLuoyan Thin';
+    font-family: 'ChenYuLuoyan Thin','Rubik', 'Noto Sans TC', "微軟正黑體", sans-serif;
+    font-display: swap;
     font-weight: 500;
     letter-spacing: .5rem;
     text-align: center;

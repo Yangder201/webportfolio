@@ -336,12 +336,8 @@ button {
 }
 
 #open_index::before {
-    content: '你好';
+    content: '';
     color: #ffffffc9;
-    font-size: 8rem;
-    font-family: 'ChenYuLuoyan Thin';
-    font-weight: 500;
-    letter-spacing: .5rem;
     text-align: center;
     position: absolute;
     top: 0;
@@ -351,31 +347,55 @@ button {
     height: 66%;
     background-image: url(../img/cat_hand.png);
     background-repeat: no-repeat;
-    background-position: right center;
- 
+    background-position: right top;
+    opacity: 0;
     z-index: 2;
-    animation: fadeout 4s ease forwards;
+    display: inline-block;
+    transform-origin: bottom center; 
+
+    animation: cathand 4s .1s ease forwards;
 }
 
-@keyframes fadeout {
+@keyframes cathand {
     0% {
-        content: '你好';
+        background-position: 50% 120%;
+        transform: rotate(0deg);
         opacity: 1;
     }
-
-    50% {
-        content: '歡迎';
-        opacity: 1;
+    15% {
+        background-position: 50% 105%;
+        transform: rotate(0deg);
     }
 
-    60% {
-        content: '';
+    25%{
+        transform: rotate(-5deg);
+    }
+    30%{
+        transform: rotate(10deg);
+    }
+    35%{
+        transform: rotate(-10deg);
+    }
+    40%{
+        transform: rotate(10deg);
+    }
+
+    50%{
+        background-position: 50% 110%;
+        transform: rotate(0deg);
+    }
+
+    70% {
+        
+        opacity: 1;
+      
     }
 
     100% {
-        content: '';
+        
+        transform: rotate(-20deg);
+        background-position: 50% 180%;
         opacity: 0;
-
     }
 }
 

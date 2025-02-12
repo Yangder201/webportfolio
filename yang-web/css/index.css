@@ -1,13 +1,13 @@
 @charset "utf-8";
 @font-face {
     font-family: 'CP Font';
-    src: url('../font/CP_Font.woff2') format('woff2');
+    src: url('../font/CP_Font.ttf') format('truetype');
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ChenYuLuoyan Thin';
-    src: url('../font/ChenYuluoyan-Thin.woff2') format('woff2');
+    src: url('../font/ChenYuluoyan-Thin.ttf') format('truetype');
     font-style: normal;
 }
 

@@ -1,13 +1,13 @@
 @charset "utf-8";
 @font-face {
-    font-family: 'CP Font'; /* 可以單獨定義每個字體家族名稱 */
-    src: url('/fonts/CP_Font.otf') format('opentype');
+    font-family: 'CP Font'; 
+    src: url('/fonts/CP_Font.woff2') format('opentype');
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'ChenYuLuoyan Thin'; /* 建議定義中文字體名稱時，使用英文名稱 */
-    src: url('/fonts/ChenYuluoyan-Thin.ttf') format('truetype'); /* 修正 format 拼寫錯誤 */
+    font-family: 'ChenYuLuoyan Thin'; 
+    src: url('/fonts/ChenYuluoyan-Thin.woff2') format('truetype');
     font-style: normal;
 }
 

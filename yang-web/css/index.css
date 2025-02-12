@@ -14,11 +14,6 @@
 
 
 
-:root {
-    --primary-color: ;
-    --secondary-color: ;
-    --text-color: ;
-}
 
 * {
     margin: 0;
@@ -57,7 +52,7 @@ a {
     text-decoration: none;
     transition: .5s;
     -webkit-transition: .2s;
-
+    color: inherit;
 }
 
 a:hover {
@@ -2073,9 +2068,10 @@ h3 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('../img/cover_bg2.png') no-repeat top;
-    background-size: cover; /* 確保圖片覆蓋整個區域 */
-    z-index: 0; /* 確保這層蓋在其他內容上 */
+    background: url('../img/cover_bg4.png') no-repeat top;
+    background-size: cover; 
+    z-index: 0; 
+    opacity: .6;
 }
 
 #skill {
@@ -2170,7 +2166,8 @@ h3 {
     width: 100%;
     height: inherit;
     padding: 5px 0 20px 60px;
-    color: #ffd066;
+    color: #fae0b8;
+
 }
 
 
@@ -2190,6 +2187,7 @@ h3 {
     font-size: 2rem;
     line-height: 4.5rem;
     font-weight: 500;
+    color: #ffcb5c;
 }
 
 .company_circle {
@@ -2209,7 +2207,7 @@ h3 {
     font-weight: 500;
     display: flex;
     flex-wrap: nowrap;
-    color: #ffeecf;
+    color: #ffffff;
 }
 
 /* .work_tit span{

@@ -440,12 +440,21 @@ footer {
     #photo_area {
         width: 30%;
         height: initial;
+        border-top-left-radius: 30px;
+    }
+
+    #logo{
+        padding-left: 1vw;
+        padding-top: 1vh;
+        width: 90%;
+        font-size: 3.3rem;
+        line-height: 4.5rem;
     }
 
     #info_area {
         width: 70%;
         border-right: none;
-        border-top-right-radius: 10px;
+        border-top-right-radius: 30px;
     }
 
     #ride_side {
@@ -453,8 +462,8 @@ footer {
         padding-left: 10vw;
         padding-top: 10vh;
         border-top-right-radius: 0;
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
         height: fit-content;
     }
 
@@ -583,6 +592,14 @@ footer {
         width: 40%;
     }
 
+    #logo{
+        padding-left: 2vw;
+        padding-top: 1vh;
+        width: 90%;
+        font-size: 2.8rem;
+        line-height: 4rem;
+    }
+
     #tag_area {
         font-size: 1em;
     }
@@ -642,11 +659,13 @@ footer {
 
     #photo_area {
         width: 100%;
-        border-top-right-radius: 10px;
+        border-top-right-radius: 20px;
     }
 
     #info_area {
         width: 100%;
+        padding-left: 10vw;
+        padding-top: 5vh;
         border-right: none;
         border-top-right-radius: 0;
     }
@@ -654,7 +673,8 @@ footer {
     #ride_side {
         width: 100%;
         border-top-right-radius: 0;
-        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 30px;
         height: fit-content;
 
     }
@@ -670,12 +690,12 @@ footer {
     }
 
     #logo {
-        padding-left: 15px;
+        padding-left: 10vw;
         width: 250px;
         word-wrap: break-word;
-        text-align: center;
+        text-align: left;
         padding-top: 1vh;
-        font-size: 4.5em;
+        font-size: 3rem;
     }
 
     .photo {

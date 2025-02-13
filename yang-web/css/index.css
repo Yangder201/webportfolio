@@ -12,9 +12,6 @@
 }
 
 
-
-
-
 * {
     margin: 0;
     padding: 0;
@@ -37,7 +34,6 @@ body {
     background: #fdfdfd;
     margin: 0;
     padding: 0;
-    /* scroll-behavior: smooth; */
     overflow-x: hidden;
     position: relative;
     clear: both;
@@ -140,7 +136,7 @@ img {
 }
 
 ::-webkit-scrollbar-track-piece {
-    background: #363636;
+    background: #2c2c2c;
 }
 
 
@@ -750,7 +746,7 @@ button {
     opacity: 0.2;
     transform: translateY(40px);
     font-size: 3rem;
-    /* 增大字體 */
+
     line-height: 3rem;
     font-weight: 600;
     color: #f8b474;
@@ -2241,7 +2237,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    z-index: 88;
+    z-index: 5;
     position: relative;
 
 }
